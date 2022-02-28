@@ -21,7 +21,7 @@
               <i class="material-icons">
                 add
               </i>
-              {{ $t('global.add') }}
+              {{ $t('global.add') }} 
             </router-link>
             <button
               type="button"
@@ -74,7 +74,6 @@ import HeaderSettings from '@components/Datatables/HeaderSettings'
 import GlobalSearch from '@components/Datatables/GlobalSearch'
 import DatatableSingle from '@components/Datatables/DatatableSingle'
 import DatatablePictures from '@components/Datatables/DatatablePictures'
-import DatatableEnum from '@components/Datatables/DatatableEnum'
 
 export default {
   components: {
@@ -128,13 +127,7 @@ export default {
           thComp: TranslatedHeader,
           tdComp: DatatablePictures
         },
-        {
-          title: 'cruds.universitySubject.fields.type',
-          field: 'type',
-          thComp: TranslatedHeader,
-          sortable: true,
-          tdComp: DatatableEnum
-        },
+        
         {
           title: 'global.actions',
           thComp: TranslatedHeader,

@@ -1,23 +1,47 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito');
-
 // Variables
 @import 'variables';
-
 // Tailwind
 @tailwind base;
-
 @tailwind components;
-
 @tailwind utilities;
-
-
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .gradient {
-  //background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
-  background: linear-gradient(90deg, $brand-1 0%, $brand-2 100%);
+    //background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+    background: linear-gradient(90deg, $brand-1 0%, $brand-2 100%);
+}
 
+// Then import Bootstrap an BootstrapVue SCSS files (order is important)
+@import '~bootstrap/scss/bootstrap.scss';
+@import '~bootstrap-vue/src/index.scss';
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity .5s;
+}
+
+.fade-enter,
+.fade-leave-to
+/* .fade-leave-active below version 2.1.8 */
+
+{
+    opacity: 0;
+}
+
+.v-enter-active,
+.v-leave-active {
+    transition: opacity 4s;
+}
+
+.v-enter,
+.v-leave-to
+/* .fade-leave-active below version 2.1.8 */
+
+{
+    opacity: 0;
 }

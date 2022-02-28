@@ -104,10 +104,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/WeeklyAccommodations/Show.vue?vue&type=script&lang=js&":
-/*!****************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/cruds/WeeklyAccommodations/Show.vue?vue&type=script&lang=js& ***!
-  \****************************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/UnivercityCourses/Show.vue?vue&type=script&lang=js&":
+/*!*************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/cruds/UnivercityCourses/Show.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -125,6 +125,50 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -278,7 +322,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
   beforeDestroy: function beforeDestroy() {
     this.resetState();
   },
-  computed: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapGetters"])('WeeklyAccommodationsSingle', ['entry'])),
+  computed: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapGetters"])('UnivercityCoursesSingle', ['entry'])),
   watch: {
     '$route.params.id': {
       immediate: true,
@@ -288,7 +332,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       }
     }
   },
-  methods: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapActions"])('WeeklyAccommodationsSingle', ['fetchShowData', 'resetState']))
+  methods: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapActions"])('UnivercityCoursesSingle', ['fetchShowData', 'resetState']))
 });
 
 /***/ }),
@@ -556,10 +600,10 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/WeeklyAccommodations/Show.vue?vue&type=template&id=450fdcff&":
-/*!********************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/cruds/WeeklyAccommodations/Show.vue?vue&type=template&id=450fdcff& ***!
-  \********************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/UnivercityCourses/Show.vue?vue&type=template&id=149d09ed&":
+/*!*****************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/cruds/UnivercityCourses/Show.vue?vue&type=template&id=149d09ed& ***!
+  \*****************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -589,7 +633,7 @@ var render = function () {
                 ),
                 _c("strong", [
                   _vm._v(
-                    _vm._s(_vm.$t("cruds.weeklyAccommodation.title_singular"))
+                    _vm._s(_vm.$t("cruds.univercityCourse.title_singular"))
                   ),
                 ]),
               ]),
@@ -609,7 +653,7 @@ var render = function () {
                           _vm._v(
                             "\n                        " +
                               _vm._s(
-                                _vm.$t("cruds.weeklyAccommodation.fields.id")
+                                _vm.$t("cruds.univercityCourse.fields.id")
                               ) +
                               "\n                      "
                           ),
@@ -629,7 +673,7 @@ var render = function () {
                           _vm._v(
                             "\n                        " +
                               _vm._s(
-                                _vm.$t("cruds.weeklyAccommodation.fields.name")
+                                _vm.$t("cruds.univercityCourse.fields.name")
                               ) +
                               "\n                      "
                           ),
@@ -650,7 +694,7 @@ var render = function () {
                             "\n                        " +
                               _vm._s(
                                 _vm.$t(
-                                  "cruds.weeklyAccommodation.fields.description"
+                                  "cruds.univercityCourse.fields.description"
                                 )
                               ) +
                               "\n                      "
@@ -677,27 +721,7 @@ var render = function () {
                           _vm._v(
                             "\n                        " +
                               _vm._s(
-                                _vm.$t("cruds.weeklyAccommodation.fields.price")
-                              ) +
-                              "\n                      "
-                          ),
-                        ]),
-                        _vm._v(" "),
-                        _c("td", [
-                          _vm._v(
-                            "\n                        " +
-                              _vm._s(_vm.entry.price) +
-                              "\n                      "
-                          ),
-                        ]),
-                      ]),
-                      _vm._v(" "),
-                      _c("tr", [
-                        _c("td", { staticClass: "text-primary" }, [
-                          _vm._v(
-                            "\n                        " +
-                              _vm._s(
-                                _vm.$t("cruds.weeklyAccommodation.fields.city")
+                                _vm.$t("cruds.univercityCourse.fields.city")
                               ) +
                               "\n                      "
                           ),
@@ -719,8 +743,30 @@ var render = function () {
                           _vm._v(
                             "\n                        " +
                               _vm._s(
+                                _vm.$t("cruds.univercityCourse.fields.language")
+                              ) +
+                              "\n                      "
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "td",
+                          [
+                            _c("datatable-single", {
+                              attrs: { row: _vm.entry, field: "language.name" },
+                            }),
+                          ],
+                          1
+                        ),
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", { staticClass: "text-primary" }, [
+                          _vm._v(
+                            "\n                        " +
+                              _vm._s(
                                 _vm.$t(
-                                  "cruds.weeklyAccommodation.fields.availability"
+                                  "cruds.univercityCourse.fields.availability"
                                 )
                               ) +
                               "\n                      "
@@ -746,9 +792,7 @@ var render = function () {
                           _vm._v(
                             "\n                        " +
                               _vm._s(
-                                _vm.$t(
-                                  "cruds.weeklyAccommodation.fields.features"
-                                )
+                                _vm.$t("cruds.univercityCourse.fields.extra")
                               ) +
                               "\n                      "
                           ),
@@ -758,7 +802,7 @@ var render = function () {
                           "td",
                           [
                             _c("datatable-list", {
-                              attrs: { row: _vm.entry, field: "features.name" },
+                              attrs: { row: _vm.entry, field: "extra.name" },
                             }),
                           ],
                           1
@@ -771,8 +815,99 @@ var render = function () {
                             "\n                        " +
                               _vm._s(
                                 _vm.$t(
-                                  "cruds.weeklyAccommodation.fields.photos"
+                                  "cruds.univercityCourse.fields.accommodation"
                                 )
+                              ) +
+                              "\n                      "
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "td",
+                          [
+                            _c("datatable-list", {
+                              attrs: {
+                                row: _vm.entry,
+                                field: "accommodation.name",
+                              },
+                            }),
+                          ],
+                          1
+                        ),
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", { staticClass: "text-primary" }, [
+                          _vm._v(
+                            "\n                        " +
+                              _vm._s(
+                                _vm.$t(
+                                  "cruds.univercityCourse.fields.twitter_link"
+                                )
+                              ) +
+                              "\n                      "
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c("td", [
+                          _vm._v(
+                            "\n                        " +
+                              _vm._s(_vm.entry.twitter_link) +
+                              "\n                      "
+                          ),
+                        ]),
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", { staticClass: "text-primary" }, [
+                          _vm._v(
+                            "\n                        " +
+                              _vm._s(
+                                _vm.$t(
+                                  "cruds.univercityCourse.fields.instagram_link"
+                                )
+                              ) +
+                              "\n                      "
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c("td", [
+                          _vm._v(
+                            "\n                        " +
+                              _vm._s(_vm.entry.instagram_link) +
+                              "\n                      "
+                          ),
+                        ]),
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", { staticClass: "text-primary" }, [
+                          _vm._v(
+                            "\n                        " +
+                              _vm._s(
+                                _vm.$t(
+                                  "cruds.univercityCourse.fields.facebook_link"
+                                )
+                              ) +
+                              "\n                      "
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c("td", [
+                          _vm._v(
+                            "\n                        " +
+                              _vm._s(_vm.entry.facebook_link) +
+                              "\n                      "
+                          ),
+                        ]),
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", { staticClass: "text-primary" }, [
+                          _vm._v(
+                            "\n                        " +
+                              _vm._s(
+                                _vm.$t("cruds.univercityCourse.fields.photos")
                               ) +
                               "\n                      "
                           ),
@@ -795,7 +930,7 @@ var render = function () {
                             "\n                        " +
                               _vm._s(
                                 _vm.$t(
-                                  "cruds.weeklyAccommodation.fields.featured_image"
+                                  "cruds.univercityCourse.fields.featured_image"
                                 )
                               ) +
                               "\n                      "
@@ -810,6 +945,28 @@ var render = function () {
                                 row: _vm.entry,
                                 field: "featured_image",
                               },
+                            }),
+                          ],
+                          1
+                        ),
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", { staticClass: "text-primary" }, [
+                          _vm._v(
+                            "\n                        " +
+                              _vm._s(
+                                _vm.$t("cruds.univercityCourse.fields.features")
+                              ) +
+                              "\n                      "
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "td",
+                          [
+                            _c("datatable-list", {
+                              attrs: { row: _vm.entry, field: "features.name" },
                             }),
                           ],
                           1
@@ -1103,17 +1260,17 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/adminapp/js/cruds/WeeklyAccommodations/Show.vue":
-/*!*******************************************************************!*\
-  !*** ./resources/adminapp/js/cruds/WeeklyAccommodations/Show.vue ***!
-  \*******************************************************************/
+/***/ "./resources/adminapp/js/cruds/UnivercityCourses/Show.vue":
+/*!****************************************************************!*\
+  !*** ./resources/adminapp/js/cruds/UnivercityCourses/Show.vue ***!
+  \****************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Show_vue_vue_type_template_id_450fdcff___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Show.vue?vue&type=template&id=450fdcff& */ "./resources/adminapp/js/cruds/WeeklyAccommodations/Show.vue?vue&type=template&id=450fdcff&");
-/* harmony import */ var _Show_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Show.vue?vue&type=script&lang=js& */ "./resources/adminapp/js/cruds/WeeklyAccommodations/Show.vue?vue&type=script&lang=js&");
+/* harmony import */ var _Show_vue_vue_type_template_id_149d09ed___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Show.vue?vue&type=template&id=149d09ed& */ "./resources/adminapp/js/cruds/UnivercityCourses/Show.vue?vue&type=template&id=149d09ed&");
+/* harmony import */ var _Show_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Show.vue?vue&type=script&lang=js& */ "./resources/adminapp/js/cruds/UnivercityCourses/Show.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -1124,8 +1281,8 @@ __webpack_require__.r(__webpack_exports__);
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
   _Show_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Show_vue_vue_type_template_id_450fdcff___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Show_vue_vue_type_template_id_450fdcff___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _Show_vue_vue_type_template_id_149d09ed___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Show_vue_vue_type_template_id_149d09ed___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -1135,38 +1292,38 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/adminapp/js/cruds/WeeklyAccommodations/Show.vue"
+component.options.__file = "resources/adminapp/js/cruds/UnivercityCourses/Show.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/adminapp/js/cruds/WeeklyAccommodations/Show.vue?vue&type=script&lang=js&":
-/*!********************************************************************************************!*\
-  !*** ./resources/adminapp/js/cruds/WeeklyAccommodations/Show.vue?vue&type=script&lang=js& ***!
-  \********************************************************************************************/
+/***/ "./resources/adminapp/js/cruds/UnivercityCourses/Show.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************************!*\
+  !*** ./resources/adminapp/js/cruds/UnivercityCourses/Show.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Show_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Show.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/WeeklyAccommodations/Show.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Show_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Show.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/UnivercityCourses/Show.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Show_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/adminapp/js/cruds/WeeklyAccommodations/Show.vue?vue&type=template&id=450fdcff&":
-/*!**************************************************************************************************!*\
-  !*** ./resources/adminapp/js/cruds/WeeklyAccommodations/Show.vue?vue&type=template&id=450fdcff& ***!
-  \**************************************************************************************************/
+/***/ "./resources/adminapp/js/cruds/UnivercityCourses/Show.vue?vue&type=template&id=149d09ed&":
+/*!***********************************************************************************************!*\
+  !*** ./resources/adminapp/js/cruds/UnivercityCourses/Show.vue?vue&type=template&id=149d09ed& ***!
+  \***********************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Show_vue_vue_type_template_id_450fdcff___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Show.vue?vue&type=template&id=450fdcff& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/WeeklyAccommodations/Show.vue?vue&type=template&id=450fdcff&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Show_vue_vue_type_template_id_450fdcff___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Show_vue_vue_type_template_id_149d09ed___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Show.vue?vue&type=template&id=149d09ed& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/UnivercityCourses/Show.vue?vue&type=template&id=149d09ed&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Show_vue_vue_type_template_id_149d09ed___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Show_vue_vue_type_template_id_450fdcff___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Show_vue_vue_type_template_id_149d09ed___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

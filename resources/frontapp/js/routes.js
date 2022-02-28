@@ -3,6 +3,7 @@ import Login from './pages/Login.vue';
 import Aboutus from './pages/Aboutus.vue';
 import Contactus from './pages/Contactus.vue';
 import searchcourses from './pages/searchcourses.vue';
+import searchaccommodation from './pages/searchaccommodation.vue';
 import SingleCourse from './pages/SingleCourse.vue';
 import Checkoutcourseweekly from './pages/Checkoutcourseweekly.vue';
 import MultiSteps from './pages/MultiSteps.vue';
@@ -34,6 +35,11 @@ export default {
             path: '/searchcourses',
             component: searchcourses,
             name: 'search courses'
+        },
+        {
+            path: '/searchaccommodation',
+            component: searchaccommodation,
+            name: ' search accommodation'
         },
         {
             path: '/checkoutcourseweekly',

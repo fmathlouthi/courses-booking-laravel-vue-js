@@ -9,7 +9,7 @@
                 <i class="material-icons">add</i>
               </div>
               <h4 class="card-title">
-                {{ $t('global.create') }}
+                {{ $t('global.create') }}  
                 <strong>{{ $t('cruds.subjectProgram.title_singular') }}</strong>
               </h4>
             </div>
@@ -38,6 +38,27 @@
                       @focus="focusField('name')"
                       @blur="clearFocus"
                       required
+                    />
+                  </div>
+                     <div
+                    class="form-group bmd-form-group"
+                    :class="{
+                      'has-items': entry.type,
+                      'is-focused': activeField == 'type'
+                    }"
+                  >
+                    <label class="bmd-label-floating required">{{
+                      $t('cruds.universitySubject.fields.type')
+                    }}</label>
+                    <v-select
+                      name="type"
+                      :key="'type-field'"
+                      :value="entry.type"
+                      :options="lists.type"
+                      :reduce="entry => entry.value"
+                      @input="updateType"
+                      @search.focus="focusField('type')"
+                      @search.blur="clearFocus"
                     />
                   </div>
                   <div class="form-group">
@@ -141,6 +162,28 @@
                       @search.blur="clearFocus"
                     />
                   </div>
+                     <div
+                    class="form-group bmd-form-group"
+                    :class="{
+                      'has-items': entry.subject_id !== null,
+                      'is-focused': activeField == 'subject'
+                    }"
+                  >
+                    <label class="bmd-label-floating required">
+                      Subject Type
+                    </label>
+                    <v-select
+                      name="subject"
+                      label="name"
+                      :key="'subject-field'"
+                      :value="entry.subject_id"
+                      :options="lists.subject"
+                      :reduce="entry => entry.id"
+                      @input="updateSubject"
+                      @search.focus="focusField('subject')"
+                      @search.blur="clearFocus"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -196,6 +239,8 @@ export default {
       'setFeesAndFunding',
       'setQualificationAndCourseDuration',
       'setUniversity',
+      'setSubject',
+      'setType',
       'fetchCreateData'
     ]),
     updateName(e) {
@@ -210,6 +255,9 @@ export default {
     updateCourseContent(value) {
       this.setCourseContent(value)
     },
+    updateType(value) {
+      this.setType(value)
+    },
     updateFeesAndFunding(e) {
       this.setFeesAndFunding(e.target.value)
     },
@@ -218,6 +266,9 @@ export default {
     },
     updateUniversity(value) {
       this.setUniversity(value)
+    },
+    updateSubject(value) {
+      this.setSubject(value)
     },
     submitForm() {
       this.storeData()

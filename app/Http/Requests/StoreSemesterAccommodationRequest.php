@@ -40,8 +40,22 @@ class StoreSemesterAccommodationRequest extends FormRequest
 
             
             'price' => [
-                'numeric',
-                'required',
+            ],
+            'photos' => [
+                'array',
+                'nullable',
+            ],
+            'photos.*.id' => [
+                'integer',
+                'exists:media,id',
+            ],
+            'featured_image' => [
+                'array',
+                'nullable',
+            ],
+            'featured_image.*.id' => [
+                'integer',
+                'exists:media,id',
             ],
         
 

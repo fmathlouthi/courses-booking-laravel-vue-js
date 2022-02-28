@@ -1,0 +1,112 @@
+/**
+* Transition-timing-function property@mixin 
+*/
+/*background RGBA
+============================================*/
+/****/
+/* Veralign center text */
+/* RIGHT TO LEFT */
+/**
+ * Web Application Prefix Apply For Making Owner Styles
+ */
+/**
+ *   Blocks Layout Selectors 
+ */
+/***********************************************************************/
+/** CHECKOUT BY STEP */
+.search-top-fix {
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+    background-color: #072930 !important;
+	position: relative;
+
+}
+
+#leo_search_block_top {
+  position: relative;
+  margin: 0;
+  padding: 29px 50px;
+  display: inline-block;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+#leo_search_block_top .title_block {
+  color: white;
+  margin-bottom: 0;
+  font-size: 20px;
+  float: left;
+  padding: 12px 9% 0 0;
+}
+.rtl #leo_search_block_top .title_block {
+  float: right;
+}
+.rtl #leo_search_block_top .title_block {
+  padding: 12px 0 0 9%;
+}
+#leo_search_block_top #leosearchtopbox {
+  overflow: hidden;
+  zoom: 1;
+}
+#leo_search_block_top select, #leo_search_block_top input {
+  height: 42px;
+  padding: 9px;
+  border: none;
+  background: white;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  -webkit-appearance: none;
+}
+#leo_search_block_top select {
+  line-height: 17px;
+  background: white;
+  color: #999;
+  width: 100%;
+}
+#leo_search_block_top button {
+  color: white;
+  background: #424e5c;
+  border: none !important;
+  height: 42px;
+  line-height: 43px;
+  padding: 0 20px;
+  font-size: 14px;
+  float: right;
+}
+.rtl #leo_search_block_top button {
+  float: left;
+}
+#leo_search_block_top button:hover {
+  background: #2cd1e4;
+}
+#leo_search_block_top .fa {
+  color: #000;
+  position: absolute;
+  right: 10px;
+  top: 2px;
+  line-height: 40px;
+  font-size: 16px;
+}
+.rtl #leo_search_block_top .fa {
+  left: 10px;
+  right: auto;
+}
+#leo_search_block_top .fa:before {
+  content: "\f0d7";
+}
+#leo_search_block_top .category_filter {
+  position: relative;
+  display: inline;
+  width: 56%;
+  float: left;
+}
+.rtl #leo_search_block_top .category_filter {
+  float: right;
+}

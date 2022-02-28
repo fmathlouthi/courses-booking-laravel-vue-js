@@ -28,6 +28,8 @@ class SemesterAccommVariante extends Model
         'id',
         'starting_date',
         'price',
+        'bookfee',
+        'weeksnumber',
         'semester_accommodation.name',
     ];
 
@@ -35,12 +37,16 @@ class SemesterAccommVariante extends Model
         'id',
         'starting_date',
         'price',
+        'bookfee',
+        'weeksnumber',
         'semester_accommodation.name',
     ];
 
     protected $fillable = [
         'starting_date',
         'price',
+        'bookfee',
+        'weeksnumber',
         'semester_accommodation_id',
         'created_at',
         'updated_at',
@@ -67,7 +73,14 @@ class SemesterAccommVariante extends Model
     {
         return $this->belongsTo(User::class);
     }
+public function getLowestAttribute ()
+{
+    $prices = $this->prices->filter(function ($item) {
+        return !is_null($item->price);
+    });
 
+    return $prices->min('price');
+}
     protected function serializeDate(DateTimeInterface $date)
     {
         return $date->format('Y-m-d H:i:s');

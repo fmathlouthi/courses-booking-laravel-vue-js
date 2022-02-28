@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[55],{
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/ContactCompanies/Create.vue?vue&type=script&lang=js&":
-/*!**************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/cruds/ContactCompanies/Create.vue?vue&type=script&lang=js& ***!
-  \**************************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/Cities/Create.vue?vue&type=script&lang=js&":
+/*!****************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/cruds/Cities/Create.vue?vue&type=script&lang=js& ***!
+  \****************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -121,19 +121,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -142,29 +129,29 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       activeField: ''
     };
   },
-  computed: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapGetters"])('ContactCompaniesSingle', ['entry', 'loading'])),
+  computed: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapGetters"])('CitiesSingle', ['entry', 'loading', 'lists'])),
+  mounted: function mounted() {
+    this.fetchCreateData();
+  },
   beforeDestroy: function beforeDestroy() {
     this.resetState();
   },
-  methods: _objectSpread(_objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapActions"])('ContactCompaniesSingle', ['storeData', 'resetState', 'setCompanyName', 'setCompanyAddress', 'setCompanyWebsite', 'setCompanyEmail'])), {}, {
-    updateCompanyName: function updateCompanyName(e) {
-      this.setCompanyName(e.target.value);
+  methods: _objectSpread(_objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapActions"])('CitiesSingle', ['storeData', 'resetState', 'setName', 'setStatus', 'setCountry', 'fetchCreateData'])), {}, {
+    updateName: function updateName(e) {
+      this.setName(e.target.value);
     },
-    updateCompanyAddress: function updateCompanyAddress(e) {
-      this.setCompanyAddress(e.target.value);
+    updateStatus: function updateStatus(value) {
+      this.setStatus(value);
     },
-    updateCompanyWebsite: function updateCompanyWebsite(e) {
-      this.setCompanyWebsite(e.target.value);
-    },
-    updateCompanyEmail: function updateCompanyEmail(e) {
-      this.setCompanyEmail(e.target.value);
+    updateCountry: function updateCountry(value) {
+      this.setCountry(value);
     },
     submitForm: function submitForm() {
       var _this = this;
 
       this.storeData().then(function () {
         _this.$router.push({
-          name: 'contact_companies.index'
+          name: 'cities.index'
         });
 
         _this.$eventHub.$emit('create-success');
@@ -187,10 +174,10 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/ContactCompanies/Create.vue?vue&type=template&id=75eacd85&":
-/*!******************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/cruds/ContactCompanies/Create.vue?vue&type=template&id=75eacd85& ***!
-  \******************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/Cities/Create.vue?vue&type=template&id=4d1adb57&":
+/*!********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/cruds/Cities/Create.vue?vue&type=template&id=4d1adb57& ***!
+  \********************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -233,9 +220,7 @@ var render = function () {
                         "\n              "
                     ),
                     _c("strong", [
-                      _vm._v(
-                        _vm._s(_vm.$t("cruds.contactCompany.title_singular"))
-                      ),
+                      _vm._v(_vm._s(_vm.$t("cruds.city.title_singular"))),
                     ]),
                   ]),
                 ]
@@ -256,29 +241,25 @@ var render = function () {
                         {
                           staticClass: "form-group bmd-form-group",
                           class: {
-                            "has-items": _vm.entry.company_name,
-                            "is-focused": _vm.activeField == "company_name",
+                            "has-items": _vm.entry.name,
+                            "is-focused": _vm.activeField == "name",
                           },
                         },
                         [
-                          _c("label", { staticClass: "bmd-label-floating" }, [
-                            _vm._v(
-                              _vm._s(
-                                _vm.$t(
-                                  "cruds.contactCompany.fields.company_name"
-                                )
-                              )
-                            ),
-                          ]),
+                          _c(
+                            "label",
+                            { staticClass: "bmd-label-floating required" },
+                            [_vm._v(_vm._s(_vm.$t("cruds.city.fields.name")))]
+                          ),
                           _vm._v(" "),
                           _c("input", {
                             staticClass: "form-control",
-                            attrs: { type: "text" },
-                            domProps: { value: _vm.entry.company_name },
+                            attrs: { type: "text", required: "" },
+                            domProps: { value: _vm.entry.name },
                             on: {
-                              input: _vm.updateCompanyName,
+                              input: _vm.updateName,
                               focus: function ($event) {
-                                return _vm.focusField("company_name")
+                                return _vm.focusField("name")
                               },
                               blur: _vm.clearFocus,
                             },
@@ -291,34 +272,65 @@ var render = function () {
                         {
                           staticClass: "form-group bmd-form-group",
                           class: {
-                            "has-items": _vm.entry.company_address,
-                            "is-focused": _vm.activeField == "company_address",
+                            "has-items": _vm.entry.status,
+                            "is-focused": _vm.activeField == "status",
                           },
                         },
                         [
-                          _c("label", { staticClass: "bmd-label-floating" }, [
-                            _vm._v(
-                              _vm._s(
-                                _vm.$t(
-                                  "cruds.contactCompany.fields.company_address"
-                                )
-                              )
-                            ),
-                          ]),
+                          _c(
+                            "label",
+                            { staticClass: "bmd-label-floating required" },
+                            [_vm._v(_vm._s(_vm.$t("cruds.city.fields.status")))]
+                          ),
                           _vm._v(" "),
-                          _c("input", {
-                            staticClass: "form-control",
-                            attrs: { type: "text" },
-                            domProps: { value: _vm.entry.company_address },
-                            on: {
-                              input: _vm.updateCompanyAddress,
-                              focus: function ($event) {
-                                return _vm.focusField("company_address")
+                          _c("v-select", {
+                            key: "status-field",
+                            attrs: {
+                              name: "status",
+                              value: _vm.entry.status,
+                              options: _vm.lists.status,
+                              reduce: function (entry) {
+                                return entry.value
                               },
-                              blur: _vm.clearFocus,
+                            },
+                            on: {
+                              input: _vm.updateStatus,
+                              search: [
+                                function ($event) {
+                                  if (
+                                    !$event.type.indexOf("key") &&
+                                    _vm._k(
+                                      $event.keyCode,
+                                      "focus",
+                                      undefined,
+                                      $event.key,
+                                      undefined
+                                    )
+                                  ) {
+                                    return null
+                                  }
+                                  return _vm.focusField("status")
+                                },
+                                function ($event) {
+                                  if (
+                                    !$event.type.indexOf("key") &&
+                                    _vm._k(
+                                      $event.keyCode,
+                                      "blur",
+                                      undefined,
+                                      $event.key,
+                                      undefined
+                                    )
+                                  ) {
+                                    return null
+                                  }
+                                  return _vm.clearFocus.apply(null, arguments)
+                                },
+                              ],
                             },
                           }),
-                        ]
+                        ],
+                        1
                       ),
                       _vm._v(" "),
                       _c(
@@ -326,69 +338,70 @@ var render = function () {
                         {
                           staticClass: "form-group bmd-form-group",
                           class: {
-                            "has-items": _vm.entry.company_website,
-                            "is-focused": _vm.activeField == "company_website",
+                            "has-items": _vm.entry.country_id !== null,
+                            "is-focused": _vm.activeField == "country",
                           },
                         },
                         [
-                          _c("label", { staticClass: "bmd-label-floating" }, [
-                            _vm._v(
-                              _vm._s(
-                                _vm.$t(
-                                  "cruds.contactCompany.fields.company_website"
-                                )
-                              )
-                            ),
-                          ]),
+                          _c(
+                            "label",
+                            { staticClass: "bmd-label-floating required" },
+                            [
+                              _vm._v(
+                                _vm._s(_vm.$t("cruds.city.fields.country"))
+                              ),
+                            ]
+                          ),
                           _vm._v(" "),
-                          _c("input", {
-                            staticClass: "form-control",
-                            attrs: { type: "text" },
-                            domProps: { value: _vm.entry.company_website },
-                            on: {
-                              input: _vm.updateCompanyWebsite,
-                              focus: function ($event) {
-                                return _vm.focusField("company_website")
+                          _c("v-select", {
+                            key: "country-field",
+                            attrs: {
+                              name: "country",
+                              label: "name",
+                              value: _vm.entry.country_id,
+                              options: _vm.lists.country,
+                              reduce: function (entry) {
+                                return entry.id
                               },
-                              blur: _vm.clearFocus,
+                            },
+                            on: {
+                              input: _vm.updateCountry,
+                              search: [
+                                function ($event) {
+                                  if (
+                                    !$event.type.indexOf("key") &&
+                                    _vm._k(
+                                      $event.keyCode,
+                                      "focus",
+                                      undefined,
+                                      $event.key,
+                                      undefined
+                                    )
+                                  ) {
+                                    return null
+                                  }
+                                  return _vm.focusField("country")
+                                },
+                                function ($event) {
+                                  if (
+                                    !$event.type.indexOf("key") &&
+                                    _vm._k(
+                                      $event.keyCode,
+                                      "blur",
+                                      undefined,
+                                      $event.key,
+                                      undefined
+                                    )
+                                  ) {
+                                    return null
+                                  }
+                                  return _vm.clearFocus.apply(null, arguments)
+                                },
+                              ],
                             },
                           }),
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        {
-                          staticClass: "form-group bmd-form-group",
-                          class: {
-                            "has-items": _vm.entry.company_email,
-                            "is-focused": _vm.activeField == "company_email",
-                          },
-                        },
-                        [
-                          _c("label", { staticClass: "bmd-label-floating" }, [
-                            _vm._v(
-                              _vm._s(
-                                _vm.$t(
-                                  "cruds.contactCompany.fields.company_email"
-                                )
-                              )
-                            ),
-                          ]),
-                          _vm._v(" "),
-                          _c("input", {
-                            staticClass: "form-control",
-                            attrs: { type: "text" },
-                            domProps: { value: _vm.entry.company_email },
-                            on: {
-                              input: _vm.updateCompanyEmail,
-                              focus: function ($event) {
-                                return _vm.focusField("company_email")
-                              },
-                              blur: _vm.clearFocus,
-                            },
-                          }),
-                        ]
+                        ],
+                        1
                       ),
                     ]),
                   ]),
@@ -444,17 +457,17 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./resources/adminapp/js/cruds/ContactCompanies/Create.vue":
-/*!*****************************************************************!*\
-  !*** ./resources/adminapp/js/cruds/ContactCompanies/Create.vue ***!
-  \*****************************************************************/
+/***/ "./resources/adminapp/js/cruds/Cities/Create.vue":
+/*!*******************************************************!*\
+  !*** ./resources/adminapp/js/cruds/Cities/Create.vue ***!
+  \*******************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Create_vue_vue_type_template_id_75eacd85___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Create.vue?vue&type=template&id=75eacd85& */ "./resources/adminapp/js/cruds/ContactCompanies/Create.vue?vue&type=template&id=75eacd85&");
-/* harmony import */ var _Create_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Create.vue?vue&type=script&lang=js& */ "./resources/adminapp/js/cruds/ContactCompanies/Create.vue?vue&type=script&lang=js&");
+/* harmony import */ var _Create_vue_vue_type_template_id_4d1adb57___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Create.vue?vue&type=template&id=4d1adb57& */ "./resources/adminapp/js/cruds/Cities/Create.vue?vue&type=template&id=4d1adb57&");
+/* harmony import */ var _Create_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Create.vue?vue&type=script&lang=js& */ "./resources/adminapp/js/cruds/Cities/Create.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -465,8 +478,8 @@ __webpack_require__.r(__webpack_exports__);
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
   _Create_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Create_vue_vue_type_template_id_75eacd85___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Create_vue_vue_type_template_id_75eacd85___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _Create_vue_vue_type_template_id_4d1adb57___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Create_vue_vue_type_template_id_4d1adb57___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -476,38 +489,38 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/adminapp/js/cruds/ContactCompanies/Create.vue"
+component.options.__file = "resources/adminapp/js/cruds/Cities/Create.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/adminapp/js/cruds/ContactCompanies/Create.vue?vue&type=script&lang=js&":
-/*!******************************************************************************************!*\
-  !*** ./resources/adminapp/js/cruds/ContactCompanies/Create.vue?vue&type=script&lang=js& ***!
-  \******************************************************************************************/
+/***/ "./resources/adminapp/js/cruds/Cities/Create.vue?vue&type=script&lang=js&":
+/*!********************************************************************************!*\
+  !*** ./resources/adminapp/js/cruds/Cities/Create.vue?vue&type=script&lang=js& ***!
+  \********************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Create_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Create.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/ContactCompanies/Create.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Create_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Create.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/Cities/Create.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Create_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/adminapp/js/cruds/ContactCompanies/Create.vue?vue&type=template&id=75eacd85&":
-/*!************************************************************************************************!*\
-  !*** ./resources/adminapp/js/cruds/ContactCompanies/Create.vue?vue&type=template&id=75eacd85& ***!
-  \************************************************************************************************/
+/***/ "./resources/adminapp/js/cruds/Cities/Create.vue?vue&type=template&id=4d1adb57&":
+/*!**************************************************************************************!*\
+  !*** ./resources/adminapp/js/cruds/Cities/Create.vue?vue&type=template&id=4d1adb57& ***!
+  \**************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Create_vue_vue_type_template_id_75eacd85___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Create.vue?vue&type=template&id=75eacd85& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/ContactCompanies/Create.vue?vue&type=template&id=75eacd85&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Create_vue_vue_type_template_id_75eacd85___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Create_vue_vue_type_template_id_4d1adb57___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Create.vue?vue&type=template&id=4d1adb57& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/Cities/Create.vue?vue&type=template&id=4d1adb57&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Create_vue_vue_type_template_id_4d1adb57___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Create_vue_vue_type_template_id_75eacd85___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Create_vue_vue_type_template_id_4d1adb57___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

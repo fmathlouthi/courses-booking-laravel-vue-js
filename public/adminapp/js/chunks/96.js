@@ -1,8 +1,8 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[96],{
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/SubjectPrograms/Create.vue?vue&type=script&lang=js&":
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/SemesterCourses/Create.vue?vue&type=script&lang=js&":
 /*!*************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/cruds/SubjectPrograms/Create.vue?vue&type=script&lang=js& ***!
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/cruds/SemesterCourses/Create.vue?vue&type=script&lang=js& ***!
   \*************************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -134,53 +134,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -194,41 +147,32 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       editor: _ckeditor_ckeditor5_build_classic__WEBPACK_IMPORTED_MODULE_1___default.a
     };
   },
-  computed: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapGetters"])('SubjectProgramsSingle', ['entry', 'loading', 'lists'])),
+  computed: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapGetters"])('SemesterCoursesSingle', ['entry', 'loading', 'lists'])),
   mounted: function mounted() {
     this.fetchCreateData();
   },
   beforeDestroy: function beforeDestroy() {
     this.resetState();
   },
-  methods: _objectSpread(_objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapActions"])('SubjectProgramsSingle', ['storeData', 'resetState', 'setName', 'setEntryRequirements', 'setMonthsOfEntry', 'setCourseContent', 'setFeesAndFunding', 'setQualificationAndCourseDuration', 'setUniversity', 'fetchCreateData'])), {}, {
+  methods: _objectSpread(_objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapActions"])('SemesterCoursesSingle', ['storeData', 'resetState', 'setName', 'setPrice', 'setUniversity', 'setDescription', 'fetchCreateData'])), {}, {
     updateName: function updateName(e) {
       this.setName(e.target.value);
     },
-    updateEntryRequirements: function updateEntryRequirements(value) {
-      this.setEntryRequirements(value);
-    },
-    updateMonthsOfEntry: function updateMonthsOfEntry(e) {
-      this.setMonthsOfEntry(e.target.value);
-    },
-    updateCourseContent: function updateCourseContent(value) {
-      this.setCourseContent(value);
-    },
-    updateFeesAndFunding: function updateFeesAndFunding(e) {
-      this.setFeesAndFunding(e.target.value);
-    },
-    updateQualificationAndCourseDuration: function updateQualificationAndCourseDuration(value) {
-      this.setQualificationAndCourseDuration(value);
-    },
     updateUniversity: function updateUniversity(value) {
       this.setUniversity(value);
+    },
+    updateDescription: function updateDescription(value) {
+      this.setDescription(value);
+    },
+    updatePrice: function updatePrice(e) {
+      this.setPrice(e.target.value);
     },
     submitForm: function submitForm() {
       var _this = this;
 
       this.storeData().then(function () {
         _this.$router.push({
-          name: 'subject_programs.index'
+          name: 'semester_courses.index'
         });
 
         _this.$eventHub.$emit('create-success');
@@ -251,9 +195,9 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/SubjectPrograms/Create.vue?vue&type=template&id=226a160b&":
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/SemesterCourses/Create.vue?vue&type=template&id=46641d74&":
 /*!*****************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/cruds/SubjectPrograms/Create.vue?vue&type=template&id=226a160b& ***!
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/cruds/SemesterCourses/Create.vue?vue&type=template&id=46641d74& ***!
   \*****************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -298,7 +242,7 @@ var render = function () {
                     ),
                     _c("strong", [
                       _vm._v(
-                        _vm._s(_vm.$t("cruds.subjectProgram.title_singular"))
+                        _vm._s(_vm.$t("cruds.semesterCourse.title_singular"))
                       ),
                     ]),
                   ]),
@@ -331,7 +275,7 @@ var render = function () {
                             [
                               _vm._v(
                                 _vm._s(
-                                  _vm.$t("cruds.subjectProgram.fields.name")
+                                  _vm.$t("cruds.semesterCourse.fields.name")
                                 )
                               ),
                             ]
@@ -354,172 +298,6 @@ var render = function () {
                       _vm._v(" "),
                       _c(
                         "div",
-                        { staticClass: "form-group" },
-                        [
-                          _c("label", { staticClass: "required" }, [
-                            _vm._v(
-                              _vm._s(
-                                _vm.$t(
-                                  "cruds.subjectProgram.fields.entry_requirements"
-                                )
-                              )
-                            ),
-                          ]),
-                          _vm._v(" "),
-                          _c("ckeditor", {
-                            attrs: {
-                              editor: _vm.editor,
-                              value: _vm.entry.entry_requirements,
-                              required: "",
-                            },
-                            on: { input: _vm.updateEntryRequirements },
-                          }),
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        {
-                          staticClass: "form-group bmd-form-group",
-                          class: {
-                            "has-items": _vm.entry.months_of_entry,
-                            "is-focused": _vm.activeField == "months_of_entry",
-                          },
-                        },
-                        [
-                          _c(
-                            "label",
-                            { staticClass: "bmd-label-floating required" },
-                            [
-                              _vm._v(
-                                _vm._s(
-                                  _vm.$t(
-                                    "cruds.subjectProgram.fields.months_of_entry"
-                                  )
-                                )
-                              ),
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c("datetime-picker", {
-                            staticClass: "form-control",
-                            attrs: {
-                              type: "text",
-                              picker: "date",
-                              value: _vm.entry.months_of_entry,
-                              required: "",
-                            },
-                            on: {
-                              input: _vm.updateMonthsOfEntry,
-                              focus: function ($event) {
-                                return _vm.focusField("months_of_entry")
-                              },
-                              blur: _vm.clearFocus,
-                            },
-                          }),
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        { staticClass: "form-group" },
-                        [
-                          _c("label", [
-                            _vm._v(
-                              _vm._s(
-                                _vm.$t(
-                                  "cruds.subjectProgram.fields.course_content"
-                                )
-                              )
-                            ),
-                          ]),
-                          _vm._v(" "),
-                          _c("ckeditor", {
-                            attrs: {
-                              editor: _vm.editor,
-                              value: _vm.entry.course_content,
-                            },
-                            on: { input: _vm.updateCourseContent },
-                          }),
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        {
-                          staticClass: "form-group bmd-form-group",
-                          class: {
-                            "has-items": _vm.entry.fees_and_funding,
-                            "is-focused": _vm.activeField == "fees_and_funding",
-                          },
-                        },
-                        [
-                          _c(
-                            "label",
-                            { staticClass: "bmd-label-floating required" },
-                            [
-                              _vm._v(
-                                _vm._s(
-                                  _vm.$t(
-                                    "cruds.subjectProgram.fields.fees_and_funding"
-                                  )
-                                )
-                              ),
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c("input", {
-                            staticClass: "form-control",
-                            attrs: {
-                              type: "number",
-                              step: "0.01",
-                              required: "",
-                            },
-                            domProps: { value: _vm.entry.fees_and_funding },
-                            on: {
-                              input: _vm.updateFeesAndFunding,
-                              focus: function ($event) {
-                                return _vm.focusField("fees_and_funding")
-                              },
-                              blur: _vm.clearFocus,
-                            },
-                          }),
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        { staticClass: "form-group" },
-                        [
-                          _c("label", [
-                            _vm._v(
-                              _vm._s(
-                                _vm.$t(
-                                  "cruds.subjectProgram.fields.qualification_and_course_duration"
-                                )
-                              )
-                            ),
-                          ]),
-                          _vm._v(" "),
-                          _c("ckeditor", {
-                            attrs: {
-                              editor: _vm.editor,
-                              value:
-                                _vm.entry.qualification_and_course_duration,
-                            },
-                            on: {
-                              input: _vm.updateQualificationAndCourseDuration,
-                            },
-                          }),
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
                         {
                           staticClass: "form-group bmd-form-group",
                           class: {
@@ -535,7 +313,7 @@ var render = function () {
                               _vm._v(
                                 _vm._s(
                                   _vm.$t(
-                                    "cruds.subjectProgram.fields.university"
+                                    "cruds.semesterCourse.fields.university"
                                   )
                                 )
                               ),
@@ -592,6 +370,74 @@ var render = function () {
                         ],
                         1
                       ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "form-group" },
+                        [
+                          _c("label", [
+                            _vm._v(
+                              _vm._s(
+                                _vm.$t(
+                                  "cruds.semesterCourse.fields.description"
+                                )
+                              )
+                            ),
+                          ]),
+                          _vm._v(" "),
+                          _c("ckeditor", {
+                            attrs: {
+                              editor: _vm.editor,
+                              value: _vm.entry.description,
+                            },
+                            on: { input: _vm.updateDescription },
+                          }),
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "form-group bmd-form-group",
+                          class: {
+                            "has-items": _vm.entry.price,
+                            "is-focused": _vm.activeField == "price",
+                          },
+                        },
+                        [
+                          _c(
+                            "label",
+                            { staticClass: "bmd-label-floating required" },
+                            [
+                              _vm._v(
+                                _vm._s(
+                                  _vm.$t(
+                                    "cruds.semesterCourseVariante.fields.price"
+                                  )
+                                )
+                              ),
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c("input", {
+                            staticClass: "form-control",
+                            attrs: {
+                              type: "number",
+                              step: "0.01",
+                              required: "",
+                            },
+                            domProps: { value: _vm.entry.price },
+                            on: {
+                              input: _vm.updatePrice,
+                              focus: function ($event) {
+                                return _vm.focusField("price")
+                              },
+                              blur: _vm.clearFocus,
+                            },
+                          }),
+                        ]
+                      ),
                     ]),
                   ]),
                 ],
@@ -646,17 +492,17 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./resources/adminapp/js/cruds/SubjectPrograms/Create.vue":
+/***/ "./resources/adminapp/js/cruds/SemesterCourses/Create.vue":
 /*!****************************************************************!*\
-  !*** ./resources/adminapp/js/cruds/SubjectPrograms/Create.vue ***!
+  !*** ./resources/adminapp/js/cruds/SemesterCourses/Create.vue ***!
   \****************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Create_vue_vue_type_template_id_226a160b___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Create.vue?vue&type=template&id=226a160b& */ "./resources/adminapp/js/cruds/SubjectPrograms/Create.vue?vue&type=template&id=226a160b&");
-/* harmony import */ var _Create_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Create.vue?vue&type=script&lang=js& */ "./resources/adminapp/js/cruds/SubjectPrograms/Create.vue?vue&type=script&lang=js&");
+/* harmony import */ var _Create_vue_vue_type_template_id_46641d74___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Create.vue?vue&type=template&id=46641d74& */ "./resources/adminapp/js/cruds/SemesterCourses/Create.vue?vue&type=template&id=46641d74&");
+/* harmony import */ var _Create_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Create.vue?vue&type=script&lang=js& */ "./resources/adminapp/js/cruds/SemesterCourses/Create.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -667,8 +513,8 @@ __webpack_require__.r(__webpack_exports__);
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
   _Create_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Create_vue_vue_type_template_id_226a160b___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Create_vue_vue_type_template_id_226a160b___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _Create_vue_vue_type_template_id_46641d74___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Create_vue_vue_type_template_id_46641d74___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -678,38 +524,38 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/adminapp/js/cruds/SubjectPrograms/Create.vue"
+component.options.__file = "resources/adminapp/js/cruds/SemesterCourses/Create.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/adminapp/js/cruds/SubjectPrograms/Create.vue?vue&type=script&lang=js&":
+/***/ "./resources/adminapp/js/cruds/SemesterCourses/Create.vue?vue&type=script&lang=js&":
 /*!*****************************************************************************************!*\
-  !*** ./resources/adminapp/js/cruds/SubjectPrograms/Create.vue?vue&type=script&lang=js& ***!
+  !*** ./resources/adminapp/js/cruds/SemesterCourses/Create.vue?vue&type=script&lang=js& ***!
   \*****************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Create_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Create.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/SubjectPrograms/Create.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Create_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Create.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/SemesterCourses/Create.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Create_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/adminapp/js/cruds/SubjectPrograms/Create.vue?vue&type=template&id=226a160b&":
+/***/ "./resources/adminapp/js/cruds/SemesterCourses/Create.vue?vue&type=template&id=46641d74&":
 /*!***********************************************************************************************!*\
-  !*** ./resources/adminapp/js/cruds/SubjectPrograms/Create.vue?vue&type=template&id=226a160b& ***!
+  !*** ./resources/adminapp/js/cruds/SemesterCourses/Create.vue?vue&type=template&id=46641d74& ***!
   \***********************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Create_vue_vue_type_template_id_226a160b___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Create.vue?vue&type=template&id=226a160b& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/SubjectPrograms/Create.vue?vue&type=template&id=226a160b&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Create_vue_vue_type_template_id_226a160b___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Create_vue_vue_type_template_id_46641d74___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Create.vue?vue&type=template&id=46641d74& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/SemesterCourses/Create.vue?vue&type=template&id=46641d74&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Create_vue_vue_type_template_id_46641d74___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Create_vue_vue_type_template_id_226a160b___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Create_vue_vue_type_template_id_46641d74___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

@@ -56,6 +56,8 @@ import UniversitySubjectsIndex from './cruds/UniversitySubjects'
 import UniversitySubjectsSingle from './cruds/UniversitySubjects/single'
 import SubjectProgramsIndex from './cruds/SubjectPrograms'
 import SubjectProgramsSingle from './cruds/SubjectPrograms/single'
+import SubjectsIndex from './cruds/Subjects'
+import SubjectsSingle from './cruds/Subjects/single'
 
 Vue.use(Vuex)
 
@@ -116,7 +118,9 @@ export default new Vuex.Store({
         UniversitySubjectsIndex,
         UniversitySubjectsSingle,
         SubjectProgramsIndex,
-        SubjectProgramsSingle
+        SubjectProgramsSingle,
+        SubjectsIndex,
+        SubjectsSingle
     },
     strict: debug
 })

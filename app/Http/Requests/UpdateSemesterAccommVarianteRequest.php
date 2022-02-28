@@ -25,6 +25,15 @@ class UpdateSemesterAccommVarianteRequest extends FormRequest
                 'numeric',
                 'required',
             ],
+            
+            'bookfee' => [
+                'numeric',
+                'required',
+            ],
+            'weeksnumber' => [
+                'integer',
+                'required',
+            ],
             'semester_accommodation_id' => [
                 'integer',
                 'exists:semester_accommodations,id',

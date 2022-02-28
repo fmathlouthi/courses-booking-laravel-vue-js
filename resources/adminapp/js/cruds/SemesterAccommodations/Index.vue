@@ -106,7 +106,7 @@ export default {
         },
         {
           title: 'cruds.semesterCourseVariante.fields.price',
-          field: 'price',
+          field: 'min_price',
           thComp: TranslatedHeader,
           sortable: true
         },

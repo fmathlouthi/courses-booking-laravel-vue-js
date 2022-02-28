@@ -124,11 +124,11 @@
                           <datatable-pictures
                             :row="entry"
                             :field="'featured_image'"
-                          >
+                          > 
                           </datatable-pictures>
                         </td>
                       </tr>
-                      <tr>
+                     <!-- <tr>
                         <td class="text-primary">
                           {{ $t('cruds.universitySubject.fields.type') }}
                         </td>
@@ -136,7 +136,7 @@
                           <datatable-enum :row="entry" field="type">
                           </datatable-enum>
                         </td>
-                      </tr>
+                      </tr>-->
                     </tbody>
                   </div>
                 </div>
@@ -155,7 +155,7 @@ import ClassicEditor from '@ckeditor/ckeditor5-build-classic'
 import DatatableAttachments from '@components/Datatables/DatatableAttachments'
 import DatatableSingle from '@components/Datatables/DatatableSingle'
 import DatatablePictures from '@components/Datatables/DatatablePictures'
-import DatatableEnum from '@components/Datatables/DatatableEnum'
+import DatatableEnum from '@components/Datatables/DatatableEnum' 
 
 export default {
   components: {

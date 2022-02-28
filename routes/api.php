@@ -37,7 +37,7 @@ Route::group(['prefix' => 'v1', 'as' => 'api.', 'namespace' => 'Api\V1\Admin', '
 
     // Course Order
     Route::resource('course-orders', 'CourseOrderApiController');
-
+    Route::get('course-orders/active/{id}', 'CourseOrderApiController@active')->name('locales.messages');
     // Language
     Route::resource('languages', 'LanguageApiController');
 
@@ -52,6 +52,9 @@ Route::group(['prefix' => 'v1', 'as' => 'api.', 'namespace' => 'Api\V1\Admin', '
     // City
     Route::resource('cities', 'CityApiController');
     Route::get('cities/active/{id}', 'CityApiController@active')->name('locales.messages');
+       // Subject
+       Route::resource('subjects', 'SubjectApiController');
+       Route::get('subjects/active/{id}', 'SubjectApiController@active')->name('locales.messages');
     // Extra
     Route::resource('extras', 'ExtraApiController');
 
@@ -81,7 +84,7 @@ Route::group(['prefix' => 'v1', 'as' => 'api.', 'namespace' => 'Api\V1\Admin', '
 
     // Semester Accommodation
     Route::resource('semester-accommodations', 'SemesterAccommodationApiController');
-
+    Route::post('semester-accommodations/media', 'SemesterAccommodationApiController@storeMedia')->name('weekly-accommodations.storeMedia');
     // Semester Accomm Variantes
     Route::resource('semester-accomm-variantes', 'SemesterAccommVariantesApiController');
 
@@ -103,6 +106,10 @@ Route::group(['prefix' => 'v1', 'as' => 'api.', 'namespace' => 'Api\V1\Admin', '
 
 Route::group(['prefix' => 'v2', 'as' => 'api.', 'namespace' => 'Api\V1\Front'], function () {
     $routes = ['only' => ['index','show']];
+    Route::get('countriesaccommodation', 'AccommodatinsApiController@getcountres');
+    Route::get('citiesbycountryaccommodation', 'AccommodatinsApiController@getcitybycountry');
+    Route::get('accommodatinsfilter', 'AccommodatinsApiController@filtercourse' );
+
     Route::resource('course-weeklies', 'CoursesUniversitiesApiController',$routes );
     Route::get('checklogin', 'CoursesUniversitiesApiController@checklogin' );
     Route::get('universities-courses', 'LanguagesUniversitiesApiController@universitiescourse');

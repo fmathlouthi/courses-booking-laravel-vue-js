@@ -3,14 +3,16 @@
     v-if="item.gate === undefined || $can(item.gate)"
     :to="item.path"
     v-slot="{ href, route, navigate, isActive, isExactActive }"
+    
   >
     <li
       class="nav-item"
       :class="[isActive && 'active', isExactActive && 'active']"
     >
-      <a :href="href" class="nav-link" @click="navigate">
-        <template v-if="text">
-          <span class="sidebar-mini">{{ textIcon }}</span>
+      <a :href="href" class="nav-link" @click="navigate" >
+        <template v-if="text" >
+          <!--<span class="sidebar-mini">{{ textIcon }}</span>-->
+          <i style=" padding-left: 20px; " class="material-icons">keyboard_arrow_right</i>
           <span class="sidebar-normal">{{ $t(item.title) }}</span>
         </template>
         <template v-else>

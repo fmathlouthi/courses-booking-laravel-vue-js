@@ -3,7 +3,9 @@ function initialState() {
         entry: {
             id: null,
             starting_date: '',
-            price: 0,
+            price: '',
+            bookfee: '',
+            weeksnumber: '',
             semester_accommodation_id: null,
             created_at: '',
             updated_at: '',
@@ -92,6 +94,13 @@ const actions = {
     setPrice({ commit }, value) {
         commit('setPrice', value)
     },
+
+    setBookfee({ commit }, value) {
+        commit('setBookfee', value)
+    },
+    setWeeksnumber({ commit }, value) {
+        commit('setWeeksnumber', value)
+    },
     setSemesterAccommodation({ commit }, value) {
         commit('setSemesterAccommodation', value)
     },
@@ -137,6 +146,12 @@ const mutations = {
     },
     setPrice(state, value) {
         state.entry.price = value
+    },
+    setBookfee(state, value) {
+        state.entry.bookfee = value
+    },
+    setWeeksnumber(state, value) {
+        state.entry.weeksnumber = value
     },
     setSemesterAccommodation(state, value) {
         state.entry.semester_accommodation_id = value

@@ -43,7 +43,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "adminapp/js/chunks/" + ({}[chunkId]||chunkId) + ".js?id=" + {"0":"e3d467cf242ef95b7511","1":"e5ef6109f6284792dbe8","2":"8183ed157c166c03e40f","3":"410d00e047f9472220f6","4":"d8e1059185ddba3415e2","5":"a27916af91730369f955","6":"0708b520da2ca89a287b","7":"b72b2f266189cca1b674","8":"92c97bd2c00c9faa2cec","9":"2d9055b90fae6a6f5b04","10":"d29541faed4511ab1f95","11":"aa55e5cb7e790358064c","12":"9d3991a9c659e76dcf51","13":"68220609b44b332add0a","14":"ccb89b2122167760bf7f","15":"17469111cf0bc2dbece4","16":"3d72709ef4665476802e","17":"3da408f97ec12f7b73bd","18":"960b328a57e2b2a6e1f5","19":"b8a2df3eedb90a677d4e","20":"0229433a54852517e2bc","21":"ec61bc0373192444b9ab","22":"188241c7cc3a43a18d03","23":"44707a34ca762c2dd71b","24":"0b37d3f2562270910543","25":"e847e5e6fd48e05922ab","26":"5e09784fd73ecdfe8694","27":"0280402785b1c1c7f0af","28":"f58320c1e5003513e077","29":"191e03fc61479dd85278","30":"df99801abb79d0d92e8a","31":"949ea0f77a7546952622","33":"b954f46606f99f66dd55","34":"6ec255b693c539419560","35":"5d030a4b4fb96e82ace9","36":"e9393f669eda5bedb4c3","37":"78ca5fb15a505cf011c7","38":"fb7750d6503ce6c1ee75","39":"8af2837fb45c13f5d91d","40":"6467797246a496aaa14d","41":"4ef0183718c88ff55bbb","42":"ba801c931ee2f7748aed","43":"3ef708826be028924e02","44":"f4f66277b604818ef746","45":"b4eef4e5c576d8dfcedb","46":"0d8300a95eaa27d11c40","47":"005ba8015b74845c77fe","48":"27122b23e6ff82d37556","49":"cf643c38c39777424930","50":"b667d4c742741cb12ea9","51":"711588b670c7926b6d01","52":"67f4e29ac4bd839f2795","53":"a1e9d98f564ecfa91b4a","54":"dd7998515224ff78df01","55":"84fb4ff4415ce324e1e4","56":"569f8f113581903ba955","57":"904d5183e4b4cb6068d2","58":"90327daac6b522bcb87f","59":"bad37f5091bf399c36e6","60":"a4388c428b75f2847449","61":"0f81739fec4cc7008141","62":"72e8ccbb46e11afceb11","63":"f2e7757323954e831333","64":"46f587767b6bbfab8b45","65":"11e8c19f966a5070f68d","66":"df800fdf6cd9f809f4dd","67":"c3395030dfddbdd09a88","68":"57bf5394b14f869bacf5","69":"4840c202652216670d28","70":"e9a2aa7b79b103f70547","71":"1b3016aa3ef17bf03b31","72":"c20c2f8f2a3a79972dc4","73":"71ff772aae6a4f280a95","74":"0c03edb4b3ebbd00e6fe","75":"cac29d39bbb42b4f5cf0","76":"8109bfd986c085a0f5cf","77":"26f5505b0b78393e0756","78":"1c36d312d86f8fcf0fa5","79":"921a0abfdc83eeb4cf9a","80":"e902092c485f6c8539a0","81":"85604c29f82839722031","82":"de5a0364d05b65bea6e5","83":"7410b7b12c3941b1ca1b","84":"538d6aac0d6db5334e96","85":"78be08aca13bd4f27441","86":"5b86eb804e67bd5ab898","87":"0c7d8bdf5c0ceff3d7a6","88":"2af387d5f55326ddba80","89":"f0e1bdb5c73533a7e867","90":"ca056d363249b4b87190","91":"181560c2ca8582048e84","92":"a6894815b51f47a13a4e","93":"27a8b7f270f6f8ca7607","94":"b7dd911e129c530dde53","95":"5a51523bbb806090febc","96":"52b03168486d45ddfcde","97":"0320572bfcfeb3fc1cb5","98":"117d9d6f8842b0bc25e1","99":"66e9a3cc7935ea5f3080","100":"9531d80b2e8a047fcaa3","101":"4e6a72e6bbf4cda6adff","102":"c06fdc1d591cb7715881","103":"2f7bc69bc396af88c453","104":"6eeb5ea19fcba7a9685b","105":"4095250c92e6b5a30abf","106":"d5dbbe687b43b8163640","107":"03eef8d0e55df8e8f0f7","108":"33692cb51d52c67de34f","109":"7b5d2245529336e412ca","110":"ce5e5b3572515b46d205","111":"67ae102a24c39a2f7649","112":"029b1d09542c568c1a80","113":"f418558d194d64dd4c55"}[chunkId] + ""
+/******/ 		return __webpack_require__.p + "adminapp/js/chunks/" + ({}[chunkId]||chunkId) + ".js?id=" + {"0":"e3d467cf242ef95b7511","1":"daa3576afc4b11b0fec3","2":"8183ed157c166c03e40f","3":"410d00e047f9472220f6","4":"751978e001809dbd53ec","5":"f736240a5581fd43ab9c","6":"7a7e5f3c2973f9ec3bb4","7":"77fdce9a8319e9f51fdd","8":"1fafc275e7d291e50095","9":"bfc55011ab589071d84c","10":"8818f7be067f67156c27","11":"9bdbaa4fbe28ec0f3643","12":"2987d262b12fd6e4aa88","13":"c9755a76e8e6066eb2ad","14":"81c19912667ba6989697","15":"51212dc59b4dece16b0f","16":"6051e961ef0b1915de80","17":"c50c61a2a38305823a65","18":"8d570b5c824f00f33683","19":"baf844d6f933e8a3a6ec","20":"7519ca9fdc84e9c9d842","21":"1e2b7dd5731613ffd01f","22":"0d1a038a8417621b27f2","23":"fada6b0539f3e5d7fc08","24":"301deb02c18600d30fef","25":"1324e8e0bb0903ba28db","26":"aeb1a1dabb5374e75bb5","27":"809cb36cf119fa6796c0","28":"cea067e3abdfde14e8b4","29":"beffa798672d3cb775b9","30":"f83101fcea18b7019c67","31":"af5fc4f0a65181f6596b","32":"444a2492cfdc41e5e6b3","33":"5c761d02a21a98813418","34":"d93b47442b28788726e7","35":"4fc57d77fd4631459a42","36":"641a7a07cef982610ec7","37":"97c51fe9fb9cf556882a","38":"18ce02e214eb05b33105","39":"9053f48eb45c5b82b2bc","40":"3c8e6ae405c489d55cb7","41":"9b84a2e5ee8ef046ddfe","42":"0bb74eff9f24bede69ce","43":"d49f941fbb51cd6d11bf","44":"84f3c53c1907a7e1086a","45":"5be630a0dae76e0380d1","46":"b123a09bc7c5e8f943d1","47":"ce36eaa3db00b50fe6d4","48":"44717e1ed36b55c6ddef","49":"1c8aff762782f688fe11","50":"0144962c3ad77576439f","51":"b5444dcad14fa8ffb1e6","52":"00bcdf9bd8704ba00c90","53":"3724dfeec6fea5a13151","54":"5b9a59e00769ab3a89bd","55":"acc530c8c22d81f608b9","56":"710624b52f468dd2b071","57":"3f9c19e7d87ff6e82271","58":"b4bd80098a25e4631c23","59":"db2b96a73138f59a4ed9","60":"b9c9157eff77cd21960e","61":"ded264b918c07b04d088","62":"ea573356e63c84334a8c","63":"e42f20ab4dd5dd5d0876","64":"4c4e12bf8274c5835718","65":"0e41b282d69021801465","66":"2ce381372715bcae5296","67":"6bba57197a11486704d4","68":"9b5f609ee96f33617d22","69":"bccdf50d637ee953a4ea","70":"3edd7d9d2f70ea4b1af9","71":"373405da77707776804a","72":"af3647b6b616abf25faf","73":"ed6bd46ce07882ce5101","74":"dab39259fb90931a460b","75":"958f77fcdcdaedc969a4","76":"055acb272709c0b5f1e1","77":"88ae87d9dc80212c4026","78":"f30d162683cf53b7ea7e","79":"1e1708519dc88dafcff1","80":"50aaa6d06311f6af6006","81":"4296c19d61b8fd149a58","82":"58f79ecd00e7aa0b6370","83":"ff162ba1b30cba99d662","84":"d9d9233c5356775954f4","85":"312c2f2b0c9e3a4642ef","86":"ce7e81fa19319333f9fd","87":"9f1a31148f10fac26fd0","88":"2030fda4c8c2435bea7c","89":"b83a344102c3ec63ac82","90":"51e79658ca3944fb3e35","91":"377420e2265500db89e8","92":"9c7d79ecf6a20010fb26","93":"ea66bf01b078c0f57a02","94":"0bf284e8ccbbcfe7f83d","95":"3dc4ab9cbb917cc49234","96":"da937a5cf546ea20019e","97":"c8d6d01d1f2a5bc3f5bb","98":"18113202585c547a64af","99":"c2ad82bc288f08d5527f","100":"842b083626a25a5e2236","101":"23d65db2715347d37185","102":"6aac53fec0ceceec8df7","103":"6f2d38d0db659cb6ff26","104":"2996b7efc433b1778573","105":"96d10c0cc14c6d370ba7","106":"7e84b7a29b9b93cbd9eb","107":"b869adf7ff07ffbddad2","108":"598c794a1b1f86efc8d3","109":"985028b1ac61aad0c9cf","110":"bd86a1045fc855a0f761","111":"fe7735546bd57d5213da","112":"1a2da1b6fa5d3218a00e","113":"0e9fc1f7019054d738b2","114":"26fcedf9c0430c341bc5","115":"009109639aa3f1db26bc","116":"caa4ed59cfb1570ccb0a"}[chunkId] + ""
 /******/ 	}
 /******/
 /******/ 	// The require function
@@ -4061,6 +4061,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'SidebarItemGroup',
   props: {
@@ -4292,6 +4293,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
     item: {
@@ -4454,10 +4457,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /*! For license information please see ckeditor.js.LICENSE.txt */
 /*!*
-* @license Copyright (c) 2003-2021, CKSource - Frederico Knabben. All rights reserved.
+* @license Copyright (c) 2003-2022, CKSource Holding sp. z o.o. All rights reserved.
 * For licensing, see LICENSE.md.
 */
-!function(t,e){ true?module.exports=e():undefined}(window,(function(){return function(t){var e={};function n(r){if(e[r])return e[r].exports;var o=e[r]={i:r,l:!1,exports:{}};return t[r].call(o.exports,o,o.exports,n),o.l=!0,o.exports}return n.m=t,n.c=e,n.d=function(t,e,r){n.o(t,e)||Object.defineProperty(t,e,{enumerable:!0,get:r})},n.r=function(t){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(t,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(t,"__esModule",{value:!0})},n.t=function(t,e){if(1&e&&(t=n(t)),8&e)return t;if(4&e&&"object"==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(n.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:t}),2&e&&"string"!=typeof t)for(var o in t)n.d(r,o,function(e){return t[e]}.bind(null,o));return r},n.n=function(t){var e=t&&t.__esModule?function(){return t.default}:function(){return t};return n.d(e,"a",e),e},n.o=function(t,e){return Object.prototype.hasOwnProperty.call(t,e)},n.p="",n(n.s=0)}([function(t,e,n){t.exports=n(1)},function(t,e,n){"use strict";function r(t,e){t.onload=function(){this.onerror=this.onload=null,e(null,t)},t.onerror=function(){this.onerror=this.onload=null,e(new Error("Failed to load "+this.src),t)}}function o(t,e){t.onreadystatechange=function(){"complete"!=this.readyState&&"loaded"!=this.readyState||(this.onreadystatechange=null,e(null,t))}}var i;function a(t,e){return"CKEDITOR"in window?Promise.resolve(CKEDITOR):"string"!=typeof t||t.length<1?Promise.reject(new TypeError("CKEditor URL must be a non-empty string.")):(i||(i=a.scriptLoader(t).then((function(t){return e&&e(t),t}))),i)}n.r(e),a.scriptLoader=function(t){return new Promise((function(e,n){!function(t,e,n){var i=document.head||document.getElementsByTagName("head")[0],a=document.createElement("script");"function"==typeof e&&(n=e,e={}),e=e||{},n=n||function(){},a.type=e.type||"text/javascript",a.charset=e.charset||"utf8",a.async=!("async"in e)||!!e.async,a.src=t,e.attrs&&function(t,e){for(var n in e)t.setAttribute(n,e[n])}(a,e.attrs),e.text&&(a.text=String(e.text)),("onload"in a?r:o)(a,n),a.onload||r(a,n),i.appendChild(a)}(t,(function(t){return i=void 0,t?n(t):window.CKEDITOR?void e(CKEDITOR):n(new Error("Script loaded from editorUrl doesn't provide CKEDITOR namespace."))}))}))};var s={name:"ckeditor",render(t){return t("div",{},[t(this.tagName)])},props:{value:{type:String,default:""},type:{type:String,default:"classic",validator:t=>["classic","inline"].includes(t)},editorUrl:{type:String,default:"https://cdn.ckeditor.com/4.17.1/standard-all/ckeditor.js"},config:{type:Object,default:()=>{}},tagName:{type:String,default:"textarea"},readOnly:{type:Boolean,default:null},throttle:{type:Number,default:80}},mounted(){a(this.editorUrl,(t=>{this.$emit("namespaceloaded",t)})).then((()=>{if(this.$_destroyed)return;const t=this.config||{};null!==this.readOnly&&(t.readOnly=this.readOnly);const e="inline"===this.type?"inline":"replace",n=this.$el.firstElementChild,r=this.instance=CKEDITOR[e](n,t);r.on("instanceReady",(()=>{this.$nextTick().then((()=>{const t=this.value;r.fire("lockSnapshot"),r.setData(t,{callback:()=>{this.$_setUpEditorEvents();const e=r.getData();t!==e?(this.$once("input",(()=>{this.$emit("ready",r)})),this.$emit("input",e)):this.$emit("ready",r),r.fire("unlockSnapshot")}})}))}))}))},beforeDestroy(){this.instance&&this.instance.destroy(),this.$_destroyed=!0},watch:{value(t){this.instance&&this.instance.getData()!==t&&this.instance.setData(t)},readOnly(t){this.instance&&this.instance.setReadOnly(t)}},methods:{$_setUpEditorEvents(){const t=this.instance,e=function(t,e){var n,r=arguments.length>2&&void 0!==arguments[2]?arguments[2]:{};return function(){clearTimeout(n);for(var o=arguments.length,i=new Array(o),a=0;a<o;a++)i[a]=arguments[a];n=setTimeout(t.bind.apply(t,[r].concat(i)),e)}}((e=>{const n=t.getData();this.value!==n&&this.$emit("input",n,e,t)}),this.throttle);t.on("change",e),t.on("focus",(e=>{this.$emit("focus",e,t)})),t.on("blur",(e=>{this.$emit("blur",e,t)}))}}};const c={install(t){t.component("ckeditor",s)},component:s};e.default=c}]).default}));
+!function(t,e){ true?module.exports=e():undefined}(window,(function(){return function(t){var e={};function n(i){if(e[i])return e[i].exports;var r=e[i]={i:i,l:!1,exports:{}};return t[i].call(r.exports,r,r.exports,n),r.l=!0,r.exports}return n.m=t,n.c=e,n.d=function(t,e,i){n.o(t,e)||Object.defineProperty(t,e,{enumerable:!0,get:i})},n.r=function(t){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(t,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(t,"__esModule",{value:!0})},n.t=function(t,e){if(1&e&&(t=n(t)),8&e)return t;if(4&e&&"object"==typeof t&&t&&t.__esModule)return t;var i=Object.create(null);if(n.r(i),Object.defineProperty(i,"default",{enumerable:!0,value:t}),2&e&&"string"!=typeof t)for(var r in t)n.d(i,r,function(e){return t[e]}.bind(null,r));return i},n.n=function(t){var e=t&&t.__esModule?function(){return t.default}:function(){return t};return n.d(e,"a",e),e},n.o=function(t,e){return Object.prototype.hasOwnProperty.call(t,e)},n.p="",n(n.s=0)}([function(t,e,n){t.exports=n(1)},function(t,e,n){"use strict";function i(t,e){t.onload=function(){this.onerror=this.onload=null,e(null,t)},t.onerror=function(){this.onerror=this.onload=null,e(new Error("Failed to load "+this.src),t)}}function r(t,e){t.onreadystatechange=function(){"complete"!=this.readyState&&"loaded"!=this.readyState||(this.onreadystatechange=null,e(null,t))}}var o;function a(t,e){return"CKEDITOR"in window?Promise.resolve(CKEDITOR):"string"!=typeof t||t.length<1?Promise.reject(new TypeError("CKEditor URL must be a non-empty string.")):(o||(o=a.scriptLoader(t).then((function(t){return e&&e(t),t}))),o)}n.r(e),a.scriptLoader=function(t){return new Promise((function(e,n){!function(t,e,n){var o=document.head||document.getElementsByTagName("head")[0],a=document.createElement("script");"function"==typeof e&&(n=e,e={}),e=e||{},n=n||function(){},a.type=e.type||"text/javascript",a.charset=e.charset||"utf8",a.async=!("async"in e)||!!e.async,a.src=t,e.attrs&&function(t,e){for(var n in e)t.setAttribute(n,e[n])}(a,e.attrs),e.text&&(a.text=String(e.text)),("onload"in a?i:r)(a,n),a.onload||i(a,n),o.appendChild(a)}(t,(function(t){return o=void 0,t?n(t):window.CKEDITOR?void e(CKEDITOR):n(new Error("Script loaded from editorUrl doesn't provide CKEDITOR namespace."))}))}))};var s={name:"ckeditor",render(t){return t("div",{},[t(this.tagName)])},props:{value:{type:String,default:""},type:{type:String,default:"classic",validator:t=>["classic","inline"].includes(t)},editorUrl:{type:String,default:"https://cdn.ckeditor.com/4.17.2/standard-all/ckeditor.js"},config:{type:Object,default:()=>{}},tagName:{type:String,default:"textarea"},readOnly:{type:Boolean,default:null},throttle:{type:Number,default:80}},mounted(){a(this.editorUrl,(t=>{this.$emit("namespaceloaded",t)})).then((()=>{if(this.$_destroyed)return;const t=this.prepareConfig(),e="inline"===this.type?"inline":"replace",n=this.$el.firstElementChild;CKEDITOR[e](n,t)}))},beforeDestroy(){this.instance&&this.instance.destroy(),this.$_destroyed=!0},watch:{value(t){this.instance&&this.instance.getData()!==t&&this.instance.setData(t)},readOnly(t){this.instance&&this.instance.setReadOnly(t)}},methods:{prepareConfig(){const t=this.config||{};t.on=t.on||{},void 0===t.delayIfDetached&&(t.delayIfDetached=!0),null!==this.readOnly&&(t.readOnly=this.readOnly);const e=t.on.instanceReady;return t.on.instanceReady=t=>{this.instance=t.editor,this.$nextTick().then((()=>{this.prepareComponentData(),e&&e(t)}))},t},prepareComponentData(){const t=this.value;this.instance.fire("lockSnapshot"),this.instance.setData(t,{callback:()=>{this.$_setUpEditorEvents();const e=this.instance.getData();t!==e?(this.$once("input",(()=>{this.$emit("ready",this.instance)})),this.$emit("input",e)):this.$emit("ready",this.instance),this.instance.fire("unlockSnapshot")}})},$_setUpEditorEvents(){const t=this.instance,e=function(t,e){var n,i=arguments.length>2&&void 0!==arguments[2]?arguments[2]:{};return function(){clearTimeout(n);for(var r=arguments.length,o=new Array(r),a=0;a<r;a++)o[a]=arguments[a];n=setTimeout(t.bind.apply(t,[i].concat(o)),e)}}((e=>{const n=t.getData();this.value!==n&&this.$emit("input",n,e,t)}),this.throttle);t.on("change",e),t.on("focus",(e=>{this.$emit("focus",e,t)})),t.on("blur",(e=>{this.$emit("blur",e,t)}))}}};const c={install(t){t.component("ckeditor",s)},component:s};e.default=c}]).default}));
 //# sourceMappingURL=ckeditor.js.map
 
 /***/ }),
@@ -32318,8 +32321,8 @@ exports.mixin = mixin;
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /*!
- * vue-i18n v8.26.8 
- * (c) 2021 kazuya kawaguchi
+ * vue-i18n v8.27.0 
+ * (c) 2022 kazuya kawaguchi
  * Released under the MIT License.
  */
 /*  */
@@ -33530,6 +33533,9 @@ var VueI18n = function VueI18n (options) {
   this._fallbackRoot = options.fallbackRoot === undefined
     ? true
     : !!options.fallbackRoot;
+  this._fallbackRootWithEmptyString = options.fallbackRootWithEmptyString === undefined
+    ? true
+    : !!options.fallbackRootWithEmptyString;
   this._formatFallbackMessages = options.formatFallbackMessages === undefined
     ? false
     : !!options.formatFallbackMessages;
@@ -33812,7 +33818,7 @@ VueI18n.prototype._warnDefault = function _warnDefault (locale, key, result, vm,
 };
 
 VueI18n.prototype._isFallbackRoot = function _isFallbackRoot (val) {
-  return !val && !isNull(this._root) && this._fallbackRoot
+  return (this._fallbackRootWithEmptyString? !val : isNull(val)) && !isNull(this._root) && this._fallbackRoot
 };
 
 VueI18n.prototype._isSilentFallbackWarn = function _isSilentFallbackWarn (key) {
@@ -33894,7 +33900,7 @@ VueI18n.prototype._link = function _link (
   // We are going to replace each of
   // them with its translation
   var matches = ret.match(linkKeyMatcher);
-    
+
   // eslint-disable-next-line no-autofix/prefer-const
   for (var idx in matches) {
     // ie compatible: filter custom array
@@ -34576,7 +34582,7 @@ Object.defineProperty(VueI18n, 'availabilities', {
 });
 
 VueI18n.install = install;
-VueI18n.version = '8.26.8';
+VueI18n.version = '8.27.0';
 
 /* harmony default export */ __webpack_exports__["default"] = (VueI18n);
 
@@ -37104,6 +37110,7 @@ var render = function () {
                   "a",
                   {
                     staticClass: "nav-link collapsed",
+                    staticStyle: { width: "100%" },
                     attrs: {
                       href: "#" + _vm.getAttributeTitle,
                       "data-toggle": "collapse",
@@ -37251,7 +37258,7 @@ var render = function () {
       _vm._v(" "),
       _c(
         "div",
-        { staticClass: "sidebar-wrapper" },
+        { staticClass: "sidebar-wrapper", staticStyle: { width: "100%" } },
         [
           _vm._t("content"),
           _vm._v(" "),
@@ -37365,9 +37372,14 @@ var render = function () {
                         [
                           _vm.text
                             ? [
-                                _c("span", { staticClass: "sidebar-mini" }, [
-                                  _vm._v(_vm._s(_vm.textIcon)),
-                                ]),
+                                _c(
+                                  "i",
+                                  {
+                                    staticClass: "material-icons",
+                                    staticStyle: { "padding-left": "20px" },
+                                  },
+                                  [_vm._v("keyboard_arrow_right")]
+                                ),
                                 _vm._v(" "),
                                 _c("span", { staticClass: "sidebar-normal" }, [
                                   _vm._v(_vm._s(_vm.$t(_vm.item.title))),
@@ -37393,7 +37405,7 @@ var render = function () {
           ],
           null,
           false,
-          2407205576
+          3988101200
         ),
       })
     : _vm._e()
@@ -55649,14 +55661,14 @@ var View = {
 var routes = [{
   path: '/',
   component: function component() {
-    return __webpack_require__.e(/*! import() */ 11).then(__webpack_require__.bind(null, /*! @pages/Layout/DashboardLayout.vue */ "./resources/adminapp/js/pages/Layout/DashboardLayout.vue"));
+    return __webpack_require__.e(/*! import() */ 12).then(__webpack_require__.bind(null, /*! @pages/Layout/DashboardLayout.vue */ "./resources/adminapp/js/pages/Layout/DashboardLayout.vue"));
   },
   redirect: 'dashboard',
   children: [{
     path: 'dashboard',
     name: 'dashboard',
     component: function component() {
-      return Promise.all(/*! import() */[__webpack_require__.e(5), __webpack_require__.e(6)]).then(__webpack_require__.bind(null, /*! @pages/Dashboard.vue */ "./resources/adminapp/js/pages/Dashboard.vue"));
+      return Promise.all(/*! import() */[__webpack_require__.e(6), __webpack_require__.e(7)]).then(__webpack_require__.bind(null, /*! @pages/Dashboard.vue */ "./resources/adminapp/js/pages/Dashboard.vue"));
     },
     meta: {
       title: 'global.dashboard'
@@ -55672,7 +55684,7 @@ var routes = [{
       path: 'permissions',
       name: 'permissions.index',
       component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(84)]).then(__webpack_require__.bind(null, /*! @cruds/Permissions/Index.vue */ "./resources/adminapp/js/cruds/Permissions/Index.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(86)]).then(__webpack_require__.bind(null, /*! @cruds/Permissions/Index.vue */ "./resources/adminapp/js/cruds/Permissions/Index.vue"));
       },
       meta: {
         title: 'cruds.permission.title'
@@ -55681,7 +55693,7 @@ var routes = [{
       path: 'permissions/create',
       name: 'permissions.create',
       component: function component() {
-        return __webpack_require__.e(/*! import() */ 82).then(__webpack_require__.bind(null, /*! @cruds/Permissions/Create.vue */ "./resources/adminapp/js/cruds/Permissions/Create.vue"));
+        return __webpack_require__.e(/*! import() */ 84).then(__webpack_require__.bind(null, /*! @cruds/Permissions/Create.vue */ "./resources/adminapp/js/cruds/Permissions/Create.vue"));
       },
       meta: {
         title: 'cruds.permission.title'
@@ -55690,7 +55702,7 @@ var routes = [{
       path: 'permissions/:id',
       name: 'permissions.show',
       component: function component() {
-        return __webpack_require__.e(/*! import() */ 85).then(__webpack_require__.bind(null, /*! @cruds/Permissions/Show.vue */ "./resources/adminapp/js/cruds/Permissions/Show.vue"));
+        return __webpack_require__.e(/*! import() */ 87).then(__webpack_require__.bind(null, /*! @cruds/Permissions/Show.vue */ "./resources/adminapp/js/cruds/Permissions/Show.vue"));
       },
       meta: {
         title: 'cruds.permission.title'
@@ -55699,7 +55711,7 @@ var routes = [{
       path: 'permissions/:id/edit',
       name: 'permissions.edit',
       component: function component() {
-        return __webpack_require__.e(/*! import() */ 83).then(__webpack_require__.bind(null, /*! @cruds/Permissions/Edit.vue */ "./resources/adminapp/js/cruds/Permissions/Edit.vue"));
+        return __webpack_require__.e(/*! import() */ 85).then(__webpack_require__.bind(null, /*! @cruds/Permissions/Edit.vue */ "./resources/adminapp/js/cruds/Permissions/Edit.vue"));
       },
       meta: {
         title: 'cruds.permission.title'
@@ -55708,7 +55720,7 @@ var routes = [{
       path: 'roles',
       name: 'roles.index',
       component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(21)]).then(__webpack_require__.bind(null, /*! @cruds/Roles/Index.vue */ "./resources/adminapp/js/cruds/Roles/Index.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(24)]).then(__webpack_require__.bind(null, /*! @cruds/Roles/Index.vue */ "./resources/adminapp/js/cruds/Roles/Index.vue"));
       },
       meta: {
         title: 'cruds.role.title'
@@ -55717,7 +55729,7 @@ var routes = [{
       path: 'roles/create',
       name: 'roles.create',
       component: function component() {
-        return __webpack_require__.e(/*! import() */ 86).then(__webpack_require__.bind(null, /*! @cruds/Roles/Create.vue */ "./resources/adminapp/js/cruds/Roles/Create.vue"));
+        return __webpack_require__.e(/*! import() */ 88).then(__webpack_require__.bind(null, /*! @cruds/Roles/Create.vue */ "./resources/adminapp/js/cruds/Roles/Create.vue"));
       },
       meta: {
         title: 'cruds.role.title'
@@ -55726,7 +55738,7 @@ var routes = [{
       path: 'roles/:id',
       name: 'roles.show',
       component: function component() {
-        return __webpack_require__.e(/*! import() */ 22).then(__webpack_require__.bind(null, /*! @cruds/Roles/Show.vue */ "./resources/adminapp/js/cruds/Roles/Show.vue"));
+        return __webpack_require__.e(/*! import() */ 25).then(__webpack_require__.bind(null, /*! @cruds/Roles/Show.vue */ "./resources/adminapp/js/cruds/Roles/Show.vue"));
       },
       meta: {
         title: 'cruds.role.title'
@@ -55735,7 +55747,7 @@ var routes = [{
       path: 'roles/:id/edit',
       name: 'roles.edit',
       component: function component() {
-        return __webpack_require__.e(/*! import() */ 87).then(__webpack_require__.bind(null, /*! @cruds/Roles/Edit.vue */ "./resources/adminapp/js/cruds/Roles/Edit.vue"));
+        return __webpack_require__.e(/*! import() */ 89).then(__webpack_require__.bind(null, /*! @cruds/Roles/Edit.vue */ "./resources/adminapp/js/cruds/Roles/Edit.vue"));
       },
       meta: {
         title: 'cruds.role.title'
@@ -55744,7 +55756,7 @@ var routes = [{
       path: 'users',
       name: 'users.index',
       component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(23)]).then(__webpack_require__.bind(null, /*! @cruds/Users/Index.vue */ "./resources/adminapp/js/cruds/Users/Index.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(26)]).then(__webpack_require__.bind(null, /*! @cruds/Users/Index.vue */ "./resources/adminapp/js/cruds/Users/Index.vue"));
       },
       meta: {
         title: 'cruds.user.title'
@@ -55753,7 +55765,7 @@ var routes = [{
       path: 'users/create',
       name: 'users.create',
       component: function component() {
-        return __webpack_require__.e(/*! import() */ 106).then(__webpack_require__.bind(null, /*! @cruds/Users/Create.vue */ "./resources/adminapp/js/cruds/Users/Create.vue"));
+        return __webpack_require__.e(/*! import() */ 111).then(__webpack_require__.bind(null, /*! @cruds/Users/Create.vue */ "./resources/adminapp/js/cruds/Users/Create.vue"));
       },
       meta: {
         title: 'cruds.user.title'
@@ -55762,7 +55774,7 @@ var routes = [{
       path: 'users/:id',
       name: 'users.show',
       component: function component() {
-        return __webpack_require__.e(/*! import() */ 24).then(__webpack_require__.bind(null, /*! @cruds/Users/Show.vue */ "./resources/adminapp/js/cruds/Users/Show.vue"));
+        return __webpack_require__.e(/*! import() */ 27).then(__webpack_require__.bind(null, /*! @cruds/Users/Show.vue */ "./resources/adminapp/js/cruds/Users/Show.vue"));
       },
       meta: {
         title: 'cruds.user.title'
@@ -55771,7 +55783,7 @@ var routes = [{
       path: 'users/:id/edit',
       name: 'users.edit',
       component: function component() {
-        return __webpack_require__.e(/*! import() */ 107).then(__webpack_require__.bind(null, /*! @cruds/Users/Edit.vue */ "./resources/adminapp/js/cruds/Users/Edit.vue"));
+        return __webpack_require__.e(/*! import() */ 112).then(__webpack_require__.bind(null, /*! @cruds/Users/Edit.vue */ "./resources/adminapp/js/cruds/Users/Edit.vue"));
       },
       meta: {
         title: 'cruds.user.title'
@@ -55788,7 +55800,7 @@ var routes = [{
       path: 'contact-companies',
       name: 'contact_companies.index',
       component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(57)]).then(__webpack_require__.bind(null, /*! @cruds/ContactCompanies/Index.vue */ "./resources/adminapp/js/cruds/ContactCompanies/Index.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(59)]).then(__webpack_require__.bind(null, /*! @cruds/ContactCompanies/Index.vue */ "./resources/adminapp/js/cruds/ContactCompanies/Index.vue"));
       },
       meta: {
         title: 'cruds.contactCompany.title'
@@ -55797,7 +55809,7 @@ var routes = [{
       path: 'contact-companies/create',
       name: 'contact_companies.create',
       component: function component() {
-        return __webpack_require__.e(/*! import() */ 55).then(__webpack_require__.bind(null, /*! @cruds/ContactCompanies/Create.vue */ "./resources/adminapp/js/cruds/ContactCompanies/Create.vue"));
+        return __webpack_require__.e(/*! import() */ 57).then(__webpack_require__.bind(null, /*! @cruds/ContactCompanies/Create.vue */ "./resources/adminapp/js/cruds/ContactCompanies/Create.vue"));
       },
       meta: {
         title: 'cruds.contactCompany.title'
@@ -55806,7 +55818,7 @@ var routes = [{
       path: 'contact-companies/:id',
       name: 'contact_companies.show',
       component: function component() {
-        return __webpack_require__.e(/*! import() */ 58).then(__webpack_require__.bind(null, /*! @cruds/ContactCompanies/Show.vue */ "./resources/adminapp/js/cruds/ContactCompanies/Show.vue"));
+        return __webpack_require__.e(/*! import() */ 60).then(__webpack_require__.bind(null, /*! @cruds/ContactCompanies/Show.vue */ "./resources/adminapp/js/cruds/ContactCompanies/Show.vue"));
       },
       meta: {
         title: 'cruds.contactCompany.title'
@@ -55815,7 +55827,7 @@ var routes = [{
       path: 'contact-companies/:id/edit',
       name: 'contact_companies.edit',
       component: function component() {
-        return __webpack_require__.e(/*! import() */ 56).then(__webpack_require__.bind(null, /*! @cruds/ContactCompanies/Edit.vue */ "./resources/adminapp/js/cruds/ContactCompanies/Edit.vue"));
+        return __webpack_require__.e(/*! import() */ 58).then(__webpack_require__.bind(null, /*! @cruds/ContactCompanies/Edit.vue */ "./resources/adminapp/js/cruds/ContactCompanies/Edit.vue"));
       },
       meta: {
         title: 'cruds.contactCompany.title'
@@ -55824,7 +55836,7 @@ var routes = [{
       path: 'contact-contacts',
       name: 'contact_contacts.index',
       component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(28)]).then(__webpack_require__.bind(null, /*! @cruds/ContactContacts/Index.vue */ "./resources/adminapp/js/cruds/ContactContacts/Index.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(30)]).then(__webpack_require__.bind(null, /*! @cruds/ContactContacts/Index.vue */ "./resources/adminapp/js/cruds/ContactContacts/Index.vue"));
       },
       meta: {
         title: 'cruds.contactContact.title'
@@ -55833,7 +55845,7 @@ var routes = [{
       path: 'contact-contacts/create',
       name: 'contact_contacts.create',
       component: function component() {
-        return __webpack_require__.e(/*! import() */ 59).then(__webpack_require__.bind(null, /*! @cruds/ContactContacts/Create.vue */ "./resources/adminapp/js/cruds/ContactContacts/Create.vue"));
+        return __webpack_require__.e(/*! import() */ 61).then(__webpack_require__.bind(null, /*! @cruds/ContactContacts/Create.vue */ "./resources/adminapp/js/cruds/ContactContacts/Create.vue"));
       },
       meta: {
         title: 'cruds.contactContact.title'
@@ -55842,7 +55854,7 @@ var routes = [{
       path: 'contact-contacts/:id',
       name: 'contact_contacts.show',
       component: function component() {
-        return __webpack_require__.e(/*! import() */ 29).then(__webpack_require__.bind(null, /*! @cruds/ContactContacts/Show.vue */ "./resources/adminapp/js/cruds/ContactContacts/Show.vue"));
+        return __webpack_require__.e(/*! import() */ 31).then(__webpack_require__.bind(null, /*! @cruds/ContactContacts/Show.vue */ "./resources/adminapp/js/cruds/ContactContacts/Show.vue"));
       },
       meta: {
         title: 'cruds.contactContact.title'
@@ -55851,7 +55863,7 @@ var routes = [{
       path: 'contact-contacts/:id/edit',
       name: 'contact_contacts.edit',
       component: function component() {
-        return __webpack_require__.e(/*! import() */ 60).then(__webpack_require__.bind(null, /*! @cruds/ContactContacts/Edit.vue */ "./resources/adminapp/js/cruds/ContactContacts/Edit.vue"));
+        return __webpack_require__.e(/*! import() */ 62).then(__webpack_require__.bind(null, /*! @cruds/ContactContacts/Edit.vue */ "./resources/adminapp/js/cruds/ContactContacts/Edit.vue"));
       },
       meta: {
         title: 'cruds.contactContact.title'
@@ -55861,7 +55873,7 @@ var routes = [{
     path: 'transactions',
     name: 'transactions.index',
     component: function component() {
-      return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(100)]).then(__webpack_require__.bind(null, /*! @cruds/Transactions/Index.vue */ "./resources/adminapp/js/cruds/Transactions/Index.vue"));
+      return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(105)]).then(__webpack_require__.bind(null, /*! @cruds/Transactions/Index.vue */ "./resources/adminapp/js/cruds/Transactions/Index.vue"));
     },
     meta: {
       title: 'cruds.transaction.title'
@@ -55870,7 +55882,7 @@ var routes = [{
     path: 'transactions/create',
     name: 'transactions.create',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 98).then(__webpack_require__.bind(null, /*! @cruds/Transactions/Create.vue */ "./resources/adminapp/js/cruds/Transactions/Create.vue"));
+      return __webpack_require__.e(/*! import() */ 103).then(__webpack_require__.bind(null, /*! @cruds/Transactions/Create.vue */ "./resources/adminapp/js/cruds/Transactions/Create.vue"));
     },
     meta: {
       title: 'cruds.transaction.title'
@@ -55879,7 +55891,7 @@ var routes = [{
     path: 'transactions/:id',
     name: 'transactions.show',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 101).then(__webpack_require__.bind(null, /*! @cruds/Transactions/Show.vue */ "./resources/adminapp/js/cruds/Transactions/Show.vue"));
+      return __webpack_require__.e(/*! import() */ 106).then(__webpack_require__.bind(null, /*! @cruds/Transactions/Show.vue */ "./resources/adminapp/js/cruds/Transactions/Show.vue"));
     },
     meta: {
       title: 'cruds.transaction.title'
@@ -55888,7 +55900,7 @@ var routes = [{
     path: 'transactions/:id/edit',
     name: 'transactions.edit',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 99).then(__webpack_require__.bind(null, /*! @cruds/Transactions/Edit.vue */ "./resources/adminapp/js/cruds/Transactions/Edit.vue"));
+      return __webpack_require__.e(/*! import() */ 104).then(__webpack_require__.bind(null, /*! @cruds/Transactions/Edit.vue */ "./resources/adminapp/js/cruds/Transactions/Edit.vue"));
     },
     meta: {
       title: 'cruds.transaction.title'
@@ -55904,7 +55916,7 @@ var routes = [{
       path: 'coupons',
       name: 'coupons.index',
       component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(41)]).then(__webpack_require__.bind(null, /*! @cruds/Coupons/Index.vue */ "./resources/adminapp/js/cruds/Coupons/Index.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(38)]).then(__webpack_require__.bind(null, /*! @cruds/Coupons/Index.vue */ "./resources/adminapp/js/cruds/Coupons/Index.vue"));
       },
       meta: {
         title: 'cruds.coupon.title'
@@ -55913,7 +55925,7 @@ var routes = [{
       path: 'coupons/create',
       name: 'coupons.create',
       component: function component() {
-        return __webpack_require__.e(/*! import() */ 65).then(__webpack_require__.bind(null, /*! @cruds/Coupons/Create.vue */ "./resources/adminapp/js/cruds/Coupons/Create.vue"));
+        return __webpack_require__.e(/*! import() */ 67).then(__webpack_require__.bind(null, /*! @cruds/Coupons/Create.vue */ "./resources/adminapp/js/cruds/Coupons/Create.vue"));
       },
       meta: {
         title: 'cruds.coupon.title'
@@ -55922,7 +55934,7 @@ var routes = [{
       path: 'coupons/:id',
       name: 'coupons.show',
       component: function component() {
-        return __webpack_require__.e(/*! import() */ 42).then(__webpack_require__.bind(null, /*! @cruds/Coupons/Show.vue */ "./resources/adminapp/js/cruds/Coupons/Show.vue"));
+        return __webpack_require__.e(/*! import() */ 39).then(__webpack_require__.bind(null, /*! @cruds/Coupons/Show.vue */ "./resources/adminapp/js/cruds/Coupons/Show.vue"));
       },
       meta: {
         title: 'cruds.coupon.title'
@@ -55931,7 +55943,7 @@ var routes = [{
       path: 'coupons/:id/edit',
       name: 'coupons.edit',
       component: function component() {
-        return __webpack_require__.e(/*! import() */ 66).then(__webpack_require__.bind(null, /*! @cruds/Coupons/Edit.vue */ "./resources/adminapp/js/cruds/Coupons/Edit.vue"));
+        return __webpack_require__.e(/*! import() */ 68).then(__webpack_require__.bind(null, /*! @cruds/Coupons/Edit.vue */ "./resources/adminapp/js/cruds/Coupons/Edit.vue"));
       },
       meta: {
         title: 'cruds.coupon.title'
@@ -55940,7 +55952,7 @@ var routes = [{
       path: 'languages',
       name: 'languages.index',
       component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(43)]).then(__webpack_require__.bind(null, /*! @cruds/Languages/Index.vue */ "./resources/adminapp/js/cruds/Languages/Index.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(40)]).then(__webpack_require__.bind(null, /*! @cruds/Languages/Index.vue */ "./resources/adminapp/js/cruds/Languages/Index.vue"));
       },
       meta: {
         title: 'cruds.language.title'
@@ -55949,7 +55961,7 @@ var routes = [{
       path: 'languages/create',
       name: 'languages.create',
       component: function component() {
-        return __webpack_require__.e(/*! import() */ 75).then(__webpack_require__.bind(null, /*! @cruds/Languages/Create.vue */ "./resources/adminapp/js/cruds/Languages/Create.vue"));
+        return __webpack_require__.e(/*! import() */ 77).then(__webpack_require__.bind(null, /*! @cruds/Languages/Create.vue */ "./resources/adminapp/js/cruds/Languages/Create.vue"));
       },
       meta: {
         title: 'cruds.language.title'
@@ -55958,7 +55970,7 @@ var routes = [{
       path: 'languages/:id',
       name: 'languages.show',
       component: function component() {
-        return __webpack_require__.e(/*! import() */ 44).then(__webpack_require__.bind(null, /*! @cruds/Languages/Show.vue */ "./resources/adminapp/js/cruds/Languages/Show.vue"));
+        return __webpack_require__.e(/*! import() */ 41).then(__webpack_require__.bind(null, /*! @cruds/Languages/Show.vue */ "./resources/adminapp/js/cruds/Languages/Show.vue"));
       },
       meta: {
         title: 'cruds.language.title'
@@ -55967,7 +55979,7 @@ var routes = [{
       path: 'languages/:id/edit',
       name: 'languages.edit',
       component: function component() {
-        return __webpack_require__.e(/*! import() */ 76).then(__webpack_require__.bind(null, /*! @cruds/Languages/Edit.vue */ "./resources/adminapp/js/cruds/Languages/Edit.vue"));
+        return __webpack_require__.e(/*! import() */ 78).then(__webpack_require__.bind(null, /*! @cruds/Languages/Edit.vue */ "./resources/adminapp/js/cruds/Languages/Edit.vue"));
       },
       meta: {
         title: 'cruds.language.title'
@@ -55976,7 +55988,7 @@ var routes = [{
       path: 'countries',
       name: 'countries.index',
       component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(63)]).then(__webpack_require__.bind(null, /*! @cruds/Countries/Index.vue */ "./resources/adminapp/js/cruds/Countries/Index.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(65)]).then(__webpack_require__.bind(null, /*! @cruds/Countries/Index.vue */ "./resources/adminapp/js/cruds/Countries/Index.vue"));
       },
       meta: {
         title: 'cruds.country.title'
@@ -55985,7 +55997,7 @@ var routes = [{
       path: 'countries/create',
       name: 'countries.create',
       component: function component() {
-        return __webpack_require__.e(/*! import() */ 61).then(__webpack_require__.bind(null, /*! @cruds/Countries/Create.vue */ "./resources/adminapp/js/cruds/Countries/Create.vue"));
+        return __webpack_require__.e(/*! import() */ 63).then(__webpack_require__.bind(null, /*! @cruds/Countries/Create.vue */ "./resources/adminapp/js/cruds/Countries/Create.vue"));
       },
       meta: {
         title: 'cruds.country.title'
@@ -55994,7 +56006,7 @@ var routes = [{
       path: 'countries/:id',
       name: 'countries.show',
       component: function component() {
-        return __webpack_require__.e(/*! import() */ 64).then(__webpack_require__.bind(null, /*! @cruds/Countries/Show.vue */ "./resources/adminapp/js/cruds/Countries/Show.vue"));
+        return __webpack_require__.e(/*! import() */ 66).then(__webpack_require__.bind(null, /*! @cruds/Countries/Show.vue */ "./resources/adminapp/js/cruds/Countries/Show.vue"));
       },
       meta: {
         title: 'cruds.country.title'
@@ -56003,7 +56015,7 @@ var routes = [{
       path: 'countries/:id/edit',
       name: 'countries.edit',
       component: function component() {
-        return __webpack_require__.e(/*! import() */ 62).then(__webpack_require__.bind(null, /*! @cruds/Countries/Edit.vue */ "./resources/adminapp/js/cruds/Countries/Edit.vue"));
+        return __webpack_require__.e(/*! import() */ 64).then(__webpack_require__.bind(null, /*! @cruds/Countries/Edit.vue */ "./resources/adminapp/js/cruds/Countries/Edit.vue"));
       },
       meta: {
         title: 'cruds.country.title'
@@ -56012,7 +56024,7 @@ var routes = [{
       path: 'cities',
       name: 'cities.index',
       component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(14)]).then(__webpack_require__.bind(null, /*! @cruds/Cities/Index.vue */ "./resources/adminapp/js/cruds/Cities/Index.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(16)]).then(__webpack_require__.bind(null, /*! @cruds/Cities/Index.vue */ "./resources/adminapp/js/cruds/Cities/Index.vue"));
       },
       meta: {
         title: 'cruds.city.title'
@@ -56021,7 +56033,7 @@ var routes = [{
       path: 'cities/create',
       name: 'cities.create',
       component: function component() {
-        return __webpack_require__.e(/*! import() */ 53).then(__webpack_require__.bind(null, /*! @cruds/Cities/Create.vue */ "./resources/adminapp/js/cruds/Cities/Create.vue"));
+        return __webpack_require__.e(/*! import() */ 55).then(__webpack_require__.bind(null, /*! @cruds/Cities/Create.vue */ "./resources/adminapp/js/cruds/Cities/Create.vue"));
       },
       meta: {
         title: 'cruds.city.title'
@@ -56030,7 +56042,7 @@ var routes = [{
       path: 'cities/:id',
       name: 'cities.show',
       component: function component() {
-        return __webpack_require__.e(/*! import() */ 15).then(__webpack_require__.bind(null, /*! @cruds/Cities/Show.vue */ "./resources/adminapp/js/cruds/Cities/Show.vue"));
+        return __webpack_require__.e(/*! import() */ 17).then(__webpack_require__.bind(null, /*! @cruds/Cities/Show.vue */ "./resources/adminapp/js/cruds/Cities/Show.vue"));
       },
       meta: {
         title: 'cruds.city.title'
@@ -56039,7 +56051,7 @@ var routes = [{
       path: 'cities/:id/edit',
       name: 'cities.edit',
       component: function component() {
-        return __webpack_require__.e(/*! import() */ 54).then(__webpack_require__.bind(null, /*! @cruds/Cities/Edit.vue */ "./resources/adminapp/js/cruds/Cities/Edit.vue"));
+        return __webpack_require__.e(/*! import() */ 56).then(__webpack_require__.bind(null, /*! @cruds/Cities/Edit.vue */ "./resources/adminapp/js/cruds/Cities/Edit.vue"));
       },
       meta: {
         title: 'cruds.city.title'
@@ -56048,7 +56060,7 @@ var routes = [{
       path: 'features',
       name: 'features.index',
       component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(25)]).then(__webpack_require__.bind(null, /*! @cruds/Features/Index.vue */ "./resources/adminapp/js/cruds/Features/Index.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(28)]).then(__webpack_require__.bind(null, /*! @cruds/Features/Index.vue */ "./resources/adminapp/js/cruds/Features/Index.vue"));
       },
       meta: {
         title: 'cruds.feature.title'
@@ -56057,7 +56069,7 @@ var routes = [{
       path: 'features/create',
       name: 'features.create',
       component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(3), __webpack_require__.e(2), __webpack_require__.e(73)]).then(__webpack_require__.bind(null, /*! @cruds/Features/Create.vue */ "./resources/adminapp/js/cruds/Features/Create.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(3), __webpack_require__.e(2), __webpack_require__.e(75)]).then(__webpack_require__.bind(null, /*! @cruds/Features/Create.vue */ "./resources/adminapp/js/cruds/Features/Create.vue"));
       },
       meta: {
         title: 'cruds.feature.title'
@@ -56066,7 +56078,7 @@ var routes = [{
       path: 'features/:id',
       name: 'features.show',
       component: function component() {
-        return __webpack_require__.e(/*! import() */ 26).then(__webpack_require__.bind(null, /*! @cruds/Features/Show.vue */ "./resources/adminapp/js/cruds/Features/Show.vue"));
+        return __webpack_require__.e(/*! import() */ 29).then(__webpack_require__.bind(null, /*! @cruds/Features/Show.vue */ "./resources/adminapp/js/cruds/Features/Show.vue"));
       },
       meta: {
         title: 'cruds.feature.title'
@@ -56075,7 +56087,7 @@ var routes = [{
       path: 'features/:id/edit',
       name: 'features.edit',
       component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(3), __webpack_require__.e(2), __webpack_require__.e(74)]).then(__webpack_require__.bind(null, /*! @cruds/Features/Edit.vue */ "./resources/adminapp/js/cruds/Features/Edit.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(3), __webpack_require__.e(2), __webpack_require__.e(76)]).then(__webpack_require__.bind(null, /*! @cruds/Features/Edit.vue */ "./resources/adminapp/js/cruds/Features/Edit.vue"));
       },
       meta: {
         title: 'cruds.feature.title'
@@ -56092,7 +56104,7 @@ var routes = [{
       path: 'course-orders',
       name: 'course_orders.index',
       component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(16)]).then(__webpack_require__.bind(null, /*! @cruds/CourseOrders/Index.vue */ "./resources/adminapp/js/cruds/CourseOrders/Index.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(18)]).then(__webpack_require__.bind(null, /*! @cruds/CourseOrders/Index.vue */ "./resources/adminapp/js/cruds/CourseOrders/Index.vue"));
       },
       meta: {
         title: 'cruds.courseOrder.title'
@@ -56101,7 +56113,7 @@ var routes = [{
       path: 'course-orders/create',
       name: 'course_orders.create',
       component: function component() {
-        return __webpack_require__.e(/*! import() */ 67).then(__webpack_require__.bind(null, /*! @cruds/CourseOrders/Create.vue */ "./resources/adminapp/js/cruds/CourseOrders/Create.vue"));
+        return __webpack_require__.e(/*! import() */ 69).then(__webpack_require__.bind(null, /*! @cruds/CourseOrders/Create.vue */ "./resources/adminapp/js/cruds/CourseOrders/Create.vue"));
       },
       meta: {
         title: 'cruds.courseOrder.title'
@@ -56110,7 +56122,7 @@ var routes = [{
       path: 'course-orders/:id',
       name: 'course_orders.show',
       component: function component() {
-        return __webpack_require__.e(/*! import() */ 17).then(__webpack_require__.bind(null, /*! @cruds/CourseOrders/Show.vue */ "./resources/adminapp/js/cruds/CourseOrders/Show.vue"));
+        return __webpack_require__.e(/*! import() */ 19).then(__webpack_require__.bind(null, /*! @cruds/CourseOrders/Show.vue */ "./resources/adminapp/js/cruds/CourseOrders/Show.vue"));
       },
       meta: {
         title: 'cruds.courseOrder.title'
@@ -56119,7 +56131,7 @@ var routes = [{
       path: 'course-orders/:id/edit',
       name: 'course_orders.edit',
       component: function component() {
-        return __webpack_require__.e(/*! import() */ 68).then(__webpack_require__.bind(null, /*! @cruds/CourseOrders/Edit.vue */ "./resources/adminapp/js/cruds/CourseOrders/Edit.vue"));
+        return __webpack_require__.e(/*! import() */ 70).then(__webpack_require__.bind(null, /*! @cruds/CourseOrders/Edit.vue */ "./resources/adminapp/js/cruds/CourseOrders/Edit.vue"));
       },
       meta: {
         title: 'cruds.courseOrder.title'
@@ -56128,7 +56140,7 @@ var routes = [{
       path: 'availabilities',
       name: 'availabilities.index',
       component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(51)]).then(__webpack_require__.bind(null, /*! @cruds/Availabilities/Index.vue */ "./resources/adminapp/js/cruds/Availabilities/Index.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(53)]).then(__webpack_require__.bind(null, /*! @cruds/Availabilities/Index.vue */ "./resources/adminapp/js/cruds/Availabilities/Index.vue"));
       },
       meta: {
         title: 'cruds.availability.title'
@@ -56137,7 +56149,7 @@ var routes = [{
       path: 'availabilities/create',
       name: 'availabilities.create',
       component: function component() {
-        return __webpack_require__.e(/*! import() */ 49).then(__webpack_require__.bind(null, /*! @cruds/Availabilities/Create.vue */ "./resources/adminapp/js/cruds/Availabilities/Create.vue"));
+        return __webpack_require__.e(/*! import() */ 51).then(__webpack_require__.bind(null, /*! @cruds/Availabilities/Create.vue */ "./resources/adminapp/js/cruds/Availabilities/Create.vue"));
       },
       meta: {
         title: 'cruds.availability.title'
@@ -56146,7 +56158,7 @@ var routes = [{
       path: 'availabilities/:id',
       name: 'availabilities.show',
       component: function component() {
-        return __webpack_require__.e(/*! import() */ 52).then(__webpack_require__.bind(null, /*! @cruds/Availabilities/Show.vue */ "./resources/adminapp/js/cruds/Availabilities/Show.vue"));
+        return __webpack_require__.e(/*! import() */ 54).then(__webpack_require__.bind(null, /*! @cruds/Availabilities/Show.vue */ "./resources/adminapp/js/cruds/Availabilities/Show.vue"));
       },
       meta: {
         title: 'cruds.availability.title'
@@ -56155,7 +56167,7 @@ var routes = [{
       path: 'availabilities/:id/edit',
       name: 'availabilities.edit',
       component: function component() {
-        return __webpack_require__.e(/*! import() */ 50).then(__webpack_require__.bind(null, /*! @cruds/Availabilities/Edit.vue */ "./resources/adminapp/js/cruds/Availabilities/Edit.vue"));
+        return __webpack_require__.e(/*! import() */ 52).then(__webpack_require__.bind(null, /*! @cruds/Availabilities/Edit.vue */ "./resources/adminapp/js/cruds/Availabilities/Edit.vue"));
       },
       meta: {
         title: 'cruds.availability.title'
@@ -56164,7 +56176,7 @@ var routes = [{
       path: 'extras',
       name: 'extras.index',
       component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(71)]).then(__webpack_require__.bind(null, /*! @cruds/Extras/Index.vue */ "./resources/adminapp/js/cruds/Extras/Index.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(73)]).then(__webpack_require__.bind(null, /*! @cruds/Extras/Index.vue */ "./resources/adminapp/js/cruds/Extras/Index.vue"));
       },
       meta: {
         title: 'cruds.extra.title'
@@ -56173,7 +56185,7 @@ var routes = [{
       path: 'extras/create',
       name: 'extras.create',
       component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(69)]).then(__webpack_require__.bind(null, /*! @cruds/Extras/Create.vue */ "./resources/adminapp/js/cruds/Extras/Create.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(71)]).then(__webpack_require__.bind(null, /*! @cruds/Extras/Create.vue */ "./resources/adminapp/js/cruds/Extras/Create.vue"));
       },
       meta: {
         title: 'cruds.extra.title'
@@ -56182,7 +56194,7 @@ var routes = [{
       path: 'extras/:id',
       name: 'extras.show',
       component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(72)]).then(__webpack_require__.bind(null, /*! @cruds/Extras/Show.vue */ "./resources/adminapp/js/cruds/Extras/Show.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(74)]).then(__webpack_require__.bind(null, /*! @cruds/Extras/Show.vue */ "./resources/adminapp/js/cruds/Extras/Show.vue"));
       },
       meta: {
         title: 'cruds.extra.title'
@@ -56191,7 +56203,7 @@ var routes = [{
       path: 'extras/:id/edit',
       name: 'extras.edit',
       component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(70)]).then(__webpack_require__.bind(null, /*! @cruds/Extras/Edit.vue */ "./resources/adminapp/js/cruds/Extras/Edit.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(72)]).then(__webpack_require__.bind(null, /*! @cruds/Extras/Edit.vue */ "./resources/adminapp/js/cruds/Extras/Edit.vue"));
       },
       meta: {
         title: 'cruds.extra.title'
@@ -56200,7 +56212,7 @@ var routes = [{
       path: 'accommodations',
       name: 'accommodations.index',
       component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(47)]).then(__webpack_require__.bind(null, /*! @cruds/Accommodations/Index.vue */ "./resources/adminapp/js/cruds/Accommodations/Index.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(49)]).then(__webpack_require__.bind(null, /*! @cruds/Accommodations/Index.vue */ "./resources/adminapp/js/cruds/Accommodations/Index.vue"));
       },
       meta: {
         title: 'cruds.accommodation.title'
@@ -56209,7 +56221,7 @@ var routes = [{
       path: 'accommodations/create',
       name: 'accommodations.create',
       component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(45)]).then(__webpack_require__.bind(null, /*! @cruds/Accommodations/Create.vue */ "./resources/adminapp/js/cruds/Accommodations/Create.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(47)]).then(__webpack_require__.bind(null, /*! @cruds/Accommodations/Create.vue */ "./resources/adminapp/js/cruds/Accommodations/Create.vue"));
       },
       meta: {
         title: 'cruds.accommodation.title'
@@ -56218,7 +56230,7 @@ var routes = [{
       path: 'accommodations/:id',
       name: 'accommodations.show',
       component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(48)]).then(__webpack_require__.bind(null, /*! @cruds/Accommodations/Show.vue */ "./resources/adminapp/js/cruds/Accommodations/Show.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(50)]).then(__webpack_require__.bind(null, /*! @cruds/Accommodations/Show.vue */ "./resources/adminapp/js/cruds/Accommodations/Show.vue"));
       },
       meta: {
         title: 'cruds.accommodation.title'
@@ -56227,7 +56239,7 @@ var routes = [{
       path: 'accommodations/:id/edit',
       name: 'accommodations.edit',
       component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(46)]).then(__webpack_require__.bind(null, /*! @cruds/Accommodations/Edit.vue */ "./resources/adminapp/js/cruds/Accommodations/Edit.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(48)]).then(__webpack_require__.bind(null, /*! @cruds/Accommodations/Edit.vue */ "./resources/adminapp/js/cruds/Accommodations/Edit.vue"));
       },
       meta: {
         title: 'cruds.accommodation.title'
@@ -56236,7 +56248,7 @@ var routes = [{
       path: 'univercity-courses',
       name: 'univercity_courses.index',
       component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(7)]).then(__webpack_require__.bind(null, /*! @cruds/UnivercityCourses/Index.vue */ "./resources/adminapp/js/cruds/UnivercityCourses/Index.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(8)]).then(__webpack_require__.bind(null, /*! @cruds/UnivercityCourses/Index.vue */ "./resources/adminapp/js/cruds/UnivercityCourses/Index.vue"));
       },
       meta: {
         title: 'cruds.univercityCourse.title'
@@ -56245,7 +56257,7 @@ var routes = [{
       path: 'univercity-courses/create',
       name: 'univercity_courses.create',
       component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(3), __webpack_require__.e(2), __webpack_require__.e(102)]).then(__webpack_require__.bind(null, /*! @cruds/UnivercityCourses/Create.vue */ "./resources/adminapp/js/cruds/UnivercityCourses/Create.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(3), __webpack_require__.e(2), __webpack_require__.e(107)]).then(__webpack_require__.bind(null, /*! @cruds/UnivercityCourses/Create.vue */ "./resources/adminapp/js/cruds/UnivercityCourses/Create.vue"));
       },
       meta: {
         title: 'cruds.univercityCourse.title'
@@ -56254,7 +56266,7 @@ var routes = [{
       path: 'univercity-courses/:id',
       name: 'univercity_courses.show',
       component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(8)]).then(__webpack_require__.bind(null, /*! @cruds/UnivercityCourses/Show.vue */ "./resources/adminapp/js/cruds/UnivercityCourses/Show.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(9)]).then(__webpack_require__.bind(null, /*! @cruds/UnivercityCourses/Show.vue */ "./resources/adminapp/js/cruds/UnivercityCourses/Show.vue"));
       },
       meta: {
         title: 'cruds.univercityCourse.title'
@@ -56263,7 +56275,7 @@ var routes = [{
       path: 'univercity-courses/:id/edit',
       name: 'univercity_courses.edit',
       component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(3), __webpack_require__.e(2), __webpack_require__.e(103)]).then(__webpack_require__.bind(null, /*! @cruds/UnivercityCourses/Edit.vue */ "./resources/adminapp/js/cruds/UnivercityCourses/Edit.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(3), __webpack_require__.e(2), __webpack_require__.e(108)]).then(__webpack_require__.bind(null, /*! @cruds/UnivercityCourses/Edit.vue */ "./resources/adminapp/js/cruds/UnivercityCourses/Edit.vue"));
       },
       meta: {
         title: 'cruds.univercityCourse.title'
@@ -56272,7 +56284,7 @@ var routes = [{
       path: 'weekly-courses',
       name: 'weekly_courses.index',
       component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(39)]).then(__webpack_require__.bind(null, /*! @cruds/WeeklyCourses/Index.vue */ "./resources/adminapp/js/cruds/WeeklyCourses/Index.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(36)]).then(__webpack_require__.bind(null, /*! @cruds/WeeklyCourses/Index.vue */ "./resources/adminapp/js/cruds/WeeklyCourses/Index.vue"));
       },
       meta: {
         title: 'cruds.weeklyCourse.title'
@@ -56281,7 +56293,7 @@ var routes = [{
       path: 'weekly-courses/create',
       name: 'weekly_courses.create',
       component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(110)]).then(__webpack_require__.bind(null, /*! @cruds/WeeklyCourses/Create.vue */ "./resources/adminapp/js/cruds/WeeklyCourses/Create.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(115)]).then(__webpack_require__.bind(null, /*! @cruds/WeeklyCourses/Create.vue */ "./resources/adminapp/js/cruds/WeeklyCourses/Create.vue"));
       },
       meta: {
         title: 'cruds.weeklyCourse.title'
@@ -56290,7 +56302,7 @@ var routes = [{
       path: 'weekly-courses/:id',
       name: 'weekly_courses.show',
       component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(40)]).then(__webpack_require__.bind(null, /*! @cruds/WeeklyCourses/Show.vue */ "./resources/adminapp/js/cruds/WeeklyCourses/Show.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(37)]).then(__webpack_require__.bind(null, /*! @cruds/WeeklyCourses/Show.vue */ "./resources/adminapp/js/cruds/WeeklyCourses/Show.vue"));
       },
       meta: {
         title: 'cruds.weeklyCourse.title'
@@ -56299,7 +56311,7 @@ var routes = [{
       path: 'weekly-courses/:id/edit',
       name: 'weekly_courses.edit',
       component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(111)]).then(__webpack_require__.bind(null, /*! @cruds/WeeklyCourses/Edit.vue */ "./resources/adminapp/js/cruds/WeeklyCourses/Edit.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(116)]).then(__webpack_require__.bind(null, /*! @cruds/WeeklyCourses/Edit.vue */ "./resources/adminapp/js/cruds/WeeklyCourses/Edit.vue"));
       },
       meta: {
         title: 'cruds.weeklyCourse.title'
@@ -56308,7 +56320,7 @@ var routes = [{
       path: 'semester-courses',
       name: 'semester_courses.index',
       component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(35), __webpack_require__.e(112)]).then(__webpack_require__.bind(null, /*! @cruds/SemesterCourses/Index.vue */ "./resources/adminapp/js/cruds/SemesterCourses/Index.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(4), __webpack_require__.e(46)]).then(__webpack_require__.bind(null, /*! @cruds/SemesterCourses/Index.vue */ "./resources/adminapp/js/cruds/SemesterCourses/Index.vue"));
       },
       meta: {
         title: 'cruds.semesterCourse.title'
@@ -56317,7 +56329,7 @@ var routes = [{
       path: 'semester-courses/create',
       name: 'semester_courses.create',
       component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(94)]).then(__webpack_require__.bind(null, /*! @cruds/SemesterCourses/Create.vue */ "./resources/adminapp/js/cruds/SemesterCourses/Create.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(96)]).then(__webpack_require__.bind(null, /*! @cruds/SemesterCourses/Create.vue */ "./resources/adminapp/js/cruds/SemesterCourses/Create.vue"));
       },
       meta: {
         title: 'cruds.semesterCourse.title'
@@ -56326,7 +56338,7 @@ var routes = [{
       path: 'semester-courses/:id',
       name: 'semester_courses.show',
       component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(35), __webpack_require__.e(113)]).then(__webpack_require__.bind(null, /*! @cruds/SemesterCourses/Show.vue */ "./resources/adminapp/js/cruds/SemesterCourses/Show.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(4), __webpack_require__.e(98)]).then(__webpack_require__.bind(null, /*! @cruds/SemesterCourses/Show.vue */ "./resources/adminapp/js/cruds/SemesterCourses/Show.vue"));
       },
       meta: {
         title: 'cruds.semesterCourse.title'
@@ -56335,7 +56347,7 @@ var routes = [{
       path: 'semester-courses/:id/edit',
       name: 'semester_courses.edit',
       component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(95)]).then(__webpack_require__.bind(null, /*! @cruds/SemesterCourses/Edit.vue */ "./resources/adminapp/js/cruds/SemesterCourses/Edit.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(97)]).then(__webpack_require__.bind(null, /*! @cruds/SemesterCourses/Edit.vue */ "./resources/adminapp/js/cruds/SemesterCourses/Edit.vue"));
       },
       meta: {
         title: 'cruds.semesterCourse.title'
@@ -56344,7 +56356,7 @@ var routes = [{
       path: 'semester-course-variantes',
       name: 'semester_course_variantes.index',
       component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(33)]).then(__webpack_require__.bind(null, /*! @cruds/SemesterCourseVariantes/Index.vue */ "./resources/adminapp/js/cruds/SemesterCourseVariantes/Index.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(34)]).then(__webpack_require__.bind(null, /*! @cruds/SemesterCourseVariantes/Index.vue */ "./resources/adminapp/js/cruds/SemesterCourseVariantes/Index.vue"));
       },
       meta: {
         title: 'cruds.semesterCourseVariante.title'
@@ -56353,7 +56365,7 @@ var routes = [{
       path: 'semester-course-variantes/create',
       name: 'semester_course_variantes.create',
       component: function component() {
-        return __webpack_require__.e(/*! import() */ 92).then(__webpack_require__.bind(null, /*! @cruds/SemesterCourseVariantes/Create.vue */ "./resources/adminapp/js/cruds/SemesterCourseVariantes/Create.vue"));
+        return __webpack_require__.e(/*! import() */ 94).then(__webpack_require__.bind(null, /*! @cruds/SemesterCourseVariantes/Create.vue */ "./resources/adminapp/js/cruds/SemesterCourseVariantes/Create.vue"));
       },
       meta: {
         title: 'cruds.semesterCourseVariante.title'
@@ -56362,7 +56374,7 @@ var routes = [{
       path: 'semester-course-variantes/:id',
       name: 'semester_course_variantes.show',
       component: function component() {
-        return __webpack_require__.e(/*! import() */ 34).then(__webpack_require__.bind(null, /*! @cruds/SemesterCourseVariantes/Show.vue */ "./resources/adminapp/js/cruds/SemesterCourseVariantes/Show.vue"));
+        return __webpack_require__.e(/*! import() */ 35).then(__webpack_require__.bind(null, /*! @cruds/SemesterCourseVariantes/Show.vue */ "./resources/adminapp/js/cruds/SemesterCourseVariantes/Show.vue"));
       },
       meta: {
         title: 'cruds.semesterCourseVariante.title'
@@ -56371,7 +56383,7 @@ var routes = [{
       path: 'semester-course-variantes/:id/edit',
       name: 'semester_course_variantes.edit',
       component: function component() {
-        return __webpack_require__.e(/*! import() */ 93).then(__webpack_require__.bind(null, /*! @cruds/SemesterCourseVariantes/Edit.vue */ "./resources/adminapp/js/cruds/SemesterCourseVariantes/Edit.vue"));
+        return __webpack_require__.e(/*! import() */ 95).then(__webpack_require__.bind(null, /*! @cruds/SemesterCourseVariantes/Edit.vue */ "./resources/adminapp/js/cruds/SemesterCourseVariantes/Edit.vue"));
       },
       meta: {
         title: 'cruds.semesterCourseVariante.title'
@@ -56388,7 +56400,7 @@ var routes = [{
       path: 'weekly-accommodations',
       name: 'weekly_accommodations.index',
       component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(13)]).then(__webpack_require__.bind(null, /*! @cruds/WeeklyAccommodations/Index.vue */ "./resources/adminapp/js/cruds/WeeklyAccommodations/Index.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(15)]).then(__webpack_require__.bind(null, /*! @cruds/WeeklyAccommodations/Index.vue */ "./resources/adminapp/js/cruds/WeeklyAccommodations/Index.vue"));
       },
       meta: {
         title: 'cruds.weeklyAccommodation.title'
@@ -56397,7 +56409,7 @@ var routes = [{
       path: 'weekly-accommodations/create',
       name: 'weekly_accommodations.create',
       component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(3), __webpack_require__.e(2), __webpack_require__.e(108)]).then(__webpack_require__.bind(null, /*! @cruds/WeeklyAccommodations/Create.vue */ "./resources/adminapp/js/cruds/WeeklyAccommodations/Create.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(3), __webpack_require__.e(2), __webpack_require__.e(113)]).then(__webpack_require__.bind(null, /*! @cruds/WeeklyAccommodations/Create.vue */ "./resources/adminapp/js/cruds/WeeklyAccommodations/Create.vue"));
       },
       meta: {
         title: 'cruds.weeklyAccommodation.title'
@@ -56406,7 +56418,7 @@ var routes = [{
       path: 'weekly-accommodations/:id',
       name: 'weekly_accommodations.show',
       component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(9)]).then(__webpack_require__.bind(null, /*! @cruds/WeeklyAccommodations/Show.vue */ "./resources/adminapp/js/cruds/WeeklyAccommodations/Show.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(10)]).then(__webpack_require__.bind(null, /*! @cruds/WeeklyAccommodations/Show.vue */ "./resources/adminapp/js/cruds/WeeklyAccommodations/Show.vue"));
       },
       meta: {
         title: 'cruds.weeklyAccommodation.title'
@@ -56415,7 +56427,7 @@ var routes = [{
       path: 'weekly-accommodations/:id/edit',
       name: 'weekly_accommodations.edit',
       component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(3), __webpack_require__.e(2), __webpack_require__.e(109)]).then(__webpack_require__.bind(null, /*! @cruds/WeeklyAccommodations/Edit.vue */ "./resources/adminapp/js/cruds/WeeklyAccommodations/Edit.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(3), __webpack_require__.e(2), __webpack_require__.e(114)]).then(__webpack_require__.bind(null, /*! @cruds/WeeklyAccommodations/Edit.vue */ "./resources/adminapp/js/cruds/WeeklyAccommodations/Edit.vue"));
       },
       meta: {
         title: 'cruds.weeklyAccommodation.title'
@@ -56424,7 +56436,7 @@ var routes = [{
       path: 'semester-accommodations',
       name: 'semester_accommodations.index',
       component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(35), __webpack_require__.e(36)]).then(__webpack_require__.bind(null, /*! @cruds/SemesterAccommodations/Index.vue */ "./resources/adminapp/js/cruds/SemesterAccommodations/Index.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(4), __webpack_require__.e(45)]).then(__webpack_require__.bind(null, /*! @cruds/SemesterAccommodations/Index.vue */ "./resources/adminapp/js/cruds/SemesterAccommodations/Index.vue"));
       },
       meta: {
         title: 'cruds.semesterAccommodation.title'
@@ -56433,7 +56445,7 @@ var routes = [{
       path: 'semester-accommodations/create',
       name: 'semester_accommodations.create',
       component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(90)]).then(__webpack_require__.bind(null, /*! @cruds/SemesterAccommodations/Create.vue */ "./resources/adminapp/js/cruds/SemesterAccommodations/Create.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(3), __webpack_require__.e(2), __webpack_require__.e(92)]).then(__webpack_require__.bind(null, /*! @cruds/SemesterAccommodations/Create.vue */ "./resources/adminapp/js/cruds/SemesterAccommodations/Create.vue"));
       },
       meta: {
         title: 'cruds.semesterAccommodation.title'
@@ -56442,7 +56454,7 @@ var routes = [{
       path: 'semester-accommodations/:id',
       name: 'semester_accommodations.show',
       component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(12)]).then(__webpack_require__.bind(null, /*! @cruds/SemesterAccommodations/Show.vue */ "./resources/adminapp/js/cruds/SemesterAccommodations/Show.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(11)]).then(__webpack_require__.bind(null, /*! @cruds/SemesterAccommodations/Show.vue */ "./resources/adminapp/js/cruds/SemesterAccommodations/Show.vue"));
       },
       meta: {
         title: 'cruds.semesterAccommodation.title'
@@ -56451,7 +56463,7 @@ var routes = [{
       path: 'semester-accommodations/:id/edit',
       name: 'semester_accommodations.edit',
       component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(91)]).then(__webpack_require__.bind(null, /*! @cruds/SemesterAccommodations/Edit.vue */ "./resources/adminapp/js/cruds/SemesterAccommodations/Edit.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(3), __webpack_require__.e(2), __webpack_require__.e(93)]).then(__webpack_require__.bind(null, /*! @cruds/SemesterAccommodations/Edit.vue */ "./resources/adminapp/js/cruds/SemesterAccommodations/Edit.vue"));
       },
       meta: {
         title: 'cruds.semesterAccommodation.title'
@@ -56460,7 +56472,7 @@ var routes = [{
       path: 'semester-accomm-variantes',
       name: 'semester_accomm_variantes.index',
       component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(30)]).then(__webpack_require__.bind(null, /*! @cruds/SemesterAccommVariantes/Index.vue */ "./resources/adminapp/js/cruds/SemesterAccommVariantes/Index.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(32)]).then(__webpack_require__.bind(null, /*! @cruds/SemesterAccommVariantes/Index.vue */ "./resources/adminapp/js/cruds/SemesterAccommVariantes/Index.vue"));
       },
       meta: {
         title: 'cruds.semesterAccommVariante.title'
@@ -56469,7 +56481,7 @@ var routes = [{
       path: 'semester-accomm-variantes/create',
       name: 'semester_accomm_variantes.create',
       component: function component() {
-        return __webpack_require__.e(/*! import() */ 88).then(__webpack_require__.bind(null, /*! @cruds/SemesterAccommVariantes/Create.vue */ "./resources/adminapp/js/cruds/SemesterAccommVariantes/Create.vue"));
+        return __webpack_require__.e(/*! import() */ 90).then(__webpack_require__.bind(null, /*! @cruds/SemesterAccommVariantes/Create.vue */ "./resources/adminapp/js/cruds/SemesterAccommVariantes/Create.vue"));
       },
       meta: {
         title: 'cruds.semesterAccommVariante.title'
@@ -56478,7 +56490,7 @@ var routes = [{
       path: 'semester-accomm-variantes/:id',
       name: 'semester_accomm_variantes.show',
       component: function component() {
-        return __webpack_require__.e(/*! import() */ 31).then(__webpack_require__.bind(null, /*! @cruds/SemesterAccommVariantes/Show.vue */ "./resources/adminapp/js/cruds/SemesterAccommVariantes/Show.vue"));
+        return __webpack_require__.e(/*! import() */ 33).then(__webpack_require__.bind(null, /*! @cruds/SemesterAccommVariantes/Show.vue */ "./resources/adminapp/js/cruds/SemesterAccommVariantes/Show.vue"));
       },
       meta: {
         title: 'cruds.semesterAccommVariante.title'
@@ -56487,7 +56499,7 @@ var routes = [{
       path: 'semester-accomm-variantes/:id/edit',
       name: 'semester_accomm_variantes.edit',
       component: function component() {
-        return __webpack_require__.e(/*! import() */ 89).then(__webpack_require__.bind(null, /*! @cruds/SemesterAccommVariantes/Edit.vue */ "./resources/adminapp/js/cruds/SemesterAccommVariantes/Edit.vue"));
+        return __webpack_require__.e(/*! import() */ 91).then(__webpack_require__.bind(null, /*! @cruds/SemesterAccommVariantes/Edit.vue */ "./resources/adminapp/js/cruds/SemesterAccommVariantes/Edit.vue"));
       },
       meta: {
         title: 'cruds.semesterAccommVariante.title'
@@ -56504,7 +56516,7 @@ var routes = [{
       path: 'pathway-universities',
       name: 'pathway_universities.index',
       component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(27)]).then(__webpack_require__.bind(null, /*! @cruds/PathwayUniversities/Index.vue */ "./resources/adminapp/js/cruds/PathwayUniversities/Index.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(13)]).then(__webpack_require__.bind(null, /*! @cruds/PathwayUniversities/Index.vue */ "./resources/adminapp/js/cruds/PathwayUniversities/Index.vue"));
       },
       meta: {
         title: 'cruds.pathwayUniversity.title'
@@ -56513,7 +56525,7 @@ var routes = [{
       path: 'pathway-universities/create',
       name: 'pathway_universities.create',
       component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(3), __webpack_require__.e(2), __webpack_require__.e(77)]).then(__webpack_require__.bind(null, /*! @cruds/PathwayUniversities/Create.vue */ "./resources/adminapp/js/cruds/PathwayUniversities/Create.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(3), __webpack_require__.e(2), __webpack_require__.e(79)]).then(__webpack_require__.bind(null, /*! @cruds/PathwayUniversities/Create.vue */ "./resources/adminapp/js/cruds/PathwayUniversities/Create.vue"));
       },
       meta: {
         title: 'cruds.pathwayUniversity.title'
@@ -56522,7 +56534,7 @@ var routes = [{
       path: 'pathway-universities/:id',
       name: 'pathway_universities.show',
       component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(4), __webpack_require__.e(79)]).then(__webpack_require__.bind(null, /*! @cruds/PathwayUniversities/Show.vue */ "./resources/adminapp/js/cruds/PathwayUniversities/Show.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(5), __webpack_require__.e(81)]).then(__webpack_require__.bind(null, /*! @cruds/PathwayUniversities/Show.vue */ "./resources/adminapp/js/cruds/PathwayUniversities/Show.vue"));
       },
       meta: {
         title: 'cruds.pathwayUniversity.title'
@@ -56531,7 +56543,7 @@ var routes = [{
       path: 'pathway-universities/:id/edit',
       name: 'pathway_universities.edit',
       component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(3), __webpack_require__.e(2), __webpack_require__.e(78)]).then(__webpack_require__.bind(null, /*! @cruds/PathwayUniversities/Edit.vue */ "./resources/adminapp/js/cruds/PathwayUniversities/Edit.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(3), __webpack_require__.e(2), __webpack_require__.e(80)]).then(__webpack_require__.bind(null, /*! @cruds/PathwayUniversities/Edit.vue */ "./resources/adminapp/js/cruds/PathwayUniversities/Edit.vue"));
       },
       meta: {
         title: 'cruds.pathwayUniversity.title'
@@ -56540,7 +56552,7 @@ var routes = [{
       path: 'pathways',
       name: 'pathways.index',
       component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(18)]).then(__webpack_require__.bind(null, /*! @cruds/Pathways/Index.vue */ "./resources/adminapp/js/cruds/Pathways/Index.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(20)]).then(__webpack_require__.bind(null, /*! @cruds/Pathways/Index.vue */ "./resources/adminapp/js/cruds/Pathways/Index.vue"));
       },
       meta: {
         title: 'cruds.pathway.title'
@@ -56549,7 +56561,7 @@ var routes = [{
       path: 'pathways/create',
       name: 'pathways.create',
       component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(80)]).then(__webpack_require__.bind(null, /*! @cruds/Pathways/Create.vue */ "./resources/adminapp/js/cruds/Pathways/Create.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(82)]).then(__webpack_require__.bind(null, /*! @cruds/Pathways/Create.vue */ "./resources/adminapp/js/cruds/Pathways/Create.vue"));
       },
       meta: {
         title: 'cruds.pathway.title'
@@ -56558,7 +56570,7 @@ var routes = [{
       path: 'pathways/:id',
       name: 'pathways.show',
       component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(19)]).then(__webpack_require__.bind(null, /*! @cruds/Pathways/Show.vue */ "./resources/adminapp/js/cruds/Pathways/Show.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(21)]).then(__webpack_require__.bind(null, /*! @cruds/Pathways/Show.vue */ "./resources/adminapp/js/cruds/Pathways/Show.vue"));
       },
       meta: {
         title: 'cruds.pathway.title'
@@ -56567,7 +56579,7 @@ var routes = [{
       path: 'pathways/:id/edit',
       name: 'pathways.edit',
       component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(81)]).then(__webpack_require__.bind(null, /*! @cruds/Pathways/Edit.vue */ "./resources/adminapp/js/cruds/Pathways/Edit.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(83)]).then(__webpack_require__.bind(null, /*! @cruds/Pathways/Edit.vue */ "./resources/adminapp/js/cruds/Pathways/Edit.vue"));
       },
       meta: {
         title: 'cruds.pathway.title'
@@ -56584,7 +56596,7 @@ var routes = [{
       path: 'university-subjects',
       name: 'university_subjects.index',
       component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(10)]).then(__webpack_require__.bind(null, /*! @cruds/UniversitySubjects/Index.vue */ "./resources/adminapp/js/cruds/UniversitySubjects/Index.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(14)]).then(__webpack_require__.bind(null, /*! @cruds/UniversitySubjects/Index.vue */ "./resources/adminapp/js/cruds/UniversitySubjects/Index.vue"));
       },
       meta: {
         title: 'cruds.universitySubject.title'
@@ -56593,7 +56605,7 @@ var routes = [{
       path: 'university-subjects/create',
       name: 'university_subjects.create',
       component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(3), __webpack_require__.e(2), __webpack_require__.e(104)]).then(__webpack_require__.bind(null, /*! @cruds/UniversitySubjects/Create.vue */ "./resources/adminapp/js/cruds/UniversitySubjects/Create.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(3), __webpack_require__.e(2), __webpack_require__.e(109)]).then(__webpack_require__.bind(null, /*! @cruds/UniversitySubjects/Create.vue */ "./resources/adminapp/js/cruds/UniversitySubjects/Create.vue"));
       },
       meta: {
         title: 'cruds.universitySubject.title'
@@ -56602,7 +56614,7 @@ var routes = [{
       path: 'university-subjects/:id',
       name: 'university_subjects.show',
       component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(4), __webpack_require__.e(20)]).then(__webpack_require__.bind(null, /*! @cruds/UniversitySubjects/Show.vue */ "./resources/adminapp/js/cruds/UniversitySubjects/Show.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(5), __webpack_require__.e(44)]).then(__webpack_require__.bind(null, /*! @cruds/UniversitySubjects/Show.vue */ "./resources/adminapp/js/cruds/UniversitySubjects/Show.vue"));
       },
       meta: {
         title: 'cruds.universitySubject.title'
@@ -56611,7 +56623,7 @@ var routes = [{
       path: 'university-subjects/:id/edit',
       name: 'university_subjects.edit',
       component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(3), __webpack_require__.e(2), __webpack_require__.e(105)]).then(__webpack_require__.bind(null, /*! @cruds/UniversitySubjects/Edit.vue */ "./resources/adminapp/js/cruds/UniversitySubjects/Edit.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(3), __webpack_require__.e(2), __webpack_require__.e(110)]).then(__webpack_require__.bind(null, /*! @cruds/UniversitySubjects/Edit.vue */ "./resources/adminapp/js/cruds/UniversitySubjects/Edit.vue"));
       },
       meta: {
         title: 'cruds.universitySubject.title'
@@ -56620,7 +56632,7 @@ var routes = [{
       path: 'subject-programs',
       name: 'subject_programs.index',
       component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(37)]).then(__webpack_require__.bind(null, /*! @cruds/SubjectPrograms/Index.vue */ "./resources/adminapp/js/cruds/SubjectPrograms/Index.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(22)]).then(__webpack_require__.bind(null, /*! @cruds/SubjectPrograms/Index.vue */ "./resources/adminapp/js/cruds/SubjectPrograms/Index.vue"));
       },
       meta: {
         title: 'cruds.subjectProgram.title'
@@ -56629,7 +56641,7 @@ var routes = [{
       path: 'subject-programs/create',
       name: 'subject_programs.create',
       component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(96)]).then(__webpack_require__.bind(null, /*! @cruds/SubjectPrograms/Create.vue */ "./resources/adminapp/js/cruds/SubjectPrograms/Create.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(99)]).then(__webpack_require__.bind(null, /*! @cruds/SubjectPrograms/Create.vue */ "./resources/adminapp/js/cruds/SubjectPrograms/Create.vue"));
       },
       meta: {
         title: 'cruds.subjectProgram.title'
@@ -56638,7 +56650,7 @@ var routes = [{
       path: 'subject-programs/:id',
       name: 'subject_programs.show',
       component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(38)]).then(__webpack_require__.bind(null, /*! @cruds/SubjectPrograms/Show.vue */ "./resources/adminapp/js/cruds/SubjectPrograms/Show.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(23)]).then(__webpack_require__.bind(null, /*! @cruds/SubjectPrograms/Show.vue */ "./resources/adminapp/js/cruds/SubjectPrograms/Show.vue"));
       },
       meta: {
         title: 'cruds.subjectProgram.title'
@@ -56647,7 +56659,44 @@ var routes = [{
       path: 'subject-programs/:id/edit',
       name: 'subject_programs.edit',
       component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(97)]).then(__webpack_require__.bind(null, /*! @cruds/SubjectPrograms/Edit.vue */ "./resources/adminapp/js/cruds/SubjectPrograms/Edit.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(100)]).then(__webpack_require__.bind(null, /*! @cruds/SubjectPrograms/Edit.vue */ "./resources/adminapp/js/cruds/SubjectPrograms/Edit.vue"));
+      },
+      meta: {
+        title: 'cruds.subjectProgram.title'
+      }
+    } ///
+    , {
+      path: 'subjects',
+      name: 'subjects.index',
+      component: function component() {
+        return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(42)]).then(__webpack_require__.bind(null, /*! @cruds/Subjects/Index.vue */ "./resources/adminapp/js/cruds/Subjects/Index.vue"));
+      },
+      meta: {
+        title: 'cruds.subjectProgram.title'
+      }
+    }, {
+      path: 'subjects/create',
+      name: 'subjects.create',
+      component: function component() {
+        return __webpack_require__.e(/*! import() */ 101).then(__webpack_require__.bind(null, /*! @cruds/Subjects/Create.vue */ "./resources/adminapp/js/cruds/Subjects/Create.vue"));
+      },
+      meta: {
+        title: 'cruds.subjectProgram.title'
+      }
+    }, {
+      path: 'subjects/:id',
+      name: 'subjects.show',
+      component: function component() {
+        return __webpack_require__.e(/*! import() */ 43).then(__webpack_require__.bind(null, /*! @cruds/Subjects/Show.vue */ "./resources/adminapp/js/cruds/Subjects/Show.vue"));
+      },
+      meta: {
+        title: 'cruds.subjectProgram.title'
+      }
+    }, {
+      path: 'subjects/:id/edit',
+      name: 'subjects.edit',
+      component: function component() {
+        return __webpack_require__.e(/*! import() */ 102).then(__webpack_require__.bind(null, /*! @cruds/Subjects/Edit.vue */ "./resources/adminapp/js/cruds/Subjects/Edit.vue"));
       },
       meta: {
         title: 'cruds.subjectProgram.title'
@@ -58812,12 +58861,22 @@ var actions = {
       message = error.response.data.message || error.message; // TODO error handling
     });
   },
-  setQuery: function setQuery(_ref3, value) {
-    var commit = _ref3.commit;
+  activeData: function activeData(_ref3, id) {
+    var commit = _ref3.commit,
+        state = _ref3.state,
+        dispatch = _ref3.dispatch;
+    axios.get("".concat(route, "/active/").concat(id)).then(function (response) {
+      dispatch('fetchIndexData');
+    })["catch"](function (error) {
+      message = error.response.data.message || error.message; // TODO error handling
+    });
+  },
+  setQuery: function setQuery(_ref4, value) {
+    var commit = _ref4.commit;
     commit('setQuery', _.cloneDeep(value));
   },
-  resetState: function resetState(_ref4) {
-    var commit = _ref4.commit;
+  resetState: function resetState(_ref5) {
+    var commit = _ref5.commit;
     commit('resetState');
   }
 };
@@ -61384,7 +61443,9 @@ function initialState() {
     entry: {
       id: null,
       starting_date: '',
-      price: 0,
+      price: '',
+      bookfee: '',
+      weeksnumber: '',
       semester_accommodation_id: null,
       created_at: '',
       updated_at: '',
@@ -61483,49 +61544,57 @@ var actions = {
     var commit = _ref4.commit;
     commit('setPrice', value);
   },
-  setSemesterAccommodation: function setSemesterAccommodation(_ref5, value) {
+  setBookfee: function setBookfee(_ref5, value) {
     var commit = _ref5.commit;
+    commit('setBookfee', value);
+  },
+  setWeeksnumber: function setWeeksnumber(_ref6, value) {
+    var commit = _ref6.commit;
+    commit('setWeeksnumber', value);
+  },
+  setSemesterAccommodation: function setSemesterAccommodation(_ref7, value) {
+    var commit = _ref7.commit;
     commit('setSemesterAccommodation', value);
   },
-  setCreatedAt: function setCreatedAt(_ref6, value) {
-    var commit = _ref6.commit;
+  setCreatedAt: function setCreatedAt(_ref8, value) {
+    var commit = _ref8.commit;
     commit('setCreatedAt', value);
   },
-  setUpdatedAt: function setUpdatedAt(_ref7, value) {
-    var commit = _ref7.commit;
+  setUpdatedAt: function setUpdatedAt(_ref9, value) {
+    var commit = _ref9.commit;
     commit('setUpdatedAt', value);
   },
-  setDeletedAt: function setDeletedAt(_ref8, value) {
-    var commit = _ref8.commit;
+  setDeletedAt: function setDeletedAt(_ref10, value) {
+    var commit = _ref10.commit;
     commit('setDeletedAt', value);
   },
-  setOwner: function setOwner(_ref9, value) {
-    var commit = _ref9.commit;
+  setOwner: function setOwner(_ref11, value) {
+    var commit = _ref11.commit;
     commit('setOwner', value);
   },
-  fetchCreateData: function fetchCreateData(_ref10) {
-    var commit = _ref10.commit;
+  fetchCreateData: function fetchCreateData(_ref12) {
+    var commit = _ref12.commit;
     axios.get("".concat(route, "/create")).then(function (response) {
       commit('setLists', response.data.meta);
     });
   },
-  fetchEditData: function fetchEditData(_ref11, id) {
-    var commit = _ref11.commit,
-        dispatch = _ref11.dispatch;
+  fetchEditData: function fetchEditData(_ref13, id) {
+    var commit = _ref13.commit,
+        dispatch = _ref13.dispatch;
     axios.get("".concat(route, "/").concat(id, "/edit")).then(function (response) {
       commit('setEntry', response.data.data);
       commit('setLists', response.data.meta);
     });
   },
-  fetchShowData: function fetchShowData(_ref12, id) {
-    var commit = _ref12.commit,
-        dispatch = _ref12.dispatch;
+  fetchShowData: function fetchShowData(_ref14, id) {
+    var commit = _ref14.commit,
+        dispatch = _ref14.dispatch;
     axios.get("".concat(route, "/").concat(id)).then(function (response) {
       commit('setEntry', response.data.data);
     });
   },
-  resetState: function resetState(_ref13) {
-    var commit = _ref13.commit;
+  resetState: function resetState(_ref15) {
+    var commit = _ref15.commit;
     commit('resetState');
   }
 };
@@ -61538,6 +61607,12 @@ var mutations = {
   },
   setPrice: function setPrice(state, value) {
     state.entry.price = value;
+  },
+  setBookfee: function setBookfee(state, value) {
+    state.entry.bookfee = value;
+  },
+  setWeeksnumber: function setWeeksnumber(state, value) {
+    state.entry.weeksnumber = value;
   },
   setSemesterAccommodation: function setSemesterAccommodation(state, value) {
     state.entry.semester_accommodation_id = value;
@@ -61683,8 +61758,10 @@ function initialState() {
       name: '',
       description: '',
       city_id: null,
-      price: '',
+      price: 0,
       features: [],
+      photos: [],
+      featured_image: [],
       created_at: '',
       updated_at: '',
       deleted_at: '',
@@ -61787,53 +61864,69 @@ var actions = {
     var commit = _ref5.commit;
     commit('setCity', value);
   },
-  setFeatures: function setFeatures(_ref6, value) {
+  insertPhotosFile: function insertPhotosFile(_ref6, file) {
     var commit = _ref6.commit;
+    commit('insertPhotosFile', file);
+  },
+  removePhotosFile: function removePhotosFile(_ref7, file) {
+    var commit = _ref7.commit;
+    commit('removePhotosFile', file);
+  },
+  insertFeaturedImageFile: function insertFeaturedImageFile(_ref8, file) {
+    var commit = _ref8.commit;
+    commit('insertFeaturedImageFile', file);
+  },
+  removeFeaturedImageFile: function removeFeaturedImageFile(_ref9, file) {
+    var commit = _ref9.commit;
+    commit('removeFeaturedImageFile', file);
+  },
+  setFeatures: function setFeatures(_ref10, value) {
+    var commit = _ref10.commit;
     commit('setFeatures', value);
   },
-  setPrice: function setPrice(_ref7, value) {
-    var commit = _ref7.commit;
+  setPrice: function setPrice(_ref11, value) {
+    var commit = _ref11.commit;
     commit('setPrice', value);
   },
-  setCreatedAt: function setCreatedAt(_ref8, value) {
-    var commit = _ref8.commit;
+  setCreatedAt: function setCreatedAt(_ref12, value) {
+    var commit = _ref12.commit;
     commit('setCreatedAt', value);
   },
-  setUpdatedAt: function setUpdatedAt(_ref9, value) {
-    var commit = _ref9.commit;
+  setUpdatedAt: function setUpdatedAt(_ref13, value) {
+    var commit = _ref13.commit;
     commit('setUpdatedAt', value);
   },
-  setDeletedAt: function setDeletedAt(_ref10, value) {
-    var commit = _ref10.commit;
+  setDeletedAt: function setDeletedAt(_ref14, value) {
+    var commit = _ref14.commit;
     commit('setDeletedAt', value);
   },
-  setOwner: function setOwner(_ref11, value) {
-    var commit = _ref11.commit;
+  setOwner: function setOwner(_ref15, value) {
+    var commit = _ref15.commit;
     commit('setOwner', value);
   },
-  fetchCreateData: function fetchCreateData(_ref12) {
-    var commit = _ref12.commit;
+  fetchCreateData: function fetchCreateData(_ref16) {
+    var commit = _ref16.commit;
     axios.get("".concat(route, "/create")).then(function (response) {
       commit('setLists', response.data.meta);
     });
   },
-  fetchEditData: function fetchEditData(_ref13, id) {
-    var commit = _ref13.commit,
-        dispatch = _ref13.dispatch;
+  fetchEditData: function fetchEditData(_ref17, id) {
+    var commit = _ref17.commit,
+        dispatch = _ref17.dispatch;
     axios.get("".concat(route, "/").concat(id, "/edit")).then(function (response) {
       commit('setEntry', response.data.data);
       commit('setLists', response.data.meta);
     });
   },
-  fetchShowData: function fetchShowData(_ref14, id) {
-    var commit = _ref14.commit,
-        dispatch = _ref14.dispatch;
+  fetchShowData: function fetchShowData(_ref18, id) {
+    var commit = _ref18.commit,
+        dispatch = _ref18.dispatch;
     axios.get("".concat(route, "/").concat(id)).then(function (response) {
       commit('setEntry', response.data.data);
     });
   },
-  resetState: function resetState(_ref15) {
-    var commit = _ref15.commit;
+  resetState: function resetState(_ref19) {
+    var commit = _ref19.commit;
     commit('resetState');
   }
 };
@@ -61858,6 +61951,22 @@ var mutations = {
   },
   setCreatedAt: function setCreatedAt(state, value) {
     state.entry.created_at = value;
+  },
+  insertPhotosFile: function insertPhotosFile(state, file) {
+    state.entry.photos.push(file);
+  },
+  removePhotosFile: function removePhotosFile(state, file) {
+    state.entry.photos = state.entry.photos.filter(function (item) {
+      return item.id !== file.id;
+    });
+  },
+  insertFeaturedImageFile: function insertFeaturedImageFile(state, file) {
+    state.entry.featured_image.push(file);
+  },
+  removeFeaturedImageFile: function removeFeaturedImageFile(state, file) {
+    state.entry.featured_image = state.entry.featured_image.filter(function (item) {
+      return item.id !== file.id;
+    });
   },
   setUpdatedAt: function setUpdatedAt(state, value) {
     state.entry.updated_at = value;
@@ -62603,13 +62712,16 @@ function initialState() {
       fees_and_funding: '0',
       qualification_and_course_duration: '',
       university_id: null,
+      subject_id: null,
       created_at: '',
+      type: 'postgraduate',
       updated_at: '',
       deleted_at: '',
       owner_id: null
     },
     lists: {
       university: [],
+      type: [],
       owner: []
     },
     loading: false
@@ -62708,57 +62820,65 @@ var actions = {
     var commit = _ref6.commit;
     commit('setCourseContent', value);
   },
-  setFeesAndFunding: function setFeesAndFunding(_ref7, value) {
+  setType: function setType(_ref7, value) {
     var commit = _ref7.commit;
+    commit('setType', value);
+  },
+  setFeesAndFunding: function setFeesAndFunding(_ref8, value) {
+    var commit = _ref8.commit;
     commit('setFeesAndFunding', value);
   },
-  setQualificationAndCourseDuration: function setQualificationAndCourseDuration(_ref8, value) {
-    var commit = _ref8.commit;
+  setQualificationAndCourseDuration: function setQualificationAndCourseDuration(_ref9, value) {
+    var commit = _ref9.commit;
     commit('setQualificationAndCourseDuration', value);
   },
-  setUniversity: function setUniversity(_ref9, value) {
-    var commit = _ref9.commit;
+  setUniversity: function setUniversity(_ref10, value) {
+    var commit = _ref10.commit;
     commit('setUniversity', value);
   },
-  setCreatedAt: function setCreatedAt(_ref10, value) {
-    var commit = _ref10.commit;
+  setSubject: function setSubject(_ref11, value) {
+    var commit = _ref11.commit;
+    commit('setSubject', value);
+  },
+  setCreatedAt: function setCreatedAt(_ref12, value) {
+    var commit = _ref12.commit;
     commit('setCreatedAt', value);
   },
-  setUpdatedAt: function setUpdatedAt(_ref11, value) {
-    var commit = _ref11.commit;
+  setUpdatedAt: function setUpdatedAt(_ref13, value) {
+    var commit = _ref13.commit;
     commit('setUpdatedAt', value);
   },
-  setDeletedAt: function setDeletedAt(_ref12, value) {
-    var commit = _ref12.commit;
+  setDeletedAt: function setDeletedAt(_ref14, value) {
+    var commit = _ref14.commit;
     commit('setDeletedAt', value);
   },
-  setOwner: function setOwner(_ref13, value) {
-    var commit = _ref13.commit;
+  setOwner: function setOwner(_ref15, value) {
+    var commit = _ref15.commit;
     commit('setOwner', value);
   },
-  fetchCreateData: function fetchCreateData(_ref14) {
-    var commit = _ref14.commit;
+  fetchCreateData: function fetchCreateData(_ref16) {
+    var commit = _ref16.commit;
     axios.get("".concat(route, "/create")).then(function (response) {
       commit('setLists', response.data.meta);
     });
   },
-  fetchEditData: function fetchEditData(_ref15, id) {
-    var commit = _ref15.commit,
-        dispatch = _ref15.dispatch;
+  fetchEditData: function fetchEditData(_ref17, id) {
+    var commit = _ref17.commit,
+        dispatch = _ref17.dispatch;
     axios.get("".concat(route, "/").concat(id, "/edit")).then(function (response) {
       commit('setEntry', response.data.data);
       commit('setLists', response.data.meta);
     });
   },
-  fetchShowData: function fetchShowData(_ref16, id) {
-    var commit = _ref16.commit,
-        dispatch = _ref16.dispatch;
+  fetchShowData: function fetchShowData(_ref18, id) {
+    var commit = _ref18.commit,
+        dispatch = _ref18.dispatch;
     axios.get("".concat(route, "/").concat(id)).then(function (response) {
       commit('setEntry', response.data.data);
     });
   },
-  resetState: function resetState(_ref17) {
-    var commit = _ref17.commit;
+  resetState: function resetState(_ref19) {
+    var commit = _ref19.commit;
     commit('resetState');
   }
 };
@@ -62787,6 +62907,12 @@ var mutations = {
   setUniversity: function setUniversity(state, value) {
     state.entry.university_id = value;
   },
+  setSubject: function setSubject(state, value) {
+    state.entry.subject_id = value;
+  },
+  setType: function setType(state, value) {
+    state.entry.type = value;
+  },
   setCreatedAt: function setCreatedAt(state, value) {
     state.entry.created_at = value;
   },
@@ -62798,6 +62924,296 @@ var mutations = {
   },
   setOwner: function setOwner(state, value) {
     state.entry.owner_id = value;
+  },
+  setLists: function setLists(state, lists) {
+    state.lists = lists;
+  },
+  setLoading: function setLoading(state, loading) {
+    state.loading = loading;
+  },
+  resetState: function resetState(state) {
+    state = Object.assign(state, initialState());
+  }
+};
+/* harmony default export */ __webpack_exports__["default"] = ({
+  namespaced: true,
+  state: initialState,
+  getters: getters,
+  actions: actions,
+  mutations: mutations
+});
+
+/***/ }),
+
+/***/ "./resources/adminapp/js/store/cruds/Subjects/index.js":
+/*!*************************************************************!*\
+  !*** ./resources/adminapp/js/store/cruds/Subjects/index.js ***!
+  \*************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var set = function set(key) {
+  return function (state, val) {
+    state[key] = val;
+  };
+};
+
+function initialState() {
+  return {
+    data: [],
+    total: 0,
+    query: {},
+    loading: false
+  };
+}
+
+var route = 'subjects';
+var getters = {
+  data: function data(state) {
+    return state.data;
+  },
+  total: function total(state) {
+    return state.total;
+  },
+  loading: function loading(state) {
+    return state.loading;
+  }
+};
+var actions = {
+  fetchIndexData: function fetchIndexData(_ref) {
+    var commit = _ref.commit,
+        state = _ref.state;
+    commit('setLoading', true);
+    axios.get(route, {
+      params: state.query
+    }).then(function (response) {
+      commit('setData', response.data.data);
+      commit('setTotal', response.data.total);
+    })["catch"](function (error) {
+      message = error.response.data.message || error.message; // TODO error handling
+    })["finally"](function () {
+      commit('setLoading', false);
+    });
+  },
+  destroyData: function destroyData(_ref2, id) {
+    var commit = _ref2.commit,
+        state = _ref2.state,
+        dispatch = _ref2.dispatch;
+    axios["delete"]("".concat(route, "/").concat(id)).then(function (response) {
+      dispatch('fetchIndexData');
+    })["catch"](function (error) {
+      message = error.response.data.message || error.message; // TODO error handling
+    });
+  },
+  activeData: function activeData(_ref3, id) {
+    var commit = _ref3.commit,
+        state = _ref3.state,
+        dispatch = _ref3.dispatch;
+    axios.get("".concat(route, "/active/").concat(id)).then(function (response) {
+      dispatch('fetchIndexData');
+    })["catch"](function (error) {
+      message = error.response.data.message || error.message; // TODO error handling
+    });
+  },
+  setQuery: function setQuery(_ref4, value) {
+    var commit = _ref4.commit;
+    commit('setQuery', _.cloneDeep(value));
+  },
+  resetState: function resetState(_ref5) {
+    var commit = _ref5.commit;
+    commit('resetState');
+  }
+};
+var mutations = {
+  setData: set('data'),
+  setTotal: set('total'),
+  setQuery: function setQuery(state, query) {
+    query.page = (query.offset + query.limit) / query.limit;
+    state.query = query;
+  },
+  setLoading: set('loading'),
+  resetState: function resetState(state) {
+    Object.assign(state, initialState());
+  }
+};
+/* harmony default export */ __webpack_exports__["default"] = ({
+  namespaced: true,
+  state: initialState,
+  getters: getters,
+  actions: actions,
+  mutations: mutations
+});
+
+/***/ }),
+
+/***/ "./resources/adminapp/js/store/cruds/Subjects/single.js":
+/*!**************************************************************!*\
+  !*** ./resources/adminapp/js/store/cruds/Subjects/single.js ***!
+  \**************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+function initialState() {
+  return {
+    entry: {
+      id: null,
+      name: '',
+      status: 'active',
+      created_at: '',
+      updated_at: '',
+      deleted_at: ''
+    },
+    lists: {
+      status: []
+    },
+    loading: false
+  };
+}
+
+var route = 'subjects';
+var getters = {
+  entry: function entry(state) {
+    return state.entry;
+  },
+  lists: function lists(state) {
+    return state.lists;
+  },
+  loading: function loading(state) {
+    return state.loading;
+  }
+};
+var actions = {
+  storeData: function storeData(_ref) {
+    var commit = _ref.commit,
+        state = _ref.state,
+        dispatch = _ref.dispatch;
+    commit('setLoading', true);
+    dispatch('Alert/resetState', null, {
+      root: true
+    });
+    return new Promise(function (resolve, reject) {
+      var params = objectToFormData(state.entry, {
+        indices: true,
+        booleansAsIntegers: true
+      });
+      axios.post(route, params).then(function (response) {
+        resolve(response);
+      })["catch"](function (error) {
+        var message = error.response.data.message || error.message;
+        var errors = error.response.data.errors;
+        dispatch('Alert/setAlert', {
+          message: message,
+          errors: errors,
+          color: 'danger'
+        }, {
+          root: true
+        });
+        reject(error);
+      })["finally"](function () {
+        commit('setLoading', false);
+      });
+    });
+  },
+  updateData: function updateData(_ref2) {
+    var commit = _ref2.commit,
+        state = _ref2.state,
+        dispatch = _ref2.dispatch;
+    commit('setLoading', true);
+    dispatch('Alert/resetState', null, {
+      root: true
+    });
+    return new Promise(function (resolve, reject) {
+      var params = objectToFormData(state.entry, {
+        indices: true,
+        booleansAsIntegers: true
+      });
+      params.set('_method', 'PUT');
+      axios.post("".concat(route, "/").concat(state.entry.id), params).then(function (response) {
+        resolve(response);
+      })["catch"](function (error) {
+        var message = error.response.data.message || error.message;
+        var errors = error.response.data.errors;
+        dispatch('Alert/setAlert', {
+          message: message,
+          errors: errors,
+          color: 'danger'
+        }, {
+          root: true
+        });
+        reject(error);
+      })["finally"](function () {
+        commit('setLoading', false);
+      });
+    });
+  },
+  setName: function setName(_ref3, value) {
+    var commit = _ref3.commit;
+    commit('setName', value);
+  },
+  setStatus: function setStatus(_ref4, value) {
+    var commit = _ref4.commit;
+    commit('setStatus', value);
+  },
+  setCreatedAt: function setCreatedAt(_ref5, value) {
+    var commit = _ref5.commit;
+    commit('setCreatedAt', value);
+  },
+  setUpdatedAt: function setUpdatedAt(_ref6, value) {
+    var commit = _ref6.commit;
+    commit('setUpdatedAt', value);
+  },
+  setDeletedAt: function setDeletedAt(_ref7, value) {
+    var commit = _ref7.commit;
+    commit('setDeletedAt', value);
+  },
+  fetchCreateData: function fetchCreateData(_ref8) {
+    var commit = _ref8.commit;
+    axios.get("".concat(route, "/create")).then(function (response) {
+      commit('setLists', response.data.meta);
+    });
+  },
+  fetchEditData: function fetchEditData(_ref9, id) {
+    var commit = _ref9.commit,
+        dispatch = _ref9.dispatch;
+    axios.get("".concat(route, "/").concat(id, "/edit")).then(function (response) {
+      commit('setEntry', response.data.data);
+      commit('setLists', response.data.meta);
+    });
+  },
+  fetchShowData: function fetchShowData(_ref10, id) {
+    var commit = _ref10.commit,
+        dispatch = _ref10.dispatch;
+    axios.get("".concat(route, "/").concat(id)).then(function (response) {
+      commit('setEntry', response.data.data);
+    });
+  },
+  resetState: function resetState(_ref11) {
+    var commit = _ref11.commit;
+    commit('resetState');
+  }
+};
+var mutations = {
+  setEntry: function setEntry(state, entry) {
+    state.entry = entry;
+  },
+  setName: function setName(state, value) {
+    state.entry.name = value;
+  },
+  setStatus: function setStatus(state, value) {
+    state.entry.status = value;
+  },
+  setCreatedAt: function setCreatedAt(state, value) {
+    state.entry.created_at = value;
+  },
+  setUpdatedAt: function setUpdatedAt(state, value) {
+    state.entry.updated_at = value;
+  },
+  setDeletedAt: function setDeletedAt(state, value) {
+    state.entry.deleted_at = value;
   },
   setLists: function setLists(state, lists) {
     state.lists = lists;
@@ -65078,6 +65494,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _cruds_UniversitySubjects_single__WEBPACK_IMPORTED_MODULE_53__ = __webpack_require__(/*! ./cruds/UniversitySubjects/single */ "./resources/adminapp/js/store/cruds/UniversitySubjects/single.js");
 /* harmony import */ var _cruds_SubjectPrograms__WEBPACK_IMPORTED_MODULE_54__ = __webpack_require__(/*! ./cruds/SubjectPrograms */ "./resources/adminapp/js/store/cruds/SubjectPrograms/index.js");
 /* harmony import */ var _cruds_SubjectPrograms_single__WEBPACK_IMPORTED_MODULE_55__ = __webpack_require__(/*! ./cruds/SubjectPrograms/single */ "./resources/adminapp/js/store/cruds/SubjectPrograms/single.js");
+/* harmony import */ var _cruds_Subjects__WEBPACK_IMPORTED_MODULE_56__ = __webpack_require__(/*! ./cruds/Subjects */ "./resources/adminapp/js/store/cruds/Subjects/index.js");
+/* harmony import */ var _cruds_Subjects_single__WEBPACK_IMPORTED_MODULE_57__ = __webpack_require__(/*! ./cruds/Subjects/single */ "./resources/adminapp/js/store/cruds/Subjects/single.js");
+
+
 
 
 
@@ -65191,7 +65611,9 @@ var debug = "development" !== 'production';
     UniversitySubjectsIndex: _cruds_UniversitySubjects__WEBPACK_IMPORTED_MODULE_52__["default"],
     UniversitySubjectsSingle: _cruds_UniversitySubjects_single__WEBPACK_IMPORTED_MODULE_53__["default"],
     SubjectProgramsIndex: _cruds_SubjectPrograms__WEBPACK_IMPORTED_MODULE_54__["default"],
-    SubjectProgramsSingle: _cruds_SubjectPrograms_single__WEBPACK_IMPORTED_MODULE_55__["default"]
+    SubjectProgramsSingle: _cruds_SubjectPrograms_single__WEBPACK_IMPORTED_MODULE_55__["default"],
+    SubjectsIndex: _cruds_Subjects__WEBPACK_IMPORTED_MODULE_56__["default"],
+    SubjectsSingle: _cruds_Subjects_single__WEBPACK_IMPORTED_MODULE_57__["default"]
   },
   strict: debug
 }));

@@ -17,6 +17,14 @@
             </div>
             <div class="card-body">
               <back-button></back-button>
+                 <a
+      href="#"
+      class="btn btn-primary"
+      @click.prevent="destroyData(entry.id)"
+      type="button"
+    >
+      <i class="material-icons">delete</i> delete
+    </a>
             </div>
             <div class="card-body">
               <bootstrap-alert />
@@ -43,6 +51,47 @@
                       required
                     >
                     </datetime-picker>
+                  </div>
+                   <div
+                    class="form-group bmd-form-group"
+                    :class="{
+                      'has-items': entry.weeksnumber,
+                      'is-focused': activeField == 'weeksnumber'
+                    }"
+                  >
+                    <label class="bmd-label-floating required">{{
+                      $t('Weeks number')
+                    }}</label>
+                    <input
+                      class="form-control"
+                      type="number"
+                      :value="entry.weeksnumber"
+                      @input="updateWeeksnumber"
+                      @focus="focusField('weeksnumber')"
+                      @blur="clearFocus"
+                      required
+                    />
+                  </div>
+                   <div
+                    class="form-group bmd-form-group"
+                    :class="{
+                      'has-items': entry.bookfee,
+                      'is-focused': activeField == 'bookfee'
+                    }"
+                  >
+                    <label class="bmd-label-floating required">{{
+                      $t('Book Fees')
+                    }}</label>
+                    <input
+                      class="form-control"
+                      type="number"
+                      step="0.01"
+                      :value="entry.bookfee"
+                      @input="updateBookfee"
+                      @focus="focusField('bookfee')"
+                      @blur="clearFocus"
+                      required
+                    />
                   </div>
                   <div
                     class="form-group bmd-form-group"
@@ -139,12 +188,35 @@ export default {
     }
   },
   methods: {
+     destroyData(id) {
+      this.$swal({
+        title: 'Are you sure?',
+        text: "You won't be able to revert this!",
+        type: 'warning',
+        showCancelButton: true,
+        confirmButtonText: 'Delete',
+        confirmButtonColor: '#dd4b39',
+        focusCancel: true,
+        reverseButtons: true
+      }).then(result => {
+        if (result.value) {
+          this.$store
+            .dispatch( 'SemesterAccommVariantesIndex/destroyData', id)
+            .then(result => {
+              this.$eventHub.$emit('delete-success')
+              this.$router.push({ name: 'semester_accommodations.index' });
+            })
+        }
+      })
+    },
     ...mapActions('SemesterAccommVariantesSingle', [
       'fetchEditData',
       'updateData',
       'resetState',
       'setStartingDate',
       'setPrice',
+      'setBookfee',
+      'setWeeksnumber',
       'setSemesterAccommodation'
     ]),
     updateStartingDate(e) {
@@ -153,13 +225,18 @@ export default {
     updatePrice(e) {
       this.setPrice(e.target.value)
     },
+    updateWeeksnumber(e) {
+      this.setWeeksnumber(e.target.value)
+    },updateBookfee(e) {
+      this.setBookfee(e.target.value)
+    },
     updateSemesterAccommodation(value) {
       this.setSemesterAccommodation(value)
     },
     submitForm() {
       this.updateData()
         .then(() => {
-          this.$router.push({ name: 'semester_accomm_variantes.index' })
+          this.$router.push({ name: 'semester_accommodations.index' })
           this.$eventHub.$emit('update-success')
         })
         .catch(error => {

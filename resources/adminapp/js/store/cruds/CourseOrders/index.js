@@ -47,6 +47,17 @@ const actions = {
                     // TODO error handling
             })
     },
+        activeData({ commit, state, dispatch }, id) {
+        axios
+            .get(`${route}/active/${id}`)
+            .then(response => {
+                dispatch('fetchIndexData')
+            })
+            .catch(error => {
+                message = error.response.data.message || error.message
+                    // TODO error handling
+            })
+    },
     setQuery({ commit }, value) {
         commit('setQuery', _.cloneDeep(value))
     },

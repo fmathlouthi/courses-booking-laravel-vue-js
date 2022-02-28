@@ -95,6 +95,19 @@ export default {
           thComp: TranslatedHeader,
           sortable: true
         },
+        
+        {
+          title: 'Weeks number',
+          field: 'weeksnumber',
+          thComp: TranslatedHeader,
+          sortable: true
+        },
+        {
+          title: 'Book fee',
+          field: 'bookfee',
+          thComp: TranslatedHeader,
+          sortable: true
+        },
         {
           title: 'cruds.semesterAccommVariante.fields.price',
           field: 'price',
@@ -105,7 +118,7 @@ export default {
           title: 'cruds.semesterAccommVariante.fields.semester_accommodation',
           field: 'semester_accommodation.name',
           thComp: TranslatedHeader,
-          tdComp: DatatableSingle,
+          tdComp: DatatableSingle, 
           sortable: true
         },
          

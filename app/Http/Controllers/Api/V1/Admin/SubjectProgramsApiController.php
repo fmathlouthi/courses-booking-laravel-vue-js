@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreSubjectProgramRequest;
 use App\Http\Requests\UpdateSubjectProgramRequest;
 use App\Http\Resources\Admin\SubjectProgramResource;
+use App\Models\Subject;
 use App\Models\SubjectProgram;
 use App\Models\UniversitySubject;
 use Gate;
@@ -17,8 +18,8 @@ class SubjectProgramsApiController extends Controller
     public function index()
     {
         abort_if(Gate::denies('subject_program_access'), Response::HTTP_FORBIDDEN, '403 Forbidden');
-
-        return new SubjectProgramResource(SubjectProgram::with(['university'])->advancedFilter());
+ 
+        return new SubjectProgramResource(SubjectProgram::with(['university','subject'])->advancedFilter());
     }
 
     public function store(StoreSubjectProgramRequest $request)
@@ -37,6 +38,8 @@ class SubjectProgramsApiController extends Controller
         return response([
             'meta' => [
                 'university' => UniversitySubject::get(['id', 'name']),
+                'subject' => Subject::get(['id', 'name']),
+                'type' => UniversitySubject::TYPE_SELECT,
             ],
         ]);
     }
@@ -45,7 +48,7 @@ class SubjectProgramsApiController extends Controller
     {
         abort_if(Gate::denies('subject_program_show'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
-        return new SubjectProgramResource($subjectProgram->load(['university']));
+        return new SubjectProgramResource($subjectProgram->load(['university','subject']));
     }
 
     public function update(UpdateSubjectProgramRequest $request, SubjectProgram $subjectProgram)
@@ -62,9 +65,11 @@ class SubjectProgramsApiController extends Controller
         abort_if(Gate::denies('subject_program_edit'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
         return response([
-            'data' => new SubjectProgramResource($subjectProgram->load(['university'])),
+            'data' => new SubjectProgramResource($subjectProgram->load(['university','subject'])),
             'meta' => [
                 'university' => UniversitySubject::get(['id', 'name']),
+                'subject' => Subject::get(['id', 'name']),
+                'type' => UniversitySubject::TYPE_SELECT,
             ],
         ]);
     }

@@ -78,6 +78,7 @@
                         <td>
                           <datatable-list
                             :row="entry"
+                            xprops: xprops
                             field="semestrecoursesvariante.starting_date"
                           >
                           </datatable-list>
@@ -109,7 +110,13 @@ export default {
   },
   data() {
     return {
-      editor: ClassicEditor
+      editor: ClassicEditor,
+      xprops: {
+        module: 'SemesterCoursesIndex',
+        route: 'semester_courses',
+        route2: 'semester_course_variantes',
+        permission_prefix: 'semester_course_'
+      }
     }
   },
   beforeDestroy() {
@@ -119,7 +126,7 @@ export default {
     ...mapGetters('SemesterCoursesSingle', ['entry'])
   },
   watch: {
-    '$route.params.id': {
+    '$route.params.id': { 
       immediate: true,
       handler() {
         this.resetState()

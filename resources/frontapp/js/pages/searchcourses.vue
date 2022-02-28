@@ -1,240 +1,569 @@
 <template>
-<section class="text-gray-700 body-font overflow-hidden bg-white">
-    <div class="container px-5 py-24 mx-auto" :class="{'loading': loading}">
-        
-        <div class="lg:w-4/5 mx-auto flex flex-wrap">
-        <div class="grid grid-cols-3 gap-4">
-            <div class=""> 
-                                        <div class="text-LEFT pb-12">
-                                <h2 class="text-base font-bold text-indigo-600">
-                                FILTER BY 
-                                </h2>
-                                
+  <div>
+    <navbarsecond />
+    
+    <section id="columns" class="columns-container">
+      <brandcamp />
+      <div class="container">
+        <div class="row">
+          <!-- Left -->
+          <section id="left_column" class="column sidebar col-md-3">
+            <div>
+              <div id="categories_block_left" class="block">
+                <h4 class="title_block">SEARCH SCHOOL</h4>
+
+                <div class="block_content" style="">
+                  <div class="hero-banner">
+                    <div id="main" class="col-sm-12 col-md-12">
+                      <div>
+                        <input
+                          type="hidden"
+                          value="22"
+                          name="firstlevel"
+                          id="firstlevel4"
+                        />
+                        <div class="form-row-column">
+                          <h5 class="booking-filters-title">I want to learn</h5>
+                          <select
+                            class="select form-controle highlight"
+                            id="secondlevel4"
+                            name="secondlevel"
+                            v-model="languagesearch"
+                            @change="getCountries()"
+                          >
+                            <option value="0">Select language</option>
+                            <option
+                              v-for="data in languages"
+                              :value="data.id"
+                              :key="'cc' + data.id"
+                            >
+                              {{ data.name }}
+                            </option>
+                          </select>
+                        </div>
+
+                        <div class="form-row-column">
+                          <h5 class="booking-filters-title">Where</h5>
+
+                          <select
+                            class="select form-controle highlight"
+                            id="thirdlevel4"
+                            name="thirdlevel"
+                            :disabled="!isFormValidcountry"
+                            :class="{
+                              'opacity-25 cursor-not-allowed':
+                                !isFormValidcountry,
+                            }"
+                            v-model="countrysearch"
+                            @change="getCities()"
+                          >
+                            <option value="0">Select country</option>
+                            <option
+                              v-for="data in countries"
+                              :value="data.id"
+                              :key="'cc' + data.id"
+                            >
+                              {{ data.name }}
+                            </option>
+                          </select>
+                        </div>
+
+                        <div class="form-row-column">
+                          <h5 class="booking-filters-title">In</h5>
+                          <select
+                            class="select form-controle highlight"
+                            id="fourthlevel4"
+                            name="fourthlevel"
+                            :disabled="!isFormValid"
+                            :class="{
+                              'opacity-25 cursor-not-allowed': !isFormValid,
+                            }"
+                            v-model="citysearch"
+                          >
+                            <option value="0">Select city</option>
+                            <option
+                              v-for="data in cities"
+                              :value="data.id"
+                              :key="'cc' + data.id"
+                            >
+                              {{ data.name }}
+                            </option>
+                          </select>
+                        </div>
+
+                        <div class="button_vertical">
+                          <div class="col-lg-12" id="wkextsearchform">
+                            <button
+                              type="submit"
+                              id="search_button2"
+                              name="sUBMITSEARCh"
+                              class="
+                                btn btn-outline-inverse
+                                fa fa-search1
+                                col-lg-12
+                              "
+                              :disabled="!isFormValid"
+                              :class="{
+                                'opacity-25 cursor-not-allowed': !isFormValid,
+                              }"
+                               v-on:click="submit()"
+                            >
+                              <span>Search</span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="center_column" class="col-md-9">
+            <p id="resetShow" style="display: none" class="alert alert-warning">
+              <i class="icon-warning"></i>
+              Please make a search by available filters or/and by keywords.
+            </p>
+
+            <div id="sortBy" class="content_sortPagiBar sidebar">
+              <div id="categories_block_left1" class="block">
+                <h4 class="title_block">Sort By</h4>
+                <div class="block_content" style="">
+                  <div class="sortPagiBar clearfix">
+                    <div id="resetHidden" class="display pull-right">
+                      <!--<div id="grid"><a rel="nofollow" href="#" title="Grid"><i class="fa fa fa-th"></i></a></div>-->
+                      <div id="list" class="selected">
+                        <a rel="nofollow" href="#" title="List"
+                          ><i class="fa fa-list-ul"></i
+                        ></a>
+                      </div>
+                    </div>
+
+                    <form
+                      id="productsSortForm"
+                      action="https://stoodux.com/products-search?firstlevel=22&amp;secondlevel=44&amp;thirdlevel=45&amp;fourthlevel=&amp;sUBMITSEARCh=&amp;module=wkextsearch&amp;fc=module"
+                      class="productsSortForm form-horizontal pull-left"
+                    >
+                      <label for="selectProductSort">Sort by :</label>
+
+                      <div class="select">
+                        <select
+                          id="selectProductSort"
+                          class="selectProductSort form-control"
+                        >
+                          <option value="position:asc" selected="selected">
+                            Price
+                          </option>
+                          <option value="price:asc">Price: Lowest first</option>
+                          <option value="price:desc">
+                            Price: Highest first
+                          </option>
+                        </select>
+                      </div>
+                      <hr class="separation1" />
+                      <div class="select">
+                        <select
+                          id="selectProductSort"
+                          class="selectProductSort form-control"
+                        >
+                          <option value="position:asc" selected="selected">
+                            SEARCH SCHOOL
+                          </option>
+                          <option value="name:asc">
+                            SEARCH SCHOOL: A to Z
+                          </option>
+                          <option value="name:desc">
+                            SEARCH SCHOOL: Z to A
+                          </option>
+                        </select>
+                      </div>
+                    </form>
+
+                    <!-- /Sort products -->
+
+                    <!-- nbr product/page -->
+                    <!-- /nbr product/page -->
+                  </div>
+                  <div class="top-pagination-content clearfix"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <h1 style="font-size: 36px; margin-top: 0px; font-weight: 700;">
+                <span class="heading-counter">{{products.length}} results have been found.</span>
+              </h1>
+            </div>
+            <div class="product_list list row profile-default">
+              <div class="col-md-12" v-for="product in products" :key="product.id">
+                <div
+                  class="
+                    ajax_block_product
+                    col-sp-12
+                    first-in-line first-item-of-tablet-line
+                    last-item-of-mobile-line
+                    col-xs-12
+                  "
+                >
+                  <div class="product-container product-block">
+                    <div class="row">
+                      <div class="left-block col-md-4 col-sm-4">
+                        <!-- @file modules\appagebuilder\views\templates\front\products\image_container -->
+                        <div class="product-image-container image">
+                          <a
+                            class="product_img_link"
+                            href="#"
+                            title="ACCORD Paris"
+                            itemprop="url"
+                          >
+                            <img
+                              class="replace-2x img-responsive"
+                              :src="product.featured_image[0].url"
+                              alt="ACCORD Paris"
+                              title="ACCORD Paris"
+                              width="370"
+                              height="235"
+                              itemprop="image"
+                            />
+                          </a>
+
+                          <a class="new-box" href="#">
+                            <span
+                              class="label-new product-label label-info label"
+                              >New</span
+                            >
+                          </a>
+                        </div>
+                      </div>
+                      <div class="right-block col-md-8 col-sm-8">
+                        <div class="col1">
+                          <div class="product-meta">
+                            <!-- @file modules\appagebuilder\views\templates\front\products\reviews -->
+                            <!-- @file modules\appagebuilder\views\templates\front\products\name -->
+                            <h5 itemprop="name" class="name">
+                              <a
+                                class="product-name"
+                                href="#"
+                                :title="product.name"
+                                itemprop="url"
+                              >
+                                {{product.name}} ({{ product.city.name }})
+                              </a>
+                            </h5>
+
+                            <!-- @file modules\appagebuilder\views\templates\front\products\color -->
+
+                            <div class="hook-reviews">
+                              <div
+                                class="comments_note product-rating"
+                                itemprop="aggregateRating"
+                                itemscope=""
+                                itemtype="https://schema.org/AggregateRating"
+                              >
+                                <div class="star_content">
+                                  <div class="star"></div>
+                                  <div class="star"></div>
+                                  <div class="star"></div>
+                                  <div class="star"></div>
+                                  <div class="star"></div>
+                                  <meta itemprop="worstRating" content="0" />
+                                  <meta itemprop="ratingValue" content="0" />
+                                  <meta itemprop="bestRating" content="5" />
+                                </div>
+                                <!--<span class="nb-comments"><span itemprop="reviewCount"></span> Review(s)</span>-->
+                              </div>
                             </div>
 
-                                        <h3 class="text-base font-bold text-indigo-600">Price</h3>
-                                        <div class="form-check" v-for="(price, index) in prices" :key="'fadi' + index">
-                                            <input class="form-check-input" type="checkbox" :value="index" :id="'price'+index" v-model="selected.prices">
-                                            <label class="form-check-label" :for="'price' + index">
-                                                {{ price.name }} ({{ price.products_count }})
-                                            </label>
-                                        </div>
-                        <h3 class="text-base font-bold text-indigo-600">FEATURES</h3>
-                                    <div class="form-check" v-for="(feature, index) in features" :key="index">
-                                            <input class="form-check-input" type="checkbox" :value="feature.id" :id="'category'+index" v-model="selected.features">
-                                            <label class="form-check-label" :for="'feature' + index">
-                                                {{ feature.name }} ({{ feature.universities_count }})
-                                            </label>
-                                        </div>
-                                    
-            </div>
-            <div class="col-span-2 ">
-                <div class="text-left pb-12">
-       
-        <h1 class="font-bold text-3xl md:text-4xl lg:text-5xl font-heading text-gray-900">
-            Check our awesome courses
-        </h1>
-    </div>
-                <div  v-for="product in products" :key="product.id">
-                	<div
-		class="relative flex flex-col md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl shadow-lg p-3 max-w-xs md:max-w-3xl mx-auto border border-white bg-white">
-		<div class="w-full md:w-1/3 bg-white grid place-items-center">
-			<img :src=" product.featured_image[0].url" alt="tailwind logo" class="rounded-xl" />
-    </div>
-			<div class="w-full md:w-2/3 bg-white flex flex-col space-y-2 p-3">
-				<div class="flex justify-between item-center">
-					<p class="text-gray-500 font-medium hidden md:block">{{ product.city.name }}</p>
-					<div class="flex items-center">
-						<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-500" viewBox="0 0 20 20"
-							fill="currentColor">
-							<path
-								d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-						</svg>
-						<p class="text-gray-600 font-bold text-sm ml-1">
-							4.96
-							<span class="text-gray-500 font-normal">(76 reviews)</span>
-						</p>
-					</div>
-					<div class="">
-						<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-pink-500" viewBox="0 0 20 20"
-							fill="currentColor">
-							<path fill-rule="evenodd"
-								d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
-								clip-rule="evenodd" />
-						</svg>
-					</div>
-					<div class="bg-gray-200 px-3 py-1 rounded-full text-xs font-medium text-gray-800 hidden md:block">
-						NEW</div>
-				</div>
-				<h3 class="font-black text-gray-800 md:text-3xl text-xl">{{ product.name }}</h3>
-				<div class="grid grid-cols-3 gap-4">
-  <div ><p class="md:text-lg text-gray-500 text-base">{{ product.language.name }}</p>
-                </div>
-  <div > <a  @click="showModalextrafunction(product.weeklycourses)" class="text-black hover:text-gray-800 mr-2">
-								<i class="material-icons-outlined text-base">visibility</i>
-							</a></div>
-  <div > <a  @click="showModalsemesterfunction(product.semestrecourses)" class="text-black hover:text-gray-800 mr-2">
-								<i class="material-icons-outlined text-base">visibility</i>
-							</a></div>
-</div>
-               
-				 <div class="grid grid-cols-3 gap-4">
-                       <div v-for="feature in product.features" :key="feature.id">
-                    <a  class="share-button google-plus" target="_blank"><img class="rounded-full border border-gray-100 shadow-sm" :src="feature.icon[0].thumbnail" :alt="'stoodux'" :title="'stoodux'" />
-    {{feature.name}}</a>
+                            <!-- @file modules\appagebuilder\views\templates\front\products\price -->
+                            <!-- @file modules\appagebuilder\views\templates\front\products\view -->
+                          </div>
+                          <p class="location"></p>
 
-                       </div>
+                          <div class="attribut">
+                            <div class="tooltip2">
+                              <span class="toolipAbout">About</span>
+                            </div>
+                          </div>
+                          <hr class="separation1" />
+                          <div class="featsize">
+                            <div
+                              v-for="feature in product.features"
+                              :key="feature.id"
+                            >
+                              <div class="col-sm-2">
+                                <div class="tooltip2">
+                                  <img
+                                    :src="feature.icon[0].thumbnail"
+                                    :alt="feature.name"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col2">
+                          <div class="box-buttons">
+                            <div class="content_price">
+                              <span class="col-sm-12 col-sp-12 from">
+                                From
+                              </span>
+
+                              <span
+                                class="price product-price col-sm-12 col-sp-12"
+                              >
+                                ${{ product.weeklycourses[0].price }}
+                              </span>
+
+                              <span class="col-sm-12 col-sp-12 from"
+                                >Per week
+                              </span>
+                            </div>
+                            <div class="view">
+                              <router-link
+                          :to="{ path: '/courses-weekly/' + product.id }"
+                             
+                                class="
+                                  button
+                                  lnk_view
+                                  exclusive
+                                  btn btn-inverse
+                                "
+                                
+                              >
+                                <span>More Detail</span>
+                                <i class="fa fa-long-arrow-right"></i>
+                              </router-link>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="grid grid-cols-6 gap-4">
-  <div class="col-start-1 col-end-4 "><p class="text-xl font-black text-gray-800">
-					$ {{ product.weeklycourses[0].price }}
-					<span class="font-normal text-gray-600 text-base">/WEEK</span>
-				</p></div>
-  <div class="col-end-7 col-span-3"><router-link :to="{ path: '/courses-weekly/'+product.id}">
-        <button class="text-lg block font-semibold py-2 px-6 text-green-100 hover:text-white bg-green-400 rounded-lg shadow hover:shadow-md transition duration-300">Book now</button>
-         </router-link></div>
-</div>
-			</div>
-		</div>
+              </div>
             </div>
-                <t-modal 
-v-model="showModalextra1"
-:header="'Course weekly'"
->
-    <div   class="w-full bg-white rounded-lg sahdow-lg overflow-hidden flex flex-col justify-center items-center">
-    <ul class="list-disc">
-  <li v-for="item in showModalextra" :key="'1' + item.id">
-      {{ item.name }} (${{ item.price}})
-  </li>
-  <!-- ... -->
-</ul>
-    </div>
-  <template v-slot:footer>
-    <div class="flex justify-between">
-      Stoodux team
-    </div>
-  </template>
-</t-modal>
-   <t-modal 
-v-model="showModalsemester1"
-:header="'Course semestre'"
->
-    <div   class="w-full bg-white rounded-lg sahdow-lg overflow-hidden flex flex-col justify-center items-center">
-    <ul class="list-disc">
-  <li v-for="item in showModalsemester" :key="'1' + item.id">
-      {{ item.name }} 
-  </li>
-  <!-- ... -->
-</ul>
-    </div>
-  <template v-slot:footer>
-    <div class="flex justify-between">
-      Stoodux team
-    </div>
-  </template>
-</t-modal>
+            <div id="resetHidden" class="content_sortPagiBar">
+              <div class="bottom-pagination-content clearfix">
+                <!-- Pagination -->
+                <div
+                  id="pagination_bottom"
+                  class="pagination clearfix pull-left"
+                ></div>
+                <div class="product-count pull-right">
+                  Showing 1 - {{products.length}} of {{products.length}} items
+                </div>
+                <!-- /Pagination -->
+              </div>
             </div>
+          </section>
         </div>
-    </div>
-    </div>
-    <footer-component></footer-component>
-</section>
-
+      </div>
+    </section>
+  </div>
 </template>
 
 <script>
-
-import FooterComponent from '../components/FooterComponent.vue';
-import {
-  TModal,
-} from 'vue-tailwind/dist/components'
-    export default {
-        props : ['country','city' ,'language'],
-            components: {
-      FooterComponent,
-      TModal
+import navbarsecond from "./../shared/components/NavBarsecond.vue";
+import brandcamp from "./../shared/components/brandcamp.vue";
+import { TModal } from "vue-tailwind/dist/components";
+export default {
+  props: ["country", "city", "language"],
+  components: {
+    navbarsecond,
+    TModal,
+    brandcamp,
+  },
+  data: function () {
+    return {
+      languagesearch: this.$route.query.language,
+      languages: [],
+      isFormValid: false,
+      isFormValidcountry: false,
+      countrysearch: this.$route.query.country,
+      countries: [],
+      citysearch: this.$route.query.city,
+      cities: [],
+      showModalextra: false,
+      showModalextra1: false,
+      showModalsemester: false,
+      showModalsemester1: false,
+      prices: [],
+      features: [],
+      products: [],
+      loading: true,
+      selected: {
+        prices: [],
+        features: [],
+        country:  this.$route.query.country,
+        city:  this.$route.query.city,
+        language:  this.$route.query.language,
       },
-        data: function () {
-            return {
-                showModalextra: false,
-              showModalextra1: false,
-              showModalsemester: false,
-              showModalsemester1: false,
-                prices: [],
-                features: [],
-                products: [],
-                loading: true,
-                selected: {
-                     prices: [],
-                     features: [],
-                    country: this.$route.query.country,
-                    city: this.$route.query.city,
-                    language: this.$route.query.language
-                }
-            }
-        },
-        mounted() {
-            this.loadFeatures();
-            this.loadPrices();
-            this.loadProducts();
-        },
-        watch: {
-            selected: {
-                handler: function () {
-                    this.loadFeatures();
-                    this.loadPrices();
-                    this.loadProducts();
-                },
-                deep: true
-            }
-        },
-        methods: {
-              showModalextrafunction(model){
-             this.showModalextra = model
-             this.showModalextra1 = true
-           },
-  showModalsemesterfunction(model){
-             this.showModalsemester = model
-             this.showModalsemester1 = true
-           },
+    };
+  },
+  mounted() {
+    this.loadFeatures();
+    this.loadPrices();
+    this.loadProducts();
+  },
+  watch: {
+    selected: {
+      handler: function () {
+        this.loadFeatures();
+        this.loadPrices();
+        this.loadProducts();
+      },
+      deep: true,
+    },
+  },
+  methods: {
+    submit: function () {
+         this.selected.country= this.countrysearch;
+        this.selected.city= this.citysearch;
+        this.selected.language= this.languagesearch;
+      
+      //if you want to send any data into server before redirection then you can do it here
+     /* this.$router.push(
+        `/searchcourses?language=${this.languagesearch}&city=${this.citysearch}&country=${this.countrysearch}`
+      );*/
+      axios
+        .get("/prices", {
+          params: _.omit(this.selected, "prices"),
+        })
+        .then((response) => {
+          this.prices = response.data;
+          this.loading = false;
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
+      axios
+        .get("course-weekliesfiltercourse", {
+          params: this.selected,
+        })
+        .then((response) => {
+          this.products = response.data.data;
+          this.loading = false;
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
+        axios
+        .get("CourseUniversityFeatures", {
+          params: _.omit(this.selected, "features"),
+        })
+        .then((response) => {
+          this.features = response.data.data;
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
+    },
+    getlanguages: function () {
+      axios.get("/languages").then(
+        function (response) {
+          this.languages = response.data.data;
+        }.bind(this)
+      );
+    },
+    getCountries: function () {
+      axios
+        .get(`/countrybylanguage`, {
+          params: {
+            languageId: this.languagesearch,
+          },
+        })
+        .then(
+          function (response) {
+            this.countries = response.data;
+            this.isFormValidcountry = true;
+          }.bind(this)
+        );
+    },
+    getCities: function () {
+      axios
+        .get(`/citiesbycountry`, {
+          params: {
+            countryid: this.countrysearch,
+          },
+        })
+        .then(
+          function (response) {
+            this.cities = response.data;
+            this.isFormValid = true;
+          }.bind(this)
+        );
+    },
+    showModalextrafunction(model) {
+      this.showModalextra = model;
+      this.showModalextra1 = true;
+    },
+    showModalsemesterfunction(model) {
+      this.showModalsemester = model;
+      this.showModalsemester1 = true;
+    },
 
-           
-            loadFeatures: function () {
-                axios.get('CourseUniversityFeatures', {
-                        params: _.omit(this.selected, 'features')
-                    })
-                    .then((response) => {
-                        this.features = response.data.data;
-                    })
-                    .catch(function (error) {
-                        console.log(error);
-                    });
-            },
-            loadProducts: function () {
-                axios.get('course-weekliesfiltercourse', {
-                        params: this.selected
-                    })
-                    .then((response) => {
-                        this.products = response.data.data;
-                        this.loading = false;
-                    })
-                    .catch(function (error) {
-                        console.log(error);
-                    });
-            },
-          
-            loadPrices: function () {
-                axios.get('/prices', {
-                        params: _.omit(this.selected, 'prices')
-                    })
-                    .then((response) => {
-                        this.prices = response.data;
-                        this.loading = false;
-                    })
-                    .catch(function (error) {
-                        console.log(error);
-                    });
-            }
-        }
-    }
+    loadFeatures: function () {
+      axios
+        .get("CourseUniversityFeatures", {
+          params: _.omit(this.selected, "features"),
+        })
+        .then((response) => {
+          this.features = response.data.data;
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
+    },
+    loadProducts: function () {
+      axios
+        .get("course-weekliesfiltercourse", {
+          params: this.selected,
+        })
+        .then((response) => {
+          this.products = response.data.data;
+          this.loading = false;
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
+    },
+
+    loadPrices: function () {
+      axios
+        .get("/prices", {
+          params: _.omit(this.selected, "prices"),
+        })
+        .then((response) => {
+          this.prices = response.data;
+          this.loading = false;
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
+    },
+  },
+  created: function () {
+    this.getlanguages();
+    this.getCountries();
+    this.getCities();
+  },
+};
 </script>
+<style scoped>
+#search_button2 {
+  height: 35px;
+  border-radius: 50px;
+  background-color: #d63933;
+  color: white;
+}
+.tooltip2 {
+  position: relative;
+  display: inline-block;
+}
+.featsize img {
+  width: 50px !important;
+}
+.product-image-container.image {
+  width: 70%;
+}
+</style>

@@ -1,0 +1,324 @@
+/**
+* Transition-timing-function property@mixin 
+*/
+/*background RGBA
+============================================*/
+/****/
+/* Veralign center text */
+/* RIGHT TO LEFT */
+/**
+ * Web Application Prefix Apply For Making Owner Styles
+ */
+/**
+ *   Blocks Layout Selectors 
+ */
+/***********************************************************************/
+/** CHECKOUT BY STEP */
+/****************************
+	Home 5
+*****************************/
+/* Header */
+#header {
+  position: fixed;
+  z-index: 9;
+  width: 100%;
+  min-height: 140px;
+  background: black;
+  background: -moz-linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+  background: -o-linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+  background: -ms-linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+#header-main, #topbar {
+  background: none;
+}
+
+#topbar {
+  font-weight: 400;
+  border: none;
+}
+#topbar a {
+  color: #cccccc;
+}
+#topbar ul li a {
+  color: #272727;
+}
+#topbar ul li a:hover {
+  color: #2cd1e4;
+}
+
+#columns {
+  padding: 0;
+}
+
+.ap-total {
+  color: #cccccc;
+}
+
+.popup-over {
+  padding: 30px 0 15px;
+  margin-right: 0;
+}
+.rtl .popup-over {
+  margin-left: 0;
+  margin-right: inherit;
+}
+.popup-over:before {
+  position: absolute;
+  height: 15px;
+  width: 1px;
+  content: "";
+  top: 31px;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.rtl .popup-over:before {
+  right: 0;
+  left: auto;
+}
+.popup-over .popup-title {
+  padding: 0 10px 0 15px;
+}
+.rtl .popup-over .popup-title {
+  padding: 0 15px 0 10px;
+}
+.popup-over .popup-title:before {
+  color: #cccccc;
+  display: none;
+}
+.popup-over .popup-title span {
+  display: none;
+}
+.popup-over .popup-title .fa-globe {
+  display: none;
+}
+.popup-over .popup-content {
+  top: 60px;
+  right: 0px;
+  left: auto;
+}
+.rtl .popup-over .popup-content {
+  left: 0px;
+  right: auto;
+}
+
+#header_logo {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+#header_logo .logo img {
+  padding: 25px 0 0 30px;
+}
+.rtl #header_logo .logo img {
+  padding: 25px 30px 0 0;
+}
+#header_logo .block {
+  margin: 0;
+}
+
+/* Block Cart */
+#cart {
+  padding: 30px 0 15px 0;
+}
+.rtl #cart {
+  padding: 30px 0 15px 0;
+}
+#cart .title-cart {
+  color: #cccccc;
+}
+#cart .heading {
+  padding-left: 15px;
+}
+.rtl #cart .heading {
+  padding-right: 15px;
+  padding-left: inherit;
+}
+#cart .heading .cart-inner h4 {
+  display: none;
+}
+#cart:before {
+  background-color: rgba(255, 255, 255, 0.3);
+  top: 31px;
+  left: 0px;
+}
+.rtl #cart:before {
+  right: 0px;
+  left: auto;
+}
+#cart .ajax_cart_product_txt,
+#cart .ajax_cart_product_txt_s,
+#cart .ajax_cart_total {
+  display: none;
+}
+
+.blockcart_top {
+  float: left;
+}
+.rtl .blockcart_top {
+  float: right;
+}
+
+/* Mainmenu */
+#leo-megamenu {
+  background: none;
+  float: right;
+}
+.rtl #leo-megamenu {
+  float: left;
+}
+#leo-megamenu .navbar-nav > li > a {
+  color: white;
+}
+
+/* Title block */
+.group-widget .title_block, .ApColumn .title_block {
+  text-align: center;
+}
+
+.footer-container .group-widget .title_block, .footer-container .ApColumn .title_block {
+  text-align: left;
+}
+.rtl .footer-container .group-widget .title_block, .rtl .footer-container .ApColumn .title_block {
+  text-align: right;
+}
+
+.ApColumn .ApProductList {
+  margin: 0;
+}
+
+/* Block search top */
+#search_block_top {
+  float: left;
+  height: 55px;
+}
+.rtl #search_block_top {
+  float: right;
+}
+#search_block_top > .fa-search {
+  color: white;
+  font-weight: 500;
+}
+
+.header_user_info {
+  float: left;
+}
+.rtl .header_user_info {
+  float: right;
+}
+.header_user_info .popup-title {
+  display: inline-block;
+}
+
+#fp-nav.left {
+  right: 40px;
+  left: inherit;
+}
+
+#fp-nav ul li,
+.fp-slidesNav ul li {
+  width: 12px;
+  height: 12px;
+}
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  width: 12px;
+  height: 12px;
+  background-color: rgba(255, 255, 255, 0.4);
+  margin: -5px 0 0 -5px;
+}
+.rtl #fp-nav ul li a span, .rtl
+.fp-slidesNav ul li a span {
+  margin: -5px -5px 0 0;
+}
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span {
+  background: white;
+  margin: -5px 0 0 -5px;
+}
+.rtl #fp-nav ul li a.active span, .rtl
+.fp-slidesNav ul li a.active span {
+  margin: -5px -5px 0 0;
+}
+#fp-nav ul li:hover a.active span,
+.fp-slidesNav ul li:hover a.active span {
+  background: white;
+  margin: -5px 0 0 -5px;
+}
+.rtl #fp-nav ul li:hover a.active span, .rtl
+.fp-slidesNav ul li:hover a.active span {
+  margin: -5px -5px 0 0;
+}
+#fp-nav ul li:hover a span,
+.fp-slidesNav ul li:hover a span {
+  width: 12px;
+  height: 12px;
+  background: white;
+}
+
+/* Responsive */
+@media (min-width: 1024px) {
+  #leo-megamenu .navbar-nav > li > a {
+    font-size: 13px;
+    padding: 30px 10px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #leo-megamenu {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  #leo-megamenu .navbar-nav {
+    float: none;
+    display: inline-block;
+    text-align: left;
+  }
+  .rtl #leo-megamenu .navbar-nav {
+    text-align: right;
+  }
+  #leo-megamenu .navbar-nav > li > a {
+    padding: 20px 15px;
+  }
+
+  .column-fixed {
+    text-align: center;
+  }
+  .column-fixed .popup-over, .column-fixed #search_block_top, .column-fixed .blockcart_top {
+    float: none;
+    display: inline-block;
+  }
+  .column-fixed #search_block_top {
+    height: 15px;
+  }
+}
+@media (max-width: 767px) {
+  .navbar-header .navbar-toggle {
+    color: white;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 598px) {
+  .plist-special {
+    left: 3%;
+    max-width: 100%;
+  }
+  .rtl .plist-special {
+    right: 3%;
+    left: auto;
+  }
+}
+@media (max-width: 354px) {
+  .column-fixed {
+    text-align: center;
+    width: 100%;
+  }
+  .column-fixed .popup-over, .column-fixed #search_block_top, .column-fixed .blockcart_top {
+    float: none;
+    display: inline-block;
+  }
+  .column-fixed #search_block_top {
+    height: 15px;
+  }
+}

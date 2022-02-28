@@ -85,3 +85,15 @@ export default {
   }
 }
 </script>
+<style scoped>
+.btn.btn-just-icon {
+    font-size: 20px;
+    height: 30px;
+    min-width: 30px;
+    width: 30px;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    line-height: 41px;
+}
+</style>

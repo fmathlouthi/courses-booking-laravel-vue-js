@@ -36,10 +36,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/SemesterAccommVariantes/Index.vue?vue&type=script&lang=js&":
-/*!********************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/cruds/SemesterAccommVariantes/Index.vue?vue&type=script&lang=js& ***!
-  \********************************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/ContactContacts/Index.vue?vue&type=script&lang=js&":
+/*!************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/cruds/ContactContacts/Index.vue?vue&type=script&lang=js& ***!
+  \************************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -139,26 +139,51 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
   data: function data() {
     return {
       columns: [{
-        title: 'cruds.semesterAccommVariante.fields.id',
+        title: 'cruds.contactContact.fields.id',
         field: 'id',
         thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
         sortable: true,
         colStyle: 'width: 100px;'
       }, {
-        title: 'cruds.semesterAccommVariante.fields.starting_date',
-        field: 'starting_date',
-        thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
-        sortable: true
-      }, {
-        title: 'cruds.semesterAccommVariante.fields.price',
-        field: 'price',
-        thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
-        sortable: true
-      }, {
-        title: 'cruds.semesterAccommVariante.fields.semester_accommodation',
-        field: 'semester_accommodation.name',
+        title: 'cruds.contactContact.fields.company',
+        field: 'company.company_name',
         thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
         tdComp: _components_Datatables_DatatableSingle__WEBPACK_IMPORTED_MODULE_5__["default"],
+        sortable: true
+      }, {
+        title: 'cruds.contactContact.fields.contact_first_name',
+        field: 'contact_first_name',
+        thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
+        sortable: true
+      }, {
+        title: 'cruds.contactContact.fields.contact_last_name',
+        field: 'contact_last_name',
+        thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
+        sortable: true
+      }, {
+        title: 'cruds.contactContact.fields.contact_phone_1',
+        field: 'contact_phone_1',
+        thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
+        sortable: true
+      }, {
+        title: 'cruds.contactContact.fields.contact_phone_2',
+        field: 'contact_phone_2',
+        thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
+        sortable: true
+      }, {
+        title: 'cruds.contactContact.fields.contact_email',
+        field: 'contact_email',
+        thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
+        sortable: true
+      }, {
+        title: 'cruds.contactContact.fields.contact_skype',
+        field: 'contact_skype',
+        thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
+        sortable: true
+      }, {
+        title: 'cruds.contactContact.fields.contact_address',
+        field: 'contact_address',
+        thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
         sortable: true
       }, {
         title: 'global.actions',
@@ -176,16 +201,16 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         s: ''
       },
       xprops: {
-        module: 'SemesterAccommVariantesIndex',
-        route: 'semester_accomm_variantes',
-        permission_prefix: 'semester_accomm_variante_'
+        module: 'ContactContactsIndex',
+        route: 'contact_contacts',
+        permission_prefix: 'contact_contact_'
       }
     };
   },
   beforeDestroy: function beforeDestroy() {
     this.resetState();
   },
-  computed: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapGetters"])('SemesterAccommVariantesIndex', ['data', 'total', 'loading'])),
+  computed: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapGetters"])('ContactContactsIndex', ['data', 'total', 'loading'])),
   watch: {
     query: {
       handler: function handler(query) {
@@ -195,7 +220,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       deep: true
     }
   },
-  methods: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapActions"])('SemesterAccommVariantesIndex', ['fetchIndexData', 'setQuery', 'resetState']))
+  methods: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapActions"])('ContactContactsIndex', ['fetchIndexData', 'setQuery', 'resetState']))
 });
 
 /***/ }),
@@ -283,10 +308,10 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/SemesterAccommVariantes/Index.vue?vue&type=template&id=36d824e5&":
-/*!************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/cruds/SemesterAccommVariantes/Index.vue?vue&type=template&id=36d824e5& ***!
-  \************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/ContactContacts/Index.vue?vue&type=template&id=d5499c2a&":
+/*!****************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/cruds/ContactContacts/Index.vue?vue&type=template&id=d5499c2a& ***!
+  \****************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -315,7 +340,7 @@ var render = function () {
                     "\n            "
                 ),
                 _c("strong", [
-                  _vm._v(_vm._s(_vm.$t("cruds.semesterAccommVariante.title"))),
+                  _vm._v(_vm._s(_vm.$t("cruds.contactContact.title"))),
                 ]),
               ]),
             ]
@@ -545,17 +570,17 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/adminapp/js/cruds/SemesterAccommVariantes/Index.vue":
-/*!***********************************************************************!*\
-  !*** ./resources/adminapp/js/cruds/SemesterAccommVariantes/Index.vue ***!
-  \***********************************************************************/
+/***/ "./resources/adminapp/js/cruds/ContactContacts/Index.vue":
+/*!***************************************************************!*\
+  !*** ./resources/adminapp/js/cruds/ContactContacts/Index.vue ***!
+  \***************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Index_vue_vue_type_template_id_36d824e5___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Index.vue?vue&type=template&id=36d824e5& */ "./resources/adminapp/js/cruds/SemesterAccommVariantes/Index.vue?vue&type=template&id=36d824e5&");
-/* harmony import */ var _Index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Index.vue?vue&type=script&lang=js& */ "./resources/adminapp/js/cruds/SemesterAccommVariantes/Index.vue?vue&type=script&lang=js&");
+/* harmony import */ var _Index_vue_vue_type_template_id_d5499c2a___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Index.vue?vue&type=template&id=d5499c2a& */ "./resources/adminapp/js/cruds/ContactContacts/Index.vue?vue&type=template&id=d5499c2a&");
+/* harmony import */ var _Index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Index.vue?vue&type=script&lang=js& */ "./resources/adminapp/js/cruds/ContactContacts/Index.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -566,8 +591,8 @@ __webpack_require__.r(__webpack_exports__);
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
   _Index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Index_vue_vue_type_template_id_36d824e5___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Index_vue_vue_type_template_id_36d824e5___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _Index_vue_vue_type_template_id_d5499c2a___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Index_vue_vue_type_template_id_d5499c2a___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -577,38 +602,38 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/adminapp/js/cruds/SemesterAccommVariantes/Index.vue"
+component.options.__file = "resources/adminapp/js/cruds/ContactContacts/Index.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/adminapp/js/cruds/SemesterAccommVariantes/Index.vue?vue&type=script&lang=js&":
-/*!************************************************************************************************!*\
-  !*** ./resources/adminapp/js/cruds/SemesterAccommVariantes/Index.vue?vue&type=script&lang=js& ***!
-  \************************************************************************************************/
+/***/ "./resources/adminapp/js/cruds/ContactContacts/Index.vue?vue&type=script&lang=js&":
+/*!****************************************************************************************!*\
+  !*** ./resources/adminapp/js/cruds/ContactContacts/Index.vue?vue&type=script&lang=js& ***!
+  \****************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Index.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/SemesterAccommVariantes/Index.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Index.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/ContactContacts/Index.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/adminapp/js/cruds/SemesterAccommVariantes/Index.vue?vue&type=template&id=36d824e5&":
-/*!******************************************************************************************************!*\
-  !*** ./resources/adminapp/js/cruds/SemesterAccommVariantes/Index.vue?vue&type=template&id=36d824e5& ***!
-  \******************************************************************************************************/
+/***/ "./resources/adminapp/js/cruds/ContactContacts/Index.vue?vue&type=template&id=d5499c2a&":
+/*!**********************************************************************************************!*\
+  !*** ./resources/adminapp/js/cruds/ContactContacts/Index.vue?vue&type=template&id=d5499c2a& ***!
+  \**********************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_template_id_36d824e5___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Index.vue?vue&type=template&id=36d824e5& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/SemesterAccommVariantes/Index.vue?vue&type=template&id=36d824e5&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_template_id_36d824e5___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_template_id_d5499c2a___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Index.vue?vue&type=template&id=d5499c2a& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/ContactContacts/Index.vue?vue&type=template&id=d5499c2a&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_template_id_d5499c2a___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_template_id_36d824e5___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_template_id_d5499c2a___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

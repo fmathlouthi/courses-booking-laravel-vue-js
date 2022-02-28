@@ -15,13 +15,28 @@ class SubjectProgram extends Model
     use SoftDeletes;
     use Tenantable;
 
+    public const TYPE_SELECT = [
+        [
+            'label' => 'Postgraduate',
+            'value' => 'postgraduate',
+        ],
+        [
+            'label' => 'Undergraduate',
+            'value' => 'undergraduate',
+        ],
+    ];
     public $table = 'subject_programs';
 
+    protected $appends = [
+        'type_label',
+    ];
     protected $orderable = [
         'id',
         'name',
         'months_of_entry',
         'university.name',
+        'type',
+        'subject.name',
     ];
 
     protected $filterable = [
@@ -29,6 +44,8 @@ class SubjectProgram extends Model
         'name',
         'months_of_entry',
         'university.name',
+        'type',
+        'subject.name',
     ];
 
     protected $dates = [
@@ -46,6 +63,8 @@ class SubjectProgram extends Model
         'fees_and_funding',
         'qualification_and_course_duration',
         'university_id',
+        'type',
+        'subject_id',
         'created_at',
         'updated_at',
         'deleted_at',
@@ -66,12 +85,19 @@ class SubjectProgram extends Model
     {
         return $this->belongsTo(UniversitySubject::class);
     }
+    public function subject()
+    {
+        return $this->belongsTo(Subject::class);
+    }
 
     public function owner()
     {
         return $this->belongsTo(User::class);
     }
-
+    public function getTypeLabelAttribute()
+    {
+        return collect(static::TYPE_SELECT)->firstWhere('value', $this->type)['label'] ?? '';
+    }
     protected function serializeDate(DateTimeInterface $date)
     {
         return $date->format('Y-m-d H:i:s');

@@ -208,7 +208,7 @@
                       :max-files="1"
                     />
                   </div>
-                  <div
+                 <!-- <div
                     class="form-group bmd-form-group"
                     :class="{
                       'has-items': entry.type,
@@ -228,7 +228,7 @@
                       @search.focus="focusField('type')"
                       @search.blur="clearFocus"
                     />
-                  </div>
+                  </div>-->
                 </div>
               </div>
             </div>
