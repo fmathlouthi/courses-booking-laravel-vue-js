@@ -1,0 +1,297 @@
+/**
+* Transition-timing-function property@mixin 
+*/
+/*background RGBA
+============================================*/
+/****/
+/* Veralign center text */
+/* RIGHT TO LEFT */
+/**
+ * Web Application Prefix Apply For Making Owner Styles
+ */
+/**
+ *   Blocks Layout Selectors 
+ */
+/***********************************************************************/
+/** CHECKOUT BY STEP */
+#my-account .addresses-lists {
+  margin-bottom: 30px;
+}
+ul.myaccount-link-list li {
+  overflow: hidden;
+  background-color: white;
+    padding: 13px 15px 15px 17px;
+
+}
+ul.myaccount-link-list li a {
+  display: inline-block;
+  overflow: hidden;
+  color: #000;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+  border: none;
+ /*  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f7f7f7), color-stop(100%, #ededed));
+  background-image: -webkit-linear-gradient(#f7f7f7, #ededed);
+  background-image: -moz-linear-gradient(#f7f7f7, #ededed);
+  background-image: -o-linear-gradient(#f7f7f7, #ededed);
+  background-image: linear-gradient(#f7f7f7, #ededed);*/ 
+  background-color:white;
+}
+ul.myaccount-link-list li a i {
+  font-size: 25px;
+  color: #54b0bd;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 52px;
+  height: 100%;
+  padding: 10px 0 0 0;
+  text-align: center;
+  -moz-border-radius-topleft: 4px;
+  -webkit-border-top-left-radius: 4px;
+  border-top-left-radius: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+ul.myaccount-link-list li a span {
+  display: inline-block;
+  overflow: hidden;
+ }
+ul.myaccount-link-list li a:hover {
+  filter: none;
+  color: #076F89;
+ }
+#dash{ padding: 10px;	}
+
+ul.myaccount-link-list li a.active span{
+color: #076F89;
+
+}
+#order-list th {
+	background: #076f89;
+	color: #fff;
+}
+#identity button ,#message button, #module-jmarketplace-sellerinvoice button, #module-jmarketplace-editseller button{
+	    background: #076f89;
+    border: none;
+}
+.myaccount-link-list{
+	 
+}
+.border-acc .page-subheading{
+	color:#076f89;
+}
+
+#account a::before{
+	content:"";
+	background:url(../img/001-sketch.png);
+	width:32px;
+	height:32px;
+	display:inline-block;
+	position: relative;
+    left: 8px;
+    margin-right: 28px;
+	top: 4px;
+}
+#account a:hover::before,#account a.active::before{
+	background:url(../img/001-home-sketchh.png);
+}
+
+#hist a::before{
+	content:"";
+	background:url(../img/003-sketch-1.png);
+	width:32px;
+	height:32px;
+	display:inline-block;
+	position: relative;
+    left: 8px;
+    margin-right: 28px;
+	top: 4px;
+}
+#hist a:hover::before,#hist a.active::before{
+	background:url(../img/006-clipboard-sketchh.png);
+}
+
+
+#iden a::before{
+	content:"";
+	background:url(../img/004-portrait.png);
+	width:32px;
+	height:32px;
+	display:inline-block;
+	position: relative;
+    left: 8px;
+    margin-right: 28px;
+	top: 4px;
+}
+
+#iden a:hover::before, #iden a.active::before{
+	background:url(../img/004-image-file-sketchh.png);
+}
+
+#mess a::before{
+	content:"";
+	background:url(../img/005-chat-speech-bubbles-sketch.png);
+	width:32px;
+	height:32px;
+	display:inline-block;
+	position: relative;
+    left: 8px;
+    margin-right: 28px;
+	top: 4px;
+}
+#mess a:hover::before, #mess a.active::before{
+	background:url(../img/005-chat-speech-bubbles-sketchh.png);
+}
+.lnk_wishlist a::before{
+	content:"";
+	background:url(../img/006-heart-sketch.png);
+	width:32px;
+	height:32px;
+	display:inline-block;
+	position: relative;
+    left: 8px;
+    margin-right: 28px;
+	top: 4px;
+}
+.lnk_wishlist a:hover::before, #lnk_wishlist a.active::before{
+	background:url(../img/002-heart-sketchh.png);
+}
+#log a::before{
+	content:"";
+	background:url(../img/002-logout.png);
+	width:32px;
+	height:32px;
+	display:inline-block;
+	position: relative;
+    left: 8px;
+    margin-right: 28px;
+	top: 4px;
+}
+#log a:hover::before, #log a.active::before{
+	background:url(../img/003-logout-sketchh.png);
+}
+#paccount a::before{
+	content:"";
+	background:url(../img/007-graph.png);
+	width:32px;
+	height:32px;
+	display:inline-block;
+	position: relative;
+    left: 8px;
+    margin-right: 28px;
+	top: 4px;
+}
+#paccount a:hover::before, #paccount a.active::before{
+	background:url(../img/007-graph1.png);
+}
+ 
+#piden a::before{
+	content:"";
+	background:url(../img/005-handbag.png);
+	width:32px;
+	height:32px;
+	display:inline-block;
+	position: relative;
+    left: 8px;
+    margin-right: 28px;
+	top: 4px;
+}
+#piden a:hover::before, #piden a.active::before{
+	background:url(../img/006-handbag.png);
+} 
+
+#phist a::before{
+	content:"";
+	background:url(../img/006-note.png);
+	width:32px;
+	height:32px;
+	display:inline-block;
+	position: relative;
+    left: 8px;
+    margin-right: 28px;
+	top: 4px;
+}
+#phist a:hover::before, #phist a.active::before{
+	background:url(../img/005-note.png);
+}
+
+#porder a::before{
+	content:"";
+	background:url(../img/001-shopping-cart-sketch.png);
+	width:32px;
+	height:32px;
+	display:inline-block;
+	position: relative;
+    left: 8px;
+    margin-right: 28px;
+	top: 4px;
+}
+#porder a:hover::before, #porder a.active::before{
+	background:url(../img/003-cart.png);
+}
+#ppay a::before{
+	content:"";
+	background:url(../img/003-money.png);
+	width:32px;
+	height:32px;
+	display:inline-block;
+	position: relative;
+    left: 8px;
+    margin-right: 28px;
+	top: 4px;
+}
+#ppay a:hover::before, #ppay a.active::before{
+	background:url(../img/004-money.png);
+}
+
+#transfer a::before{
+	content:"";
+	background:url(../img/004-retweet.png);
+	width:32px;
+	height:32px;
+	display:inline-block;
+	position: relative;
+    left: 8px;
+    margin-right: 28px;
+	top: 4px;
+}
+
+#transfer a:hover::before, #transfer a.active::before{
+	background:url(../img/002-retweet.png);
+
+}
+#history .fa-eye:before{
+		content:"";
+	background:url(../img/001-eye.png);
+	width:32px;
+	height:32px;
+	display:inline-block;
+	position: relative;
+    left: 8px;
+    margin-right: 28px;
+	top: 4px;
+
+}
+#history .fa-eye:hover:before{
+	background:url(../img/002-eye.png);
+
+}
+#history .fa-trash:before{
+		content:"";
+	background:url(../img/002-trash.png);
+	width:32px;
+	height:32px;
+	display:inline-block;
+	position: relative;
+    left: 8px;
+    margin-right: 28px;
+	top: 4px;
+
+}
+#history .fa-trash:hover:before{
+	background:url(../img/001-trash.png);
+
+}

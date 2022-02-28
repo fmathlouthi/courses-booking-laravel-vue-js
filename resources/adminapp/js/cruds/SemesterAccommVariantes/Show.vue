@@ -51,6 +51,21 @@
                           {{ entry.price }}
                         </td>
                       </tr>
+                       <tr>
+                        <td class="text-primary">
+                          {{ $t('WEEKS NUMBER') }}
+                        </td>
+                        <td>
+                          {{ entry.weeksnumber }}
+                        </td>
+                      </tr> <tr>
+                        <td class="text-primary">
+                          {{ $t('Book fee') }}
+                        </td>
+                        <td>
+                          {{ entry.bookfee }}
+                        </td>
+                      </tr>
                       <tr>
                         <td class="text-primary">
                           {{

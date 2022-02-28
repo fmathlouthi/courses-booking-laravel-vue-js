@@ -12,6 +12,7 @@ use App\Models\UnivercityCourse;
 use App\Models\WeeklyCourse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Carbon\Carbon;
 
 class CoursesUniversitiesApiController extends Controller
 {
@@ -63,6 +64,20 @@ class CoursesUniversitiesApiController extends Controller
             $idextra = 0;
         }
         $price = $pricecourse + $pricetotalExtra + $pricetotalacom;
+        if( $request->startdate){
+        $date = Carbon::createFromFormat('Y-m-d', $request->startdate);
+$daysToAdd = $weeksnumber * 7;
+$date = $date->addDays($daysToAdd)->format('Y-m-d');
+}else{
+    $date = $request->startdate;
+}
+if( $weeksnumberaccom){
+    $dateaccom = Carbon::createFromFormat('Y-m-d', $request->startdate);
+$daysToAdd = $weeksnumberaccom * 7;
+$dateaccom = $dateaccom->addDays($daysToAdd)->format('Y-m-d');
+}else{
+$dateaccom = 0;
+}
         return response()->json([
             'total' => number_format($price, 3),
             'idcourse' => $bookable->id,
@@ -71,8 +86,10 @@ class CoursesUniversitiesApiController extends Controller
             'idacom' => $idacom,
             'idextra' => $idextra,
             'startDate' => $request->startdate,
+            'fromdate' => $date,
             'weeksnumber' => $weeksnumber,
             'weeksnumberaccom' => $weeksnumberaccom,
+            'todateaccom' => $dateaccom,
             'breakdown' => [
                 'Course' => [$weeksnumber.'  * '.number_format($bookable->price, 3).' = ',number_format($pricecourse, 3)],
                 'extra' => [number_format($priceextra, 3).' = ',number_format($pricetotalExtra, 3)],

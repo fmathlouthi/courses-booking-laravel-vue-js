@@ -96,8 +96,8 @@ return [
         ],
     ],
     'courseOrder' => [
-        'title'          => 'Course Order',
-        'title_singular' => 'Course Order',
+        'title'          => 'Orders Lists',
+        'title_singular' => 'Orders Lists',
         'fields'         => [
             'id'                    => 'ID',
             'id_helper'             => ' ',
@@ -152,8 +152,8 @@ return [
         ],
     ],
     'universityCourse' => [
-        'title'          => 'University Course',
-        'title_singular' => 'University Course',
+        'title'          => 'Languges List',
+        'title_singular' => 'Languge',
     ],
     'language' => [
         'title'          => 'Language',
@@ -230,8 +230,8 @@ return [
         ],
     ],
     'extra' => [
-        'title'          => 'Extra',
-        'title_singular' => 'Extra',
+        'title'          => 'School Extra',
+        'title_singular' => 'School Extra',
         'fields'         => [
             'id'                 => 'ID',
             'id_helper'          => ' ',
@@ -256,8 +256,8 @@ return [
         'title_singular' => 'Globale Data',
     ],
     'accommodation' => [
-        'title'          => 'Accommodation',
-        'title_singular' => 'Accommodation',
+        'title'          => 'School Accommodation',
+        'title_singular' => 'School Accommodation',
         'fields'         => [
             'id'                 => 'ID',
             'id_helper'          => ' ',
@@ -278,8 +278,8 @@ return [
         ],
     ],
     'univercityCourse' => [
-        'title'          => 'Univercity Course',
-        'title_singular' => 'Univercity Course',
+        'title'          => 'Schools List',
+        'title_singular' => 'School Details',
         'fields'         => [
             'id'                    => 'ID',
             'id_helper'             => ' ',
@@ -391,7 +391,7 @@ return [
             'id_helper'              => ' ',
             'starting_date'          => 'Starting Date',
             'starting_date_helper'   => ' ',
-            'price'                  => 'Price',
+            'price'                  => 'Price start ',
             'price_helper'           => ' ',
             'semester_course'        => 'Semester Course',
             'semester_course_helper' => ' ',
@@ -442,8 +442,8 @@ return [
         ],
     ],
     'semesterAccommodation' => [
-        'title'          => 'Semester Accommodation',
-        'title_singular' => 'Semester Accommodation',
+        'title'          => 'Accommodation list',
+        'title_singular' => 'Accommodation details',
         'fields'         => [
             'id'                 => 'ID',
             'id_helper'          => ' ',
@@ -466,8 +466,8 @@ return [
         ],
     ],
     'semesterAccommVariante' => [
-        'title'          => 'Semester Accomm Variantes',
-        'title_singular' => 'Semester Accomm Variante',
+        'title'          => 'Accommodation Variantes',
+        'title_singular' => 'Accommodation Variante',
         'fields'         => [
             'id'                            => 'ID',
             'id_helper'                     => ' ',
@@ -475,7 +475,7 @@ return [
             'starting_date_helper'          => ' ',
             'price'                         => 'Price',
             'price_helper'                  => ' ',
-            'semester_accommodation'        => 'Semester Accommodation',
+            'semester_accommodation'        => 'Accommodation ',
             'semester_accommodation_helper' => ' ',
             'created_at'                    => 'Created at',
             'created_at_helper'             => ' ',
@@ -488,7 +488,7 @@ return [
         ],
     ],
     'pathwayProgram' => [
-        'title'          => 'Pathway Program',
+        'title'          => 'Pathways Program',
         'title_singular' => 'Pathway Program',
     ],
     'pathwayUniversity' => [
@@ -552,12 +552,12 @@ return [
         ],
     ],
     'universitiesProgram' => [
-        'title'          => 'Universities Programs',
-        'title_singular' => 'Universities Program',
+        'title'          => 'Programs list',
+        'title_singular' => 'Program Deatails',
     ],
     'universitySubject' => [
-        'title'          => 'University Subject',
-        'title_singular' => 'University Subject',
+        'title'          => 'University',
+        'title_singular' => 'University',
         'fields'         => [
             'id'                    => 'ID',
             'id_helper'             => ' ',
@@ -592,8 +592,8 @@ return [
         ],
     ],
     'subjectProgram' => [
-        'title'          => 'Subject Programs',
-        'title_singular' => 'Subject Program',
+        'title'          => 'Programs list',
+        'title_singular' => 'Program',
         'fields'         => [
             'id'                                       => 'ID',
             'id_helper'                                => ' ',

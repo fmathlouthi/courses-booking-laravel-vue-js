@@ -9,13 +9,16 @@ function initialState() {
             fees_and_funding: '0',
             qualification_and_course_duration: '',
             university_id: null,
+            subject_id: null,
             created_at: '',
+            type: 'postgraduate',
             updated_at: '',
             deleted_at: '',
             owner_id: null
         },
         lists: {
             university: [],
+            type: [],
             owner: []
         },
         loading: false
@@ -102,6 +105,9 @@ const actions = {
     setCourseContent({ commit }, value) {
         commit('setCourseContent', value)
     },
+    setType({ commit }, value) {
+        commit('setType', value)
+    },
     setFeesAndFunding({ commit }, value) {
         commit('setFeesAndFunding', value)
     },
@@ -110,6 +116,9 @@ const actions = {
     },
     setUniversity({ commit }, value) {
         commit('setUniversity', value)
+    },
+    setSubject({ commit }, value) {
+        commit('setSubject', value)
     },
     setCreatedAt({ commit }, value) {
         commit('setCreatedAt', value)
@@ -168,6 +177,12 @@ const mutations = {
     },
     setUniversity(state, value) {
         state.entry.university_id = value
+    },
+    setSubject(state, value) {
+        state.entry.subject_id = value
+    },
+    setType(state, value) {
+        state.entry.type = value
     },
     setCreatedAt(state, value) {
         state.entry.created_at = value

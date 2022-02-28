@@ -39,7 +39,7 @@ class City extends Model
         'id',
         'name',
         'status',
-        'country.name',
+        'country.name', 
     ];
 
     protected $filterable = [
@@ -62,7 +62,10 @@ class City extends Model
     {
         return collect(static::STATUS_SELECT)->firstWhere('value', $this->status)['label'] ?? '';
     }
-
+    public function accommodations()
+    {
+        return $this->hasMany(SemesterAccommodation::class);
+    }
     public function country()
     {
         return $this->belongsTo(Country::class);

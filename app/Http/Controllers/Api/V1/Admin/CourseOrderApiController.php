@@ -106,4 +106,20 @@ class CourseOrderApiController extends Controller
 
         return response(null, Response::HTTP_NO_CONTENT);
     }
+    public function active( $id)
+    {
+        abort_if(Gate::denies('course_order_delete'), Response::HTTP_FORBIDDEN, '403 Forbidden');
+        $courseOrder = CourseOrder::find($id);
+        if($courseOrder->status == "process")
+        {
+            $courseOrder->status = "cancel";
+        }
+        else
+        {
+            $courseOrder->status = "process";
+        }
+        $courseOrder->save();
+
+        return response(null, Response::HTTP_NO_CONTENT);
+    }
 }

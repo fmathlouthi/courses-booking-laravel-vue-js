@@ -115,14 +115,15 @@ export default {
           title: 'cruds.semesterCourseVariante.fields.price',
           field: 'price',
           thComp: TranslatedHeader,
-          sortable: true
+          sortable: true,
+          colStyle: 'width: 100px;'
         },
         {
           title: 'ADD Start date',
           thComp: TranslatedHeader,
           tdComp: addstartdate,
           visible: true,
-          colStyle: 'width: 150px;'
+          colStyle: 'width: 140px;'
         },
         {
           title: 'global.actions',

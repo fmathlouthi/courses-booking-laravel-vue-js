@@ -39,7 +39,10 @@ class Country extends Model
         'updated_at',
         'deleted_at',
     ];
-
+    public function cities()
+    {
+        return $this->hasMany(City::class);
+    }
     protected function serializeDate(DateTimeInterface $date)
     {
         return $date->format('Y-m-d H:i:s');

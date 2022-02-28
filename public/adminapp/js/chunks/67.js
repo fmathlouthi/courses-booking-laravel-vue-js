@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[67],{
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/CourseOrders/Create.vue?vue&type=script&lang=js&":
-/*!**********************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/cruds/CourseOrders/Create.vue?vue&type=script&lang=js& ***!
-  \**********************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/Coupons/Create.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/cruds/Coupons/Create.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -202,269 +202,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -473,80 +210,41 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       activeField: ''
     };
   },
-  computed: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapGetters"])('CourseOrdersSingle', ['entry', 'loading', 'lists'])),
+  computed: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapGetters"])('CouponsSingle', ['entry', 'loading', 'lists'])),
   mounted: function mounted() {
     this.fetchCreateData();
   },
   beforeDestroy: function beforeDestroy() {
     this.resetState();
   },
-  methods: _objectSpread(_objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapActions"])('CourseOrdersSingle', ['storeData', 'resetState', 'setOrderNumber', 'setClient', 'setSubTotal', 'setCoupon', 'setTotalAmount', 'setPaymentMethod', 'setPaymentStatus', 'setStatus', 'setFirstName', 'setLastName', 'setEmail', 'setPhone', 'setCountry', 'setPostCode', 'setAddress1', 'setAddress2', 'setCourse', 'setExtra', 'setAccommodation', 'setStartDate', 'fetchCreateData'])), {}, {
-    updateOrderNumber: function updateOrderNumber(e) {
-      this.setOrderNumber(e.target.value);
+  methods: _objectSpread(_objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapActions"])('CouponsSingle', ['storeData', 'resetState', 'setName', 'setCode', 'setType', 'setValue', 'setCount', 'setExpiredAt', 'setStatus', 'fetchCreateData'])), {}, {
+    updateName: function updateName(e) {
+      this.setName(e.target.value);
     },
-    updateClient: function updateClient(value) {
-      this.setClient(value);
+    updateCode: function updateCode(e) {
+      this.setCode(e.target.value);
     },
-    updateSubTotal: function updateSubTotal(e) {
-      this.setSubTotal(e.target.value);
+    updateType: function updateType(value) {
+      this.setType(value);
     },
-    updateCoupon: function updateCoupon(value) {
-      this.setCoupon(value);
+    updateValue: function updateValue(e) {
+      this.setValue(e.target.value);
     },
-    updateTotalAmount: function updateTotalAmount(e) {
-      this.setTotalAmount(e.target.value);
+    updateCount: function updateCount(e) {
+      this.setCount(e.target.value);
     },
-    updatePaymentMethod: function updatePaymentMethod(value) {
-      this.setPaymentMethod(value);
-    },
-    updatePaymentStatus: function updatePaymentStatus(value) {
-      this.setPaymentStatus(value);
+    updateExpiredAt: function updateExpiredAt(e) {
+      this.setExpiredAt(e.target.value);
     },
     updateStatus: function updateStatus(value) {
       this.setStatus(value);
-    },
-    updateFirstName: function updateFirstName(e) {
-      this.setFirstName(e.target.value);
-    },
-    updateLastName: function updateLastName(e) {
-      this.setLastName(e.target.value);
-    },
-    updateEmail: function updateEmail(e) {
-      this.setEmail(e.target.value);
-    },
-    updatePhone: function updatePhone(e) {
-      this.setPhone(e.target.value);
-    },
-    updateCountry: function updateCountry(e) {
-      this.setCountry(e.target.value);
-    },
-    updatePostCode: function updatePostCode(e) {
-      this.setPostCode(e.target.value);
-    },
-    updateAddress1: function updateAddress1(e) {
-      this.setAddress1(e.target.value);
-    },
-    updateAddress2: function updateAddress2(e) {
-      this.setAddress2(e.target.value);
-    },
-    updateCourse: function updateCourse(value) {
-      this.setCourse(value);
-    },
-    updateExtra: function updateExtra(value) {
-      this.setExtra(value);
-    },
-    updateAccommodation: function updateAccommodation(value) {
-      this.setAccommodation(value);
-    },
-    updateStartDate: function updateStartDate(e) {
-      this.setStartDate(e.target.value);
     },
     submitForm: function submitForm() {
       var _this = this;
 
       this.storeData().then(function () {
         _this.$router.push({
-          name: 'course_orders.index'
+          name: 'coupons.index'
         });
 
         _this.$eventHub.$emit('create-success');
@@ -569,10 +267,10 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/CourseOrders/Create.vue?vue&type=template&id=f2176cc0&":
-/*!**************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/cruds/CourseOrders/Create.vue?vue&type=template&id=f2176cc0& ***!
-  \**************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/Coupons/Create.vue?vue&type=template&id=bdb5170e&":
+/*!*********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/cruds/Coupons/Create.vue?vue&type=template&id=bdb5170e& ***!
+  \*********************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -615,9 +313,7 @@ var render = function () {
                         "\n              "
                     ),
                     _c("strong", [
-                      _vm._v(
-                        _vm._s(_vm.$t("cruds.courseOrder.title_singular"))
-                      ),
+                      _vm._v(_vm._s(_vm.$t("cruds.coupon.title_singular"))),
                     ]),
                   ]),
                 ]
@@ -638,33 +334,25 @@ var render = function () {
                         {
                           staticClass: "form-group bmd-form-group",
                           class: {
-                            "has-items": _vm.entry.order_number,
-                            "is-focused": _vm.activeField == "order_number",
+                            "has-items": _vm.entry.name,
+                            "is-focused": _vm.activeField == "name",
                           },
                         },
                         [
                           _c(
                             "label",
                             { staticClass: "bmd-label-floating required" },
-                            [
-                              _vm._v(
-                                _vm._s(
-                                  _vm.$t(
-                                    "cruds.courseOrder.fields.order_number"
-                                  )
-                                )
-                              ),
-                            ]
+                            [_vm._v(_vm._s(_vm.$t("cruds.coupon.fields.name")))]
                           ),
                           _vm._v(" "),
                           _c("input", {
                             staticClass: "form-control",
                             attrs: { type: "text", required: "" },
-                            domProps: { value: _vm.entry.order_number },
+                            domProps: { value: _vm.entry.name },
                             on: {
-                              input: _vm.updateOrderNumber,
+                              input: _vm.updateName,
                               focus: function ($event) {
-                                return _vm.focusField("order_number")
+                                return _vm.focusField("name")
                               },
                               blur: _vm.clearFocus,
                             },
@@ -677,36 +365,60 @@ var render = function () {
                         {
                           staticClass: "form-group bmd-form-group",
                           class: {
-                            "has-items": _vm.entry.client_id !== null,
-                            "is-focused": _vm.activeField == "client",
+                            "has-items": _vm.entry.code,
+                            "is-focused": _vm.activeField == "code",
                           },
                         },
                         [
                           _c(
                             "label",
                             { staticClass: "bmd-label-floating required" },
-                            [
-                              _vm._v(
-                                _vm._s(
-                                  _vm.$t("cruds.courseOrder.fields.client")
-                                )
-                              ),
-                            ]
+                            [_vm._v(_vm._s(_vm.$t("cruds.coupon.fields.code")))]
+                          ),
+                          _vm._v(" "),
+                          _c("input", {
+                            staticClass: "form-control",
+                            attrs: { type: "text", required: "" },
+                            domProps: { value: _vm.entry.code },
+                            on: {
+                              input: _vm.updateCode,
+                              focus: function ($event) {
+                                return _vm.focusField("code")
+                              },
+                              blur: _vm.clearFocus,
+                            },
+                          }),
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "form-group bmd-form-group",
+                          class: {
+                            "has-items": _vm.entry.type,
+                            "is-focused": _vm.activeField == "type",
+                          },
+                        },
+                        [
+                          _c(
+                            "label",
+                            { staticClass: "bmd-label-floating required" },
+                            [_vm._v(_vm._s(_vm.$t("cruds.coupon.fields.type")))]
                           ),
                           _vm._v(" "),
                           _c("v-select", {
-                            key: "client-field",
+                            key: "type-field",
                             attrs: {
-                              name: "client",
-                              label: "name",
-                              value: _vm.entry.client_id,
-                              options: _vm.lists.client,
+                              name: "type",
+                              value: _vm.entry.type,
+                              options: _vm.lists.type,
                               reduce: function (entry) {
-                                return entry.id
+                                return entry.value
                               },
                             },
                             on: {
-                              input: _vm.updateClient,
+                              input: _vm.updateType,
                               search: [
                                 function ($event) {
                                   if (
@@ -721,7 +433,7 @@ var render = function () {
                                   ) {
                                     return null
                                   }
-                                  return _vm.focusField("client")
+                                  return _vm.focusField("type")
                                 },
                                 function ($event) {
                                   if (
@@ -750,8 +462,8 @@ var render = function () {
                         {
                           staticClass: "form-group bmd-form-group",
                           class: {
-                            "has-items": _vm.entry.sub_total,
-                            "is-focused": _vm.activeField == "sub_total",
+                            "has-items": _vm.entry.value,
+                            "is-focused": _vm.activeField == "value",
                           },
                         },
                         [
@@ -760,9 +472,7 @@ var render = function () {
                             { staticClass: "bmd-label-floating required" },
                             [
                               _vm._v(
-                                _vm._s(
-                                  _vm.$t("cruds.courseOrder.fields.sub_total")
-                                )
+                                _vm._s(_vm.$t("cruds.coupon.fields.value"))
                               ),
                             ]
                           ),
@@ -774,11 +484,11 @@ var render = function () {
                               step: "0.01",
                               required: "",
                             },
-                            domProps: { value: _vm.entry.sub_total },
+                            domProps: { value: _vm.entry.value },
                             on: {
-                              input: _vm.updateSubTotal,
+                              input: _vm.updateValue,
                               focus: function ($event) {
-                                return _vm.focusField("sub_total")
+                                return _vm.focusField("value")
                               },
                               blur: _vm.clearFocus,
                             },
@@ -791,94 +501,23 @@ var render = function () {
                         {
                           staticClass: "form-group bmd-form-group",
                           class: {
-                            "has-items": _vm.entry.coupon_id !== null,
-                            "is-focused": _vm.activeField == "coupon",
+                            "has-items": _vm.entry.count,
+                            "is-focused": _vm.activeField == "count",
                           },
                         },
                         [
                           _c("label", { staticClass: "bmd-label-floating" }, [
-                            _vm._v(
-                              _vm._s(_vm.$t("cruds.courseOrder.fields.coupon"))
-                            ),
-                          ]),
-                          _vm._v(" "),
-                          _c("v-select", {
-                            key: "coupon-field",
-                            attrs: {
-                              name: "coupon",
-                              label: "name",
-                              value: _vm.entry.coupon_id,
-                              options: _vm.lists.coupon,
-                              reduce: function (entry) {
-                                return entry.id
-                              },
-                            },
-                            on: {
-                              input: _vm.updateCoupon,
-                              search: [
-                                function ($event) {
-                                  if (
-                                    !$event.type.indexOf("key") &&
-                                    _vm._k(
-                                      $event.keyCode,
-                                      "focus",
-                                      undefined,
-                                      $event.key,
-                                      undefined
-                                    )
-                                  ) {
-                                    return null
-                                  }
-                                  return _vm.focusField("coupon")
-                                },
-                                function ($event) {
-                                  if (
-                                    !$event.type.indexOf("key") &&
-                                    _vm._k(
-                                      $event.keyCode,
-                                      "blur",
-                                      undefined,
-                                      $event.key,
-                                      undefined
-                                    )
-                                  ) {
-                                    return null
-                                  }
-                                  return _vm.clearFocus.apply(null, arguments)
-                                },
-                              ],
-                            },
-                          }),
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        {
-                          staticClass: "form-group bmd-form-group",
-                          class: {
-                            "has-items": _vm.entry.total_amount,
-                            "is-focused": _vm.activeField == "total_amount",
-                          },
-                        },
-                        [
-                          _c("label", { staticClass: "bmd-label-floating" }, [
-                            _vm._v(
-                              _vm._s(
-                                _vm.$t("cruds.courseOrder.fields.total_amount")
-                              )
-                            ),
+                            _vm._v(_vm._s(_vm.$t("cruds.coupon.fields.count"))),
                           ]),
                           _vm._v(" "),
                           _c("input", {
                             staticClass: "form-control",
-                            attrs: { type: "number", step: "0.01" },
-                            domProps: { value: _vm.entry.total_amount },
+                            attrs: { type: "number", step: "1" },
+                            domProps: { value: _vm.entry.count },
                             on: {
-                              input: _vm.updateTotalAmount,
+                              input: _vm.updateCount,
                               focus: function ($event) {
-                                return _vm.focusField("total_amount")
+                                return _vm.focusField("count")
                               },
                               blur: _vm.clearFocus,
                             },
@@ -891,8 +530,8 @@ var render = function () {
                         {
                           staticClass: "form-group bmd-form-group",
                           class: {
-                            "has-items": _vm.entry.payment_method,
-                            "is-focused": _vm.activeField == "payment_method",
+                            "has-items": _vm.entry.expired_at,
+                            "is-focused": _vm.activeField == "expired_at",
                           },
                         },
                         [
@@ -901,129 +540,24 @@ var render = function () {
                             { staticClass: "bmd-label-floating required" },
                             [
                               _vm._v(
-                                _vm._s(
-                                  _vm.$t(
-                                    "cruds.courseOrder.fields.payment_method"
-                                  )
-                                )
+                                _vm._s(_vm.$t("cruds.coupon.fields.expired_at"))
                               ),
                             ]
                           ),
                           _vm._v(" "),
-                          _c("v-select", {
-                            key: "payment_method-field",
+                          _c("datetime-picker", {
+                            staticClass: "form-control",
                             attrs: {
-                              name: "payment_method",
-                              value: _vm.entry.payment_method,
-                              options: _vm.lists.payment_method,
-                              reduce: function (entry) {
-                                return entry.value
-                              },
+                              type: "text",
+                              value: _vm.entry.expired_at,
+                              required: "",
                             },
                             on: {
-                              input: _vm.updatePaymentMethod,
-                              search: [
-                                function ($event) {
-                                  if (
-                                    !$event.type.indexOf("key") &&
-                                    _vm._k(
-                                      $event.keyCode,
-                                      "focus",
-                                      undefined,
-                                      $event.key,
-                                      undefined
-                                    )
-                                  ) {
-                                    return null
-                                  }
-                                  return _vm.focusField("payment_method")
-                                },
-                                function ($event) {
-                                  if (
-                                    !$event.type.indexOf("key") &&
-                                    _vm._k(
-                                      $event.keyCode,
-                                      "blur",
-                                      undefined,
-                                      $event.key,
-                                      undefined
-                                    )
-                                  ) {
-                                    return null
-                                  }
-                                  return _vm.clearFocus.apply(null, arguments)
-                                },
-                              ],
-                            },
-                          }),
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        {
-                          staticClass: "form-group bmd-form-group",
-                          class: {
-                            "has-items": _vm.entry.payment_status,
-                            "is-focused": _vm.activeField == "payment_status",
-                          },
-                        },
-                        [
-                          _c("label", { staticClass: "bmd-label-floating" }, [
-                            _vm._v(
-                              _vm._s(
-                                _vm.$t(
-                                  "cruds.courseOrder.fields.payment_status"
-                                )
-                              )
-                            ),
-                          ]),
-                          _vm._v(" "),
-                          _c("v-select", {
-                            key: "payment_status-field",
-                            attrs: {
-                              name: "payment_status",
-                              value: _vm.entry.payment_status,
-                              options: _vm.lists.payment_status,
-                              reduce: function (entry) {
-                                return entry.value
+                              input: _vm.updateExpiredAt,
+                              focus: function ($event) {
+                                return _vm.focusField("expired_at")
                               },
-                            },
-                            on: {
-                              input: _vm.updatePaymentStatus,
-                              search: [
-                                function ($event) {
-                                  if (
-                                    !$event.type.indexOf("key") &&
-                                    _vm._k(
-                                      $event.keyCode,
-                                      "focus",
-                                      undefined,
-                                      $event.key,
-                                      undefined
-                                    )
-                                  ) {
-                                    return null
-                                  }
-                                  return _vm.focusField("payment_status")
-                                },
-                                function ($event) {
-                                  if (
-                                    !$event.type.indexOf("key") &&
-                                    _vm._k(
-                                      $event.keyCode,
-                                      "blur",
-                                      undefined,
-                                      $event.key,
-                                      undefined
-                                    )
-                                  ) {
-                                    return null
-                                  }
-                                  return _vm.clearFocus.apply(null, arguments)
-                                },
-                              ],
+                              blur: _vm.clearFocus,
                             },
                           }),
                         ],
@@ -1042,7 +576,7 @@ var render = function () {
                         [
                           _c("label", { staticClass: "bmd-label-floating" }, [
                             _vm._v(
-                              _vm._s(_vm.$t("cruds.courseOrder.fields.status"))
+                              _vm._s(_vm.$t("cruds.coupon.fields.status"))
                             ),
                           ]),
                           _vm._v(" "),
@@ -1090,504 +624,6 @@ var render = function () {
                                   return _vm.clearFocus.apply(null, arguments)
                                 },
                               ],
-                            },
-                          }),
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        {
-                          staticClass: "form-group bmd-form-group",
-                          class: {
-                            "has-items": _vm.entry.first_name,
-                            "is-focused": _vm.activeField == "first_name",
-                          },
-                        },
-                        [
-                          _c("label", { staticClass: "bmd-label-floating" }, [
-                            _vm._v(
-                              _vm._s(
-                                _vm.$t("cruds.courseOrder.fields.first_name")
-                              )
-                            ),
-                          ]),
-                          _vm._v(" "),
-                          _c("input", {
-                            staticClass: "form-control",
-                            attrs: { type: "text" },
-                            domProps: { value: _vm.entry.first_name },
-                            on: {
-                              input: _vm.updateFirstName,
-                              focus: function ($event) {
-                                return _vm.focusField("first_name")
-                              },
-                              blur: _vm.clearFocus,
-                            },
-                          }),
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        {
-                          staticClass: "form-group bmd-form-group",
-                          class: {
-                            "has-items": _vm.entry.last_name,
-                            "is-focused": _vm.activeField == "last_name",
-                          },
-                        },
-                        [
-                          _c("label", { staticClass: "bmd-label-floating" }, [
-                            _vm._v(
-                              _vm._s(
-                                _vm.$t("cruds.courseOrder.fields.last_name")
-                              )
-                            ),
-                          ]),
-                          _vm._v(" "),
-                          _c("input", {
-                            staticClass: "form-control",
-                            attrs: { type: "text" },
-                            domProps: { value: _vm.entry.last_name },
-                            on: {
-                              input: _vm.updateLastName,
-                              focus: function ($event) {
-                                return _vm.focusField("last_name")
-                              },
-                              blur: _vm.clearFocus,
-                            },
-                          }),
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        {
-                          staticClass: "form-group bmd-form-group",
-                          class: {
-                            "has-items": _vm.entry.email,
-                            "is-focused": _vm.activeField == "email",
-                          },
-                        },
-                        [
-                          _c("label", { staticClass: "bmd-label-floating" }, [
-                            _vm._v(
-                              _vm._s(_vm.$t("cruds.courseOrder.fields.email"))
-                            ),
-                          ]),
-                          _vm._v(" "),
-                          _c("input", {
-                            staticClass: "form-control",
-                            attrs: { type: "text" },
-                            domProps: { value: _vm.entry.email },
-                            on: {
-                              input: _vm.updateEmail,
-                              focus: function ($event) {
-                                return _vm.focusField("email")
-                              },
-                              blur: _vm.clearFocus,
-                            },
-                          }),
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        {
-                          staticClass: "form-group bmd-form-group",
-                          class: {
-                            "has-items": _vm.entry.phone,
-                            "is-focused": _vm.activeField == "phone",
-                          },
-                        },
-                        [
-                          _c("label", { staticClass: "bmd-label-floating" }, [
-                            _vm._v(
-                              _vm._s(_vm.$t("cruds.courseOrder.fields.phone"))
-                            ),
-                          ]),
-                          _vm._v(" "),
-                          _c("input", {
-                            staticClass: "form-control",
-                            attrs: { type: "text" },
-                            domProps: { value: _vm.entry.phone },
-                            on: {
-                              input: _vm.updatePhone,
-                              focus: function ($event) {
-                                return _vm.focusField("phone")
-                              },
-                              blur: _vm.clearFocus,
-                            },
-                          }),
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        {
-                          staticClass: "form-group bmd-form-group",
-                          class: {
-                            "has-items": _vm.entry.country,
-                            "is-focused": _vm.activeField == "country",
-                          },
-                        },
-                        [
-                          _c("label", { staticClass: "bmd-label-floating" }, [
-                            _vm._v(
-                              _vm._s(_vm.$t("cruds.courseOrder.fields.country"))
-                            ),
-                          ]),
-                          _vm._v(" "),
-                          _c("input", {
-                            staticClass: "form-control",
-                            attrs: { type: "text" },
-                            domProps: { value: _vm.entry.country },
-                            on: {
-                              input: _vm.updateCountry,
-                              focus: function ($event) {
-                                return _vm.focusField("country")
-                              },
-                              blur: _vm.clearFocus,
-                            },
-                          }),
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        {
-                          staticClass: "form-group bmd-form-group",
-                          class: {
-                            "has-items": _vm.entry.post_code,
-                            "is-focused": _vm.activeField == "post_code",
-                          },
-                        },
-                        [
-                          _c("label", { staticClass: "bmd-label-floating" }, [
-                            _vm._v(
-                              _vm._s(
-                                _vm.$t("cruds.courseOrder.fields.post_code")
-                              )
-                            ),
-                          ]),
-                          _vm._v(" "),
-                          _c("input", {
-                            staticClass: "form-control",
-                            attrs: { type: "text" },
-                            domProps: { value: _vm.entry.post_code },
-                            on: {
-                              input: _vm.updatePostCode,
-                              focus: function ($event) {
-                                return _vm.focusField("post_code")
-                              },
-                              blur: _vm.clearFocus,
-                            },
-                          }),
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        {
-                          staticClass: "form-group bmd-form-group",
-                          class: {
-                            "has-items": _vm.entry.address_1,
-                            "is-focused": _vm.activeField == "address_1",
-                          },
-                        },
-                        [
-                          _c("label", { staticClass: "bmd-label-floating" }, [
-                            _vm._v(
-                              _vm._s(
-                                _vm.$t("cruds.courseOrder.fields.address_1")
-                              )
-                            ),
-                          ]),
-                          _vm._v(" "),
-                          _c("input", {
-                            staticClass: "form-control",
-                            attrs: { type: "text" },
-                            domProps: { value: _vm.entry.address_1 },
-                            on: {
-                              input: _vm.updateAddress1,
-                              focus: function ($event) {
-                                return _vm.focusField("address_1")
-                              },
-                              blur: _vm.clearFocus,
-                            },
-                          }),
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        {
-                          staticClass: "form-group bmd-form-group",
-                          class: {
-                            "has-items": _vm.entry.address_2,
-                            "is-focused": _vm.activeField == "address_2",
-                          },
-                        },
-                        [
-                          _c("label", { staticClass: "bmd-label-floating" }, [
-                            _vm._v(
-                              _vm._s(
-                                _vm.$t("cruds.courseOrder.fields.address_2")
-                              )
-                            ),
-                          ]),
-                          _vm._v(" "),
-                          _c("input", {
-                            staticClass: "form-control",
-                            attrs: { type: "text" },
-                            domProps: { value: _vm.entry.address_2 },
-                            on: {
-                              input: _vm.updateAddress2,
-                              focus: function ($event) {
-                                return _vm.focusField("address_2")
-                              },
-                              blur: _vm.clearFocus,
-                            },
-                          }),
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        {
-                          staticClass: "form-group bmd-form-group",
-                          class: {
-                            "has-items": _vm.entry.course_id !== null,
-                            "is-focused": _vm.activeField == "course",
-                          },
-                        },
-                        [
-                          _c("label", { staticClass: "bmd-label-floating" }, [
-                            _vm._v(
-                              _vm._s(_vm.$t("cruds.courseOrder.fields.course"))
-                            ),
-                          ]),
-                          _vm._v(" "),
-                          _c("v-select", {
-                            key: "course-field",
-                            attrs: {
-                              name: "course",
-                              label: "name",
-                              value: _vm.entry.course_id,
-                              options: _vm.lists.course,
-                              reduce: function (entry) {
-                                return entry.id
-                              },
-                            },
-                            on: {
-                              input: _vm.updateCourse,
-                              search: [
-                                function ($event) {
-                                  if (
-                                    !$event.type.indexOf("key") &&
-                                    _vm._k(
-                                      $event.keyCode,
-                                      "focus",
-                                      undefined,
-                                      $event.key,
-                                      undefined
-                                    )
-                                  ) {
-                                    return null
-                                  }
-                                  return _vm.focusField("course")
-                                },
-                                function ($event) {
-                                  if (
-                                    !$event.type.indexOf("key") &&
-                                    _vm._k(
-                                      $event.keyCode,
-                                      "blur",
-                                      undefined,
-                                      $event.key,
-                                      undefined
-                                    )
-                                  ) {
-                                    return null
-                                  }
-                                  return _vm.clearFocus.apply(null, arguments)
-                                },
-                              ],
-                            },
-                          }),
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        {
-                          staticClass: "form-group bmd-form-group",
-                          class: {
-                            "has-items": _vm.entry.extra_id !== null,
-                            "is-focused": _vm.activeField == "extra",
-                          },
-                        },
-                        [
-                          _c("label", { staticClass: "bmd-label-floating" }, [
-                            _vm._v(
-                              _vm._s(_vm.$t("cruds.courseOrder.fields.extra"))
-                            ),
-                          ]),
-                          _vm._v(" "),
-                          _c("v-select", {
-                            key: "extra-field",
-                            attrs: {
-                              name: "extra",
-                              label: "name",
-                              value: _vm.entry.extra_id,
-                              options: _vm.lists.extra,
-                              reduce: function (entry) {
-                                return entry.id
-                              },
-                            },
-                            on: {
-                              input: _vm.updateExtra,
-                              search: [
-                                function ($event) {
-                                  if (
-                                    !$event.type.indexOf("key") &&
-                                    _vm._k(
-                                      $event.keyCode,
-                                      "focus",
-                                      undefined,
-                                      $event.key,
-                                      undefined
-                                    )
-                                  ) {
-                                    return null
-                                  }
-                                  return _vm.focusField("extra")
-                                },
-                                function ($event) {
-                                  if (
-                                    !$event.type.indexOf("key") &&
-                                    _vm._k(
-                                      $event.keyCode,
-                                      "blur",
-                                      undefined,
-                                      $event.key,
-                                      undefined
-                                    )
-                                  ) {
-                                    return null
-                                  }
-                                  return _vm.clearFocus.apply(null, arguments)
-                                },
-                              ],
-                            },
-                          }),
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        {
-                          staticClass: "form-group bmd-form-group",
-                          class: {
-                            "has-items": _vm.entry.accommodation_id !== null,
-                            "is-focused": _vm.activeField == "accommodation",
-                          },
-                        },
-                        [
-                          _c("label", { staticClass: "bmd-label-floating" }, [
-                            _vm._v(
-                              _vm._s(
-                                _vm.$t("cruds.courseOrder.fields.accommodation")
-                              )
-                            ),
-                          ]),
-                          _vm._v(" "),
-                          _c("v-select", {
-                            key: "accommodation-field",
-                            attrs: {
-                              name: "accommodation",
-                              label: "name",
-                              value: _vm.entry.accommodation_id,
-                              options: _vm.lists.accommodation,
-                              reduce: function (entry) {
-                                return entry.id
-                              },
-                            },
-                            on: {
-                              input: _vm.updateAccommodation,
-                              search: [
-                                function ($event) {
-                                  if (
-                                    !$event.type.indexOf("key") &&
-                                    _vm._k(
-                                      $event.keyCode,
-                                      "focus",
-                                      undefined,
-                                      $event.key,
-                                      undefined
-                                    )
-                                  ) {
-                                    return null
-                                  }
-                                  return _vm.focusField("accommodation")
-                                },
-                                function ($event) {
-                                  if (
-                                    !$event.type.indexOf("key") &&
-                                    _vm._k(
-                                      $event.keyCode,
-                                      "blur",
-                                      undefined,
-                                      $event.key,
-                                      undefined
-                                    )
-                                  ) {
-                                    return null
-                                  }
-                                  return _vm.clearFocus.apply(null, arguments)
-                                },
-                              ],
-                            },
-                          }),
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        {
-                          staticClass: "form-group bmd-form-group",
-                          class: {
-                            "has-items": _vm.entry.start_date,
-                            "is-focused": _vm.activeField == "start_date",
-                          },
-                        },
-                        [
-                          _c("label", { staticClass: "bmd-label-floating" }, [
-                            _vm._v(
-                              _vm._s(
-                                _vm.$t("cruds.courseOrder.fields.start_date")
-                              )
-                            ),
-                          ]),
-                          _vm._v(" "),
-                          _c("datetime-picker", {
-                            staticClass: "form-control",
-                            attrs: {
-                              type: "text",
-                              picker: "date",
-                              value: _vm.entry.start_date,
-                            },
-                            on: {
-                              input: _vm.updateStartDate,
-                              focus: function ($event) {
-                                return _vm.focusField("start_date")
-                              },
-                              blur: _vm.clearFocus,
                             },
                           }),
                         ],
@@ -1647,17 +683,17 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./resources/adminapp/js/cruds/CourseOrders/Create.vue":
-/*!*************************************************************!*\
-  !*** ./resources/adminapp/js/cruds/CourseOrders/Create.vue ***!
-  \*************************************************************/
+/***/ "./resources/adminapp/js/cruds/Coupons/Create.vue":
+/*!********************************************************!*\
+  !*** ./resources/adminapp/js/cruds/Coupons/Create.vue ***!
+  \********************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Create_vue_vue_type_template_id_f2176cc0___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Create.vue?vue&type=template&id=f2176cc0& */ "./resources/adminapp/js/cruds/CourseOrders/Create.vue?vue&type=template&id=f2176cc0&");
-/* harmony import */ var _Create_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Create.vue?vue&type=script&lang=js& */ "./resources/adminapp/js/cruds/CourseOrders/Create.vue?vue&type=script&lang=js&");
+/* harmony import */ var _Create_vue_vue_type_template_id_bdb5170e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Create.vue?vue&type=template&id=bdb5170e& */ "./resources/adminapp/js/cruds/Coupons/Create.vue?vue&type=template&id=bdb5170e&");
+/* harmony import */ var _Create_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Create.vue?vue&type=script&lang=js& */ "./resources/adminapp/js/cruds/Coupons/Create.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -1668,8 +704,8 @@ __webpack_require__.r(__webpack_exports__);
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
   _Create_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Create_vue_vue_type_template_id_f2176cc0___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Create_vue_vue_type_template_id_f2176cc0___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _Create_vue_vue_type_template_id_bdb5170e___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Create_vue_vue_type_template_id_bdb5170e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -1679,38 +715,38 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/adminapp/js/cruds/CourseOrders/Create.vue"
+component.options.__file = "resources/adminapp/js/cruds/Coupons/Create.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/adminapp/js/cruds/CourseOrders/Create.vue?vue&type=script&lang=js&":
-/*!**************************************************************************************!*\
-  !*** ./resources/adminapp/js/cruds/CourseOrders/Create.vue?vue&type=script&lang=js& ***!
-  \**************************************************************************************/
+/***/ "./resources/adminapp/js/cruds/Coupons/Create.vue?vue&type=script&lang=js&":
+/*!*********************************************************************************!*\
+  !*** ./resources/adminapp/js/cruds/Coupons/Create.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Create_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Create.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/CourseOrders/Create.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Create_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Create.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/Coupons/Create.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Create_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/adminapp/js/cruds/CourseOrders/Create.vue?vue&type=template&id=f2176cc0&":
-/*!********************************************************************************************!*\
-  !*** ./resources/adminapp/js/cruds/CourseOrders/Create.vue?vue&type=template&id=f2176cc0& ***!
-  \********************************************************************************************/
+/***/ "./resources/adminapp/js/cruds/Coupons/Create.vue?vue&type=template&id=bdb5170e&":
+/*!***************************************************************************************!*\
+  !*** ./resources/adminapp/js/cruds/Coupons/Create.vue?vue&type=template&id=bdb5170e& ***!
+  \***************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Create_vue_vue_type_template_id_f2176cc0___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Create.vue?vue&type=template&id=f2176cc0& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/CourseOrders/Create.vue?vue&type=template&id=f2176cc0&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Create_vue_vue_type_template_id_f2176cc0___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Create_vue_vue_type_template_id_bdb5170e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Create.vue?vue&type=template&id=bdb5170e& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/Coupons/Create.vue?vue&type=template&id=bdb5170e&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Create_vue_vue_type_template_id_bdb5170e___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Create_vue_vue_type_template_id_f2176cc0___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Create_vue_vue_type_template_id_bdb5170e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

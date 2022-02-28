@@ -37,6 +37,16 @@
                           {{ entry.name }}
                         </td>
                       </tr>
+                       <tr>
+                        <td class="text-primary">
+                          {{ $t('cruds.universitySubject.fields.type') }}
+                        </td>
+                        <td>
+                          <datatable-enum :row="entry" field="type">
+                          </datatable-enum>
+                        </td>
+                      </tr>
+                      
                       <tr>
                         <td class="text-primary">
                           {{
@@ -113,6 +123,17 @@
                           >
                           </datatable-single>
                         </td>
+                      </tr><tr>
+                        <td class="text-primary">
+                          Subject
+                        </td>
+                        <td>
+                          <datatable-single
+                            :row="entry"
+                            field="subject.name"
+                          >
+                          </datatable-single>
+                        </td>
                       </tr>
                     </tbody>
                   </div>
@@ -130,11 +151,13 @@
 import { mapGetters, mapActions } from 'vuex'
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic'
 import DatatableSingle from '@components/Datatables/DatatableSingle'
+import DatatableEnum from '@components/Datatables/DatatableEnum'
 
 export default {
   components: {
     ClassicEditor,
-    DatatableSingle
+    DatatableSingle,
+    DatatableEnum
   },
   data() {
     return {

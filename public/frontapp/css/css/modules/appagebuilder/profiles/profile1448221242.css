@@ -1,0 +1,160 @@
+/**
+* Transition-timing-function property@mixin 
+*/
+/*background RGBA
+============================================*/
+/****/
+/* Veralign center text */
+/* RIGHT TO LEFT */
+/**
+ * Web Application Prefix Apply For Making Owner Styles
+ */
+/**
+ *   Blocks Layout Selectors 
+ */
+/***********************************************************************/
+/** CHECKOUT BY STEP */
+/****************************
+	Home 4 
+*****************************/
+/* Header */
+#index #header {
+  position: absolute;
+  z-index: 9;
+  width: 100%;
+  min-height: 145px;
+  background: black;
+  background: -moz-linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+  background: -o-linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+  background: -ms-linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+}
+#header {width: 100%;background: #076F89;position: relative;top: -9px;padding-bottom: 18px;}
+
+#header.navbar-fixed-top {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.7);
+  min-height: inherit;
+}
+#header.navbar-fixed-top #header_logo .block {
+  margin-bottom: 0;
+}
+
+#header-main, #topbar {
+  background: none;
+}
+
+#topbar {
+  border-bottom-color: rgba(255, 255, 255, 0.2);
+  font-weight: 400;
+}
+#topbar a {
+  color: #cccccc;
+}
+#topbar .popup-content ul li a,
+#topbar ul.popup-content li a {
+  color: #272727;
+}
+#topbar .popup-content ul li a:hover,
+#topbar ul.popup-content li a:hover {
+  color: #2cd1e4;
+}
+
+.ap-total {
+  color: #cccccc;
+}
+
+.popup-over .popup-title:before {
+  color: #cccccc;
+}
+
+#cart .title-cart {
+  color: #cccccc;
+}
+#cart:before {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Mainmenu */
+#leo-megamenu {
+  background: none;
+}
+#leo-megamenu .navbar-nav > li > a {
+  color: white;
+}
+
+/* Title block */
+.group-widget .title_block, .ApColumn .title_block {
+  text-align: center;
+}
+
+.footer-container .group-widget .title_block, .footer-container .ApColumn .title_block {
+  text-align: left;
+}
+.rtl .footer-container .group-widget .title_block, .rtl .footer-container .ApColumn .title_block {
+  text-align: right;
+}
+
+.top-products {
+  margin-top: 60px;
+}
+
+/* Slideshow */
+.iview-controlNav div.iview-items {
+  bottom: 100px;
+}
+
+/******************** 
+	Responsive 
+*******************/
+@media (max-width: 991px) {
+  /*header*/
+  #header {
+    position: relative;
+    min-height: inherit;
+  }
+
+  #header_logo {
+    padding-bottom: 0;
+  }
+  #header_logo .block {
+    margin: 0;
+  }
+  #header_logo img {
+    display: inline-block;
+  }
+
+  .search-top-fix {
+    top: 0;
+    position: relative;
+  }
+
+  #leo_search_block_top {
+    text-align: center;
+    background: none;
+  }
+  #leo_search_block_top .title_block {
+    float: none;
+    margin-bottom: 20px;
+    color: #272727;
+  }
+  #leo_search_block_top #leosearchtopbox {
+    overflow: visible;
+  }
+  #leo_search_block_top select, #leo_search_block_top input {
+    border: 1px solid whitesmoke;
+    background: #f0f0f0;
+  }
+
+  /*Slideshow*/
+  .iview-controlNav div.iview-items {
+    bottom: 0px;
+  }
+}
+@media (max-width: 767px) {
+  /*menu*/
+  .navbar-header .navbar-toggle {
+    color: white;
+  }
+}

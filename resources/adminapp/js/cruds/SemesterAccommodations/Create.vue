@@ -44,6 +44,37 @@
                   </div>
                   <div class="form-group">
                     <label>{{
+                      $t('cruds.universitySubject.fields.photos')
+                    }}</label>
+                    <attachment
+                      :route="getRoute('semester-accommodations')"
+                      :collection-name="'accommodations_photos'"
+                      :media="entry.photos"
+                      :max-file-size="2"
+                      :component="'pictures'"
+                      :accept="'image/*'"
+                      @file-uploaded="insertPhotosFile"
+                      @file-removed="removePhotosFile"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label>{{
+                      $t('cruds.universitySubject.fields.featured_image')
+                    }}</label>
+                    <attachment
+                      :route="getRoute('semester-accommodations')"
+                      :collection-name="'accommodations_featured_image'"
+                      :media="entry.featured_image"
+                      :max-file-size="2"
+                      :component="'pictures'"
+                      :accept="'image/*'"
+                      @file-uploaded="insertFeaturedImageFile"
+                      @file-removed="removeFeaturedImageFile"
+                      :max-files="1"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label>{{
                       $t('cruds.semesterAccommodation.fields.description')
                     }}</label>
                     <ckeditor
@@ -129,7 +160,7 @@
                       @search.blur="clearFocus"
                     />
                   </div>
-                          <div
+                      <!--    <div
                     class="form-group bmd-form-group"
                     :class="{
                       'has-items': entry.price,
@@ -149,7 +180,7 @@
                       @blur="clearFocus"
                       required
                     />
-                  </div>
+                  </div>-->
                 </div>
               </div>
             </div>
@@ -173,10 +204,12 @@
 <script>
 import { mapGetters, mapActions } from 'vuex'
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic'
+import Attachment from '@components/Attachments/Attachment'
 
 export default {
   components: {
-    ClassicEditor
+    ClassicEditor,
+    Attachment
   },
   data() {
     return {
@@ -224,6 +257,10 @@ export default {
       'setDescription',
       'setCity',
       'setFeatures',
+      'insertPhotosFile',
+      'removePhotosFile',
+      'insertFeaturedImageFile',
+      'removeFeaturedImageFile',
       'fetchCreateData'
     ]),
     updateName(e) {
@@ -240,6 +277,9 @@ export default {
     },
     updatePrice(e) {
       this.setPrice(e.target.value)
+    },
+        getRoute(name) {
+      return `${axios.defaults.baseURL}${name}/media`
     },
     submitForm() {
       this.storeData()

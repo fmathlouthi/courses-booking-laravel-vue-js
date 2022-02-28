@@ -6,6 +6,7 @@ use App\Models\SubjectProgram;
 use Gate;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Http\Response;
+use Illuminate\Support\Arr;
 
 class StoreSubjectProgramRequest extends FormRequest
 {
@@ -45,6 +46,15 @@ class StoreSubjectProgramRequest extends FormRequest
                 'integer',
                 'exists:university_subjects,id',
                 'required',
+            ],
+            'subject_id' => [
+                'integer',
+                'exists:subjects,id',
+                'required',
+            ],
+            'type' => [
+                'required',
+                'in:' . implode(',', Arr::pluck(SubjectProgram::TYPE_SELECT, 'value')),
             ],
         ];
     }

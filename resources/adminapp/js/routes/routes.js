@@ -792,6 +792,36 @@ const routes = [{
                         import ('@cruds/SubjectPrograms/Edit.vue'),
                     meta: { title: 'cruds.subjectProgram.title' }
                 }
+                ///
+                ,
+                {
+                    path: 'subjects',
+                    name: 'subjects.index',
+                    component: () =>
+                        import ('@cruds/Subjects/Index.vue'),
+                    meta: { title: 'cruds.subjectProgram.title' }
+                },
+                {
+                    path: 'subjects/create',
+                    name: 'subjects.create',
+                    component: () =>
+                        import ('@cruds/Subjects/Create.vue'),
+                    meta: { title: 'cruds.subjectProgram.title' }
+                },
+                {
+                    path: 'subjects/:id',
+                    name: 'subjects.show',
+                    component: () =>
+                        import ('@cruds/Subjects/Show.vue'),
+                    meta: { title: 'cruds.subjectProgram.title' }
+                },
+                {
+                    path: 'subjects/:id/edit',
+                    name: 'subjects.edit',
+                    component: () =>
+                        import ('@cruds/Subjects/Edit.vue'),
+                    meta: { title: 'cruds.subjectProgram.title' }
+                }
             ]
         }
     ]

@@ -19,7 +19,7 @@ class UpdateAvailabilityRequest extends FormRequest
         return [
             'name' => [
                 'string',
-                'required',
+                'required', 
             ],
         ];
     }

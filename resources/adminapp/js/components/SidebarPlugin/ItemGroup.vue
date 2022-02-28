@@ -5,6 +5,7 @@
         :href="'#' + getAttributeTitle"
         class="nav-link collapsed"
         data-toggle="collapse"
+        style=" width: 100%; "
       >
         <template v-if="text">
           <span class="sidebar-mini">{{ textIcon }}</span>

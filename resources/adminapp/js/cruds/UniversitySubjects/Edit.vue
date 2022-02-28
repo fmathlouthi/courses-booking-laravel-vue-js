@@ -15,7 +15,7 @@
                 }}</strong>
               </h4>
             </div>
-            <div class="card-body">
+            <div class="card-body"> 
               <back-button></back-button>
             </div>
             <div class="card-body">
@@ -180,7 +180,7 @@
                       :max-files="1"
                     />
                   </div>
-                  <div
+                <!--  <div
                     class="form-group bmd-form-group"
                     :class="{
                       'has-items': entry.type,
@@ -200,7 +200,7 @@
                       @search.focus="focusField('type')"
                       @search.blur="clearFocus"
                     />
-                  </div>
+                  </div>-->
                 </div>
               </div>
             </div>

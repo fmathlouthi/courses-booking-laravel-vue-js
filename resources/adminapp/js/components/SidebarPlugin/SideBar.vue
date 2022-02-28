@@ -10,7 +10,7 @@
         {{ $t(title) }}
       </a>
     </div>
-    <div class="sidebar-wrapper">
+    <div class="sidebar-wrapper" style=" width: 100%; ">
       <slot name="content"></slot>
       <ul class="nav">
         <slot>

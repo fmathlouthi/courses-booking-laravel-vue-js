@@ -44,7 +44,49 @@
                     >
                     </datetime-picker>
                   </div>
-                 <!-- <div
+                   <div
+                    class="form-group bmd-form-group"
+                    :class="{
+                      'has-items': entry.weeksnumber,
+                      'is-focused': activeField == 'weeksnumber'
+                    }"
+                  >
+                    <label class="bmd-label-floating required">{{
+                      $t('Weeks number')
+                    }}</label>
+                    <input
+                      class="form-control"
+                      type="number"
+                      step="0.01"
+                      :value="entry.weeksnumber"
+                      @input="updateWeeksnumber"
+                      @focus="focusField('weeksnumber')"
+                      @blur="clearFocus"
+                      required
+                    />
+                  </div>
+                   <div
+                    class="form-group bmd-form-group"
+                    :class="{
+                      'has-items': entry.bookfee,
+                      'is-focused': activeField == 'bookfee'
+                    }"
+                  >
+                    <label class="bmd-label-floating required">{{
+                      $t('Book Fees')
+                    }}</label>
+                    <input
+                      class="form-control"
+                      type="number"
+                      step="0.01"
+                      :value="entry.bookfee"
+                      @input="updateBookfee"
+                      @focus="focusField('bookfee')"
+                      @blur="clearFocus"
+                      required
+                    />
+                  </div>
+                  <div
                     class="form-group bmd-form-group"
                     :class="{
                       'has-items': entry.price,
@@ -64,7 +106,7 @@
                       @blur="clearFocus"
                       required
                     />
-                  </div>-->
+                  </div>
                   <div
                     class="form-group bmd-form-group"
                     :class="{
@@ -139,6 +181,8 @@ export default {
       'setStartingDate',
       'setPrice',
       'setSemesterAccommodation',
+      'setBookfee',
+      'setWeeksnumber',
       'fetchCreateData'
     ]),
     updateStartingDate(e) {
@@ -149,6 +193,11 @@ export default {
     },
     updateSemesterAccommodation(value) {
       this.setSemesterAccommodation(value)
+    },
+    updateWeeksnumber(e) {
+      this.setWeeksnumber(e.target.value)
+    },updateBookfee(e) {
+      this.setBookfee(e.target.value)
     },
     submitForm() {
       this.storeData()

@@ -38,10 +38,7 @@ class CheckoutApiController extends Controller
             'discount.discount' => 'required|min:1',
             'discount.from' => 'required|min:2',
             'discount.to' => 'required|min:2',
-            'customer.password' => 'required|
-            min:6|
-            regex:/^.*(?=.{3,})(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[\d\x])(?=.*[!$#%]).*$/|
-            confirmed',
+            'customer.password' => 'required|min:6',
         ]);
        
 

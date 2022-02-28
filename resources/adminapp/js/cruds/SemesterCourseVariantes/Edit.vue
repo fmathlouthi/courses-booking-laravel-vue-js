@@ -17,6 +17,14 @@
             </div>
             <div class="card-body">
               <back-button></back-button>
+               <a
+      href="#"
+      class="btn btn-primary"
+      @click.prevent="destroyData(entry.id)"
+      type="button"
+    >
+      <i class="material-icons">delete</i> delete
+    </a>
             </div>
             <div class="card-body">
               <bootstrap-alert />
@@ -137,6 +145,28 @@ export default {
     }
   },
   methods: {
+     
+    destroyData(id) {
+      this.$swal({
+        title: 'Are you sure?',
+        text: "You won't be able to revert this!",
+        type: 'warning',
+        showCancelButton: true,
+        confirmButtonText: 'Delete',
+        confirmButtonColor: '#dd4b39',
+        focusCancel: true,
+        reverseButtons: true
+      }).then(result => {
+        if (result.value) {
+          this.$store
+            .dispatch( 'SemesterCourseVariantesIndex/destroyData', id)
+            .then(result => {
+              this.$eventHub.$emit('delete-success')
+              this.$router.push({ name: 'semester_courses.index' });
+            })
+        }
+      })
+    },
     ...mapActions('SemesterCourseVariantesSingle', [
       'fetchEditData',
       'updateData',
@@ -157,7 +187,7 @@ export default {
     submitForm() {
       this.updateData()
         .then(() => {
-          this.$router.push({ name: 'semester_course_variantes.index' })
+          this.$router.push({ name: 'semester_courses.index' })
           this.$eventHub.$emit('update-success')
         })
         .catch(error => {

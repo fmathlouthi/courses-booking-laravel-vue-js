@@ -79,7 +79,30 @@
                           {{ $t('cruds.semesterCourseVariante.fields.price') }}
                         </td>
                         <td>
-                          {{ entry.price }}
+                          {{ entry.min_price }} 
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-primary">
+                          {{ $t('cruds.universitySubject.fields.photos') }}
+                        </td>
+                        <td>
+                          <datatable-pictures :row="entry" :field="'photos'">
+                          </datatable-pictures>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-primary">
+                          {{
+                            $t('cruds.universitySubject.fields.featured_image')
+                          }}
+                        </td>
+                        <td>
+                          <datatable-pictures
+                            :row="entry"
+                            :field="'featured_image'"
+                          > 
+                          </datatable-pictures>
                         </td>
                       </tr>
                       <tr>
@@ -110,13 +133,15 @@
 import { mapGetters, mapActions } from 'vuex'
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic'
 import DatatableSingle from '@components/Datatables/DatatableSingle'
-import DatatableList from '@components/Datatables/DatatableList'
+import DatatableList from '@components/Datatables/DatatableListshow'
+import DatatablePictures from '@components/Datatables/DatatablePictures'
 
 export default {
   components: {
     ClassicEditor,
     DatatableSingle,
-    DatatableList
+    DatatableList,
+    DatatablePictures
   },
   data() {
     return {

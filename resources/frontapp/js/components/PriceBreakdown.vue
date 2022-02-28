@@ -1,46 +1,44 @@
 <template>
-<div class="shadow-2xl rounded p-3">
-<div class="grid grid-cols-6 gap-4">
-  <div class="col-start-2 col-span-4 bg-white p-3 rounded">
-      <h6 class="font-semibold">price breakdown</h6>
-  </div>
-</div>
-<div class="grid grid-cols-6 gap-4 bg-white p-3 rounded">
-  <div class="col-start-1 col-end-3 font-semibold">Start Date : </div>
-  <div class="col-end-7 col-span-2">{{ price.startDate }}</div>
-</div>
-<div class="grid grid-cols-6 gap-4 bg-white p-3 rounded">
-  <div class="col-start-1 col-end-3 font-semibold">Weeks number course : </div>
-  <div class="col-end-7 col-span-2">{{ price.weeksnumber }}</div>
-</div>
-<div class="grid grid-cols-6 gap-4 bg-white p-3 rounded">
-  <div class="col-start-1 col-end-3 font-semibold">Weeks number accommodation : </div>
-  <div class="col-end-7 col-span-2">{{ price.weeksnumberaccom }}</div>
-</div>
- <div
+<div >
+ <div class="bg-pay p-3"> 
+ <div class="d-flex justify-content-between mt-2"> <span class="fw-500">Course DURATION :</span> </div>
+                <div class="d-flex justify-content-between mt-2"> <span class="fw-500"><strong>Start Date</strong> : {{ price.startDate }}</span> <span><strong>End Date</strong> : {{ price.fromdate  }}</span> </div>
+               
+                <div class="d-flex justify-content-between mt-2"> <span class="fw-500">Weeks number course :</span> <span>{{ price.weeksnumber }}</span> </div>
+                <hr>
+                <div class="d-flex justify-content-between mt-2"> <span class="fw-500">accommodation DURATION :</span> </div>
+                <div class="d-flex justify-content-between mt-2"> <span class="fw-500"><strong>Start Date</strong> : {{ price.startDate }}</span> <span><strong>End Date</strong> : {{ price.todateaccom  }}</span> </div>
+               
+                <div class="d-flex justify-content-between mt-2"> <span class="lh-16 fw-500">Weeks number  : </span> <span>{{ price.weeksnumberaccom }}</span> </div>
+                
+                <hr>
+                 <div
  v-for="(days, price) in price.breakdown"
       :key="price"
-      class="grid grid-cols-6 gap-4 bg-white p-3 rounded"
+      
       >
-      <div class="col-start-1 col-end-4">{{ price }} </div>
-       <div class="col-end-7 col-span-2">${{ days[1] }}</div>
- </div>
-  
-<div class="grid grid-cols-6 gap-4 bg-white p-3 rounded">
-  <div class="col-start-1 col-end-3 font-semibold">Total : </div>
-  <div class="col-end-7 col-span-2">${{ price.total }}</div>
-</div>
-
-
-   <div class="flex border-t border-gray-300 mt-5 pt-5">
-                    <router-link :to="{ path: '/checkoutcourseweekly'}" 
+                <div class="d-flex justify-content-between mt-2"> <span class="fw-500">{{ price }} </span> <span>${{ days[1] }}</span> </div>
+          </div>
+                <hr>
+                <div class="d-flex justify-content-between mt-2"> <span class="fw-500">Total </span> <span class="text-success">${{ price.total }}</span> </div>
+                 <hr>
+                <div class="d-flex justify-content-between mt-2">
+                 <router-link :to="{ path: '/checkoutcourseweekly'}" 
                     @click.native="addToBasket"
                     class="bg-gray-800 duration-200 focus:outline-none focus:shadow-outline font-medium h-12 hover:bg-gray-900 inline-flex items-center justify-center px-6 text-white tracking-wide transition w-full">
                     
                         Checkout
                   
-                     </router-link>
-                </div>
+                     </router-link> </div>
+            </div>
+
+
+
+
+
+
+
+   
   </div>
 </template>
 

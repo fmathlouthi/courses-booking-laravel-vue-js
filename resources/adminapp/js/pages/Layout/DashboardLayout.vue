@@ -62,7 +62,7 @@ export default {
         },
         {
           title: 'cruds.globaleData.title',
-          icon: 'table_view',
+          icon: 'public',
           path: { name: 'globale_data' },
           gate: 'globale_data_access',
           children: [
@@ -100,7 +100,7 @@ export default {
         },
         {
           title: 'cruds.universityCourse.title',
-          icon: 'table_view',
+          icon: 'school',
           path: { name: 'university_course' },
           gate: 'university_course_access',
           children: [
@@ -156,16 +156,16 @@ export default {
         },
         {
           title: 'cruds.accommodationsSection.title',
-          icon: 'table_view',
+          icon: 'event',
           path: { name: 'accommodations_section' },
           gate: 'accommodations_section_access',
           children: [
-            {
+           /* {
               title: 'cruds.weeklyAccommodation.title',
               icon: 'table_view',
               path: { name: 'weekly_accommodations.index' },
               gate: 'weekly_accommodation_access'
-            },
+            },*/
             {
               title: 'cruds.semesterAccommodation.title',
               icon: 'table_view',
@@ -182,7 +182,7 @@ export default {
         },
         {
           title: 'cruds.pathwayProgram.title',
-          icon: 'table_view',
+          icon: 'flight_takeoff',
           path: { name: 'pathway_program' },
           gate: 'pathway_program_access',
           children: [
@@ -202,7 +202,7 @@ export default {
         },
         {
           title: 'cruds.universitiesProgram.title',
-          icon: 'table_view',
+          icon: 'account_balance',
           path: { name: 'universities_program' },
           gate: 'universities_program_access',
           children: [
@@ -213,11 +213,18 @@ export default {
               gate: 'university_subject_access'
             },
             {
+              title: 'Subjects List',
+              icon: 'table_view',
+              path: { name: 'subjects.index' },
+              gate: 'subject_program_access'
+            },
+            {
               title: 'cruds.subjectProgram.title',
               icon: 'table_view',
               path: { name: 'subject_programs.index' },
               gate: 'subject_program_access'
-            }
+            },
+            
           ]
         },
         {

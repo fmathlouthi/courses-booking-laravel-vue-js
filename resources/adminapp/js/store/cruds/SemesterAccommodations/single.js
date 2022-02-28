@@ -5,8 +5,10 @@ function initialState() {
             name: '',
             description: '',
             city_id: null,
-            price: '',
+            price: 0,
             features: [],
+            photos: [],
+            featured_image: [],
             created_at: '',
             updated_at: '',
             deleted_at: '',
@@ -98,6 +100,18 @@ const actions = {
     setCity({ commit }, value) {
         commit('setCity', value)
     },
+    insertPhotosFile({ commit }, file) {
+        commit('insertPhotosFile', file)
+    },
+    removePhotosFile({ commit }, file) {
+        commit('removePhotosFile', file)
+    },
+    insertFeaturedImageFile({ commit }, file) {
+        commit('insertFeaturedImageFile', file)
+    },
+    removeFeaturedImageFile({ commit }, file) {
+        commit('removeFeaturedImageFile', file)
+    },
     setFeatures({ commit }, value) {
         commit('setFeatures', value)
     },
@@ -158,6 +172,22 @@ const mutations = {
     },
     setCreatedAt(state, value) {
         state.entry.created_at = value
+    },
+    insertPhotosFile(state, file) {
+        state.entry.photos.push(file)
+    },
+    removePhotosFile(state, file) {
+        state.entry.photos = state.entry.photos.filter(item => {
+            return item.id !== file.id
+        })
+    },
+    insertFeaturedImageFile(state, file) {
+        state.entry.featured_image.push(file)
+    },
+    removeFeaturedImageFile(state, file) {
+        state.entry.featured_image = state.entry.featured_image.filter(item => {
+            return item.id !== file.id
+        })
     },
     setUpdatedAt(state, value) {
         state.entry.updated_at = value

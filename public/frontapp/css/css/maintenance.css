@@ -1,0 +1,132 @@
+/**
+* Transition-timing-function property@mixin 
+*/
+/*background RGBA
+============================================*/
+/****/
+/* Veralign center text */
+/* RIGHT TO LEFT */
+/**
+ * Web Application Prefix Apply For Making Owner Styles
+ */
+/**
+ *   Blocks Layout Selectors 
+ */
+/***********************************************************************/
+/** CHECKOUT BY STEP */
+/*********************************************************************
+					Maintenance Page Styles
+**********************************************************************/
+#body {
+  background-color: #F7F7F7;
+}
+
+#maintenance {
+  margin: 50px 0 0 0;
+  background-color: #fff;
+}
+@media (min-width: 1200px) {
+  #maintenance {
+    margin: 0;
+  }
+}
+#maintenance .logo {
+  margin: 0 0 31px 0;
+  text-align: center;
+}
+#maintenance h1 {
+    font: 45px "Poppins", sans-serif;    color: #245d66;    padding: 0 0 14px 0;    margin: 0 0 19px 0;
+}
+#maintenance #message {
+  font: 14px "Poppins", sans-serif;
+  color: #555454;
+  text-align: center;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: auto;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: auto;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: auto;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+#maintenance{
+	float: right;
+    width: 50%;
+    height: 100%;
+}
+#message{
+	float: right;
+    width: 50%;
+    height: 100%;
+}
+.main-content{
+	padding: 32px 0px;
+    text-align: center;
+    margin-top: 70px;
+}
+.main-content h1{
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+.icon{
+    width: 4%;
+    float: left;
+    margin-left: 19px;
+    margin-top: 12px;
+}
+.divGameStage{
+padding: 66px;
+    text-align: center;
+     position: relative;
+    left: 28px;
+    right: auto;
+}
+.how-social {
+    color: #fff;
+    font-size: 22px;
+    background-color: #ccc;
+    border-radius: 50%;
+}
+.size3 {
+    width: 36px;
+    height: 36px;
+}
+.flex-w{
+	    text-align: center;
+    margin: 0 auto;
+    width: 204px;
+    margin-top: 34px;
+}
+@media (max-width: 991px){
+	#maintenance{
+    width: 100%;
+}
+#message{
+    width: 100%;
+}
+
+}
