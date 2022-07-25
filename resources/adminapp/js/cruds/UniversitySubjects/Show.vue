@@ -59,6 +59,15 @@
                           {{ entry.instagram_link }}
                         </td>
                       </tr>
+                       <tr>
+                        <td class="text-primary">
+                          {{ $t('cruds.univercityCourse.fields.features') }}
+                        </td>
+                        <td>
+                          <datatable-list :row="entry" field="features.name">
+                          </datatable-list>
+                        </td>
+                      </tr>
                       <tr>
                         <td class="text-primary">
                           {{
@@ -156,6 +165,7 @@ import DatatableAttachments from '@components/Datatables/DatatableAttachments'
 import DatatableSingle from '@components/Datatables/DatatableSingle'
 import DatatablePictures from '@components/Datatables/DatatablePictures'
 import DatatableEnum from '@components/Datatables/DatatableEnum' 
+import DatatableList from '@components/Datatables/DatatableList'
 
 export default {
   components: {
@@ -163,6 +173,7 @@ export default {
     DatatableAttachments,
     DatatableSingle,
     DatatablePictures,
+    DatatableList,
     DatatableEnum
   },
   data() {

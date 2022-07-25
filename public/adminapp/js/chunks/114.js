@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[114],{
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/WeeklyAccommodations/Edit.vue?vue&type=script&lang=js&":
-/*!****************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/cruds/WeeklyAccommodations/Edit.vue?vue&type=script&lang=js& ***!
-  \****************************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/SubjectPrograms/Edit.vue?vue&type=script&lang=js&":
+/*!***********************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/cruds/SubjectPrograms/Edit.vue?vue&type=script&lang=js& ***!
+  \***********************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -12,7 +12,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
 /* harmony import */ var _ckeditor_ckeditor5_build_classic__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @ckeditor/ckeditor5-build-classic */ "./node_modules/@ckeditor/ckeditor5-build-classic/build/ckeditor.js");
 /* harmony import */ var _ckeditor_ckeditor5_build_classic__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_ckeditor_ckeditor5_build_classic__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _components_Attachments_Attachment__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @components/Attachments/Attachment */ "./resources/adminapp/js/components/Attachments/Attachment.vue");
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
@@ -216,13 +215,21 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
-
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
-    ClassicEditor: _ckeditor_ckeditor5_build_classic__WEBPACK_IMPORTED_MODULE_1___default.a,
-    Attachment: _components_Attachments_Attachment__WEBPACK_IMPORTED_MODULE_2__["default"]
+    ClassicEditor: _ckeditor_ckeditor5_build_classic__WEBPACK_IMPORTED_MODULE_1___default.a
   },
   data: function data() {
     return {
@@ -231,7 +238,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       editor: _ckeditor_ckeditor5_build_classic__WEBPACK_IMPORTED_MODULE_1___default.a
     };
   },
-  computed: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapGetters"])('WeeklyAccommodationsSingle', ['entry', 'loading', 'lists'])),
+  computed: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapGetters"])('SubjectProgramsSingle', ['entry', 'loading', 'lists'])),
   beforeDestroy: function beforeDestroy() {
     this.resetState();
   },
@@ -244,34 +251,40 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       }
     }
   },
-  methods: _objectSpread(_objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapActions"])('WeeklyAccommodationsSingle', ['fetchEditData', 'updateData', 'resetState', 'setName', 'setDescription', 'setPrice', 'setCity', 'setAvailability', 'setFeatures', 'insertPhotosFile', 'removePhotosFile', 'insertFeaturedImageFile', 'removeFeaturedImageFile'])), {}, {
+  methods: _objectSpread(_objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapActions"])('SubjectProgramsSingle', ['fetchEditData', 'updateData', 'resetState', 'setName', 'setEntryRequirements', 'setMonthsOfEntry', 'setCourseContent', 'setFeesAndFunding', 'setQualificationAndCourseDuration', 'setUniversity', 'setSubject', 'setType'])), {}, {
     updateName: function updateName(e) {
       this.setName(e.target.value);
     },
-    updateDescription: function updateDescription(value) {
-      this.setDescription(value);
+    updateEntryRequirements: function updateEntryRequirements(value) {
+      this.setEntryRequirements(value);
     },
-    updatePrice: function updatePrice(e) {
-      this.setPrice(e.target.value);
+    updateMonthsOfEntry: function updateMonthsOfEntry(e) {
+      this.setMonthsOfEntry(e.target.value);
     },
-    updateCity: function updateCity(value) {
-      this.setCity(value);
+    updateCourseContent: function updateCourseContent(value) {
+      this.setCourseContent(value);
     },
-    updateAvailability: function updateAvailability(value) {
-      this.setAvailability(value);
+    updateFeesAndFunding: function updateFeesAndFunding(e) {
+      this.setFeesAndFunding(e.target.value);
     },
-    updateFeatures: function updateFeatures(value) {
-      this.setFeatures(value);
+    updateType: function updateType(value) {
+      this.setType(value);
     },
-    getRoute: function getRoute(name) {
-      return "".concat(axios.defaults.baseURL).concat(name, "/media");
+    updateQualificationAndCourseDuration: function updateQualificationAndCourseDuration(value) {
+      this.setQualificationAndCourseDuration(value);
+    },
+    updateUniversity: function updateUniversity(value) {
+      this.setUniversity(value);
+    },
+    updateSubject: function updateSubject(value) {
+      this.setSubject(value);
     },
     submitForm: function submitForm() {
       var _this = this;
 
       this.updateData().then(function () {
         _this.$router.push({
-          name: 'weekly_accommodations.index'
+          name: 'subject_programs.index'
         });
 
         _this.$eventHub.$emit('update-success');
@@ -294,10 +307,10 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/WeeklyAccommodations/Edit.vue?vue&type=template&id=8e81bce8&":
-/*!********************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/cruds/WeeklyAccommodations/Edit.vue?vue&type=template&id=8e81bce8& ***!
-  \********************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/SubjectPrograms/Edit.vue?vue&type=template&id=11965dd9&":
+/*!***************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/cruds/SubjectPrograms/Edit.vue?vue&type=template&id=11965dd9& ***!
+  \***************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -341,9 +354,7 @@ var render = function () {
                     ),
                     _c("strong", [
                       _vm._v(
-                        _vm._s(
-                          _vm.$t("cruds.weeklyAccommodation.title_singular")
-                        )
+                        _vm._s(_vm.$t("cruds.subjectProgram.title_singular"))
                       ),
                     ]),
                   ]),
@@ -376,9 +387,7 @@ var render = function () {
                             [
                               _vm._v(
                                 _vm._s(
-                                  _vm.$t(
-                                    "cruds.weeklyAccommodation.fields.name"
-                                  )
+                                  _vm.$t("cruds.subjectProgram.fields.name")
                                 )
                               ),
                             ]
@@ -401,36 +410,11 @@ var render = function () {
                       _vm._v(" "),
                       _c(
                         "div",
-                        { staticClass: "form-group" },
-                        [
-                          _c("label", [
-                            _vm._v(
-                              _vm._s(
-                                _vm.$t(
-                                  "cruds.weeklyAccommodation.fields.description"
-                                )
-                              )
-                            ),
-                          ]),
-                          _vm._v(" "),
-                          _c("ckeditor", {
-                            attrs: {
-                              editor: _vm.editor,
-                              value: _vm.entry.description,
-                            },
-                            on: { input: _vm.updateDescription },
-                          }),
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
                         {
                           staticClass: "form-group bmd-form-group",
                           class: {
-                            "has-items": _vm.entry.price,
-                            "is-focused": _vm.activeField == "price",
+                            "has-items": _vm.entry.type,
+                            "is-focused": _vm.activeField == "type",
                           },
                         },
                         [
@@ -440,70 +424,24 @@ var render = function () {
                             [
                               _vm._v(
                                 _vm._s(
-                                  _vm.$t(
-                                    "cruds.weeklyAccommodation.fields.price"
-                                  )
-                                )
-                              ),
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c("input", {
-                            staticClass: "form-control",
-                            attrs: {
-                              type: "number",
-                              step: "0.01",
-                              required: "",
-                            },
-                            domProps: { value: _vm.entry.price },
-                            on: {
-                              input: _vm.updatePrice,
-                              focus: function ($event) {
-                                return _vm.focusField("price")
-                              },
-                              blur: _vm.clearFocus,
-                            },
-                          }),
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        {
-                          staticClass: "form-group bmd-form-group",
-                          class: {
-                            "has-items": _vm.entry.city_id !== null,
-                            "is-focused": _vm.activeField == "city",
-                          },
-                        },
-                        [
-                          _c(
-                            "label",
-                            { staticClass: "bmd-label-floating required" },
-                            [
-                              _vm._v(
-                                _vm._s(
-                                  _vm.$t(
-                                    "cruds.weeklyAccommodation.fields.city"
-                                  )
+                                  _vm.$t("cruds.universitySubject.fields.type")
                                 )
                               ),
                             ]
                           ),
                           _vm._v(" "),
                           _c("v-select", {
-                            key: "city-field",
+                            key: "type-field",
                             attrs: {
-                              name: "city",
-                              label: "name",
-                              value: _vm.entry.city,
-                              options: _vm.lists.city,
+                              name: "type",
+                              value: _vm.entry.type,
+                              options: _vm.lists.type,
                               reduce: function (entry) {
-                                return entry.id
+                                return entry.value
                               },
                             },
                             on: {
-                              input: _vm.updateCity,
+                              input: _vm.updateType,
                               search: [
                                 function ($event) {
                                   if (
@@ -518,7 +456,7 @@ var render = function () {
                                   ) {
                                     return null
                                   }
-                                  return _vm.focusField("city")
+                                  return _vm.focusField("type")
                                 },
                                 function ($event) {
                                   if (
@@ -536,183 +474,6 @@ var render = function () {
                                   return _vm.clearFocus.apply(null, arguments)
                                 },
                               ],
-                            },
-                          }),
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        {
-                          staticClass: "form-group bmd-form-group",
-                          class: {
-                            "has-items": _vm.entry.availability.length !== 0,
-                            "is-focused": _vm.activeField == "availability",
-                          },
-                        },
-                        [
-                          _c("label", { staticClass: "bmd-label-floating" }, [
-                            _vm._v(
-                              _vm._s(
-                                _vm.$t(
-                                  "cruds.weeklyAccommodation.fields.availability"
-                                )
-                              )
-                            ),
-                          ]),
-                          _vm._v(" "),
-                          _c("v-select", {
-                            key: "availability-field",
-                            attrs: {
-                              name: "availability",
-                              label: "name",
-                              value: _vm.entry.availability,
-                              options: _vm.lists.availability,
-                              closeOnSelect: false,
-                              multiple: "",
-                            },
-                            on: {
-                              input: _vm.updateAvailability,
-                              search: [
-                                function ($event) {
-                                  if (
-                                    !$event.type.indexOf("key") &&
-                                    _vm._k(
-                                      $event.keyCode,
-                                      "focus",
-                                      undefined,
-                                      $event.key,
-                                      undefined
-                                    )
-                                  ) {
-                                    return null
-                                  }
-                                  return _vm.focusField("availability")
-                                },
-                                function ($event) {
-                                  if (
-                                    !$event.type.indexOf("key") &&
-                                    _vm._k(
-                                      $event.keyCode,
-                                      "blur",
-                                      undefined,
-                                      $event.key,
-                                      undefined
-                                    )
-                                  ) {
-                                    return null
-                                  }
-                                  return _vm.clearFocus.apply(null, arguments)
-                                },
-                              ],
-                            },
-                          }),
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        {
-                          staticClass: "form-group bmd-form-group",
-                          class: {
-                            "has-items": _vm.entry.features.length !== 0,
-                            "is-focused": _vm.activeField == "features",
-                          },
-                        },
-                        [
-                          _c(
-                            "label",
-                            { staticClass: "bmd-label-floating required" },
-                            [
-                              _vm._v(
-                                _vm._s(
-                                  _vm.$t(
-                                    "cruds.weeklyAccommodation.fields.features"
-                                  )
-                                )
-                              ),
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c("v-select", {
-                            key: "features-field",
-                            attrs: {
-                              name: "features",
-                              label: "name",
-                              value: _vm.entry.features,
-                              options: _vm.lists.features,
-                              closeOnSelect: false,
-                              multiple: "",
-                            },
-                            on: {
-                              input: _vm.updateFeatures,
-                              search: [
-                                function ($event) {
-                                  if (
-                                    !$event.type.indexOf("key") &&
-                                    _vm._k(
-                                      $event.keyCode,
-                                      "focus",
-                                      undefined,
-                                      $event.key,
-                                      undefined
-                                    )
-                                  ) {
-                                    return null
-                                  }
-                                  return _vm.focusField("features")
-                                },
-                                function ($event) {
-                                  if (
-                                    !$event.type.indexOf("key") &&
-                                    _vm._k(
-                                      $event.keyCode,
-                                      "blur",
-                                      undefined,
-                                      $event.key,
-                                      undefined
-                                    )
-                                  ) {
-                                    return null
-                                  }
-                                  return _vm.clearFocus.apply(null, arguments)
-                                },
-                              ],
-                            },
-                          }),
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        { staticClass: "form-group" },
-                        [
-                          _c("label", [
-                            _vm._v(
-                              _vm._s(
-                                _vm.$t(
-                                  "cruds.weeklyAccommodation.fields.photos"
-                                )
-                              )
-                            ),
-                          ]),
-                          _vm._v(" "),
-                          _c("attachment", {
-                            attrs: {
-                              route: _vm.getRoute("weekly-accommodations"),
-                              "collection-name": "weekly_accommodation_photos",
-                              media: _vm.entry.photos,
-                              "model-id": _vm.$route.params.id,
-                              "max-file-size": 2,
-                              component: "pictures",
-                              accept: "image/*",
-                            },
-                            on: {
-                              "file-uploaded": _vm.insertPhotosFile,
-                              "file-removed": _vm.removePhotosFile,
                             },
                           }),
                         ],
@@ -727,27 +488,304 @@ var render = function () {
                             _vm._v(
                               _vm._s(
                                 _vm.$t(
-                                  "cruds.weeklyAccommodation.fields.featured_image"
+                                  "cruds.subjectProgram.fields.entry_requirements"
                                 )
                               )
                             ),
                           ]),
                           _vm._v(" "),
-                          _c("attachment", {
+                          _c("ckeditor", {
                             attrs: {
-                              route: _vm.getRoute("weekly-accommodations"),
-                              "collection-name":
-                                "weekly_accommodation_featured_image",
-                              media: _vm.entry.featured_image,
-                              "model-id": _vm.$route.params.id,
-                              "max-file-size": 2,
-                              component: "pictures",
-                              accept: "image/*",
-                              "max-files": 1,
+                              editor: _vm.editor,
+                              value: _vm.entry.entry_requirements,
+                              required: "",
+                            },
+                            on: { input: _vm.updateEntryRequirements },
+                          }),
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "form-group bmd-form-group",
+                          class: {
+                            "has-items": _vm.entry.months_of_entry,
+                            "is-focused": _vm.activeField == "months_of_entry",
+                          },
+                        },
+                        [
+                          _c(
+                            "label",
+                            { staticClass: "bmd-label-floating required" },
+                            [
+                              _vm._v(
+                                _vm._s(
+                                  _vm.$t(
+                                    "cruds.subjectProgram.fields.months_of_entry"
+                                  )
+                                )
+                              ),
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c("datetime-picker", {
+                            staticClass: "form-control",
+                            attrs: {
+                              type: "text",
+                              picker: "date",
+                              value: _vm.entry.months_of_entry,
+                              required: "",
                             },
                             on: {
-                              "file-uploaded": _vm.insertFeaturedImageFile,
-                              "file-removed": _vm.removeFeaturedImageFile,
+                              input: _vm.updateMonthsOfEntry,
+                              focus: function ($event) {
+                                return _vm.focusField("months_of_entry")
+                              },
+                              blur: _vm.clearFocus,
+                            },
+                          }),
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "form-group" },
+                        [
+                          _c("label", [
+                            _vm._v(
+                              _vm._s(
+                                _vm.$t(
+                                  "cruds.subjectProgram.fields.course_content"
+                                )
+                              )
+                            ),
+                          ]),
+                          _vm._v(" "),
+                          _c("ckeditor", {
+                            attrs: {
+                              editor: _vm.editor,
+                              value: _vm.entry.course_content,
+                            },
+                            on: { input: _vm.updateCourseContent },
+                          }),
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "form-group bmd-form-group",
+                          class: {
+                            "has-items": _vm.entry.fees_and_funding,
+                            "is-focused": _vm.activeField == "fees_and_funding",
+                          },
+                        },
+                        [
+                          _c(
+                            "label",
+                            { staticClass: "bmd-label-floating required" },
+                            [
+                              _vm._v(
+                                _vm._s(
+                                  _vm.$t(
+                                    "cruds.subjectProgram.fields.fees_and_funding"
+                                  )
+                                )
+                              ),
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c("input", {
+                            staticClass: "form-control",
+                            attrs: {
+                              type: "number",
+                              step: "0.01",
+                              required: "",
+                            },
+                            domProps: { value: _vm.entry.fees_and_funding },
+                            on: {
+                              input: _vm.updateFeesAndFunding,
+                              focus: function ($event) {
+                                return _vm.focusField("fees_and_funding")
+                              },
+                              blur: _vm.clearFocus,
+                            },
+                          }),
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "form-group" },
+                        [
+                          _c("label", [
+                            _vm._v(
+                              _vm._s(
+                                _vm.$t(
+                                  "cruds.subjectProgram.fields.qualification_and_course_duration"
+                                )
+                              )
+                            ),
+                          ]),
+                          _vm._v(" "),
+                          _c("ckeditor", {
+                            attrs: {
+                              editor: _vm.editor,
+                              value:
+                                _vm.entry.qualification_and_course_duration,
+                            },
+                            on: {
+                              input: _vm.updateQualificationAndCourseDuration,
+                            },
+                          }),
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "form-group bmd-form-group",
+                          class: {
+                            "has-items": _vm.entry.university_id !== null,
+                            "is-focused": _vm.activeField == "university",
+                          },
+                        },
+                        [
+                          _c(
+                            "label",
+                            { staticClass: "bmd-label-floating required" },
+                            [
+                              _vm._v(
+                                _vm._s(
+                                  _vm.$t(
+                                    "cruds.subjectProgram.fields.university"
+                                  )
+                                )
+                              ),
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c("v-select", {
+                            key: "university-field",
+                            attrs: {
+                              name: "university",
+                              label: "name",
+                              value: _vm.entry.university,
+                              options: _vm.lists.university,
+                              reduce: function (entry) {
+                                return entry.id
+                              },
+                            },
+                            on: {
+                              input: _vm.updateUniversity,
+                              search: [
+                                function ($event) {
+                                  if (
+                                    !$event.type.indexOf("key") &&
+                                    _vm._k(
+                                      $event.keyCode,
+                                      "focus",
+                                      undefined,
+                                      $event.key,
+                                      undefined
+                                    )
+                                  ) {
+                                    return null
+                                  }
+                                  return _vm.focusField("university")
+                                },
+                                function ($event) {
+                                  if (
+                                    !$event.type.indexOf("key") &&
+                                    _vm._k(
+                                      $event.keyCode,
+                                      "blur",
+                                      undefined,
+                                      $event.key,
+                                      undefined
+                                    )
+                                  ) {
+                                    return null
+                                  }
+                                  return _vm.clearFocus.apply(null, arguments)
+                                },
+                              ],
+                            },
+                          }),
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "form-group bmd-form-group",
+                          class: {
+                            "has-items": _vm.entry.subject_id !== null,
+                            "is-focused": _vm.activeField == "subject",
+                          },
+                        },
+                        [
+                          _c(
+                            "label",
+                            { staticClass: "bmd-label-floating required" },
+                            [
+                              _vm._v(
+                                "\n                    Subject type\n                  "
+                              ),
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c("v-select", {
+                            key: "subject-field",
+                            attrs: {
+                              name: "subject",
+                              label: "name",
+                              value: _vm.entry.subject,
+                              options: _vm.lists.subject,
+                              reduce: function (entry) {
+                                return entry.id
+                              },
+                            },
+                            on: {
+                              input: _vm.updateSubject,
+                              search: [
+                                function ($event) {
+                                  if (
+                                    !$event.type.indexOf("key") &&
+                                    _vm._k(
+                                      $event.keyCode,
+                                      "focus",
+                                      undefined,
+                                      $event.key,
+                                      undefined
+                                    )
+                                  ) {
+                                    return null
+                                  }
+                                  return _vm.focusField("subject")
+                                },
+                                function ($event) {
+                                  if (
+                                    !$event.type.indexOf("key") &&
+                                    _vm._k(
+                                      $event.keyCode,
+                                      "blur",
+                                      undefined,
+                                      $event.key,
+                                      undefined
+                                    )
+                                  ) {
+                                    return null
+                                  }
+                                  return _vm.clearFocus.apply(null, arguments)
+                                },
+                              ],
                             },
                           }),
                         ],
@@ -807,17 +845,17 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./resources/adminapp/js/cruds/WeeklyAccommodations/Edit.vue":
-/*!*******************************************************************!*\
-  !*** ./resources/adminapp/js/cruds/WeeklyAccommodations/Edit.vue ***!
-  \*******************************************************************/
+/***/ "./resources/adminapp/js/cruds/SubjectPrograms/Edit.vue":
+/*!**************************************************************!*\
+  !*** ./resources/adminapp/js/cruds/SubjectPrograms/Edit.vue ***!
+  \**************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Edit_vue_vue_type_template_id_8e81bce8___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Edit.vue?vue&type=template&id=8e81bce8& */ "./resources/adminapp/js/cruds/WeeklyAccommodations/Edit.vue?vue&type=template&id=8e81bce8&");
-/* harmony import */ var _Edit_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Edit.vue?vue&type=script&lang=js& */ "./resources/adminapp/js/cruds/WeeklyAccommodations/Edit.vue?vue&type=script&lang=js&");
+/* harmony import */ var _Edit_vue_vue_type_template_id_11965dd9___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Edit.vue?vue&type=template&id=11965dd9& */ "./resources/adminapp/js/cruds/SubjectPrograms/Edit.vue?vue&type=template&id=11965dd9&");
+/* harmony import */ var _Edit_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Edit.vue?vue&type=script&lang=js& */ "./resources/adminapp/js/cruds/SubjectPrograms/Edit.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -828,8 +866,8 @@ __webpack_require__.r(__webpack_exports__);
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
   _Edit_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Edit_vue_vue_type_template_id_8e81bce8___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Edit_vue_vue_type_template_id_8e81bce8___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _Edit_vue_vue_type_template_id_11965dd9___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Edit_vue_vue_type_template_id_11965dd9___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -839,38 +877,38 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/adminapp/js/cruds/WeeklyAccommodations/Edit.vue"
+component.options.__file = "resources/adminapp/js/cruds/SubjectPrograms/Edit.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/adminapp/js/cruds/WeeklyAccommodations/Edit.vue?vue&type=script&lang=js&":
-/*!********************************************************************************************!*\
-  !*** ./resources/adminapp/js/cruds/WeeklyAccommodations/Edit.vue?vue&type=script&lang=js& ***!
-  \********************************************************************************************/
+/***/ "./resources/adminapp/js/cruds/SubjectPrograms/Edit.vue?vue&type=script&lang=js&":
+/*!***************************************************************************************!*\
+  !*** ./resources/adminapp/js/cruds/SubjectPrograms/Edit.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Edit_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Edit.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/WeeklyAccommodations/Edit.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Edit_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Edit.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/SubjectPrograms/Edit.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Edit_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/adminapp/js/cruds/WeeklyAccommodations/Edit.vue?vue&type=template&id=8e81bce8&":
-/*!**************************************************************************************************!*\
-  !*** ./resources/adminapp/js/cruds/WeeklyAccommodations/Edit.vue?vue&type=template&id=8e81bce8& ***!
-  \**************************************************************************************************/
+/***/ "./resources/adminapp/js/cruds/SubjectPrograms/Edit.vue?vue&type=template&id=11965dd9&":
+/*!*********************************************************************************************!*\
+  !*** ./resources/adminapp/js/cruds/SubjectPrograms/Edit.vue?vue&type=template&id=11965dd9& ***!
+  \*********************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Edit_vue_vue_type_template_id_8e81bce8___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Edit.vue?vue&type=template&id=8e81bce8& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/WeeklyAccommodations/Edit.vue?vue&type=template&id=8e81bce8&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Edit_vue_vue_type_template_id_8e81bce8___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Edit_vue_vue_type_template_id_11965dd9___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Edit.vue?vue&type=template&id=11965dd9& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/SubjectPrograms/Edit.vue?vue&type=template&id=11965dd9&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Edit_vue_vue_type_template_id_11965dd9___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Edit_vue_vue_type_template_id_8e81bce8___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Edit_vue_vue_type_template_id_11965dd9___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

@@ -215,6 +215,29 @@
                       @file-removed="removePhotosFile"
                     />
                   </div>
+                  <div
+                    class="form-group bmd-form-group"
+                    :class="{
+                      'has-items': entry.features.length !== 0,
+                      'is-focused': activeField == 'features'
+                    }"
+                  >
+                    <label class="bmd-label-floating">{{
+                      $t('cruds.univercityCourse.fields.features')
+                    }}</label>
+                    <v-select
+                      name="features"
+                      label="name"
+                      :key="'features-field'"
+                      :value="entry.features"
+                      :options="lists.features"
+                      :closeOnSelect="false"
+                      multiple
+                      @input="updateFeatures"
+                      @search.focus="focusField('features')"
+                      @search.blur="clearFocus"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -294,6 +317,7 @@ export default {
       'insertFeaturedImageFile',
       'removeFeaturedImageFile',
       'insertPhotosFile',
+      'setFeatures',
       'removePhotosFile'
     ]),
     updateName(e) {
@@ -313,6 +337,9 @@ export default {
     },
     updateDescription(value) {
       this.setDescription(value)
+    },
+    updateFeatures(value) {
+      this.setFeatures(value)
     },
     getRoute(name) {
       return `${axios.defaults.baseURL}${name}/media`

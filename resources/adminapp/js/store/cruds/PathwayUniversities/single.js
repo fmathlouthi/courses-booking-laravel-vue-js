@@ -11,6 +11,7 @@ function initialState() {
             pathbrochure: [],
             featured_image: [],
             photos: [],
+            features: [],
             created_at: '',
             updated_at: '',
             deleted_at: '',
@@ -18,7 +19,8 @@ function initialState() {
         },
         lists: {
             city: [],
-            owner: []
+            owner: [],
+            features: [],
         },
         loading: false
     }
@@ -110,6 +112,9 @@ const actions = {
     setDescription({ commit }, value) {
         commit('setDescription', value)
     },
+    setFeatures({ commit }, value) {
+        commit('setFeatures', value)
+    },
     insertPathbrochureFile({ commit }, file) {
         commit('insertPathbrochureFile', file)
     },
@@ -182,6 +187,9 @@ const mutations = {
     },
     setDescription(state, value) {
         state.entry.description = value
+    },
+    setFeatures(state, value) {
+        state.entry.features = value
     },
     insertPathbrochureFile(state, file) {
         state.entry.pathbrochure.push(file)

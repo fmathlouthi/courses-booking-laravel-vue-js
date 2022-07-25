@@ -43,6 +43,11 @@ class StorePathwayRequest extends FormRequest
                 'required',
                 'in:' . implode(',', Arr::pluck(Pathway::TYPE_SELECT, 'value')),
             ],
+            'subject_pathway_id' => [
+                'integer',
+                'exists:subject_pathways,id',
+                'required',
+            ],
         ];
     }
 }

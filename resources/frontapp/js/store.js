@@ -1,6 +1,7 @@
 import { isLoggedIn, logOut } from "./shared/utils/auth";
 
 export default {
+
     state: {
         lastSearch: {
             from: null,
@@ -52,6 +53,8 @@ export default {
         },
         addToBasket({ commit, state }, payload) {
             // context.state, context.commit
+            commit("setBasket", { items: [] });
+            localStorage.setItem("basket", JSON.stringify(state.basket));
             commit('addToBasket', payload);
             localStorage.setItem('basket', JSON.stringify(state.basket));
         },
@@ -64,23 +67,39 @@ export default {
             localStorage.setItem("basket", JSON.stringify(state.basket));
         },
         async loadUser({ commit, dispatch }) {
-            if (isLoggedIn()) {
-                try {
-                    const user = (await axios.get("checklogin")).data;
-                    if (user.auth_user) {
-                        commit("setUser", user.auth_user);
-                        commit("setLoggedIn", true);
-                    } else {
-                        dispatch("logout");
-                    }
-                } catch (error) {
+
+            // if (!isLoggedIn()) {
+            try {
+
+                // let userAuth = null;
+                // axios.get('/checklogin').then(
+                //     function(response) {
+                //         userAuth = response.data
+                //         console.log("fadi", userAuth)
+                //     }.bind(this)
+                // );
+                const user = JSON.parse(localStorage.getItem("userauth"));
+
+                if (user.auth_user) {
+
+                    commit("setUser", user.auth_user);
+                    commit("setLoggedIn", true);
+                    localStorage.setItem("isLoggedIn", true);
+                } else {
+
                     dispatch("logout");
                 }
+            } catch (error) {
+
+                dispatch("logout");
             }
+            //}
         },
         logout({ commit }) {
             commit("setUser", {});
+
             commit("setLoggedIn", false);
+            localStorage.setItem("isLoggedIn", false);
             logOut();
         }
     },

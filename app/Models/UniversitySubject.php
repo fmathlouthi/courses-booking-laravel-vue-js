@@ -62,6 +62,7 @@ class UniversitySubject extends Model implements HasMedia
         'twitter_link',
         'city.name',
         'type',
+        'features.name',
     ];
 
     protected $fillable = [
@@ -110,7 +111,10 @@ class UniversitySubject extends Model implements HasMedia
     {
         return $this->belongsTo(City::class);
     }
-
+    public function features()
+    {
+        return $this->belongsToMany(Feature::class);
+    }
     public function getPhotosAttribute()
     {
         return $this->getMedia('university_subject_photos')->map(function ($item) {

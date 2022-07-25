@@ -40,6 +40,28 @@
                       required
                     />
                   </div>
+                  <div
+                    class="form-group bmd-form-group"
+                    :class="{
+                      'has-items': entry.subject_pathway_id !== null,
+                      'is-focused': activeField == 'subjectpathway'
+                    }"
+                  >
+                    <label class="bmd-label-floating required">
+                      Subject Type
+                    </label>
+                    <v-select
+                      name="subjectpathway"
+                      label="name"
+                      :key="'subject-field'"
+                      :value="entry.subject_pathway_id"
+                      :options="lists.subjectpathway"
+                      :reduce="entry => entry.id"
+                      @input="updateSubjectPathway"
+                      @search.focus="focusField('subjectpathway')"
+                      @search.blur="clearFocus"
+                    />
+                  </div>
                   <div class="form-group">
                     <label>{{ $t('cruds.pathway.fields.description') }}</label>
                     <ckeditor
@@ -184,7 +206,9 @@ export default {
       'setProgressionProgram',
       'setPrice',
       'setUniversity',
-      'setType'
+      'setType',
+      'setSubjectPathway',
+
     ]),
     updateName(e) {
       this.setName(e.target.value)
@@ -203,6 +227,9 @@ export default {
     },
     updateType(value) {
       this.setType(value)
+    },
+    updateSubjectPathway(value) {
+      this.setSubjectPathway(value)
     },
     submitForm() {
       this.updateData()

@@ -103,7 +103,7 @@ $dateaccom = 0;
     {
         
         return response()->json([
-            'auth_user' => Auth::user()
+            'auth_user' => Auth::user() 
         ]);
     }
     //price for semester course

@@ -8,18 +8,19 @@ use App\Http\Requests\UpdateUniversitySubjectRequest;
 use App\Http\Resources\Admin\UniversitySubjectResource;
 use App\Models\City;
 use App\Models\UniversitySubject;
+use App\Models\Feature;
 use Gate;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Spatie\MediaLibrary\Models\Media;
 
 class UniversitySubjectApiController extends Controller
-{
+{ 
     public function index()
     {
         abort_if(Gate::denies('university_subject_access'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
-        return new UniversitySubjectResource(UniversitySubject::with(['city'])->advancedFilter());
+        return new UniversitySubjectResource(UniversitySubject::with(['city', 'features'])->advancedFilter());
     }
 
     public function store(StoreUniversitySubjectRequest $request)
@@ -44,6 +45,7 @@ class UniversitySubjectApiController extends Controller
                 ->update(['model_id' => $universitySubject->id]);
         }
 
+        $universitySubject->features()->sync($request->input('features.*.id', []));
         return (new UniversitySubjectResource($universitySubject))
             ->response()
             ->setStatusCode(Response::HTTP_CREATED);
@@ -57,6 +59,7 @@ class UniversitySubjectApiController extends Controller
             'meta' => [
                 'city' => City::get(['id', 'name']),
                 'type' => UniversitySubject::TYPE_SELECT,
+                'features'      => Feature::get(['id', 'name']),
             ],
         ]);
     }
@@ -65,7 +68,7 @@ class UniversitySubjectApiController extends Controller
     {
         abort_if(Gate::denies('university_subject_show'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
-        return new UniversitySubjectResource($universitySubject->load(['city']));
+        return new UniversitySubjectResource($universitySubject->load(['city', 'features']));
     }
 
     public function update(UpdateUniversitySubjectRequest $request, UniversitySubject $universitySubject)
@@ -76,6 +79,7 @@ class UniversitySubjectApiController extends Controller
         $universitySubject->updateMedia($request->input('photos', []), 'university_subject_photos');
         $universitySubject->updateMedia($request->input('featured_image', []), 'university_subject_featured_image');
 
+        $universitySubject->features()->sync($request->input('features.*.id', []));
         return (new UniversitySubjectResource($universitySubject))
             ->response()
             ->setStatusCode(Response::HTTP_ACCEPTED);
@@ -86,10 +90,11 @@ class UniversitySubjectApiController extends Controller
         abort_if(Gate::denies('university_subject_edit'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
         return response([
-            'data' => new UniversitySubjectResource($universitySubject->load(['city'])),
+            'data' => new UniversitySubjectResource($universitySubject->load(['city', 'features'])),
             'meta' => [
                 'city' => City::get(['id', 'name']),
                 'type' => UniversitySubject::TYPE_SELECT,
+                'features'      => Feature::get(['id', 'name']),
             ],
         ]);
     }

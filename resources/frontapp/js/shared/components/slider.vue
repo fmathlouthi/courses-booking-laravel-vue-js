@@ -334,7 +334,93 @@
                         </div>
                       </b-tab>
                       <b-tab title="Pathway" class="tab-btn-wrapper">
-                        <b-card-text>Tab contents 2</b-card-text>
+                        <!-- pathway search from stat -->
+                                                <b-card-text>
+                            <h4 class="title-widgets">SEARCH OUR PATHWAY PROGRAM OFFERING</h4>
+                        </b-card-text>
+                        <div class="tab-content-bg">
+                            <div class="col-xs-12">
+                                <div class="container">
+                                    <div class="search-tab-content">
+                                        <div class="" id="hotels-tab">
+                                            <div id="wkextsearchform">
+
+                                                <input type="hidden" value="31" name="firstlevel" id="firstlevel3">
+                                                <div class="col-lg-3">
+                                                    <label class="tb-label">I want to study</label>
+                                                    <div class="form-row-home row-home1">
+                                                        <select required="required"
+                                                            class="select form-controle highlight" id="secondlevel3"
+                                                            @change="getpathwaySubjects()" v-model="degreepathway" name="secondlevel">
+                                                            <option value=0>Select a program</option>
+                                                            <option value="graduate">
+                                                                Graduate
+                                                            </option>
+                                                            <option value="undergraduate">
+                                                                Undergraduate
+                                                            </option>
+
+
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-3">
+                                                    <label class="tb-label">Subject</label>
+                                                    <div class="form-row-home row-home2">
+                                                        <select required="required"
+                                                            class="select form-controle highlight" id="thirdlevel3"
+                                                            name="thirdlevel" v-model="pathwaysubject"
+                                                            :disabled="!isFormValidpathwaysubject"
+                                                            @change="getpathwayCountrySubjects()"
+                                                            :class="{ 'opacity-65 cursor-not-allowed': !isFormValidpathwaysubject, }">
+                                                            <option value="0">Select a subject</option>
+                                                            <option v-for="data in pathwaysubjects" :value="data.id"
+                                                                :key="'ccs' + data.id">
+                                                                {{ data.name }}
+                                                            </option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-3">
+                                                    <label class="tb-label">Where</label>
+                                                    <div class="form-row-home row-home3">
+                                                        <select class="select form-controle" id="fourthlevel3"
+                                                            name="fourthlevel" v-model="countrypathwaysubject"
+                                                            :disabled="!isFormValidcountrypathwaysubject"
+                                                            :class="{ 'opacity-65 cursor-not-allowed': !isFormValidcountrypathwaysubject, }">
+                                                            <option value="0">Select a country</option>
+                                                            <option v-for="data in countrypathwaysubjects" :value="data.id"
+                                                                :key="'ccsc' + data.id">
+                                                                {{ data.name }}
+                                                            </option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="buttsubmit">
+                                                    <button type="submit" id="search_button" name="sUBMITSEARCh" class="
+                                          btn btn-outline-inverse
+                                          col-lg-12
+                                        " :disabled="!isFormValidcountrypathwaysubject"
+                                                        :class="{ 'opacity-65 cursor-not-allowed': !isFormValidcountrypathwaysubject }"
+                                                        @click.stop.prevent="submitpathway()">
+                                                        <span><img
+                                                                src="https://stoodux.com/img/right-arrow-black-circular-button.png"
+                                                                width="30" height="30" />Search</span>
+                                                    </button>
+
+                                                </div>
+
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- pathway search from stat -->
                       </b-tab>
                       <b-tab title="Accommodations" class="tab-btn-wrapper">
                          <b-card-text>
@@ -438,7 +524,100 @@
                         </div>
                       </b-tab>
                       <b-tab title="Universities" class="tab-btn-wrapper">
-                        <b-card-text>Tab contents 2</b-card-text>
+                        <b-card-text>
+                          <h4 class="title-widgets">Search our universities programs offering</h4>
+                          </b-card-text>
+                          <div class="tab-content-bg">
+                          <div class="col-xs-12">
+                            <div class="container">
+                              <div class="search-tab-content">
+                                <div class="" id="hotels-tab">
+<div id="wkextsearchform">
+
+    <input type="hidden" value="31" name="firstlevel" id="firstlevel3">
+    <div class="col-lg-3">
+        <label class="tb-label">I want to study</label>
+        <div class="form-row-home row-home1">
+            <select required="required" class="select form-controle highlight" id="secondlevel3" @change="getSubjects()" v-model="degree" name="secondlevel">
+                <option value=0 >Select a degree</option>
+                <option value="postgraduate">
+                    Postgraduate
+                </option>
+                <option value="undergraduate">
+                    Undergraduate
+                </option>
+
+
+            </select>
+        </div>
+    </div>
+
+    <div class="col-lg-3">
+        <label class="tb-label">Subject</label>
+        <div class="form-row-home row-home2">
+            <select required="required" class="select form-controle highlight" id="thirdlevel3" name="thirdlevel"
+            v-model="subject" :disabled="!isFormValidsubject" @change="getCountrySubjects()" :class="{ 'opacity-65 cursor-not-allowed': !isFormValidsubject, }"
+            >
+                <option value="0">Select a subject</option>
+                <option
+											v-for="data in subjects"
+											:value="data.id"
+											:key="'ccs' + data.id"
+										>
+											{{ data.name }}
+										 </option>
+            </select>
+        </div>
+    </div>
+
+    <div class="col-lg-3">
+        <label class="tb-label">Where</label>
+        <div class="form-row-home row-home3">
+            <select class="select form-controle" id="fourthlevel3" name="fourthlevel" 
+            v-model="countrysubject"  :disabled="!isFormValidcountrysubject" :class="{ 'opacity-65 cursor-not-allowed': !isFormValidcountrysubject, }">
+                <option value="0">Select a country</option>
+                  <option
+											v-for="data in countrysubjects"
+											:value="data.id"
+											:key="'ccsc' + data.id"
+										>
+											{{ data.name }}
+										 </option>
+            </select>
+        </div>
+    </div>
+    <div class="buttsubmit">
+                          <button
+                                        type="submit"
+                                        id="search_button"
+                                        name="sUBMITSEARCh"
+                                        class="
+                                          btn btn-outline-inverse
+                                          col-lg-12
+                                        "
+										:disabled="!isFormValidcountrysubject"
+                      :class="{ 'opacity-65 cursor-not-allowed': !isFormValidcountrysubject }"
+                      @click.stop.prevent="submitsubject()"
+                                      >
+                                        <span
+                                          ><img
+                                            src="https://stoodux.com/img/right-arrow-black-circular-button.png"
+                                            width="30"
+                                            height="30"
+                                          />Search</span
+                                        >
+                                      </button>
+                    
+                    </div>
+
+
+    
+ </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          </div>
                       </b-tab>
                     </b-tabs>
                   </b-card>
@@ -583,13 +762,27 @@ export default {
       languages: [],
       isFormValid: false,
       isFormValidcountry: false,
+      isFormValidsubject: false,
+      isFormValidcountrysubject: false,
+      countrypathwaysubjects : [],
+      countrysubject: 0,
+      countrysubjects: [],
+      subjects: [],
+      subject: 0,
       country: 0,
       countries: [],
       city: 0,
+      pathwaysubject : 0,
+      isFormValidpathwaysubject : false,
+      countrypathwaysubject : 0,
+      isFormValidcountrypathwaysubject : false,
+      pathwaysubjects : [],
       cities: [],
       countryAccom: 0,
       countriesaccom: [],
       cityaccom: 0,
+      degree: 0,
+      degreepathway: 0,
       citiesaccom: [],
       isFormValidaccom: false,
     };
@@ -602,6 +795,7 @@ export default {
       );
     },
     getlanguages: function () {
+      
       axios.get("/languages").then(
         function (response) {
           this.languages = response.data.data;
@@ -636,7 +830,88 @@ export default {
           }.bind(this)
         );
     },
-
+//subjectprogram 
+ submitsubject() {
+      //if you want to send any data into server before redirection then you can do it here
+      this.$router.push(
+        `/searchsubjects?degree=${this.degree}&country=${this.countrysubject}&subject=${this.subject}`
+      );
+    },
+    getSubjects: function () {
+      axios
+        .get(`/subjectbydegree`, {
+          params: {
+            degree: this.degree,
+          },
+        })
+        .then(
+          function (response) {
+            this.subject = 0;
+            this.isFormValidsubject = false;
+            this.countrysubject = 0;
+            this.isFormValidcountrysubject = false;
+            this.subjects = response.data;
+            this.isFormValidsubject = true;
+          }.bind(this)
+        );
+    },
+       getCountrySubjects: function () {
+      axios
+        .get(`/countrybysubject`, {
+          params: {
+            subject: this.subject,
+          },
+        })
+        .then(
+          function (response) {
+            this.countrysubject = 0;
+            this.isFormValidcountrysubject = false;
+            this.countrysubjects = response.data;
+            this.isFormValidcountrysubject = true;
+          }.bind(this)
+        );
+    },
+    ///pathway search
+     submitpathway() {
+      //if you want to send any data into server before redirection then you can do it here
+      this.$router.push(
+        `/searchpathways?degree=${this.degreepathway}&country=${this.countrypathwaysubject}&subject=${this.pathwaysubject}`
+      );
+    },
+    getpathwaySubjects: function () {
+      axios
+        .get(`/pathwaysubjectbydegree`, {
+          params: {
+            degree: this.degreepathway,
+          },
+        })
+        .then(
+          function (response) {
+            this.pathwaysubject = 0;
+            this.isFormValidpathwaysubject = false;
+            this.countrypathwaysubject = 0;
+            this.isFormValidcountrypathwaysubject = false;
+            this.pathwaysubjects = response.data;
+            this.isFormValidpathwaysubject = true;
+          }.bind(this)
+        );
+    },
+       getpathwayCountrySubjects: function () {
+      axios
+        .get(`/pathwaycountrybysubject`, {
+          params: {
+            subject: this.pathwaysubject,
+          },
+        })
+        .then(
+          function (response) {
+            this.countrypathwaysubject = 0;
+            this.isFormValidcountrypathwaysubject = false;
+            this.countrypathwaysubjects = response.data;
+            this.isFormValidcountrypathwaysubject = true;
+          }.bind(this)
+        );
+    },
     //accommodation data search
    submitaccom() {
       //if you want to send any data into server before redirection then you can do it here
@@ -678,5 +953,6 @@ export default {
 </script>
 
 <style scoped>
+
 </style>
 

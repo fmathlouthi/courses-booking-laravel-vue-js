@@ -57,20 +57,18 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/Pathways/Show.vue?vue&type=script&lang=js&":
-/*!****************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/cruds/Pathways/Show.vue?vue&type=script&lang=js& ***!
-  \****************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/CourseOrders/Show.vue?vue&type=script&lang=js&":
+/*!********************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/cruds/CourseOrders/Show.vue?vue&type=script&lang=js& ***!
+  \********************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
-/* harmony import */ var _ckeditor_ckeditor5_build_classic__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @ckeditor/ckeditor5-build-classic */ "./node_modules/@ckeditor/ckeditor5-build-classic/build/ckeditor.js");
-/* harmony import */ var _ckeditor_ckeditor5_build_classic__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_ckeditor_ckeditor5_build_classic__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _components_Datatables_DatatableSingle__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @components/Datatables/DatatableSingle */ "./resources/adminapp/js/components/Datatables/DatatableSingle.vue");
-/* harmony import */ var _components_Datatables_DatatableEnum__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @components/Datatables/DatatableEnum */ "./resources/adminapp/js/components/Datatables/DatatableEnum.vue");
+/* harmony import */ var _components_Datatables_DatatableSingle__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @components/Datatables/DatatableSingle */ "./resources/adminapp/js/components/Datatables/DatatableSingle.vue");
+/* harmony import */ var _components_Datatables_DatatableEnum__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @components/Datatables/DatatableEnum */ "./resources/adminapp/js/components/Datatables/DatatableEnum.vue");
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
@@ -183,25 +181,129 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
-
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
-    ClassicEditor: _ckeditor_ckeditor5_build_classic__WEBPACK_IMPORTED_MODULE_1___default.a,
-    DatatableSingle: _components_Datatables_DatatableSingle__WEBPACK_IMPORTED_MODULE_2__["default"],
-    DatatableEnum: _components_Datatables_DatatableEnum__WEBPACK_IMPORTED_MODULE_3__["default"]
+    DatatableSingle: _components_Datatables_DatatableSingle__WEBPACK_IMPORTED_MODULE_1__["default"],
+    DatatableEnum: _components_Datatables_DatatableEnum__WEBPACK_IMPORTED_MODULE_2__["default"]
   },
   data: function data() {
-    return {
-      editor: _ckeditor_ckeditor5_build_classic__WEBPACK_IMPORTED_MODULE_1___default.a
-    };
+    return {};
   },
   beforeDestroy: function beforeDestroy() {
     this.resetState();
   },
-  computed: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapGetters"])('PathwaysSingle', ['entry'])),
+  computed: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapGetters"])('CourseOrdersSingle', ['entry'])),
   watch: {
     '$route.params.id': {
       immediate: true,
@@ -211,7 +313,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       }
     }
   },
-  methods: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapActions"])('PathwaysSingle', ['fetchShowData', 'resetState']))
+  methods: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapActions"])('CourseOrdersSingle', ['fetchShowData', 'resetState']))
 });
 
 /***/ }),
@@ -325,10 +427,10 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/Pathways/Show.vue?vue&type=template&id=4e2a16d0&":
-/*!********************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/cruds/Pathways/Show.vue?vue&type=template&id=4e2a16d0& ***!
-  \********************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/CourseOrders/Show.vue?vue&type=template&id=3db9a3be&":
+/*!************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/cruds/CourseOrders/Show.vue?vue&type=template&id=3db9a3be& ***!
+  \************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -357,7 +459,7 @@ var render = function () {
                     "\n            "
                 ),
                 _c("strong", [
-                  _vm._v(_vm._s(_vm.$t("cruds.pathway.title_singular"))),
+                  _vm._v(_vm._s(_vm.$t("cruds.courseOrder.title_singular"))),
                 ]),
               ]),
             ]
@@ -375,7 +477,7 @@ var render = function () {
                         _c("td", { staticClass: "text-primary" }, [
                           _vm._v(
                             "\n                        " +
-                              _vm._s(_vm.$t("cruds.pathway.fields.id")) +
+                              _vm._s(_vm.$t("cruds.courseOrder.fields.id")) +
                               "\n                      "
                           ),
                         ]),
@@ -393,7 +495,9 @@ var render = function () {
                         _c("td", { staticClass: "text-primary" }, [
                           _vm._v(
                             "\n                        " +
-                              _vm._s(_vm.$t("cruds.pathway.fields.name")) +
+                              _vm._s(
+                                _vm.$t("cruds.courseOrder.fields.order_number")
+                              ) +
                               "\n                      "
                           ),
                         ]),
@@ -401,7 +505,7 @@ var render = function () {
                         _c("td", [
                           _vm._v(
                             "\n                        " +
-                              _vm._s(_vm.entry.name) +
+                              _vm._s(_vm.entry.order_number) +
                               "\n                      "
                           ),
                         ]),
@@ -412,7 +516,7 @@ var render = function () {
                           _vm._v(
                             "\n                        " +
                               _vm._s(
-                                _vm.$t("cruds.pathway.fields.description")
+                                _vm.$t("cruds.courseOrder.fields.client")
                               ) +
                               "\n                      "
                           ),
@@ -421,11 +525,96 @@ var render = function () {
                         _c(
                           "td",
                           [
-                            _c("ckeditor", {
+                            _c("datatable-single", {
+                              attrs: { row: _vm.entry, field: "client.name" },
+                            }),
+                          ],
+                          1
+                        ),
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", { staticClass: "text-primary" }, [
+                          _vm._v(
+                            "\n                        " +
+                              _vm._s(
+                                _vm.$t("cruds.courseOrder.fields.sub_total")
+                              ) +
+                              "\n                      "
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c("td", [
+                          _vm._v(
+                            "\n                        " +
+                              _vm._s(_vm.entry.sub_total) +
+                              "\n                      "
+                          ),
+                        ]),
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", { staticClass: "text-primary" }, [
+                          _vm._v(
+                            "\n                        " +
+                              _vm._s(
+                                _vm.$t("cruds.courseOrder.fields.coupon")
+                              ) +
+                              "\n                      "
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "td",
+                          [
+                            _c("datatable-single", {
+                              attrs: { row: _vm.entry, field: "coupon.name" },
+                            }),
+                          ],
+                          1
+                        ),
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", { staticClass: "text-primary" }, [
+                          _vm._v(
+                            "\n                        " +
+                              _vm._s(
+                                _vm.$t("cruds.courseOrder.fields.total_amount")
+                              ) +
+                              "\n                      "
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c("td", [
+                          _vm._v(
+                            "\n                        " +
+                              _vm._s(_vm.entry.total_amount) +
+                              "\n                      "
+                          ),
+                        ]),
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", { staticClass: "text-primary" }, [
+                          _vm._v(
+                            "\n                        " +
+                              _vm._s(
+                                _vm.$t(
+                                  "cruds.courseOrder.fields.payment_method"
+                                )
+                              ) +
+                              "\n                      "
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "td",
+                          [
+                            _c("datatable-enum", {
                               attrs: {
-                                editor: _vm.editor,
-                                value: _vm.entry.description,
-                                disabled: "",
+                                row: _vm.entry,
+                                field: "payment_method",
                               },
                             }),
                           ],
@@ -439,7 +628,7 @@ var render = function () {
                             "\n                        " +
                               _vm._s(
                                 _vm.$t(
-                                  "cruds.pathway.fields.progression_program"
+                                  "cruds.courseOrder.fields.payment_status"
                                 )
                               ) +
                               "\n                      "
@@ -449,11 +638,10 @@ var render = function () {
                         _c(
                           "td",
                           [
-                            _c("ckeditor", {
+                            _c("datatable-enum", {
                               attrs: {
-                                editor: _vm.editor,
-                                value: _vm.entry.progression_program,
-                                disabled: "",
+                                row: _vm.entry,
+                                field: "payment_status",
                               },
                             }),
                           ],
@@ -465,7 +653,31 @@ var render = function () {
                         _c("td", { staticClass: "text-primary" }, [
                           _vm._v(
                             "\n                        " +
-                              _vm._s(_vm.$t("cruds.pathway.fields.price")) +
+                              _vm._s(
+                                _vm.$t("cruds.courseOrder.fields.status")
+                              ) +
+                              "\n                      "
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "td",
+                          [
+                            _c("datatable-enum", {
+                              attrs: { row: _vm.entry, field: "status" },
+                            }),
+                          ],
+                          1
+                        ),
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", { staticClass: "text-primary" }, [
+                          _vm._v(
+                            "\n                        " +
+                              _vm._s(
+                                _vm.$t("cruds.courseOrder.fields.first_name")
+                              ) +
                               "\n                      "
                           ),
                         ]),
@@ -473,7 +685,7 @@ var render = function () {
                         _c("td", [
                           _vm._v(
                             "\n                        " +
-                              _vm._s(_vm.entry.price) +
+                              _vm._s(_vm.entry.first_name) +
                               "\n                      "
                           ),
                         ]),
@@ -484,7 +696,185 @@ var render = function () {
                           _vm._v(
                             "\n                        " +
                               _vm._s(
-                                _vm.$t("cruds.pathway.fields.university")
+                                _vm.$t("cruds.courseOrder.fields.last_name")
+                              ) +
+                              "\n                      "
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c("td", [
+                          _vm._v(
+                            "\n                        " +
+                              _vm._s(_vm.entry.last_name) +
+                              "\n                      "
+                          ),
+                        ]),
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", { staticClass: "text-primary" }, [
+                          _vm._v(
+                            "\n                        " +
+                              _vm._s(_vm.$t("cruds.courseOrder.fields.email")) +
+                              "\n                      "
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c("td", [
+                          _vm._v(
+                            "\n                        " +
+                              _vm._s(_vm.entry.email) +
+                              "\n                      "
+                          ),
+                        ]),
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", { staticClass: "text-primary" }, [
+                          _vm._v(
+                            "\n                        " +
+                              _vm._s(_vm.$t("cruds.courseOrder.fields.phone")) +
+                              "\n                      "
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c("td", [
+                          _vm._v(
+                            "\n                        " +
+                              _vm._s(_vm.entry.phone) +
+                              "\n                      "
+                          ),
+                        ]),
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", { staticClass: "text-primary" }, [
+                          _vm._v(
+                            "\n                        " +
+                              _vm._s(
+                                _vm.$t("cruds.courseOrder.fields.country")
+                              ) +
+                              "\n                      "
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c("td", [
+                          _vm._v(
+                            "\n                        " +
+                              _vm._s(_vm.entry.country) +
+                              "\n                      "
+                          ),
+                        ]),
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", { staticClass: "text-primary" }, [
+                          _vm._v(
+                            "\n                        " +
+                              _vm._s(
+                                _vm.$t("cruds.courseOrder.fields.post_code")
+                              ) +
+                              "\n                      "
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c("td", [
+                          _vm._v(
+                            "\n                        " +
+                              _vm._s(_vm.entry.post_code) +
+                              "\n                      "
+                          ),
+                        ]),
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", { staticClass: "text-primary" }, [
+                          _vm._v(
+                            "\n                        " +
+                              _vm._s(
+                                _vm.$t("cruds.courseOrder.fields.address_1")
+                              ) +
+                              "\n                      "
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c("td", [
+                          _vm._v(
+                            "\n                        " +
+                              _vm._s(_vm.entry.address_1) +
+                              "\n                      "
+                          ),
+                        ]),
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", { staticClass: "text-primary" }, [
+                          _vm._v(
+                            "\n                        " +
+                              _vm._s(
+                                _vm.$t("cruds.courseOrder.fields.address_2")
+                              ) +
+                              "\n                      "
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c("td", [
+                          _vm._v(
+                            "\n                        " +
+                              _vm._s(_vm.entry.address_2) +
+                              "\n                      "
+                          ),
+                        ]),
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", { staticClass: "text-primary" }, [
+                          _vm._v(
+                            "\n                        " +
+                              _vm._s(
+                                _vm.$t("cruds.courseOrder.fields.course")
+                              ) +
+                              "\n                      "
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "td",
+                          [
+                            _c("datatable-single", {
+                              attrs: { row: _vm.entry, field: "course.name" },
+                            }),
+                          ],
+                          1
+                        ),
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", { staticClass: "text-primary" }, [
+                          _vm._v(
+                            "\n                        " +
+                              _vm._s(_vm.$t("cruds.courseOrder.fields.extra")) +
+                              "\n                      "
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "td",
+                          [
+                            _c("datatable-single", {
+                              attrs: { row: _vm.entry, field: "extra.name" },
+                            }),
+                          ],
+                          1
+                        ),
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", { staticClass: "text-primary" }, [
+                          _vm._v(
+                            "\n                        " +
+                              _vm._s(
+                                _vm.$t("cruds.courseOrder.fields.accommodation")
                               ) +
                               "\n                      "
                           ),
@@ -496,7 +886,7 @@ var render = function () {
                             _c("datatable-single", {
                               attrs: {
                                 row: _vm.entry,
-                                field: "university.name",
+                                field: "accommodation.name",
                               },
                             }),
                           ],
@@ -508,20 +898,20 @@ var render = function () {
                         _c("td", { staticClass: "text-primary" }, [
                           _vm._v(
                             "\n                        " +
-                              _vm._s(_vm.$t("cruds.pathway.fields.type")) +
+                              _vm._s(
+                                _vm.$t("cruds.courseOrder.fields.start_date")
+                              ) +
                               "\n                      "
                           ),
                         ]),
                         _vm._v(" "),
-                        _c(
-                          "td",
-                          [
-                            _c("datatable-enum", {
-                              attrs: { row: _vm.entry, field: "type" },
-                            }),
-                          ],
-                          1
-                        ),
+                        _c("td", [
+                          _vm._v(
+                            "\n                        " +
+                              _vm._s(_vm.entry.start_date) +
+                              "\n                      "
+                          ),
+                        ]),
                       ]),
                     ]),
                   ]),
@@ -706,17 +1096,17 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/adminapp/js/cruds/Pathways/Show.vue":
-/*!*******************************************************!*\
-  !*** ./resources/adminapp/js/cruds/Pathways/Show.vue ***!
-  \*******************************************************/
+/***/ "./resources/adminapp/js/cruds/CourseOrders/Show.vue":
+/*!***********************************************************!*\
+  !*** ./resources/adminapp/js/cruds/CourseOrders/Show.vue ***!
+  \***********************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Show_vue_vue_type_template_id_4e2a16d0___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Show.vue?vue&type=template&id=4e2a16d0& */ "./resources/adminapp/js/cruds/Pathways/Show.vue?vue&type=template&id=4e2a16d0&");
-/* harmony import */ var _Show_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Show.vue?vue&type=script&lang=js& */ "./resources/adminapp/js/cruds/Pathways/Show.vue?vue&type=script&lang=js&");
+/* harmony import */ var _Show_vue_vue_type_template_id_3db9a3be___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Show.vue?vue&type=template&id=3db9a3be& */ "./resources/adminapp/js/cruds/CourseOrders/Show.vue?vue&type=template&id=3db9a3be&");
+/* harmony import */ var _Show_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Show.vue?vue&type=script&lang=js& */ "./resources/adminapp/js/cruds/CourseOrders/Show.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -727,8 +1117,8 @@ __webpack_require__.r(__webpack_exports__);
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
   _Show_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Show_vue_vue_type_template_id_4e2a16d0___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Show_vue_vue_type_template_id_4e2a16d0___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _Show_vue_vue_type_template_id_3db9a3be___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Show_vue_vue_type_template_id_3db9a3be___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -738,38 +1128,38 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/adminapp/js/cruds/Pathways/Show.vue"
+component.options.__file = "resources/adminapp/js/cruds/CourseOrders/Show.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/adminapp/js/cruds/Pathways/Show.vue?vue&type=script&lang=js&":
-/*!********************************************************************************!*\
-  !*** ./resources/adminapp/js/cruds/Pathways/Show.vue?vue&type=script&lang=js& ***!
-  \********************************************************************************/
+/***/ "./resources/adminapp/js/cruds/CourseOrders/Show.vue?vue&type=script&lang=js&":
+/*!************************************************************************************!*\
+  !*** ./resources/adminapp/js/cruds/CourseOrders/Show.vue?vue&type=script&lang=js& ***!
+  \************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Show_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Show.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/Pathways/Show.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Show_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Show.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/CourseOrders/Show.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Show_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/adminapp/js/cruds/Pathways/Show.vue?vue&type=template&id=4e2a16d0&":
-/*!**************************************************************************************!*\
-  !*** ./resources/adminapp/js/cruds/Pathways/Show.vue?vue&type=template&id=4e2a16d0& ***!
-  \**************************************************************************************/
+/***/ "./resources/adminapp/js/cruds/CourseOrders/Show.vue?vue&type=template&id=3db9a3be&":
+/*!******************************************************************************************!*\
+  !*** ./resources/adminapp/js/cruds/CourseOrders/Show.vue?vue&type=template&id=3db9a3be& ***!
+  \******************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Show_vue_vue_type_template_id_4e2a16d0___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Show.vue?vue&type=template&id=4e2a16d0& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/Pathways/Show.vue?vue&type=template&id=4e2a16d0&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Show_vue_vue_type_template_id_4e2a16d0___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Show_vue_vue_type_template_id_3db9a3be___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Show.vue?vue&type=template&id=3db9a3be& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/CourseOrders/Show.vue?vue&type=template&id=3db9a3be&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Show_vue_vue_type_template_id_3db9a3be___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Show_vue_vue_type_template_id_4e2a16d0___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Show_vue_vue_type_template_id_3db9a3be___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

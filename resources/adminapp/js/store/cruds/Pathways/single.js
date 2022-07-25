@@ -11,11 +11,13 @@ function initialState() {
             created_at: '',
             updated_at: '',
             deleted_at: '',
+            subject_pathway_id: null,
             owner_id: null
         },
         lists: {
             university: [],
             type: [],
+            subjectpathway: [],
             owner: []
         },
         loading: false
@@ -108,6 +110,9 @@ const actions = {
     setType({ commit }, value) {
         commit('setType', value)
     },
+    setSubjectPathway({ commit }, value) {
+        commit('setSubjectPathway', value)
+    },
     setCreatedAt({ commit }, value) {
         commit('setCreatedAt', value)
     },
@@ -162,6 +167,9 @@ const mutations = {
     },
     setType(state, value) {
         state.entry.type = value
+    },
+    setSubjectPathway(state, value) {
+        state.entry.subject_pathway_id = value
     },
     setCreatedAt(state, value) {
         state.entry.created_at = value

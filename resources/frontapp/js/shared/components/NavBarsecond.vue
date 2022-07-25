@@ -33,12 +33,13 @@
                         <ul class="links">
                           <li>
                             <a
-                              href="https://stoodux.com/my-account"
+                              href="/"
                               class="myaccount"
                               title="My account"
                             >
                               <i class="fa fa-user"></i
-                              ><span>Sign up / Login</span>
+                              ><span v-if="!islogin">Sign up / Login</span>
+                              <span v-if="islogin">Account</span>
                             </a>
                           </li>
                   
@@ -109,7 +110,7 @@
                         <div id="currencies-block-top">
                           <form
                             id="setCurrency"
-                            action="https://stoodux.com/"
+                            action="/"
                             method="post"
                           >
                             <input
@@ -168,7 +169,7 @@
                     <!-- @file modules\appagebuilder\views\templates\hook\ApGenCode -->
 
                     <div class="logoindex">
-                      <a href="http://stoodux.com/" title="Stoodux">
+                      <a href="/" title="Stoodux">
                         <img
                           class="logo img-responsive"
                           src="https://stoodux.com/img/leo-ecogreen-logo-1526892520.jpg"
@@ -207,7 +208,7 @@
                             <ul class="nav navbar-nav megamenu">
                               <li class="active">
                                 <a
-                                  href="http://stoodux.com/"
+                                  href="/"
                                   target="_self"
                                   class="has-category"
                                   ><span class="menu-title">Home</span></a
@@ -215,7 +216,7 @@
                               </li>
                               <li class="">
                                 <a
-                                  href="https://stoodux.com/content/4-about-us"
+                                  href="/"
                                   target="_self"
                                   class="has-category"
                                   ><span class="menu-title">About</span></a
@@ -223,7 +224,7 @@
                               </li>
                               <li class="">
                                 <a
-                                  href="https://stoodux.com/faq"
+                                  href="/"
                                   target="_self"
                                   class="has-category"
                                   ><span class="menu-title">Help</span></a
@@ -231,7 +232,7 @@
                               </li>
                               <li class="">
                                 <a
-                                  href="https://stoodux.com/contact-us"
+                                  href="/"
                                   target="_self"
                                   class="has-category"
                                   ><span class="menu-title">Contact us</span></a

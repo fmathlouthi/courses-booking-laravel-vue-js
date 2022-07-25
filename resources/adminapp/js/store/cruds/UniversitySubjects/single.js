@@ -10,6 +10,7 @@ function initialState() {
             pathbrochure: [],
             city_id: null,
             photos: [],
+            features: [],
             featured_image: [],
             type: 'postgraduate',
             created_at: '',
@@ -20,6 +21,7 @@ function initialState() {
         lists: {
             city: [],
             type: [],
+            features: [],
             owner: []
         },
         loading: false
@@ -133,6 +135,9 @@ const actions = {
     setType({ commit }, value) {
         commit('setType', value)
     },
+    setFeatures({ commit }, value) {
+        commit('setFeatures', value)
+    },
     setCreatedAt({ commit }, value) {
         commit('setCreatedAt', value)
     },
@@ -214,6 +219,9 @@ const mutations = {
     },
     setType(state, value) {
         state.entry.type = value
+    },
+    setFeatures(state, value) {
+        state.entry.features = value
     },
     setCreatedAt(state, value) {
         state.entry.created_at = value

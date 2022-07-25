@@ -54,6 +54,7 @@ export default {
             this.$store.dispatch("addToBasket", {
         bookable: this.price,
         price: this.price.total,
+        type: 'course-weekly',
       });
        this.$store.dispatch("setLastSearch", {
         from: this.price.total,

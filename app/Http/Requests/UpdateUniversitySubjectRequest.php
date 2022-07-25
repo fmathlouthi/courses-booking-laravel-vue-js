@@ -71,6 +71,13 @@ class UpdateUniversitySubjectRequest extends FormRequest
                 'required',
                 'in:' . implode(',', Arr::pluck(UniversitySubject::TYPE_SELECT, 'value')),
             ],
+            'features' => [
+                'array',
+            ],
+            'features.*.id' => [
+                'integer',
+                'exists:features,id',
+            ],
         ];
     }
 }
