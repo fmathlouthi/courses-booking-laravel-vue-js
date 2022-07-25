@@ -1,14 +1,3 @@
-# Laravel + Vue.js
-
-
-
-
-
-
-
-
-- - - - -
-
 
 ## How to use
 
