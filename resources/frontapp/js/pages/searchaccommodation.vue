@@ -302,7 +302,7 @@
                             </div>
                             <div class="view">
                               <router-link
-                          :to="{ path: '/courses-weekly/' + product.id }"
+                          :to="{ path: '/singleacommodation/' + product.id }"
                              
                                 class="
                                   button
@@ -461,6 +461,7 @@ export default {
         .then(
           function (response) {
             this.cities = response.data;
+            this.citysearch = 0;
             this.isFormValid = true;
           }.bind(this)
         );

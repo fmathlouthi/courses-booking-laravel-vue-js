@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Api\V1\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Services\ChartsService;
+use Illuminate\Support\Facades\Auth;
 
 class DashboardApiController extends Controller
 {
@@ -74,5 +75,12 @@ class DashboardApiController extends Controller
 
 
         return response()->json(compact('bar0','line1', 'line0', 'pie2', 'bar3', 'stats4', 'latest5'));
+    }
+    public function checklogin()
+    {
+        
+        return response()->json([
+            'auth_user' => Auth::user() 
+        ]);
     }
 }

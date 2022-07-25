@@ -43,6 +43,7 @@ class Pathway extends Model
         'price',
         'university.name',
         'type',
+        'subject_pathway.name',
     ];
 
     protected $filterable = [
@@ -51,6 +52,7 @@ class Pathway extends Model
         'price',
         'university.name',
         'type',
+        'subject_pathway.name',
     ];
 
     protected $fillable = [
@@ -60,6 +62,7 @@ class Pathway extends Model
         'price',
         'university_id',
         'type',
+        'subject_pathway_id',
         'created_at',
         'updated_at',
         'deleted_at',
@@ -70,12 +73,22 @@ class Pathway extends Model
     {
         return $this->belongsTo(PathwayUniversity::class);
     }
-
+    public function subjectPathway()
+    {
+        return $this->belongsTo(SubjectPathway::class);
+    }
     public function getTypeLabelAttribute()
     {
         return collect(static::TYPE_SELECT)->firstWhere('value', $this->type)['label'] ?? '';
     }
-
+    public function getLowestAttribute ()
+    {
+        $prices = $this->prices->filter(function ($item) {
+            return !is_null($item->price);
+        });
+    
+        return $prices->min('price');
+    }
     public function owner()
     {
         return $this->belongsTo(User::class);

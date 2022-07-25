@@ -475,6 +475,8 @@ export default {
         .then(
           function (response) {
             this.countries = response.data;
+            this.countrysearch = 0;
+            this.citysearch = 0;
             this.isFormValidcountry = true;
           }.bind(this)
         );
@@ -489,6 +491,7 @@ export default {
         .then(
           function (response) {
             this.cities = response.data;
+            this.citysearch = 0;
             this.isFormValid = true;
           }.bind(this)
         );

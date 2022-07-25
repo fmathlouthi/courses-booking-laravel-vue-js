@@ -1,4 +1,4 @@
-# Laravel + Vue.js: 
+
 ## How to use
 
 - Clone the repository with __git clone__

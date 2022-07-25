@@ -32,6 +32,7 @@ class PathwayUniversity extends Model implements HasMedia
         'name',
         'facebook_link',
         'city.name',
+        'features.name',
     ];
 
     protected $dates = [
@@ -44,6 +45,7 @@ class PathwayUniversity extends Model implements HasMedia
         'pathbrochure',
         'featured_image',
         'photos',
+        'min_price'
     ];
 
     protected $fillable = [
@@ -58,7 +60,14 @@ class PathwayUniversity extends Model implements HasMedia
         'deleted_at',
         'owner_id',
     ];
-
+    public function pathways()
+    {
+        return $this->hasMany(Pathway::class,'university_id');
+    }
+    public function getMinPriceAttribute ()
+    {
+            return $this->pathways()->min('price');
+    }
     public function registerMediaConversions(Media $media = null)
     {
         $thumbnailWidth  = 50;
@@ -76,7 +85,10 @@ class PathwayUniversity extends Model implements HasMedia
             ->height($thumbnailPreviewHeight)
             ->fit('crop', $thumbnailPreviewWidth, $thumbnailPreviewHeight);
     }
-
+    public function features()
+    {
+        return $this->belongsToMany(Feature::class);
+    }
     public function getPathbrochureAttribute()
     {
         return $this->getMedia('pathway_university_pathbrochure')->map(function ($item) {
@@ -122,5 +134,32 @@ class PathwayUniversity extends Model implements HasMedia
     protected function serializeDate(DateTimeInterface $date)
     {
         return $date->format('Y-m-d H:i:s');
+    }
+    public function scopeWithFilters($query)
+    {
+    
+       
+
+        return $query->when(request()->input('country'), function ($query) {
+                $query->whereIn('city_id', function($query) {
+                    $query->select('id')
+                      ->from(with(new City())->getTable())
+                      ->where('country_id', request()->input('country'));
+                 });
+            })
+            ->when(request()->input('degree'), function ($query) {
+                $query->whereIn('id', function($query) {
+                    $query->select('university_id')
+                      ->from(with(new Pathway())->getTable())
+                      ->where('type', '=' ,request()->input('degree'));
+                 });
+            })
+            ->when(request()->input('subject'), function ($query) {
+                $query->whereIn('id', function($query) {
+                    $query->select('university_id')
+                      ->from(with(new Pathway())->getTable())
+                      ->where('subject_pathway_id', '=' ,request()->input('subject'));
+                 });
+            });
     }
 }

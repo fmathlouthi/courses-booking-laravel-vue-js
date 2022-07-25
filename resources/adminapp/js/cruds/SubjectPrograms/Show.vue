@@ -123,7 +123,8 @@
                           >
                           </datatable-single>
                         </td>
-                      </tr><tr>
+                      </tr>
+                      <tr>
                         <td class="text-primary">
                           Subject
                         </td>

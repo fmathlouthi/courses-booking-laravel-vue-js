@@ -32,7 +32,7 @@ export default {
           title: 'global.dashboard',
           icon: 'dashboard',
           path: { name: 'dashboard' },
-          gate: 'user_management_access',
+          gate: 'dashboard_access',
         },
         {
           title: 'cruds.userManagement.title',
@@ -172,6 +172,12 @@ export default {
               path: { name: 'semester_accommodations.index' },
               gate: 'semester_accommodation_access'
             },
+            {
+              title: 'cruds.courseOrder.title',
+              icon: 'table_view',
+              path: { name: 'accommodation_orders.index' },
+              gate: 'course_order_access'
+            },
            /* {
               title: 'cruds.semesterAccommVariante.title',
               icon: 'table_view',
@@ -187,10 +193,22 @@ export default {
           gate: 'pathway_program_access',
           children: [
             {
+              title: 'cruds.pathwayRequest.title',
+              icon: 'table_view',
+              path: { name: 'pathway_requests.index' },
+              gate: 'pathway_request_access'
+            },
+            {
               title: 'cruds.pathwayUniversity.title',
               icon: 'table_view',
               path: { name: 'pathway_universities.index' },
               gate: 'pathway_university_access'
+            },
+            {
+              title: 'Subjects List',
+              icon: 'table_view',
+              path: { name: 'subjectpathways.index' },
+              gate: 'subject_program_access'
             },
             {
               title: 'cruds.pathway.title',
@@ -206,6 +224,12 @@ export default {
           path: { name: 'universities_program' },
           gate: 'universities_program_access',
           children: [
+            {
+              title: 'cruds.universityRequest.title',
+              icon: 'table_view',
+              path: { name: 'university_requests.index' },
+              gate: 'university_request_access'
+            },
             {
               title: 'cruds.universitySubject.title',
               icon: 'table_view',
@@ -232,7 +256,14 @@ export default {
               icon: 'table_view',
               path: { name: 'course_orders.index' },
               gate: 'course_order_user_access'
+            },
+            {
+              title: 'Accommodation Order list',
+              icon: 'table_view',
+              path: { name: 'accommodation_orders.index' },
+              gate: 'course_order_user_access'
             }
+
 
        /* {
           title: 'cruds.contactManagement.title',

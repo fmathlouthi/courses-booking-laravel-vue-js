@@ -58,6 +58,14 @@ import SubjectProgramsIndex from './cruds/SubjectPrograms'
 import SubjectProgramsSingle from './cruds/SubjectPrograms/single'
 import SubjectsIndex from './cruds/Subjects'
 import SubjectsSingle from './cruds/Subjects/single'
+import PathwayRequestsIndex from './cruds/PathwayRequests'
+import PathwayRequestsSingle from './cruds/PathwayRequests/single'
+import SubjectPathwaysIndex from './cruds/SubjectPathways'
+import SubjectPathwaysSingle from './cruds/SubjectPathways/single'
+import UniversityRequestsIndex from './cruds/UniversityRequests'
+import UniversityRequestsSingle from './cruds/UniversityRequests/single'
+import AccommodationOrdersIndex from './cruds/AccommodationOrders'
+import AccommodationOrdersSingle from './cruds/AccommodationOrders/single'
 
 Vue.use(Vuex)
 
@@ -67,6 +75,8 @@ export default new Vuex.Store({
     modules: {
         Alert,
         I18NStore,
+        UniversityRequestsIndex,
+        UniversityRequestsSingle,
         PermissionsIndex,
         PermissionsSingle,
         RolesIndex,
@@ -120,7 +130,13 @@ export default new Vuex.Store({
         SubjectProgramsIndex,
         SubjectProgramsSingle,
         SubjectsIndex,
-        SubjectsSingle
+        SubjectsSingle,
+        AccommodationOrdersSingle,
+        AccommodationOrdersIndex,
+        SubjectPathwaysIndex,
+        SubjectPathwaysSingle,
+        PathwayRequestsIndex,
+        PathwayRequestsSingle
     },
     strict: debug
 })

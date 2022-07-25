@@ -583,6 +583,34 @@ const routes = [{
             component: View,
             redirect: { name: 'weekly_accommodations.index' },
             children: [{
+                    path: 'accommodation-orders',
+                    name: 'accommodation_orders.index',
+                    component: () =>
+                        import ('@cruds/AccommodationOrders/Index.vue'),
+                    meta: { title: 'cruds.accommodationOrder.title' }
+                },
+                {
+                    path: 'accommodation-orders/create',
+                    name: 'accommodation_orders.create',
+                    component: () =>
+                        import ('@cruds/AccommodationOrders/Create.vue'),
+                    meta: { title: 'cruds.accommodationOrder.title' }
+                },
+                {
+                    path: 'accommodation-orders/:id',
+                    name: 'accommodation_orders.show',
+                    component: () =>
+                        import ('@cruds/AccommodationOrders/Show.vue'),
+                    meta: { title: 'cruds.accommodationOrder.title' }
+                },
+                {
+                    path: 'accommodation-orders/:id/edit',
+                    name: 'accommodation_orders.edit',
+                    component: () =>
+                        import ('@cruds/AccommodationOrders/Edit.vue'),
+                    meta: { title: 'cruds.accommodationOrder.title' }
+                },
+                {
                     path: 'weekly-accommodations',
                     name: 'weekly_accommodations.index',
                     component: () =>
@@ -728,6 +756,64 @@ const routes = [{
                     component: () =>
                         import ('@cruds/Pathways/Edit.vue'),
                     meta: { title: 'cruds.pathway.title' }
+                },
+                ///subject pathway
+
+                {
+                    path: 'subjectpathways',
+                    name: 'subjectpathways.index',
+                    component: () =>
+                        import ('@cruds/SubjectPathways/Index.vue'),
+                    meta: { title: 'cruds.subjectProgram.title' }
+                },
+                {
+                    path: 'subjectpathways/create',
+                    name: 'subjectpathways.create',
+                    component: () =>
+                        import ('@cruds/SubjectPathways/Create.vue'),
+                    meta: { title: 'cruds.subjectProgram.title' }
+                },
+                {
+                    path: 'subjectpathways/:id',
+                    name: 'subjectpathways.show',
+                    component: () =>
+                        import ('@cruds/SubjectPathways/Show.vue'),
+                    meta: { title: 'cruds.subjectProgram.title' }
+                },
+                {
+                    path: 'subjectpathways/:id/edit',
+                    name: 'subjectpathways.edit',
+                    component: () =>
+                        import ('@cruds/SubjectPathways/Edit.vue'),
+                    meta: { title: 'cruds.subjectProgram.title' }
+                },
+                {
+                    path: 'pathway-requests',
+                    name: 'pathway_requests.index',
+                    component: () =>
+                        import ('@cruds/PathwayRequests/Index.vue'),
+                    meta: { title: 'cruds.pathwayRequest.title' }
+                },
+                {
+                    path: 'pathway-requests/create',
+                    name: 'pathway_requests.create',
+                    component: () =>
+                        import ('@cruds/PathwayRequests/Create.vue'),
+                    meta: { title: 'cruds.pathwayRequest.title' }
+                },
+                {
+                    path: 'pathway-requests/:id',
+                    name: 'pathway_requests.show',
+                    component: () =>
+                        import ('@cruds/PathwayRequests/Show.vue'),
+                    meta: { title: 'cruds.pathwayRequest.title' }
+                },
+                {
+                    path: 'pathway-requests/:id/edit',
+                    name: 'pathway_requests.edit',
+                    component: () =>
+                        import ('@cruds/PathwayRequests/Edit.vue'),
+                    meta: { title: 'cruds.pathwayRequest.title' }
                 }
             ]
         },
@@ -737,6 +823,34 @@ const routes = [{
             component: View,
             redirect: { name: 'university_subjects.index' },
             children: [{
+                    path: 'university-requests',
+                    name: 'university_requests.index',
+                    component: () =>
+                        import ('@cruds/UniversityRequests/Index.vue'),
+                    meta: { title: 'cruds.universityRequest.title' }
+                },
+                {
+                    path: 'university-requests/create',
+                    name: 'university_requests.create',
+                    component: () =>
+                        import ('@cruds/UniversityRequests/Create.vue'),
+                    meta: { title: 'cruds.universityRequest.title' }
+                },
+                {
+                    path: 'university-requests/:id',
+                    name: 'university_requests.show',
+                    component: () =>
+                        import ('@cruds/UniversityRequests/Show.vue'),
+                    meta: { title: 'cruds.universityRequest.title' }
+                },
+                {
+                    path: 'university-requests/:id/edit',
+                    name: 'university_requests.edit',
+                    component: () =>
+                        import ('@cruds/UniversityRequests/Edit.vue'),
+                    meta: { title: 'cruds.universityRequest.title' }
+                },
+                {
                     path: 'university-subjects',
                     name: 'university_subjects.index',
                     component: () =>
@@ -791,9 +905,9 @@ const routes = [{
                     component: () =>
                         import ('@cruds/SubjectPrograms/Edit.vue'),
                     meta: { title: 'cruds.subjectProgram.title' }
-                }
-                ///
-                ,
+                },
+                ///subject program
+
                 {
                     path: 'subjects',
                     name: 'subjects.index',
@@ -821,7 +935,7 @@ const routes = [{
                     component: () =>
                         import ('@cruds/Subjects/Edit.vue'),
                     meta: { title: 'cruds.subjectProgram.title' }
-                }
+                },
             ]
         }
     ]

@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[92],{
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/SemesterAccommodations/Create.vue?vue&type=script&lang=js&":
-/*!********************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/cruds/SemesterAccommodations/Create.vue?vue&type=script&lang=js& ***!
-  \********************************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/PathwayUniversities/Edit.vue?vue&type=script&lang=js&":
+/*!***************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/cruds/PathwayUniversities/Edit.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -222,6 +222,57 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -234,50 +285,43 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     return {
       status: '',
       activeField: '',
-      editor: _ckeditor_ckeditor5_build_classic__WEBPACK_IMPORTED_MODULE_1___default.a,
-      country: 0,
-      countries: [],
-      state: 0,
-      states: []
+      editor: _ckeditor_ckeditor5_build_classic__WEBPACK_IMPORTED_MODULE_1___default.a
     };
   },
-  computed: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapGetters"])('SemesterAccommodationsSingle', ['entry', 'loading', 'lists'])),
-  mounted: function mounted() {
-    this.fetchCreateData();
-  },
+  computed: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapGetters"])('PathwayUniversitiesSingle', ['entry', 'loading', 'lists'])),
   beforeDestroy: function beforeDestroy() {
     this.resetState();
   },
-  methods: _objectSpread(_objectSpread({
-    getCountries: function getCountries() {
-      axios.get('countries/depand/getcountries').then(function (response) {
-        this.countries = response.data;
-      }.bind(this));
-    },
-    getStates: function getStates() {
-      axios.get('countries/depand/getstates', {
-        params: {
-          country_id: this.country
-        }
-      }).then(function (response) {
-        this.states = response.data;
-      }.bind(this));
+  watch: {
+    '$route.params.id': {
+      immediate: true,
+      handler: function handler() {
+        this.resetState();
+        this.fetchEditData(this.$route.params.id);
+      }
     }
-  }, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapActions"])('SemesterAccommodationsSingle', ['storeData', 'resetState', 'setName', 'setPrice', 'setDescription', 'setCity', 'setFeatures', 'insertPhotosFile', 'removePhotosFile', 'insertFeaturedImageFile', 'removeFeaturedImageFile', 'fetchCreateData'])), {}, {
+  },
+  methods: _objectSpread(_objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapActions"])('PathwayUniversitiesSingle', ['fetchEditData', 'updateData', 'resetState', 'setName', 'setCity', 'setFacebookLink', 'setInstagramLink', 'setTwitterLink', 'setDescription', 'insertPathbrochureFile', 'removePathbrochureFile', 'insertFeaturedImageFile', 'removeFeaturedImageFile', 'insertPhotosFile', 'setFeatures', 'removePhotosFile'])), {}, {
     updateName: function updateName(e) {
       this.setName(e.target.value);
     },
-    updateDescription: function updateDescription(value) {
-      this.setDescription(value);
+    updateFacebookLink: function updateFacebookLink(e) {
+      this.setFacebookLink(e.target.value);
+    },
+    updateInstagramLink: function updateInstagramLink(e) {
+      this.setInstagramLink(e.target.value);
     },
     updateCity: function updateCity(value) {
       this.setCity(value);
     },
+    updateTwitterLink: function updateTwitterLink(e) {
+      this.setTwitterLink(e.target.value);
+    },
     updateFeatures: function updateFeatures(value) {
       this.setFeatures(value);
     },
-    updatePrice: function updatePrice(e) {
-      this.setPrice(e.target.value);
+    updateDescription: function updateDescription(value) {
+      this.setDescription(value);
     },
     getRoute: function getRoute(name) {
       return "".concat(axios.defaults.baseURL).concat(name, "/media");
@@ -285,12 +329,12 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     submitForm: function submitForm() {
       var _this = this;
 
-      this.storeData().then(function () {
+      this.updateData().then(function () {
         _this.$router.push({
-          name: 'semester_accommodations.index'
+          name: 'pathway_universities.index'
         });
 
-        _this.$eventHub.$emit('create-success');
+        _this.$eventHub.$emit('update-success');
       })["catch"](function (error) {
         _this.status = 'failed';
 
@@ -305,18 +349,15 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     clearFocus: function clearFocus() {
       this.activeField = '';
     }
-  }),
-  created: function created() {
-    this.getCountries();
-  }
+  })
 });
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/SemesterAccommodations/Create.vue?vue&type=template&id=df221e32&":
-/*!************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/cruds/SemesterAccommodations/Create.vue?vue&type=template&id=df221e32& ***!
-  \************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/PathwayUniversities/Edit.vue?vue&type=template&id=bfa8ce04&":
+/*!*******************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/cruds/PathwayUniversities/Edit.vue?vue&type=template&id=bfa8ce04& ***!
+  \*******************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -355,14 +396,12 @@ var render = function () {
                   _c("h4", { staticClass: "card-title" }, [
                     _vm._v(
                       "\n              " +
-                        _vm._s(_vm.$t("global.create")) +
+                        _vm._s(_vm.$t("global.edit")) +
                         "\n              "
                     ),
                     _c("strong", [
                       _vm._v(
-                        _vm._s(
-                          _vm.$t("cruds.semesterAccommodation.title_singular")
-                        )
+                        _vm._s(_vm.$t("cruds.pathwayUniversity.title_singular"))
                       ),
                     ]),
                   ]),
@@ -395,9 +434,7 @@ var render = function () {
                             [
                               _vm._v(
                                 _vm._s(
-                                  _vm.$t(
-                                    "cruds.semesterAccommodation.fields.name"
-                                  )
+                                  _vm.$t("cruds.pathwayUniversity.fields.name")
                                 )
                               ),
                             ]
@@ -417,152 +454,6 @@ var render = function () {
                           }),
                         ]
                       ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        { staticClass: "form-group" },
-                        [
-                          _c("label", [
-                            _vm._v(
-                              _vm._s(
-                                _vm.$t("cruds.universitySubject.fields.photos")
-                              )
-                            ),
-                          ]),
-                          _vm._v(" "),
-                          _c("attachment", {
-                            attrs: {
-                              route: _vm.getRoute("semester-accommodations"),
-                              "collection-name": "accommodations_photos",
-                              media: _vm.entry.photos,
-                              "max-file-size": 2,
-                              component: "pictures",
-                              accept: "image/*",
-                            },
-                            on: {
-                              "file-uploaded": _vm.insertPhotosFile,
-                              "file-removed": _vm.removePhotosFile,
-                            },
-                          }),
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        { staticClass: "form-group" },
-                        [
-                          _c("label", [
-                            _vm._v(
-                              _vm._s(
-                                _vm.$t(
-                                  "cruds.universitySubject.fields.featured_image"
-                                )
-                              )
-                            ),
-                          ]),
-                          _vm._v(" "),
-                          _c("attachment", {
-                            attrs: {
-                              route: _vm.getRoute("semester-accommodations"),
-                              "collection-name":
-                                "accommodations_featured_image",
-                              media: _vm.entry.featured_image,
-                              "max-file-size": 2,
-                              component: "pictures",
-                              accept: "image/*",
-                              "max-files": 1,
-                            },
-                            on: {
-                              "file-uploaded": _vm.insertFeaturedImageFile,
-                              "file-removed": _vm.removeFeaturedImageFile,
-                            },
-                          }),
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        { staticClass: "form-group" },
-                        [
-                          _c("label", [
-                            _vm._v(
-                              _vm._s(
-                                _vm.$t(
-                                  "cruds.semesterAccommodation.fields.description"
-                                )
-                              )
-                            ),
-                          ]),
-                          _vm._v(" "),
-                          _c("ckeditor", {
-                            attrs: {
-                              editor: _vm.editor,
-                              value: _vm.entry.description,
-                            },
-                            on: { input: _vm.updateDescription },
-                          }),
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "form-group" }, [
-                        _c("label", [_vm._v("Select Country:")]),
-                        _vm._v(" "),
-                        _c(
-                          "select",
-                          {
-                            directives: [
-                              {
-                                name: "model",
-                                rawName: "v-model",
-                                value: _vm.country,
-                                expression: "country",
-                              },
-                            ],
-                            staticClass: "form-control",
-                            on: {
-                              change: [
-                                function ($event) {
-                                  var $$selectedVal = Array.prototype.filter
-                                    .call($event.target.options, function (o) {
-                                      return o.selected
-                                    })
-                                    .map(function (o) {
-                                      var val =
-                                        "_value" in o ? o._value : o.value
-                                      return val
-                                    })
-                                  _vm.country = $event.target.multiple
-                                    ? $$selectedVal
-                                    : $$selectedVal[0]
-                                },
-                                function ($event) {
-                                  return _vm.getStates()
-                                },
-                              ],
-                            },
-                          },
-                          [
-                            _c("option", { attrs: { value: "0" } }, [
-                              _vm._v("Select Country"),
-                            ]),
-                            _vm._v(" "),
-                            _vm._l(_vm.countries, function (data) {
-                              return _c(
-                                "option",
-                                {
-                                  key: "cc" + data.id,
-                                  domProps: { value: data.id },
-                                },
-                                [_vm._v(_vm._s(data.name))]
-                              )
-                            }),
-                          ],
-                          2
-                        ),
-                      ]),
                       _vm._v(" "),
                       _c(
                         "div",
@@ -591,8 +482,8 @@ var render = function () {
                             attrs: {
                               name: "city",
                               label: "name",
-                              value: _vm.entry.city_id,
-                              options: _vm.states,
+                              value: _vm.entry.city,
+                              options: _vm.lists.city,
                               reduce: function (entry) {
                                 return entry.id
                               },
@@ -637,6 +528,308 @@ var render = function () {
                         1
                       ),
                       _vm._v(" "),
+                      _c("div", { staticClass: "form-group" }, [
+                        _c("label", [
+                          _vm._v(
+                            _vm._s(
+                              _vm.$t(
+                                "cruds.pathwayUniversity.fields.facebook_link"
+                              )
+                            )
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          {
+                            staticClass: "form-group bmd-form-group",
+                            class: {
+                              "has-items": _vm.entry.facebook_link,
+                              "is-focused": _vm.activeField == "facebook_link",
+                            },
+                          },
+                          [
+                            _c("label", { staticClass: "bmd-label-floating" }, [
+                              _vm._v(
+                                _vm._s(
+                                  _vm.$t(
+                                    "cruds.pathwayUniversity.fields.facebook_link_helper"
+                                  )
+                                )
+                              ),
+                            ]),
+                            _vm._v(" "),
+                            _c("input", {
+                              staticClass: "form-control",
+                              attrs: { type: "text" },
+                              domProps: { value: _vm.entry.facebook_link },
+                              on: {
+                                input: _vm.updateFacebookLink,
+                                focus: function ($event) {
+                                  return _vm.focusField("facebook_link")
+                                },
+                                blur: _vm.clearFocus,
+                              },
+                            }),
+                          ]
+                        ),
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "form-group" }, [
+                        _c("label", [
+                          _vm._v(
+                            _vm._s(
+                              _vm.$t(
+                                "cruds.pathwayUniversity.fields.instagram_link"
+                              )
+                            )
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          {
+                            staticClass: "form-group bmd-form-group",
+                            class: {
+                              "has-items": _vm.entry.instagram_link,
+                              "is-focused": _vm.activeField == "instagram_link",
+                            },
+                          },
+                          [
+                            _c("label", { staticClass: "bmd-label-floating" }, [
+                              _vm._v(
+                                _vm._s(
+                                  _vm.$t(
+                                    "cruds.pathwayUniversity.fields.instagram_link_helper"
+                                  )
+                                )
+                              ),
+                            ]),
+                            _vm._v(" "),
+                            _c("input", {
+                              staticClass: "form-control",
+                              attrs: { type: "text" },
+                              domProps: { value: _vm.entry.instagram_link },
+                              on: {
+                                input: _vm.updateInstagramLink,
+                                focus: function ($event) {
+                                  return _vm.focusField("instagram_link")
+                                },
+                                blur: _vm.clearFocus,
+                              },
+                            }),
+                          ]
+                        ),
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "form-group" }, [
+                        _c("label", [
+                          _vm._v(
+                            _vm._s(
+                              _vm.$t(
+                                "cruds.pathwayUniversity.fields.twitter_link"
+                              )
+                            )
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          {
+                            staticClass: "form-group bmd-form-group",
+                            class: {
+                              "has-items": _vm.entry.twitter_link,
+                              "is-focused": _vm.activeField == "twitter_link",
+                            },
+                          },
+                          [
+                            _c("label", { staticClass: "bmd-label-floating" }, [
+                              _vm._v(
+                                _vm._s(
+                                  _vm.$t(
+                                    "cruds.pathwayUniversity.fields.twitter_link_helper"
+                                  )
+                                )
+                              ),
+                            ]),
+                            _vm._v(" "),
+                            _c("input", {
+                              staticClass: "form-control",
+                              attrs: { type: "text" },
+                              domProps: { value: _vm.entry.twitter_link },
+                              on: {
+                                input: _vm.updateTwitterLink,
+                                focus: function ($event) {
+                                  return _vm.focusField("twitter_link")
+                                },
+                                blur: _vm.clearFocus,
+                              },
+                            }),
+                          ]
+                        ),
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "form-group" }, [
+                        _c("label", [
+                          _vm._v(
+                            _vm._s(
+                              _vm.$t(
+                                "cruds.pathwayUniversity.fields.description"
+                              )
+                            )
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          {
+                            staticClass: "form-group bmd-form-group has-items",
+                          },
+                          [
+                            _c("label", { staticClass: "bmd-label-floating" }, [
+                              _vm._v(
+                                _vm._s(
+                                  _vm.$t(
+                                    "cruds.pathwayUniversity.fields.description_helper"
+                                  )
+                                )
+                              ),
+                            ]),
+                            _vm._v(" "),
+                            _c("ckeditor", {
+                              attrs: {
+                                editor: _vm.editor,
+                                value: _vm.entry.description,
+                              },
+                              on: { input: _vm.updateDescription },
+                            }),
+                          ],
+                          1
+                        ),
+                      ]),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "form-group" },
+                        [
+                          _c("label", [
+                            _vm._v(
+                              _vm._s(
+                                _vm.$t(
+                                  "cruds.pathwayUniversity.fields.pathbrochure"
+                                )
+                              )
+                            ),
+                          ]),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "form-group bmd-form-group has-items",
+                            },
+                            [
+                              _c(
+                                "label",
+                                { staticClass: "bmd-label-floating" },
+                                [
+                                  _vm._v(
+                                    _vm._s(
+                                      _vm.$t(
+                                        "cruds.pathwayUniversity.fields.pathbrochure_helper"
+                                      )
+                                    )
+                                  ),
+                                ]
+                              ),
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c("attachment", {
+                            attrs: {
+                              route: _vm.getRoute("pathway-universities"),
+                              "collection-name":
+                                "pathway_university_pathbrochure",
+                              media: _vm.entry.pathbrochure,
+                              "model-id": _vm.$route.params.id,
+                              "max-file-size": 2,
+                              "max-files": 1,
+                            },
+                            on: {
+                              "file-uploaded": _vm.insertPathbrochureFile,
+                              "file-removed": _vm.removePathbrochureFile,
+                            },
+                          }),
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "form-group" },
+                        [
+                          _c("label", { staticClass: "required" }, [
+                            _vm._v(
+                              _vm._s(
+                                _vm.$t(
+                                  "cruds.pathwayUniversity.fields.featured_image"
+                                )
+                              )
+                            ),
+                          ]),
+                          _vm._v(" "),
+                          _c("attachment", {
+                            attrs: {
+                              route: _vm.getRoute("pathway-universities"),
+                              "collection-name":
+                                "pathway_university_featured_image",
+                              media: _vm.entry.featured_image,
+                              "model-id": _vm.$route.params.id,
+                              "max-file-size": 2,
+                              component: "pictures",
+                              accept: "image/*",
+                              "max-files": 1,
+                            },
+                            on: {
+                              "file-uploaded": _vm.insertFeaturedImageFile,
+                              "file-removed": _vm.removeFeaturedImageFile,
+                            },
+                          }),
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "form-group" },
+                        [
+                          _c("label", [
+                            _vm._v(
+                              _vm._s(
+                                _vm.$t("cruds.pathwayUniversity.fields.photos")
+                              )
+                            ),
+                          ]),
+                          _vm._v(" "),
+                          _c("attachment", {
+                            attrs: {
+                              route: _vm.getRoute("pathway-universities"),
+                              "collection-name": "pathway_university_photos",
+                              media: _vm.entry.photos,
+                              "model-id": _vm.$route.params.id,
+                              "max-file-size": 2,
+                              component: "pictures",
+                              accept: "image/*",
+                            },
+                            on: {
+                              "file-uploaded": _vm.insertPhotosFile,
+                              "file-removed": _vm.removePhotosFile,
+                            },
+                          }),
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
                       _c(
                         "div",
                         {
@@ -650,9 +843,7 @@ var render = function () {
                           _c("label", { staticClass: "bmd-label-floating" }, [
                             _vm._v(
                               _vm._s(
-                                _vm.$t(
-                                  "cruds.semesterAccommodation.fields.features"
-                                )
+                                _vm.$t("cruds.univercityCourse.fields.features")
                               )
                             ),
                           ]),
@@ -750,7 +941,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "card-icon" }, [
-      _c("i", { staticClass: "material-icons" }, [_vm._v("add")]),
+      _c("i", { staticClass: "material-icons" }, [_vm._v("edit")]),
     ])
   },
 ]
@@ -760,17 +951,17 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./resources/adminapp/js/cruds/SemesterAccommodations/Create.vue":
-/*!***********************************************************************!*\
-  !*** ./resources/adminapp/js/cruds/SemesterAccommodations/Create.vue ***!
-  \***********************************************************************/
+/***/ "./resources/adminapp/js/cruds/PathwayUniversities/Edit.vue":
+/*!******************************************************************!*\
+  !*** ./resources/adminapp/js/cruds/PathwayUniversities/Edit.vue ***!
+  \******************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Create_vue_vue_type_template_id_df221e32___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Create.vue?vue&type=template&id=df221e32& */ "./resources/adminapp/js/cruds/SemesterAccommodations/Create.vue?vue&type=template&id=df221e32&");
-/* harmony import */ var _Create_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Create.vue?vue&type=script&lang=js& */ "./resources/adminapp/js/cruds/SemesterAccommodations/Create.vue?vue&type=script&lang=js&");
+/* harmony import */ var _Edit_vue_vue_type_template_id_bfa8ce04___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Edit.vue?vue&type=template&id=bfa8ce04& */ "./resources/adminapp/js/cruds/PathwayUniversities/Edit.vue?vue&type=template&id=bfa8ce04&");
+/* harmony import */ var _Edit_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Edit.vue?vue&type=script&lang=js& */ "./resources/adminapp/js/cruds/PathwayUniversities/Edit.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -780,9 +971,9 @@ __webpack_require__.r(__webpack_exports__);
 /* normalize component */
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _Create_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Create_vue_vue_type_template_id_df221e32___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Create_vue_vue_type_template_id_df221e32___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _Edit_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Edit_vue_vue_type_template_id_bfa8ce04___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Edit_vue_vue_type_template_id_bfa8ce04___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -792,38 +983,38 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/adminapp/js/cruds/SemesterAccommodations/Create.vue"
+component.options.__file = "resources/adminapp/js/cruds/PathwayUniversities/Edit.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/adminapp/js/cruds/SemesterAccommodations/Create.vue?vue&type=script&lang=js&":
-/*!************************************************************************************************!*\
-  !*** ./resources/adminapp/js/cruds/SemesterAccommodations/Create.vue?vue&type=script&lang=js& ***!
-  \************************************************************************************************/
+/***/ "./resources/adminapp/js/cruds/PathwayUniversities/Edit.vue?vue&type=script&lang=js&":
+/*!*******************************************************************************************!*\
+  !*** ./resources/adminapp/js/cruds/PathwayUniversities/Edit.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Create_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Create.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/SemesterAccommodations/Create.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Create_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Edit_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Edit.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/PathwayUniversities/Edit.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Edit_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/adminapp/js/cruds/SemesterAccommodations/Create.vue?vue&type=template&id=df221e32&":
-/*!******************************************************************************************************!*\
-  !*** ./resources/adminapp/js/cruds/SemesterAccommodations/Create.vue?vue&type=template&id=df221e32& ***!
-  \******************************************************************************************************/
+/***/ "./resources/adminapp/js/cruds/PathwayUniversities/Edit.vue?vue&type=template&id=bfa8ce04&":
+/*!*************************************************************************************************!*\
+  !*** ./resources/adminapp/js/cruds/PathwayUniversities/Edit.vue?vue&type=template&id=bfa8ce04& ***!
+  \*************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Create_vue_vue_type_template_id_df221e32___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Create.vue?vue&type=template&id=df221e32& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/SemesterAccommodations/Create.vue?vue&type=template&id=df221e32&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Create_vue_vue_type_template_id_df221e32___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Edit_vue_vue_type_template_id_bfa8ce04___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Edit.vue?vue&type=template&id=bfa8ce04& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/PathwayUniversities/Edit.vue?vue&type=template&id=bfa8ce04&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Edit_vue_vue_type_template_id_bfa8ce04___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Create_vue_vue_type_template_id_df221e32___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Edit_vue_vue_type_template_id_bfa8ce04___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

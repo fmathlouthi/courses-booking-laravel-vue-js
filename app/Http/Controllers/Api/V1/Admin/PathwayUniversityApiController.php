@@ -9,23 +9,25 @@ use App\Http\Resources\Admin\PathwayUniversityResource;
 use App\Models\PathwayUniversity;
 use Gate;
 use App\Models\City;
+use App\Models\Feature;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Spatie\MediaLibrary\Models\Media;
 
 class PathwayUniversityApiController extends Controller
 {
-    public function index()
+    public function index() 
     {
         abort_if(Gate::denies('pathway_university_access'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
-        return new PathwayUniversityResource(PathwayUniversity::with(['city'])->advancedFilter());
+        return new PathwayUniversityResource(PathwayUniversity::with(['city','features'])->advancedFilter());
     }
 
     public function store(StorePathwayUniversityRequest $request)
     {
         $pathwayUniversity = PathwayUniversity::create($request->validated());
 
+        $pathwayUniversity->features()->sync($request->input('features.*.id', []));
         if ($media = $request->input('pathbrochure', [])) {
             Media::whereIn('id', data_get($media, '*.id'))
                 ->where('model_id', 0)
@@ -56,6 +58,7 @@ class PathwayUniversityApiController extends Controller
         return response([
             'meta' => [
                 'city'          => City::get(['id', 'name']),
+                'features'      => Feature::get(['id', 'name']),
             ],
         ]);
     }
@@ -64,7 +67,7 @@ class PathwayUniversityApiController extends Controller
     {
         abort_if(Gate::denies('pathway_university_show'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
-        return new PathwayUniversityResource($pathwayUniversity->load(['city']));
+        return new PathwayUniversityResource($pathwayUniversity->load(['city', 'features']));
     }
 
     public function update(UpdatePathwayUniversityRequest $request, PathwayUniversity $pathwayUniversity)
@@ -74,6 +77,7 @@ class PathwayUniversityApiController extends Controller
         $pathwayUniversity->updateMedia($request->input('pathbrochure', []), 'pathway_university_pathbrochure');
         $pathwayUniversity->updateMedia($request->input('featured_image', []), 'pathway_university_featured_image');
         $pathwayUniversity->updateMedia($request->input('photos', []), 'pathway_university_photos');
+        $pathwayUniversity->features()->sync($request->input('features.*.id', []));
 
         return (new PathwayUniversityResource($pathwayUniversity))
             ->response()
@@ -85,9 +89,10 @@ class PathwayUniversityApiController extends Controller
         abort_if(Gate::denies('pathway_university_edit'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
         return response([
-            'data' => new PathwayUniversityResource($pathwayUniversity->load(['city'])),
+            'data' => new PathwayUniversityResource($pathwayUniversity->load(['city', 'features'])),
             'meta' => [
                 'city'          => City::get(['id', 'name']),
+                'features'      => Feature::get(['id', 'name']),
             ],
         ]);
     }

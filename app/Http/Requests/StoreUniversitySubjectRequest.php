@@ -15,7 +15,7 @@ class StoreUniversitySubjectRequest extends FormRequest
         return Gate::allows('university_subject_create');
     }
 
-    public function rules()
+    public function rules() 
     {
         return [
             'name' => [
@@ -70,6 +70,13 @@ class StoreUniversitySubjectRequest extends FormRequest
             'type' => [
                 'required',
                 'in:' . implode(',', Arr::pluck(UniversitySubject::TYPE_SELECT, 'value')),
+            ],
+            'features' => [
+                'array',
+            ],
+            'features.*.id' => [
+                'integer',
+                'exists:features,id',
             ],
         ];
     }

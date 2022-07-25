@@ -261,7 +261,7 @@
         </td>
         <td>
         <div class="text-center">
- <b-button style=" color: #fff; background-color: #ffffff00; border-color: #ffffff05; font-size: 1.5rem; " :id="`popover-1-${courseweekly.id}`" variant="primary"><b-icon icon="exclamation-circle-fill" variant="info"></b-icon></b-button>
+ <b-button style=" color: #fff; background-color: #ffffff00; border-color: #ffffff05; font-size: 1.5rem; " :id="`popover-1-${courseweekly.id}`" variant="primary"><b-icon icon="eye-fill" variant="info"></b-icon></b-button>
         <b-popover
           :target="`popover-1-${courseweekly.id}`"
           title="Description"
@@ -327,7 +327,7 @@
         <td>
         <div class="text-center">
  <b-button style=" color: #fff; background-color: #ffffff00; border-color: #ffffff05; font-size: 1.5rem; " :id="`popoverextra-1-${extra.id}`" variant="primary">
- <b-icon icon="exclamation-circle-fill" variant="info"></b-icon></b-button>
+ <b-icon icon="eye-fill" variant="info"></b-icon></b-button>
         <b-popover
           :target="`popoverextra-1-${extra.id}`"
           title="Description"
@@ -427,7 +427,7 @@
         <td>
         <div class="text-center">
  <b-button style=" color: #fff; background-color: #ffffff00; border-color: #ffffff05; font-size: 1.5rem; " :id="`popoveraccommodation-1-${accommodation.id}`" variant="primary">
- <b-icon icon="exclamation-circle-fill" variant="info"></b-icon></b-button>
+ <b-icon icon="eye-fill" variant="info"></b-icon></b-button>
         <b-popover
           :target="`popoveraccommodation-1-${accommodation.id}`"
           title="Description"
@@ -576,7 +576,7 @@ Information				</a>
         </td>
         <td>
         <div class="text-center">
- <b-button style=" color: #fff; background-color: #ffffff00; border-color: #ffffff05; font-size: 1.5rem; " :id="`popover-1-${coursesemester.id}`" variant="primary"><b-icon icon="exclamation-circle-fill" variant="info"></b-icon></b-button>
+ <b-button style=" color: #fff; background-color: #ffffff00; border-color: #ffffff05; font-size: 1.5rem; " :id="`popover-1-${coursesemester.id}`" variant="primary"><b-icon icon="eye-fill" variant="info"></b-icon></b-button>
         <b-popover
           :target="`popover-1-${coursesemester.id}`"
           title="Description"
@@ -628,7 +628,7 @@ Information				</a>
         <td>
         <div class="text-center">
  <b-button style=" color: #fff; background-color: #ffffff00; border-color: #ffffff05; font-size: 1.5rem; " :id="`popoverextra-1-${extra.id}`" variant="primary">
- <b-icon icon="exclamation-circle-fill" variant="info"></b-icon></b-button>
+ <b-icon icon="eye-fill" variant="info"></b-icon></b-button>
         <b-popover
           :target="`popoverextra-1-${extra.id}`"
           title="Description"
@@ -720,7 +720,7 @@ Information				</a>
         <td>
         <div class="text-center">
  <b-button style=" color: #fff; background-color: #ffffff00; border-color: #ffffff05; font-size: 1.5rem; " :id="`popoveraccommodation-1-${accommodation.id}`" variant="primary">
- <b-icon icon="exclamation-circle-fill" variant="info"></b-icon></b-button>
+ <b-icon icon="eye-fill" variant="info"></b-icon></b-button>
         <b-popover
           :target="`popoveraccommodation-1-${accommodation.id}`"
           title="Description"

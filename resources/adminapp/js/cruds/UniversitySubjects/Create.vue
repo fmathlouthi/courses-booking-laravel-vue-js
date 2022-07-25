@@ -147,6 +147,29 @@
                     />
                   </div>-->
                    <!--countries -->
+                    <div
+                    class="form-group bmd-form-group"
+                    :class="{
+                      'has-items': entry.features.length !== 0,
+                      'is-focused': activeField == 'features'
+                    }"
+                  >
+                    <label class="bmd-label-floating">{{
+                      $t('cruds.univercityCourse.fields.features')
+                    }}</label>
+                    <v-select
+                      name="features"
+                      label="name"
+                      :key="'features-field'"
+                      :value="entry.features"
+                      :options="lists.features"
+                      :closeOnSelect="false"
+                      multiple
+                      @input="updateFeatures"
+                      @search.focus="focusField('features')"
+                      @search.blur="clearFocus"
+                    />
+                  </div>
                     <div class="form-group">
                             <label>Select Country:</label>
                             <select class='form-control' v-model='country' @change='getStates()'>
@@ -313,6 +336,7 @@ export default {
       'insertFeaturedImageFile',
       'removeFeaturedImageFile',
       'setType',
+      'setFeatures',
       'fetchCreateData'
     ]),
     updateName(e) {
@@ -335,6 +359,9 @@ export default {
     },
     updateType(value) {
       this.setType(value)
+    },
+    updateFeatures(value) {
+      this.setFeatures(value)
     },
     getRoute(name) {
       return `${axios.defaults.baseURL}${name}/media`

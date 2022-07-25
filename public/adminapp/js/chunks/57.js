@@ -1,15 +1,17 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[57],{
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/ContactCompanies/Create.vue?vue&type=script&lang=js&":
-/*!**************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/cruds/ContactCompanies/Create.vue?vue&type=script&lang=js& ***!
-  \**************************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/Accommodations/Create.vue?vue&type=script&lang=js&":
+/*!************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/cruds/Accommodations/Create.vue?vue&type=script&lang=js& ***!
+  \************************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
+/* harmony import */ var _ckeditor_ckeditor5_build_classic__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @ckeditor/ckeditor5-build-classic */ "./node_modules/@ckeditor/ckeditor5-build-classic/build/ckeditor.js");
+/* harmony import */ var _ckeditor_ckeditor5_build_classic__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_ckeditor_ckeditor5_build_classic__WEBPACK_IMPORTED_MODULE_1__);
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
@@ -110,61 +112,39 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+
 
 /* harmony default export */ __webpack_exports__["default"] = ({
+  components: {
+    ClassicEditor: _ckeditor_ckeditor5_build_classic__WEBPACK_IMPORTED_MODULE_1___default.a
+  },
   data: function data() {
     return {
       status: '',
-      activeField: ''
+      activeField: '',
+      editor: _ckeditor_ckeditor5_build_classic__WEBPACK_IMPORTED_MODULE_1___default.a
     };
   },
-  computed: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapGetters"])('ContactCompaniesSingle', ['entry', 'loading'])),
+  computed: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapGetters"])('AccommodationsSingle', ['entry', 'loading'])),
   beforeDestroy: function beforeDestroy() {
     this.resetState();
   },
-  methods: _objectSpread(_objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapActions"])('ContactCompaniesSingle', ['storeData', 'resetState', 'setCompanyName', 'setCompanyAddress', 'setCompanyWebsite', 'setCompanyEmail'])), {}, {
-    updateCompanyName: function updateCompanyName(e) {
-      this.setCompanyName(e.target.value);
+  methods: _objectSpread(_objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapActions"])('AccommodationsSingle', ['storeData', 'resetState', 'setName', 'setDescription', 'setPrice'])), {}, {
+    updateName: function updateName(e) {
+      this.setName(e.target.value);
     },
-    updateCompanyAddress: function updateCompanyAddress(e) {
-      this.setCompanyAddress(e.target.value);
+    updateDescription: function updateDescription(value) {
+      this.setDescription(value);
     },
-    updateCompanyWebsite: function updateCompanyWebsite(e) {
-      this.setCompanyWebsite(e.target.value);
-    },
-    updateCompanyEmail: function updateCompanyEmail(e) {
-      this.setCompanyEmail(e.target.value);
+    updatePrice: function updatePrice(e) {
+      this.setPrice(e.target.value);
     },
     submitForm: function submitForm() {
       var _this = this;
 
       this.storeData().then(function () {
         _this.$router.push({
-          name: 'contact_companies.index'
+          name: 'accommodations.index'
         });
 
         _this.$eventHub.$emit('create-success');
@@ -187,10 +167,10 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/ContactCompanies/Create.vue?vue&type=template&id=75eacd85&":
-/*!******************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/cruds/ContactCompanies/Create.vue?vue&type=template&id=75eacd85& ***!
-  \******************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/Accommodations/Create.vue?vue&type=template&id=da6e7f82&":
+/*!****************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/cruds/Accommodations/Create.vue?vue&type=template&id=da6e7f82& ***!
+  \****************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -234,7 +214,7 @@ var render = function () {
                     ),
                     _c("strong", [
                       _vm._v(
-                        _vm._s(_vm.$t("cruds.contactCompany.title_singular"))
+                        _vm._s(_vm.$t("cruds.accommodation.title_singular"))
                       ),
                     ]),
                   ]),
@@ -256,29 +236,31 @@ var render = function () {
                         {
                           staticClass: "form-group bmd-form-group",
                           class: {
-                            "has-items": _vm.entry.company_name,
-                            "is-focused": _vm.activeField == "company_name",
+                            "has-items": _vm.entry.name,
+                            "is-focused": _vm.activeField == "name",
                           },
                         },
                         [
-                          _c("label", { staticClass: "bmd-label-floating" }, [
-                            _vm._v(
-                              _vm._s(
-                                _vm.$t(
-                                  "cruds.contactCompany.fields.company_name"
+                          _c(
+                            "label",
+                            { staticClass: "bmd-label-floating required" },
+                            [
+                              _vm._v(
+                                _vm._s(
+                                  _vm.$t("cruds.accommodation.fields.name")
                                 )
-                              )
-                            ),
-                          ]),
+                              ),
+                            ]
+                          ),
                           _vm._v(" "),
                           _c("input", {
                             staticClass: "form-control",
-                            attrs: { type: "text" },
-                            domProps: { value: _vm.entry.company_name },
+                            attrs: { type: "text", required: "" },
+                            domProps: { value: _vm.entry.name },
                             on: {
-                              input: _vm.updateCompanyName,
+                              input: _vm.updateName,
                               focus: function ($event) {
-                                return _vm.focusField("company_name")
+                                return _vm.focusField("name")
                               },
                               blur: _vm.clearFocus,
                             },
@@ -288,37 +270,25 @@ var render = function () {
                       _vm._v(" "),
                       _c(
                         "div",
-                        {
-                          staticClass: "form-group bmd-form-group",
-                          class: {
-                            "has-items": _vm.entry.company_address,
-                            "is-focused": _vm.activeField == "company_address",
-                          },
-                        },
+                        { staticClass: "form-group" },
                         [
-                          _c("label", { staticClass: "bmd-label-floating" }, [
+                          _c("label", [
                             _vm._v(
                               _vm._s(
-                                _vm.$t(
-                                  "cruds.contactCompany.fields.company_address"
-                                )
+                                _vm.$t("cruds.accommodation.fields.description")
                               )
                             ),
                           ]),
                           _vm._v(" "),
-                          _c("input", {
-                            staticClass: "form-control",
-                            attrs: { type: "text" },
-                            domProps: { value: _vm.entry.company_address },
-                            on: {
-                              input: _vm.updateCompanyAddress,
-                              focus: function ($event) {
-                                return _vm.focusField("company_address")
-                              },
-                              blur: _vm.clearFocus,
+                          _c("ckeditor", {
+                            attrs: {
+                              editor: _vm.editor,
+                              value: _vm.entry.description,
                             },
+                            on: { input: _vm.updateDescription },
                           }),
-                        ]
+                        ],
+                        1
                       ),
                       _vm._v(" "),
                       _c(
@@ -326,64 +296,35 @@ var render = function () {
                         {
                           staticClass: "form-group bmd-form-group",
                           class: {
-                            "has-items": _vm.entry.company_website,
-                            "is-focused": _vm.activeField == "company_website",
+                            "has-items": _vm.entry.price,
+                            "is-focused": _vm.activeField == "price",
                           },
                         },
                         [
-                          _c("label", { staticClass: "bmd-label-floating" }, [
-                            _vm._v(
-                              _vm._s(
-                                _vm.$t(
-                                  "cruds.contactCompany.fields.company_website"
+                          _c(
+                            "label",
+                            { staticClass: "bmd-label-floating required" },
+                            [
+                              _vm._v(
+                                _vm._s(
+                                  _vm.$t("cruds.accommodation.fields.price")
                                 )
-                              )
-                            ),
-                          ]),
+                              ),
+                            ]
+                          ),
                           _vm._v(" "),
                           _c("input", {
                             staticClass: "form-control",
-                            attrs: { type: "text" },
-                            domProps: { value: _vm.entry.company_website },
-                            on: {
-                              input: _vm.updateCompanyWebsite,
-                              focus: function ($event) {
-                                return _vm.focusField("company_website")
-                              },
-                              blur: _vm.clearFocus,
+                            attrs: {
+                              type: "number",
+                              step: "0.01",
+                              required: "",
                             },
-                          }),
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        {
-                          staticClass: "form-group bmd-form-group",
-                          class: {
-                            "has-items": _vm.entry.company_email,
-                            "is-focused": _vm.activeField == "company_email",
-                          },
-                        },
-                        [
-                          _c("label", { staticClass: "bmd-label-floating" }, [
-                            _vm._v(
-                              _vm._s(
-                                _vm.$t(
-                                  "cruds.contactCompany.fields.company_email"
-                                )
-                              )
-                            ),
-                          ]),
-                          _vm._v(" "),
-                          _c("input", {
-                            staticClass: "form-control",
-                            attrs: { type: "text" },
-                            domProps: { value: _vm.entry.company_email },
+                            domProps: { value: _vm.entry.price },
                             on: {
-                              input: _vm.updateCompanyEmail,
+                              input: _vm.updatePrice,
                               focus: function ($event) {
-                                return _vm.focusField("company_email")
+                                return _vm.focusField("price")
                               },
                               blur: _vm.clearFocus,
                             },
@@ -444,17 +385,17 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./resources/adminapp/js/cruds/ContactCompanies/Create.vue":
-/*!*****************************************************************!*\
-  !*** ./resources/adminapp/js/cruds/ContactCompanies/Create.vue ***!
-  \*****************************************************************/
+/***/ "./resources/adminapp/js/cruds/Accommodations/Create.vue":
+/*!***************************************************************!*\
+  !*** ./resources/adminapp/js/cruds/Accommodations/Create.vue ***!
+  \***************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Create_vue_vue_type_template_id_75eacd85___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Create.vue?vue&type=template&id=75eacd85& */ "./resources/adminapp/js/cruds/ContactCompanies/Create.vue?vue&type=template&id=75eacd85&");
-/* harmony import */ var _Create_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Create.vue?vue&type=script&lang=js& */ "./resources/adminapp/js/cruds/ContactCompanies/Create.vue?vue&type=script&lang=js&");
+/* harmony import */ var _Create_vue_vue_type_template_id_da6e7f82___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Create.vue?vue&type=template&id=da6e7f82& */ "./resources/adminapp/js/cruds/Accommodations/Create.vue?vue&type=template&id=da6e7f82&");
+/* harmony import */ var _Create_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Create.vue?vue&type=script&lang=js& */ "./resources/adminapp/js/cruds/Accommodations/Create.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -465,8 +406,8 @@ __webpack_require__.r(__webpack_exports__);
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
   _Create_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Create_vue_vue_type_template_id_75eacd85___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Create_vue_vue_type_template_id_75eacd85___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _Create_vue_vue_type_template_id_da6e7f82___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Create_vue_vue_type_template_id_da6e7f82___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -476,38 +417,38 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/adminapp/js/cruds/ContactCompanies/Create.vue"
+component.options.__file = "resources/adminapp/js/cruds/Accommodations/Create.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/adminapp/js/cruds/ContactCompanies/Create.vue?vue&type=script&lang=js&":
-/*!******************************************************************************************!*\
-  !*** ./resources/adminapp/js/cruds/ContactCompanies/Create.vue?vue&type=script&lang=js& ***!
-  \******************************************************************************************/
+/***/ "./resources/adminapp/js/cruds/Accommodations/Create.vue?vue&type=script&lang=js&":
+/*!****************************************************************************************!*\
+  !*** ./resources/adminapp/js/cruds/Accommodations/Create.vue?vue&type=script&lang=js& ***!
+  \****************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Create_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Create.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/ContactCompanies/Create.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Create_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Create.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/Accommodations/Create.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Create_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/adminapp/js/cruds/ContactCompanies/Create.vue?vue&type=template&id=75eacd85&":
-/*!************************************************************************************************!*\
-  !*** ./resources/adminapp/js/cruds/ContactCompanies/Create.vue?vue&type=template&id=75eacd85& ***!
-  \************************************************************************************************/
+/***/ "./resources/adminapp/js/cruds/Accommodations/Create.vue?vue&type=template&id=da6e7f82&":
+/*!**********************************************************************************************!*\
+  !*** ./resources/adminapp/js/cruds/Accommodations/Create.vue?vue&type=template&id=da6e7f82& ***!
+  \**********************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Create_vue_vue_type_template_id_75eacd85___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Create.vue?vue&type=template&id=75eacd85& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/ContactCompanies/Create.vue?vue&type=template&id=75eacd85&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Create_vue_vue_type_template_id_75eacd85___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Create_vue_vue_type_template_id_da6e7f82___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Create.vue?vue&type=template&id=da6e7f82& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/Accommodations/Create.vue?vue&type=template&id=da6e7f82&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Create_vue_vue_type_template_id_da6e7f82___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Create_vue_vue_type_template_id_75eacd85___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Create_vue_vue_type_template_id_da6e7f82___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

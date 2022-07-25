@@ -4,9 +4,16 @@ import Aboutus from './pages/Aboutus.vue';
 import Contactus from './pages/Contactus.vue';
 import searchcourses from './pages/searchcourses.vue';
 import searchaccommodation from './pages/searchaccommodation.vue';
+import searchsubjects from './pages/searchsubjects.vue';
+import searchpathways from './pages/searchpathways.vue';
 import SingleCourse from './pages/SingleCourse.vue';
+import SingleAcommodation from './pages/SingleAccommodation.vue';
+import SingleSubjectProgram from './pages/SingleSubjectProgram.vue';
+import Singlepathway from './pages/Singlepathway.vue';
 import Checkoutcourseweekly from './pages/Checkoutcourseweekly.vue';
 import MultiSteps from './pages/MultiSteps.vue';
+import MultiStepspathway from './pages/MultiStepspathway.vue';
+
 
 
 export default {
@@ -42,6 +49,16 @@ export default {
             name: ' search accommodation'
         },
         {
+            path: '/searchsubjects',
+            component: searchsubjects,
+            name: ' search subjects'
+        },
+        {
+            path: '/searchpathways',
+            component: searchpathways,
+            name: 'search pathways'
+        },
+        {
             path: '/checkoutcourseweekly',
             name: 'Checkout-course-weekly',
             component: Checkoutcourseweekly
@@ -52,9 +69,29 @@ export default {
             component: SingleCourse
         },
         {
-            path: '/multiSteps',
+            path: '/singleacommodation/:id',
+            name: 'single-acommodation',
+            component: SingleAcommodation
+        },
+        {
+            path: '/singlesubjectprogram/:id',
+            name: 'single-subject-program',
+            component: SingleSubjectProgram
+        },
+        {
+            path: '/Singlepathway/:id',
+            name: 'single-pathway',
+            component: Singlepathway
+        },
+        {
+            path: '/universityrequests/:id',
             name: 'Multi-Steps',
             component: MultiSteps
+        },
+        {
+            path: '/pathwayrequests/:id',
+            name: 'Multi-Steps-pathway',
+            component: MultiStepspathway
         },
 
         {

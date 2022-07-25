@@ -128,6 +128,15 @@
                           </datatable-pictures>
                         </td>
                       </tr>
+                      <tr>
+                        <td class="text-primary">
+                          {{ $t('cruds.univercityCourse.fields.features') }}
+                        </td>
+                        <td>
+                          <datatable-list :row="entry" field="features.name">
+                          </datatable-list>
+                        </td>
+                      </tr>
                     </tbody>
                   </div>
                 </div>
@@ -145,6 +154,7 @@ import { mapGetters, mapActions } from 'vuex'
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic'
 import DatatableAttachments from '@components/Datatables/DatatableAttachments'
 import DatatablePictures from '@components/Datatables/DatatablePictures'
+import DatatableList from '@components/Datatables/DatatableList'
 
 import DatatableSingle from '@components/Datatables/DatatableSingle'
 
@@ -153,6 +163,7 @@ export default {
     ClassicEditor,
     DatatableAttachments,
     DatatablePictures,
+    DatatableList, 
     DatatableSingle
   },
   data() {

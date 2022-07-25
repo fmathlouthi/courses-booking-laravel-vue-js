@@ -14,6 +14,8 @@ Route::group([
 ], function () {
     Route::view('/{any?}', 'layouts.admin.app')->name('dashboard')->where('any', '.*');
 });
+
+
 Route::get('/{any}' , function()
 { return view('welcome');}
 )->where('any' , '.*');

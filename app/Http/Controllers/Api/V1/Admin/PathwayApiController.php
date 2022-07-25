@@ -8,6 +8,7 @@ use App\Http\Requests\UpdatePathwayRequest;
 use App\Http\Resources\Admin\PathwayResource;
 use App\Models\Pathway;
 use App\Models\PathwayUniversity;
+use App\Models\SubjectPathway;
 use Gate;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
@@ -18,7 +19,7 @@ class PathwayApiController extends Controller
     {
         abort_if(Gate::denies('pathway_access'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
-        return new PathwayResource(Pathway::with(['university'])->advancedFilter());
+        return new PathwayResource(Pathway::with(['university','subjectPathway'])->advancedFilter());
     }
 
     public function store(StorePathwayRequest $request)
@@ -37,6 +38,7 @@ class PathwayApiController extends Controller
         return response([
             'meta' => [
                 'university' => PathwayUniversity::get(['id', 'name']),
+                'subjectpathway' => SubjectPathway::get(['id', 'name']),
                 'type'       => Pathway::TYPE_SELECT,
             ],
         ]);
@@ -46,7 +48,7 @@ class PathwayApiController extends Controller
     {
         abort_if(Gate::denies('pathway_show'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
-        return new PathwayResource($pathway->load(['university']));
+        return new PathwayResource($pathway->load(['university','subjectPathway']));
     }
 
     public function update(UpdatePathwayRequest $request, Pathway $pathway)
@@ -63,9 +65,10 @@ class PathwayApiController extends Controller
         abort_if(Gate::denies('pathway_edit'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
         return response([
-            'data' => new PathwayResource($pathway->load(['university'])),
+            'data' => new PathwayResource($pathway->load(['university','subjectPathway'])),
             'meta' => [
                 'university' => PathwayUniversity::get(['id', 'name']),
+                'subjectpathway' => SubjectPathway::get(['id', 'name']),
                 'type'       => Pathway::TYPE_SELECT,
             ],
         ]);

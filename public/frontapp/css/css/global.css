@@ -56,6 +56,7 @@ html {
 body {
     margin: 0;
 }
+
 div#buy_block {
     color: #000;
     background-color: none;
@@ -66,11 +67,14 @@ div#buy_block {
 
 .buy_block1 {
     padding: 20px;
-}.box-cart-bottom {
+}
+
+.box-cart-bottom {
     padding: 0;
     float: left;
     margin-right: 20px;
 }
+
 article,
 aside,
 details,
@@ -104,6 +108,27 @@ audio:not([controls]) {
     padding: 0px !important;
 }
 
+a#__BVID__17___BV_tab_button__::before {
+    content: "";
+    display: inline-block;
+    background: url(https://stoodux.com/modules/wkextsearch/views/img/old-school.png) no-repeat;
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+    margin-right: 13px;
+}
+
+span.badger-toggle-indicator {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+span.badger-accordion-title {
+    color: #076f89;
+    font-weight: 800;
+    font-size: 20px;
+}
+
 .nav-tabs .nav-link {
     margin-bottom: -1px;
     border: 0px solid transparent;
@@ -112,6 +137,15 @@ audio:not([controls]) {
     color: #fff !important;
     font-size: 13px;
     background-color: #076F89;
+}
+
+button.badger-accordion-toggle {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px;
+    text-decoration: none;
+    transition: 0.15s all ease-in-out;
+    text-transform: uppercase;
 }
 
 .nav-tabs .nav-link.active {
@@ -20836,17 +20870,21 @@ p.location i {
     vertical-align: -7px;
     margin-right: 5px;
 }
+
 .primary_block.col-lg-12 {
     margin-bottom: 40px;
     border-bottom: 2px solid #eee;
 }
+
 .location img {
     width: 5%;
     margin-right: 9px;
 }
+
 .carousel-item img {
-        height:300px!important ;
-    }
+    height: 300px!important;
+}
+
 .toggle-container .panel {
     margin-bottom: 0;
     box-shadow: none;
@@ -22476,7 +22514,7 @@ a#university1 {
 
 input[type="text"],
 input[type="email"] {
-    font-size: 1.6rem;
+    font-size: 1rem;
     color: #010100;
     width: 100%;
     line-height: 65px;

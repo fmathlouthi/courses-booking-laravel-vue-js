@@ -139,7 +139,7 @@ class UnivercityCourse extends Model implements HasMedia
 
             return $media;
         });
-    }
+    } 
 
     public function features()
     {

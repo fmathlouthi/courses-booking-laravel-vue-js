@@ -267,6 +267,10 @@
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="https://www.paypal.com/sdk/js?client-id=AbAduUWN2Ex6BkjyekZMl-xeViXp85v9KlotMcjRvkiJ2QUz3c1KJnOTbj6H6-ye6dRgY83V8FZx__s6"></script>
   <script src="{{ mix('/frontapp/js/app.js') }}" type="text/javascript" charset="utf-8"></script>
+  
+
+
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsdR7IYEPb95iQyI2qXoh13KB9QKRjMug&libraries=places" async defer></script>
 </body>
 
 </html>

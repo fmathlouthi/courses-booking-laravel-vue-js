@@ -19,6 +19,7 @@ function initialState() {
         lists: {
             university: [],
             type: [],
+            subject: [],
             owner: []
         },
         loading: false

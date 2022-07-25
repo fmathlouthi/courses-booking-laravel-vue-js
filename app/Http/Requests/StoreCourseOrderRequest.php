@@ -88,17 +88,17 @@ class StoreCourseOrderRequest extends FormRequest
             ],
             'course_id' => [
                 'integer',
-                'exists:products,id',
+                'exists:weekly_courses,id',
                 'nullable',
             ],
             'extra_id' => [
                 'integer',
-                'exists:product_tags,id',
+                'exists:extras,id',
                 'nullable',
             ],
             'accommodation_id' => [
                 'integer',
-                'exists:product_categories,id',
+                'exists:accommodations,id',
                 'nullable',
             ],
             'start_date' => [

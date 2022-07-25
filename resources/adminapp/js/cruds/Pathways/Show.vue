@@ -39,6 +39,18 @@
                       </tr>
                       <tr>
                         <td class="text-primary">
+                          Subject
+                        </td>
+                        <td>
+                          <datatable-single
+                            :row="entry"
+                            field="subject_pathway.name"
+                          >
+                          </datatable-single>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-primary">
                           {{ $t('cruds.pathway.fields.description') }}
                         </td>
                         <td>
